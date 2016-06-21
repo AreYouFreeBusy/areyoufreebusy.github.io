@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "How to export Twitter usernames of people who upvoted on ProductHunt without writing code"
+shortTitle: "test"
 date: 2015-06-25
 ---
 <div class="content">
