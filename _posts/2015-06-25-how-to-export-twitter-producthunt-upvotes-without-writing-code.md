@@ -44,22 +44,4 @@ and the trailing
 <script src="//platform.twitter.com/widgets.js"></script>
 </div>
 </div>
-        </div>
-	      
-	      <div class="addthis_native_toolbox"></div>
- 		  <br /><br/>
-	      <div class="share">
-			<div id="disqus_thread"></div>
-			<script type="text/javascript">
-    		/* * * begin config variables * * */
-    		var disqus_shortname = 'freebusy';
-    		/* * * end config variables * * */
-    		(function() {
-              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            })();
-            </script>
-            <noscript>Please enable JavaScript to view comments.</noscript>
-	      </div>
-		  <br /><br/>
+</div>
