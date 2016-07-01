@@ -7,7 +7,7 @@ date: 2015-06-25
 <div class="content">
   <div class="row">
     <div class="col-md-7">
-      <p>Startups launching new products live or die by the enthusiasm and retention of their early adopters (don't I know it!). So naturally, when my startup was featured on ProductHunt, I wanted to make sure that I stay in touch with everyone who likes our product.</p>
+      <p>Startups launching new products live or die by the enthusiasm and retention of their early adopters (don't I know it!). So naturally, when my startup was featured on ProductHunt, I wanted to make sure that I stay in touch with everyone who likes our product.<!--more--></p>
       <p>Unfortunately, getting a list of the people who upvoted your product isn't easy and the official word is that you have to use the ProductHunt API. I'm all for the API, but I needed something in a pinch for a campaign we were working on so I came up with a hack that uses screen scraping techniques until someone finds the time to write a proper tool.</p>
       <p></p>
       <p><iframe width="560" height="315" src="https://www.youtube.com/embed/AKWiNw62yDM" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>

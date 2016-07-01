@@ -1,3 +1,4 @@
 name: FreeBusy
 markdown: kramdown
 permalink: /blog/:title
+excerpt_separator: <!--more-->
