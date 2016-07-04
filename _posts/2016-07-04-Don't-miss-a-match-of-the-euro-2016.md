@@ -4,7 +4,6 @@ Title: "Don’t miss a match of the Euro 2016"
 Author: Abdul Hafez
 Date: 2016-07-04
 ---
-#Don’t miss a match of the Euro 2016#
 
 Lads, Lasses are you into football? You must be buzzing for Euro 2016 then!!!
 
