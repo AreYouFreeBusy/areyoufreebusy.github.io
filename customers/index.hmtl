@@ -1,0 +1,10 @@
+---
+layout: default
+title: FreeBusy Customer Pages Index 
+---
+<div class="row">
+  <div class="col-sm-12">
+        <h1>{{ page.title }}</h1>
+        <p>Index for Customer Pages</p>
+    </div>
+</div>
