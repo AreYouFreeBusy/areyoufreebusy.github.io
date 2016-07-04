@@ -23,29 +23,7 @@
 <body>
   
 <div id="body">
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="https://freebusy.io/">&nbsp;</a>
-      </div>
-      <div class="collapse navbar-collapse" id="navbar-collapse">
-        <ul class="nav navbar-nav text-uppercase">
-          <li><a href="https://freebusy.io/about">About</a></li>
-          <li><a href="https://freebusy.io/how-it-works">How It Works</a></li>
-          <li><a href="https://freebusy.io/search">Check a Schedule</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a class="text-uppercase" href="https://freebusy.io/connect">Sign In with Your Calendar</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  {% include nav.html %}
   <div id="body-content" class="pt-30">
     <div class="group">
       <div class="group">
@@ -54,10 +32,9 @@
             <div class="container">
               {{ content }}
             </div>
-
-<!--<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shBrushPlain.js"></script>-->
-<!--<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shBrushJScript.min.js"></script>-->
-<!--<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shBrushCSharp.min.js"></script>-->
+            <!--<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shBrushPlain.js"></script>-->
+            <!--<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shBrushJScript.min.js"></script>-->
+            <!--<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shBrushCSharp.min.js"></script>-->
           </div>
         </div>
       </div>
@@ -66,50 +43,7 @@
   <footer></footer>
 </div>
 
-<footer>
-  <div id="footer" class="bg-gray-lighter">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-2">
-          <ul class="list-unstyled">
-            <li>&copy; <a href="https://angel.co/freebusy">BizLogr Inc.</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-3">
-          <ul class="list-unstyled">
-            <li><a href="https://freebusy.io/about">About Us</a></li>
-            <li><a href="https://freebusy.io/how-it-works">How It Works</a></li>
-            <li><a href="https://freebusy.io/developers">API for Developers</a></li>
-            <li><a href="https://freebusy.io/security">Security</a></li>
-            <li><a href="https://freebusy.io/blog">Blog</a></li>
-            <li><a href="https://freebusy.io/privacy">Privacy Policy</a></li>
-            <li><a href="https://freebusy.io/terms">Terms of Use</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-3">
-          <div class="addthis_vertical_follow_toolbox"></div>
-        </div>
-        <div class="col-sm-4 newsletter">
-          <p>Subscribe to our mailing list<br />and we'll inform you of updates.</p>
-          <!-- Begin MailChimp Signup Form -->
-          <div id="mc_embed_signup">
-            <form action="//freebusy.us9.list-manage.com/subscribe/post?u=755277aa8a7df83c52fc44f0a&amp;id=f175123046" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-              <div class="input-group">
-                <input type="email" name="EMAIL" id="mce-EMAIL" class="email form-control input-sm" placeholder="enter your email address" required data-bv-notempty="true" />
-                <span class="input-group-btn">
-                  <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-sm">Subscribe</button>
-                </span>
-              </div>
-              <!-- anti-bot protection -->
-              <div style="position: absolute; left: -5000px;"><input type="text" name="b_755277aa8a7df83c52fc44f0a_f175123046" tabindex="-1" value=""></div>
-            </form>
-          </div>
-          <!--End mc_embed_signup-->
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
+{% include footer.html %}
 
 <script>
 (function () { 
