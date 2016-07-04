@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Don’t miss a match of the Euro 2016"
+Title: "Don’t miss a match of the Euro 2016"
 Author: Abdul Hafez
-date: 2016-07-04
+Date: 2016-07-04
 --
 
 #Don’t miss a match of the Euro 2016#
