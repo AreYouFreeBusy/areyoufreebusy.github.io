@@ -7,7 +7,7 @@ Date: 2016-07-04
 
 Lads, Lasses are you into football? You must be buzzing for Euro 2016 then!!!
 
-Here are just a few tips to keep up to date with the games and not miss any of them.
+Here are just a few tips to keep up to date with the games and not miss <!--more--> any of them.
 
 **Never miss a match**
 
