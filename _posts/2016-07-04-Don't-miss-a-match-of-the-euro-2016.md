@@ -1,7 +1,7 @@
 ---
 layout: post
 Title: "Don’t miss a match of the Euro 2016"
-Author: Abdul Hafez
+Author: Abdul
 Date: 2016-07-04
 ---
 
