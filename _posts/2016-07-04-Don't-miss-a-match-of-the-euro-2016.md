@@ -1,8 +1,8 @@
 ---
 layout: post
-Title: "Don’t miss a match of the Euro 2016"
+title: "Don’t miss a match of the Euro 2016"
 author: "Abdul"
-Date: 2016-07-04
+date: 2016-07-04
 ---
 
 Lads, Lasses are you into football? You must be buzzing for Euro 2016 then!!!
