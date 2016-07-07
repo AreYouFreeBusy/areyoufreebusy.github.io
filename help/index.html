@@ -1,6 +1,6 @@
 ---
 layout: default
-title: FreeBusy Blog 
+title: FreeBusy Help Pages
 ---
 <div class="row">
   <div class="col-sm-12">
@@ -8,15 +8,9 @@ title: FreeBusy Blog
         <h1>{{ page.title }}</h1>
         <div id="posts">
           <ul>
-          {% for post in site.categories.blog %}
+          {% for post in site.categories.help %}
             <li>
               <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-              <div class="metadata" style="margin-bottom: 10px;">
-                  <time class="clearfix" datetime="{{ post.date | date_to_string }}">
-                    Published on {{ post.date | date: '%A, %B %d, %Y' }}
-                    by {{ post.author }}
-                  </time>
-              </div>
               <p></p>
               <p></p>
               <p>{{ post.excerpt | strip_html }}</p>
@@ -29,4 +23,3 @@ title: FreeBusy Blog
       </div>
     </div>
 </div>
-

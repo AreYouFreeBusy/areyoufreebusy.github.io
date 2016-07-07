@@ -1,4 +1,4 @@
 name: FreeBusy
 markdown: kramdown
-permalink: /blog/:title
+permalink: /:categories/:title
 excerpt_separator: <!--more-->
