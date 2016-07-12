@@ -4,7 +4,6 @@ title: "How to export Twitter usernames of people who upvoted on ProductHunt wit
 author: Stefan
 date: 2015-06-25
 ---
-<div class="content">
   <div class="row">
     <div class="col-md-7">
       <p>Startups launching new products live or die by the enthusiasm and retention of their early adopters (don't I know it!). So naturally, when my startup was featured on ProductHunt, I wanted to make sure that I stay in touch with everyone who likes our product.<!--more--></p>
@@ -47,4 +46,3 @@ date: 2015-06-25
       <script src="//platform.twitter.com/widgets.js"></script>
     </div>
   </div>
-</div>

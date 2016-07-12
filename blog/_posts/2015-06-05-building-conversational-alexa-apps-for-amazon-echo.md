@@ -4,8 +4,7 @@ title: "Building Conversational Alexa Apps for Amazon Echo"
 author: Stefan
 date: 2015-06-05
 ---
-<div class="content">
-          <div class="row">
+<div class="row">
 <div class="col-md-5">
 <p><strong>TL;DR </strong>Amazon's Echo SDK doesn't provide all the building blocks necessary to build conversational apps so we came up with a design pattern to supplement the SDK. If your app is built on .NET the pattern is already baked into <a href="https://github.com/AreYouFreeBusy/AlexaSkillsKit.NET">AlexaSkillsKit.NET</a>, otherwise it's straightforward to implement in Java, node.js, Python or any other platform/language you build on.<!--more--></p>
 <p>The attached demo shows a variety of scenarios, among which the conversational create event scenarios discussed below.</p>
@@ -613,4 +612,4 @@ Content-Type: application/json; charset=utf-8
 }
 </code></pre>
 <p>Hope this helps, enjoy!</p>
-        </div>
+
