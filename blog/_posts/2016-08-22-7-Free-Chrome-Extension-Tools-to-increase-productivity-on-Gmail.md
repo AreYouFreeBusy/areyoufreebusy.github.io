@@ -1,7 +1,7 @@
 ---
-Layout: post
-Title: "7 Free chrome extension Tools to increase productivity on Gmail"
-Author: "Abdul"
+layout: post
+title: "7 Free chrome extension Tools to increase productivity on Gmail"
+author: "Abdul"
 date: 2016-08-22
 ---
 
