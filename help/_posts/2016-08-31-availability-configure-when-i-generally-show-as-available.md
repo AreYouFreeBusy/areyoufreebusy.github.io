@@ -1,8 +1,6 @@
 ---
 layout: help
-title: "configure when i generally show as available"
-author: FreeBusy
-date: 2016-08-30
+title: "Configure when I generally show as available"
 ---
 
 
