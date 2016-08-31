@@ -1,4 +1,3 @@
-
 ---
 layout: help
 title: "configure when i generally show as available"
