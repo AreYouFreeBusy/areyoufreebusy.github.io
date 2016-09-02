@@ -1,16 +1,126 @@
 ---
-layout: default
-title: FreeBusy Help Pages
 ---
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FreeBusy Help Center</title>
+    {% include help_head.html %}
+</head>
+<body class="appear-animate">
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader">Loading...</div>
+    </div>
+    <!-- End Page Loader -->
+    <!-- Page Wrap -->
+    <div class="page" id="top">
+        {% include blog_nav.html %}
 
+        <!-- Home Section -->
+        <section class="page-section pb-0 bg-dark" data-background="/help/images/support.jpg" id="home">
+            <div class="relative">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="align-center">
+                                <h1 class="hs-line-8 no-transp font-alt mb-40 mb-xs-20">
+                                    FreeBusy Help Center
+                                </h1>
+                                <h3 class="hs-line-15 font-alt">
 
-<h1>FreeBusy Help Page</h1>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Home Section -->
+        <!-- Divider -->
+        {% include divider.html %}
+        <!-- End Divider -->
+        <!-- About Section; center all text-->
+        <section class="page-section" id="about">
+            <div class="container relative">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-2">
+                        <div class="section-text ">
+                            <div class="mb-0">
+                                <!-- Category: Getting Started -->
+                                <h3>Getting Started</h3>
+                                {% for post in site.categories.help %}
+                                  {% if post.category == gettingStarted %}
+                                    <a href="{{ post.url }}">{{ post.title }}</a><br>
+                                  {% endif %}
+                                {% endfor %}
 
+                                <!-- Category: Linking Calendars -->
+                                <h3>Linking Calendars</h3>
+                                {% for post in site.categories.help %}
+                                  {% if post.category == linkingCalendars %}
+                                    <a href="{{ post.url }}">{{ post.title }}</a><br>
+                                  {% endif %}
+                                {% endfor %}
 
+                                <!-- Category: Availability -->
+                                <h3>Availability</h3>
+                                {% for post in site.categories.help %}
+                                  {% if post.category == availability %}
+                                    <a href="{{ post.url }}">{{ post.title }}</a><br>
+                                  {% endif %}
+                                {% endfor %}
 
-{% for post in site.categories.help %}
+                                <!-- Category: Group Scheduling -->
+                                <h3>Group Scheduling</h3>
+                                {% for post in site.categories.help %}
+                                  {% if post.category == groupScheduling %}
+                                    <a href="{{ post.url }}">{{ post.title }}</a><br>
+                                  {% endif %}
+                                {% endfor %}
 
+                                <!-- Category: Team Scheduling -->
+                                <h3>Team Scheduling</h3>
+                                {% for post in site.categories.help %}
+                                  {% if post.category == teamScheduling %}
+                                    <a href="{{ post.url }}">{{ post.title }}</a><br>
+                                  {% endif %}
+                                {% endfor %}
 
-<a href="{{ post.url }}">{{ post.title }}</a><br>
-{% endfor %}
+                                <!-- Category: Notifications -->
+                                <h3>Notifications</h3>
+                                {% for post in site.categories.help %}
+                                  {% if post.category == notifications %}
+                                    <a href="{{ post.url }}">{{ post.title }}</a><br>
+                                  {% endif %}
+                                {% endfor %}
+
+                                <!-- Category: Troubleshooting -->
+                                <h3>Troubleshooting</h3>
+                                {% for post in site.categories.help %}
+                                  {% if post.category == troubleshooting %}
+                                    <a href="{{ post.url }}">{{ post.title }}</a><br>
+                                  {% endif %}
+                                {% endfor %}
+
+                                <!-- Category: Outlook add-in -->
+                                <h3>Outlook add-in</h3>
+                                {% for post in site.categories.help %}
+                                  {% if post.category == outlook %}
+                                    <a href="{{ post.url }}">{{ post.title }}</a><br>
+                                  {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Text Section -->
+
+    </div>
+    <!-- End Page Wrap -->
+    {% include help_js.html %}
+
+</body>
+</html>
 
