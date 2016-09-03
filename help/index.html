@@ -46,6 +46,11 @@
                     <div class="col-md-10">
                         <div class="section-text ">
                             <div class="mb-0">
+                                <h3>Test</h3>
+                                {% for post in site.categories.help %}
+                                  <a href="{{ post.url }}">{{ post.categories }}</a><br>
+                                {% endfor %}
+                                
                                 <!-- Category: Getting Started -->
                                 <h3>Getting Started</h3>
                                 {% for post in site.categories.help %}
