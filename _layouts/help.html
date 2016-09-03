@@ -1,20 +1,43 @@
----
-layout: default
----
-<div class="row">
-  <div class="col-xs-12 col-md-10 col-md-offset-1 mt-40">
-    <div class="blog-item">
-      <div class="blog-item-body">
-        <h1>{{ page.title }}</h1>
-        <br />
-        <br />
-        <div class="content">
-          {{ content }}
-        </div>
-        <div class="addthis_native_toolbox"></div>
-        <br />
-        <br/>
-      </div>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FreeBusy Help Center</title>
+    {% include help_head.html %}
+</head>
+
+<body class="appear-animate">
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader">Loading...</div>
     </div>
-  </div>
-</div>
+    <!-- End Page Loader -->
+    <!-- Page Wrap -->
+    <div class="page" id="top">
+
+        {% include help_nav.html %}
+        <!-- Help Content -->
+        <section class="page-section" id="help-content">
+            <div class="container relative">
+                <div class="row">
+                    <div class="col-md-10">
+                        <div class="section-text">
+                            <div class="mb-0">
+                                <h3>{{ page.title }}</h3>
+                                <div class="mt-30">
+                                    {{ content }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Text Section -->
+
+    </div>
+    <!-- End Page Wrap -->
+    {% include help_js.html %}
+
+</body>
+</html>
+
