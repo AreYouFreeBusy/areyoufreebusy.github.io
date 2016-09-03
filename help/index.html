@@ -3,10 +3,207 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>FreeBusy Help Center</title>
-    {% include help_head.html %}
+    <title>Teachers and Coaches</title>
+    {% include landing_head.html %}
 </head>
-<body>
-    Test
+
+<body class="appear-animate">
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader">Loading...</div>
+    </div>
+    <!-- End Page Loader -->
+    <!-- Page Wrap -->
+    <div class="page" id="top">
+        {% include landing_nav.html %}
+
+        <!-- Home Section -->
+        <section class="page-section pb-0 bg-dark" data-background="/customers/images/teachers.jpg" id="home">
+            <div class="relative">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="align-center">
+                                <h1 class="hs-line-8 no-transp font-alt mb-40 mb-xs-20">
+                                    The World’s Easiest Online Scheduling Assistant for Teachers and Coaches
+                                </h1>
+                                <h3 class="hs-line-15 font-alt">Spend More Time Teaching and Less Time Scheduling Meetings</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {% include landing_schedule.html %}
+
+            </div>
+        </section>
+        <!-- End Home Section -->
+        <!-- Divider -->
+        {% include divider.html %}
+        <!-- End Divider -->
+        <!-- About Section; center all text-->
+        <section class="page-section" id="about">
+            <div class="container relative">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="section-text ">
+                            <div class="mb-0">
+                                <p>
+                                    How many meetings do you attend every month?  Most teachers and coaches have more than just one calendar to juggle.  For many it’s the private work calendar, the staff calendar, the monthly meeting/PTA calendar, the student/office hours’ calendar and the personal calendar.
+                                    <br><br>
+                                    Keeping track of appointments across them all are one thing but what about the last-minute reschedules, the “no-shows” or the scheduling conflicts and duplicate events?
+                                    <br><br>
+                                    Before now you needed to be a calendar master and not only keep track of all these moving pieces but if you ever need to schedule with more than one person you must also spend the hours every week chasing colleagues or students down to for “best” times to meet.
+                                    <br><br>
+                                    If you are trying to schedule with a group, this usually means not only playing coordinator for everyone’s availability but selecting the exact time slot that is free for everyone.
+                                    <br><br>
+                                    How much time do you spend per week on any of the above?
+                                    <br><br>
+                                    Imagine there was a way to send out only one invite and to be able to get the best time from everybody—with zero back and forth?  Now you can with FreeBusy.
+                                    <br><br>
+                                    FreeBusy is an online scheduling assistant for teachers and coaches that allows the following:
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Text Section -->
+        <!-- Divider -->
+        {% include divider.html %}
+        <!-- End Divider -->
+        <!-- About Section; No Sign Up -->
+        <section class="page-section">
+            <div class="container relative">
+                <div class="row">
+                    <div class="col-md-5 col-lg-4 mb-sm-40 vcenter">
+                        <!-- Description -->
+                        <div class="text">
+                            <h3 class="font-alt mb-30 mb-xxs-10">No Sign-up Necessary</h3>
+                            <p>
+                                You can use any calendar service even if it’s different from your invitees (i.e. Outlook, Office 365, Google, etc.)
+                                <br><br>
+                                No username or password to remember
+                            </p>
+                        </div>
+                        <!-- End Description -->
+                    </div>
+                    <div class="col-md-7 col-lg-offset-1">
+                        <!-- Image -->
+                        <div class="work-full-media mt-0 white-shadow wow fadeIn" style="text-align:right">
+                            <img src="/customers/images/logos.png" alt="" />
+                        </div>
+                        <!-- End Image -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Section -->
+        <!-- Divider -->
+        {% include divider.html %}
+        <!-- End Divider -->
+        <!-- About Section; Schedule Meetings -->
+        <section class="page-section">
+            <div class="container relative">
+                <div class="row">
+                    <div class="col-md-7 mb-sm-40">
+                        <!-- Image -->
+                        <div class="work-full-media mt-0 white-shadow wow fadeIn">
+                            <img src="/customers/images/meet.png" alt="" />
+                        </div>
+                        <!-- End Image -->
+                    </div>
+
+                    <div class="col-md-5 col-lg-4 col-lg-offset-1 vcenter">
+                        <!-- Description -->
+                        <div class="text">
+                            <h3 class="font-alt mb-30 mb-xxs-10">Schedule Meetings</h3>
+                            <p>
+                                You can see everyone’s availability and schedule a meeting all in one invite.
+                                <br><br>
+                                You can schedule 1:1 or group meetings all from your favorite internet browser
+                                <br><br>
+                                Elimination of the back-and-forth with contacts inside and outside of your organization
+                                <br><br>
+                            </p>
+                        </div>
+                        <!-- End Description -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Section -->
+        <!-- Divider -->
+        {% include divider.html %}
+        <!-- End Divider -->
+        <!-- About Section; Control -->
+        <section class="page-section">
+            <div class="container relative">
+                <div class="row">
+                    <div class="col-md-5 col-lg-4 mb-sm-40 vcenter">
+                        <!-- Description -->
+                        <div class="text">
+                            <h3 class="font-alt mb-30 mb-xxs-10">Control Your Availability</h3>
+                            <p>
+                                You can automatically set your availability or office hours and have people select the best time based on your availability
+                            </p>
+                        </div>
+                        <!-- End Description -->
+                    </div>
+                    <div class="col-md-7 col-lg-offset-1">
+                        <!-- Image -->
+                        <div class="work-full-media mt-0 white-shadow wow fadeIn" style="text-align:right">
+                            <img src="/customers/images/multiple_calendars_privacy.png" alt="" />
+                        </div>
+                        <!-- End Image -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Section -->
+        <!-- Testimonials Section -->
+        <section class="page-section bg-dark bg-dark-alfa-90 fullwidth-slider" data-background="/customers/images/teachers.jpg">
+
+            <!-- Slide Item -->
+            <div>
+                <div class="container relative">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 align-center">
+                            <!-- Section Icon -->
+                            <div class="section-icon">
+                                <span class="icon-quote"></span>
+                            </div>
+                            <!-- Section Title --><h3 class="small-title font-alt">What people say?</h3>
+                            <blockquote class="testimonial white">
+                                <p>
+                                    [TODO - Testimonial]
+                                </p>
+                                <footer class="testimonial-author">
+                                    [TODO - Name]
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Slide Item -->
+        </section>
+        <!-- End Testimonials Section -->
+        <!-- Divider -->
+        {% include divider.html %}
+        <!-- End Divider -->
+        <!-- Divider -->
+        {% include divider.html %}
+        <!-- End Divider -->
+        <!-- Divider -->
+        {% include divider.html %}
+        <!-- End Divider -->
+        {% include landing_footer.html %}
+
+    </div>
+    <!-- End Page Wrap -->
+    {% include landing_js.html %}
+
 </body>
 </html>
