@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Marketing Managers</title>
+    <title>FreeBusy Help Center</title>
     {% include help_head.html %}
 </head>
 
@@ -16,208 +16,93 @@
 
 <!-- Page Wrap -->
 <div class="page" id="top">
-    {% include landing_nav.html %}
+    {% include help_nav.html %}
 
     <!-- Home Section -->
-    <section class="page-section pb-0 bg-dark" data-background="/customers/images/teachers.jpg"  id="home">
+    <section class="page-section pb-0 bg-dark" data-background="/help/images/support.jpg"  id="home">
         <div class="relative">
             <div class="container">
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1">
                         <div class="align-center">
-                            <h1 class="hs-line-8 no-transp font-alt mb-40 mb-xs-20">Having more time to focus on Context
+                            <h1 class="hs-line-8 no-transp font-alt mb-40 mb-xs-20">
+                                FreeBusy Help Center
                             </h1>
-                            <h3 class="hs-line-15 font-alt">Benefits:<br/>								
-								Gives you more time to schedule meetings with bloggers, podcasters, influences & clients<br>
-								Gives you more family time<br>
-								More time to focus on context giving me a better result from readers<br>
-							</h3>
+                            <!-- Category: Getting Started -->
+                            <h3>Getting Started</h3>
+                            {% for post in site.categories.help %}
+                              {% if post.category == gettingStarted %}
+                                <a href="{{ post.url }}">{{ post.title }}</a><br>
+                              {% endif %}
+                            {% endfor %}
+
+                            <!-- Category: Linking Calendars -->
+                            <h3>Linking Calendars</h3>
+                            {% for post in site.categories.help %}
+                              {% if post.category == linkingCalendars %}
+                                <a href="{{ post.url }}">{{ post.title }}</a><br>
+                              {% endif %}
+                            {% endfor %}
+
+                            <!-- Category: Availability -->
+                            <h3>Availability</h3>
+                            {% for post in site.categories.help %}
+                              {% if post.category == availability %}
+                                <a href="{{ post.url }}">{{ post.title }}</a><br>
+                              {% endif %}
+                            {% endfor %}
+
+                            <!-- Category: Group Scheduling -->
+                            <h3>Group Scheduling</h3>
+                            {% for post in site.categories.help %}
+                              {% if post.category == groupScheduling %}
+                                <a href="{{ post.url }}">{{ post.title }}</a><br>
+                              {% endif %}
+                            {% endfor %}
+
+                            <!-- Category: Team Scheduling -->
+                            <h3>Team Scheduling</h3>
+                            {% for post in site.categories.help %}
+                              {% if post.category == teamScheduling %}
+                                <a href="{{ post.url }}">{{ post.title }}</a><br>
+                              {% endif %}
+                            {% endfor %}
+
+                            <!-- Category: Notifications -->
+                            <h3>Notifications</h3>
+                            {% for post in site.categories.help %}
+                              {% if post.category == notifications %}
+                                <a href="{{ post.url }}">{{ post.title }}</a><br>
+                              {% endif %}
+                            {% endfor %}
+
+                            <!-- Category: Troubleshooting -->
+                            <h3>Troubleshooting</h3>
+                            {% for post in site.categories.help %}
+                              {% if post.category == troubleshooting %}
+                                <a href="{{ post.url }}">{{ post.title }}</a><br>
+                              {% endif %}
+                            {% endfor %}
+
+                            <!-- Category: Outlook add-in -->
+                            <h3>Outlook add-in</h3>
+                            {% for post in site.categories.help %}
+                              {% if post.category == outlook %}
+                                <a href="{{ post.url }}">{{ post.title }}</a><br>
+                              {% endif %}
+                            {% endfor %}
                         </div>
                     </div>
                 </div>
             </div>
-
-            {% include landing_schedule.html %}
 
         </div>
     </section>
     <!-- End Home Section -->
 
-    <!-- Divider -->
-    {% include divider.html %}
-    <!-- End Divider -->
-
-    <!-- About Section; center all text-->
-    <section class="page-section" id="about">
-        <div class="container relative">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <div class="section-text ">
-                        <div class="mb-0">
-                            <p>
-								<b>Amazon Echo</b> is a voice-enabled wireless speaker developed by Amazon. The device consists of a tall cylinder speaker with a microphone array. The device responds to the name "<b>Alexa</b>".
-                                <br><br>
-								Lamar loves the fact that FreeBusy has the ability to integrate with alexa, allowing him to schedule his meetings and seeing what meetings he has by using voice recognition rather than going through his smartphone or tablet in order to see what meetings he has that day.
-                                <br><br>
-								These extra 30 minutes per day that <b>FreeBusy</b> gave him add up, becoming hours which is more time for you to spend with your family.
-                                <br><br>
-								The amount of free time that FreeBusy opened up to Lamar made him focus more on his contexts that he provides for his readers making him a better marketer and gaining more traction from new readers.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Text Section -->
-
-    <!-- Divider -->
-    {% include divider.html %}
-    <!-- End Divider -->
-
-    <!-- About Section; No Sign Up -->
-    <section class="page-section">
-        <div class="container relative">
-            <div class="row">
-                <div class="col-md-5 col-lg-4 mb-sm-40 vcenter">
-                    <!-- Description -->
-                    <div class="text">
-                        <h3 class="font-alt mb-30 mb-xxs-10">No Sign-up Necessary</h3>
-                        <p>
-                            You can use any calendar service even if it’s different from your invitees (i.e. Outlook, Office 365, Google, etc.)
-                            <br><br>
-                            No username or password to remember
-							<br><br>
-							FreeBusy works whether your invitees are FreeBusy users or not
-                        </p>
-                    </div>
-                    <!-- End Description -->
-                </div>
-                <div class="col-md-7 col-lg-offset-1">
-                    <!-- Image -->
-                    <div class="work-full-media mt-0 white-shadow wow fadeIn" style="text-align:right">
-                        <img src="/customers/images/logos.png" alt="" />
-                    </div>
-                    <!-- End Image -->
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Section -->
-
-    <!-- Divider -->
-    {% include divider.html %}
-    <!-- End Divider -->
-
-    <!-- About Section; Schedule Meetings -->
-    <section class="page-section">
-        <div class="container relative">
-            <div class="row">
-                <div class="col-md-7 mb-sm-40">
-                    <!-- Image -->
-                    <div class="work-full-media mt-0 white-shadow wow fadeIn">
-                        <img src="/customers/images/meet.png" alt="" />
-                    </div>
-                    <!-- End Image -->
-                </div>
-
-                <div class="col-md-5 col-lg-4 col-lg-offset-1 vcenter">
-                    <!-- Description -->
-                    <div class="text">
-                        <h3 class="font-alt mb-30 mb-xxs-10">Schedule Meetings</h3>
-                        <p>
-                            You can see everyone’s availability and schedule a meeting all in one invite.
-                            <br><br>
-                            You can schedule 1:1 or group meetings all from your favorite internet browser
-                            <br><br>
-                            Elimination of the back-and-forth with contacts inside and outside of your organization
-                            <br><br>
-                        </p>
-                    </div>
-                    <!-- End Description -->
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Section -->
-
-    <!-- Divider -->
-    {% include divider.html %}
-    <!-- End Divider -->
-
-    <!-- About Section; Control -->
-    <section class="page-section">
-        <div class="container relative">
-            <div class="row">
-                <div class="col-md-5 col-lg-4 mb-sm-40 vcenter">
-                    <!-- Description -->
-                    <div class="text">
-                        <h3 class="font-alt mb-30 mb-xxs-10">Control Your Availability</h3>
-                        <p>
-                            You can automatically set your availability or office hours and have people select the best time based on your availability
-							<br><br>
-							Only availability is shared. Event details stay private.
-                        </p>
-                    </div>
-                    <!-- End Description -->
-                </div>
-                <div class="col-md-7 col-lg-offset-1">
-                    <!-- Image -->
-                    <div class="work-full-media mt-0 white-shadow wow fadeIn" style="text-align:right">
-                        <img src="/customers/images/multiple_calendars_privacy.png" alt="" />
-                    </div>
-                    <!-- End Image -->
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Section -->
-
-    <!-- Testimonials Section -->
-    <section class="page-section bg-dark bg-dark-alfa-90 fullwidth-slider" data-background="/customers/images/teachers.jpg">
- 
-        <!-- Slide Item -->
-        <div>
-            <div class="container relative">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2 align-center">
-                        <!-- Section Icon -->
-                        <div class="section-icon">
-                            <span class="icon-quote"></span>
-                        </div>
-                        <!-- Section Title --><h3 class="small-title font-alt">What people say?</h3>
-                        <blockquote class="testimonial white">
-                            <p>
-							"I like your scheduler. What surprised me is that your scheduler works with Alexa. That's amazing. Someone could speak to Alexa and update their Google Calendar thanks to FreeBusy."
-                            <footer class="testimonial-author">
-							Lamar Morgan, Synergistic Business Marketing
-                            </footer>
-                        </blockquote>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Slide Item -->
-    </section>
-    <!-- End Testimonials Section -->
-
-    <!-- Divider -->
-    {% include divider.html %}
-    <!-- End Divider -->
-    
-    <!-- Divider -->
-    {% include divider.html %}
-    <!-- End Divider -->
-
-    <!-- Divider -->
-    {% include divider.html %}
-    <!-- End Divider -->
-
-    {% include landing_footer.html %}
-
 </div>
 <!-- End Page Wrap -->
-{% include landing_js.html %}
+{% include help_js.html %}
 
 </body>
 </html>
