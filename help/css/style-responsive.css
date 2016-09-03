@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /*------------------------------------------------------------------
 [Responsive Stylesheet]
 
@@ -86,8 +86,6 @@ Primary use:    MultiPurpose Template
 		padding-bottom: 43px;
     }
     
-     h1 {
-	    font-size:22px;}
 	 
      h2 {
 	    font-size:22px;}
@@ -141,9 +139,6 @@ Primary use:    MultiPurpose Template
   
 @media only screen and (max-width: 992px) {
 	
-	
-	h1 {
-	 font-size:20px;}
 	 
 	h2 {
 	 font-size:20px;}
@@ -226,7 +221,6 @@ Primary use:    MultiPurpose Template
     }
 	
 	h1 {
-	 font-size:20px;}
     
 	h2 {
 	 font-size:20px;}
@@ -317,8 +311,6 @@ Primary use:    MultiPurpose Template
     }
 	
 	
-	h1 {
-	 font-size:20px;}
 	 
 	 h2 {
 	 font-size:20px;}
@@ -494,8 +486,6 @@ Primary use:    MultiPurpose Template
   
   .mb-50 { margin-bottom:30px;}
   
-  h1 {
-	 font-size:20px;}
 	 
 	 h2 {
 	 font-size:20px;}
@@ -680,17 +670,4 @@ Primary use:    MultiPurpose Template
   	.nav-social-links{
   		display: none;
   	}
-}
-
-
-/* ==============================
-   Max Height 768
-   ============================== */
-
-@media only screen and (max-height: 768px) {
-	
-	h1 {
-	 font-size:40px;}
-	
-	
 }
