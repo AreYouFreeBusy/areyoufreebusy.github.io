@@ -1,12 +1,8 @@
 ---
 layout: help
-title: "Where can I get FreeBusy for Chrome?
-
-"
+title: "Where can I get FreeBusy for Chrome?"
+categories: chrome
 ---
-
-
-### **Chrome**
 
 ### Where can I get FreeBusy for Chrome?
 

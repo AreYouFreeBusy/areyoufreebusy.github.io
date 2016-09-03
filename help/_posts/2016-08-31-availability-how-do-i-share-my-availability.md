@@ -1,10 +1,8 @@
 ---
 layout: help
 title: "How do I share my availability?"
+categories: availability
 ---
-
-
-### **Availability**
 
 ### How do I share my availability?
 

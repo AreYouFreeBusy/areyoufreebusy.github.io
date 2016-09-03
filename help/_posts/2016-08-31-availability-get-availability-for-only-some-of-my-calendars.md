@@ -1,11 +1,8 @@
 ---
 layout: help
-title: "Get availability for only some of my calendars
-"
+title: "Get availability for only some of my calendars"
+categories: availability
 ---
-
-
-### **Availability**
 
 ### Get availability for only some of my calendars
 

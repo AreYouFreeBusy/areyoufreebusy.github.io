@@ -1,10 +1,8 @@
 ---
 layout: help
 title: "I want to point my audience to a specific date or duration"
+categories: availability
 ---
-
-
-### **Availability**
 
 ### I want to point my audience to a specific date or duration
 

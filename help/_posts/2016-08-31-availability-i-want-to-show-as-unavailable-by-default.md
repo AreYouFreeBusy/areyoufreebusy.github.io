@@ -1,12 +1,8 @@
 ---
 layout: help
-title: "I want to show as unavailable by default, unless I say otherwise
-
-"
+title: "I want to show as unavailable by default, unless I say otherwise"
+categories: availability
 ---
-
-
-### **Availability**
 
 ### I want to show as unavailable by default, unless I say otherwise
 

@@ -1,10 +1,8 @@
 ---
 layout: help
 title: "How can I change my time zone?"
+categories: availability
 ---
-
-
-### **Availability**
 
 ### How can I change my time zone?
 
