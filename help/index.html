@@ -49,15 +49,15 @@
                                 <!-- Category: Getting Started -->
                                 <h3>Getting Started</h3>
                                 {% for post in site.categories.help %}
-                                  {% if post.category == helpGettingStarted %}
-                                    <a href="{{ post.url }}">{{ post.categories }}</a><br>
+                                  {% if post.categories == helpGettingStarted %}
+                                    <a href="{{ post.url }}">{{ post.title }}</a><br>
                                   {% endif %}
                                 {% endfor %}
                                 
                                 <!-- Category: Linking Calendars -->
                                 <h3 class="mt-30">Linking Calendars</h3>
                                 {% for post in site.categories.help %}
-                                  {% if post.category == helpLinkingCalendars %}
+                                  {% if post.categories == helpLinkingCalendars %}
                                     <a href="{{ post.url }}">{{ post.title }}</a><br>
                                   {% endif %}
                                 {% endfor %}
@@ -65,7 +65,7 @@
                                 <!-- Category: Availability -->
                                 <h3 class="mt-30">Availability</h3>
                                 {% for post in site.categories.help %}
-                                  {% if post.category == helpAvailability %}
+                                  {% if post.categories == helpAvailability %}
                                     <a href="{{ post.url }}">{{ post.title }}</a><br>
                                   {% endif %}
                                 {% endfor %}
@@ -73,7 +73,7 @@
                                 <!-- Category: Group Scheduling -->
                                 <h3 class="mt-30">Group Scheduling</h3>
                                 {% for post in site.categories.help %}
-                                  {% if post.category == helpGroupScheduling %}
+                                  {% if post.categories == helpGroupScheduling %}
                                     <a href="{{ post.url }}">{{ post.title }}</a><br>
                                   {% endif %}
                                 {% endfor %}
@@ -81,7 +81,7 @@
                                 <!-- Category: Team Scheduling -->
                                 <h3 class="mt-30">Team Scheduling</h3>
                                 {% for post in site.categories.help %}
-                                  {% if post.category == helpTeamScheduling %}
+                                  {% if post.categories == helpTeamScheduling %}
                                     <a href="{{ post.url }}">{{ post.title }}</a><br>
                                   {% endif %}
                                 {% endfor %}
@@ -89,7 +89,7 @@
                                 <!-- Category: Notifications -->
                                 <h3 class="mt-30">Notifications</h3>
                                 {% for post in site.categories.help %}
-                                  {% if post.category == helpNotifications %}
+                                  {% if post.categories == helpNotifications %}
                                     <a href="{{ post.url }}">{{ post.title }}</a><br>
                                   {% endif %}
                                 {% endfor %}
@@ -97,7 +97,7 @@
                                 <!-- Category: Troubleshooting -->
                                 <h3 class="mt-30">Troubleshooting</h3>
                                 {% for post in site.categories.help %}
-                                  {% if post.category == helpTroubleshooting %}
+                                  {% if post.categories == helpTroubleshooting %}
                                     <a href="{{ post.url }}">{{ post.title }}</a><br>
                                   {% endif %}
                                 {% endfor %}
@@ -105,7 +105,7 @@
                                 <!-- Category: Outlook add-in -->
                                 <h3 class="mt-30">Outlook add-in</h3>
                                 {% for post in site.categories.help %}
-                                  {% if post.category == helpOutlook %}
+                                  {% if post.categories == helpOutlook %}
                                     <a href="{{ post.url }}">{{ post.title }}</a><br>
                                   {% endif %}
                                 {% endfor %}
