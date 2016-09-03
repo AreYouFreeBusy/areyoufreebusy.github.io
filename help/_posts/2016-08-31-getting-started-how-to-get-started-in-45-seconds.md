@@ -1,6 +1,7 @@
 ---
 layout: help
 title: "How to get started in 45 seconds"
+categories: gettingStarted
 ---
 
 
