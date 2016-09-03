@@ -4,8 +4,6 @@ title: "Let recipients pick from meeting suggestions"
 categories: outlook
 ---
 
-### Let recipients pick from meeting suggestions
-
 Start **Outlook Desktop**.
 
 > **Note**

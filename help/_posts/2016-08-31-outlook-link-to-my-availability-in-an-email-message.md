@@ -4,8 +4,6 @@ title: "Link to my availability in an email message"
 categories: outlook
 ---
 
-### Link to my availability in an email message
-
 Start **Outlook Desktop**.
 
 > **Note**

@@ -4,8 +4,6 @@ title: "How do I share my availability?"
 categories: availability
 ---
 
-### How do I share my availability?
-
 Select **Share** from the top navigation.
 
 ![Share button](http://i.imgur.com/Px64Woa.png)

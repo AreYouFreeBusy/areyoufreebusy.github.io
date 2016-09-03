@@ -4,8 +4,6 @@ title: "How do I read team availability?"
 categories: team-scheduling
 ---
 
-### How do I read team availability?
-
 
 The [Meet](https://freebusy.io/meet) page shows you availability for all participants on a grid.
 

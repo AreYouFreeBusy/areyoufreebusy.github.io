@@ -4,8 +4,6 @@ title: "I want to point my audience to a specific date or duration"
 categories: availability
 ---
 
-### I want to point my audience to a specific date or duration
-
 Select **Share** from the top navigation.
 
 ![Share button](http://i.imgur.com/Px64Woa.png)

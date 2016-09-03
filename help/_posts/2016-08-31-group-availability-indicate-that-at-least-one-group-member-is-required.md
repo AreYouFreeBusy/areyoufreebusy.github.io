@@ -4,8 +4,6 @@ title: "Indicate that at least one group member is required"
 categories: group-availability
 ---
 
-### Indicate that at least one group member is required
-
 Select **Groups** from the top navigation.
 
 ![Groups button](http://i.imgur.com/vlHHqHe.png)

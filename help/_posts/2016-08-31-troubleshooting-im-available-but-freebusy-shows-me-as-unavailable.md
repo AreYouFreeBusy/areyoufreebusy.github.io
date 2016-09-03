@@ -4,8 +4,6 @@ title: "I'm available but FreeBusy shows me as unavailable"
 categories: troubleshooting
 ---
 
-### I'm available but FreeBusy shows me as unavailable
-
 Ensure you're signed in.
 Navigate to your FreeBusy page, selecting a duration and a date.
 > **Note**

@@ -4,8 +4,6 @@ title: "How can I link a company calendar?"
 categories: linking-calendars
 ---
 
-### How can I link a company calendar?
-
 To link your company calendar to FreeBusy, [just sign in](https://freebusy.io/connect).
 
 > **Note**

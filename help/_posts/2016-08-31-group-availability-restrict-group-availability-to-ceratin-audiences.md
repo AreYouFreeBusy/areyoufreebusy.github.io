@@ -4,8 +4,6 @@ title: "Restrict group availability to certain audiences"
 categories: group-availability
 ---
 
-### Restrict group availability to certain audiences
-
 When you create a group, by default it is accessible to anyone who knows the **Vanity URL**.
 You can easily restrict the group availability to certain audiences.
 

@@ -4,8 +4,6 @@ title: "How do I schedule a meeting with my team?"
 categories: team-scheduling
 ---
 
-### How do I schedule a meeting with my team?
-
 Select **Meet** from the top navigation.
 
 ![Meet button](http://i.imgur.com/KMRUYQb.png)

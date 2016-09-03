@@ -4,8 +4,6 @@ title: "Default notifications for Scheduling"
 categories: notifications
 ---
 
-### Default notifications for Scheduling
-
 The default behaviour for scheduling notifications depends on your **Meeting Proposals** setting on the [Share](https://freebusy.io/share) page.
 
 #### **"Notify" mode**

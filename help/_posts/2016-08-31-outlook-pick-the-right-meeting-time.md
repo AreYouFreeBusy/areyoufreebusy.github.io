@@ -4,8 +4,6 @@ title: "Pick the right meeting time"
 categories: outlook
 ---
 
-### Pick the right meeting time
-
 Start **Outlook Desktop**.
 
 > **Note**

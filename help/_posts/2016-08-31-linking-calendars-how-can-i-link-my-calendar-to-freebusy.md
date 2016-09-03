@@ -4,9 +4,6 @@ title: "How can I link my calendar to FreeBusy?
 categories: linking-calendars
 ---
 
-### How can I link my calendar to FreeBusy?
-
-
 To link your calendar to FreeBusy, just [sign in with that calendar](https://freebusy.io/connect).
 It takes less than 45 seconds and there's no new account or password to remember.
 

@@ -4,8 +4,6 @@ title: "Indicate that all group members are required"
 categories: group-availability
 ---
 
-### Indicate that all group members are required
-
 Select **Groups** from the top navigation.
 
 ![Groups button](http://i.imgur.com/vlHHqHe.png)

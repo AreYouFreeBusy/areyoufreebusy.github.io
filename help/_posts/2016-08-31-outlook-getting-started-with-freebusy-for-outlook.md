@@ -4,8 +4,6 @@ title: "Getting started with FreeBusy for Outlook"
 categories: outlook
 ---
 
-### Getting started with FreeBusy for Outlook
-
 Install **FreeBusy for Outlook** add-in.
 Start **Outlook Desktop**.
 

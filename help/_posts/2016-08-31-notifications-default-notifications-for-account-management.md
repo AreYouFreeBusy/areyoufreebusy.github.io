@@ -4,8 +4,6 @@ title: "Default notifications for Account Management"
 categories: notifications
 ---
 
-### Default notifications for Account Management
-
 #### Linked Calendar
 To protect the security of your account, for every new calendar that you link to **FreeBusy**, we send a notification to all email addresses which you have connected earlier, if any.
 

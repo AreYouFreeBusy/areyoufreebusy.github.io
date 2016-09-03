@@ -4,8 +4,6 @@ title: "How do I share availability of a group?"
 categories: group-availability
 ---
 
-### How do I share availability of a group?
-
 Select **Groups** from the top navigation.
 
 ![Groups button](http://i.imgur.com/vlHHqHe.png)

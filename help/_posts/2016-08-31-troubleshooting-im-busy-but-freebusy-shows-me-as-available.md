@@ -4,8 +4,6 @@ title: "I'm busy but FreeBusy shows me as available"
 categories: troubleshooting
 ---
 
-### I'm busy but FreeBusy shows me as available
-
 First, try the following:
 
 - Check that your calendar is linked to FreeBusy on the [Account](https://freebusy.io/account) page.

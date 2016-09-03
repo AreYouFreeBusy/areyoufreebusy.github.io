@@ -4,8 +4,6 @@ title: "How can I link multiple calendars?"
 categories: linking-calendars
 ---
 
-### How can I link multiple calendars?
-
 To link multiple calendars to FreeBusy, [sign in with one of the calendars](https://freebusy.io/connect).
 
 Once done, select **Link Another Calendar** from the top right menu.

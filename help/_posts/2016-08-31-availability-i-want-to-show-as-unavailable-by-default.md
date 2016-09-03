@@ -4,8 +4,6 @@ title: "I want to show as unavailable by default, unless I say otherwise"
 categories: availability
 ---
 
-### I want to show as unavailable by default, unless I say otherwise
-
 Select **Share** from the top navigation.
 
 ![Share button](http://i.imgur.com/Px64Woa.png)

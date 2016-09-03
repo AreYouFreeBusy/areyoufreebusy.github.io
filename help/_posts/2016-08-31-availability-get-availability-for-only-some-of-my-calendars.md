@@ -4,8 +4,6 @@ title: "Get availability for only some of my calendars"
 categories: availability
 ---
 
-### Get availability for only some of my calendars
-
 Suppose you linked a Google Calendar which has two subcalendars, titled "Office" and "Outcall".
 You'd like FreeBusy to ignore all events in the "Outcall" subcalendar when calculating availability.
 

@@ -4,8 +4,6 @@ title: "Configure when I generally show as available"
 categories: availability
 ---
 
-### Configure when I generally show as available
-
 When you sign up, we set a default sharing window of **Monday - Friday, 8am to 8pm**.
 You can easily change the times which you share with your audience.
 

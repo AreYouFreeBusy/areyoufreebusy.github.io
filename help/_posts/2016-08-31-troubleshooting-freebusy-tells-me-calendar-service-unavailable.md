@@ -4,8 +4,6 @@ title: "FreeBusy tells me 'Calendar service unavailable'"
 categories: troubleshooting
 ---
 
-### FreeBusy tells me "Calendar service unavailable"
-
 We'll show this error for one of the following reasons:
 
 (1) The calendar provider is temporarily unavailable.

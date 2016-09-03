@@ -4,8 +4,6 @@ title: "Configure when the group shows as available"
 categories: group-availability
 ---
 
-### Configure when the group shows as available
-
 When you create a group, we set a default sharing window of **Monday - Friday, 8am to 8pm**.
 You can easily change the times at which the group is available.
 

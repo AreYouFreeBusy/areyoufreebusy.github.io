@@ -4,8 +4,6 @@ title: "Where can I get FreeBusy for Outlook?"
 categories: outlook
 ---
 
-### Where can I get FreeBusy for Outlook?
-
 Visit our [FreeBusy for Outlook](https://freebusy.io/outlook) page for a link to the Office store.
 
 <br>
