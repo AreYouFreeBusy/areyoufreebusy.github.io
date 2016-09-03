@@ -1,12 +1,8 @@
 ---
 layout: help
-title: "Pick the right meeting time
-
-"
+title: "Pick the right meeting time"
+categories: outlook
 ---
-
-
-### **Outlook**
 
 ### Pick the right meeting time
 

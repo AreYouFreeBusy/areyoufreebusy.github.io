@@ -1,12 +1,8 @@
 ---
 layout: help
-title: "How can I link multiple calendars?
-
-"
+title: "How can I link multiple calendars?"
+categories: linking-calendars
 ---
-
-
-### **Linking Calendars**
 
 ### How can I link multiple calendars?
 

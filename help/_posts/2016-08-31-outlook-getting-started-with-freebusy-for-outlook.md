@@ -1,10 +1,8 @@
----
+---
 layout: help
 title: "Getting started with FreeBusy for Outlook"
+categories: outlook
 ---
-
-
-### **Outlook**
 
 ### Getting started with FreeBusy for Outlook
 

@@ -1,13 +1,8 @@
 ---
 layout: help
 title: "How can I link my calendar to FreeBusy?
-
-
-"
+categories: linking-calendars
 ---
-
-
-### **Linking Calendars**
 
 ### How can I link my calendar to FreeBusy?
 

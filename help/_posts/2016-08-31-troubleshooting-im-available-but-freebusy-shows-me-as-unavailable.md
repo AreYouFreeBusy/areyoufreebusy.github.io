@@ -1,11 +1,8 @@
 ---
 layout: help
-title: "I'm available but FreeBusy shows me as unavailable
-"
+title: "I'm available but FreeBusy shows me as unavailable"
+categories: troubleshooting
 ---
-
-
-### **Troubleshooting**
 
 ### I'm available but FreeBusy shows me as unavailable
 

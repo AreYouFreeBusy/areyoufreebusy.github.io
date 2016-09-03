@@ -1,10 +1,8 @@
 ---
 layout: help
 title: "Configure when the group shows as available"
+categories: group-availability
 ---
-
-
-### **Group Availability**
 
 ### Configure when the group shows as available
 

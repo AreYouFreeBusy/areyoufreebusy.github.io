@@ -1,10 +1,8 @@
 ---
 layout: help
 title: "FreeBusy tells me 'Calendar service unavailable'"
+categories: troubleshooting
 ---
-
-
-### **Troubleshooting**
 
 ### FreeBusy tells me "Calendar service unavailable"
 

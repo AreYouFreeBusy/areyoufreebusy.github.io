@@ -1,12 +1,8 @@
 ---
 layout: help
-title: "Restrict group availability to certain audiences
-
-"
+title: "Restrict group availability to certain audiences"
+categories: group-availability
 ---
-
-
-### **Group Availability**
 
 ### Restrict group availability to certain audiences
 

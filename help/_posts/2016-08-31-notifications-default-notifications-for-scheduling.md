@@ -1,10 +1,8 @@
 ---
 layout: help
 title: "Default notifications for Scheduling"
+categories: notifications
 ---
-
-
-### **Notifications**
 
 ### Default notifications for Scheduling
 

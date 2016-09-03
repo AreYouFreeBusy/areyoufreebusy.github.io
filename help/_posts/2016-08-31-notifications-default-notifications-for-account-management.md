@@ -1,10 +1,8 @@
 ---
 layout: help
 title: "Default notifications for Account Management"
+categories: notifications
 ---
-
-
-### **Notifications**
 
 ### Default notifications for Account Management
 

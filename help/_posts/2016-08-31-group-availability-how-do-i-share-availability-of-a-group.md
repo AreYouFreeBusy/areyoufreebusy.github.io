@@ -1,12 +1,8 @@
 ---
 layout: help
-title: "How do I share availability of a group?
-
-"
+title: "How do I share availability of a group?"
+categories: group-availability
 ---
-
-
-### **Group Availability**
 
 ### How do I share availability of a group?
 

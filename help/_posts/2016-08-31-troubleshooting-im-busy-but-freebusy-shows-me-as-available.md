@@ -1,10 +1,8 @@
 ---
 layout: help
 title: "I'm busy but FreeBusy shows me as available"
+categories: troubleshooting
 ---
-
-
-### **Troubleshooting**
 
 ### I'm busy but FreeBusy shows me as available
 

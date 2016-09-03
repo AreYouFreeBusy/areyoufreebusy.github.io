@@ -1,10 +1,8 @@
 ---
 layout: help
 title: "Let recipients pick from meeting suggestions"
+categories: outlook
 ---
-
-
-### **Outlook**
 
 ### Let recipients pick from meeting suggestions
 

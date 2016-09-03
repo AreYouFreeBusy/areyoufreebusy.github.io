@@ -1,10 +1,8 @@
 ---
 layout: help
 title: "Indicate that all group members are required"
+categories: group-availability
 ---
-
-
-### **Group Availability**
 
 ### Indicate that all group members are required
 

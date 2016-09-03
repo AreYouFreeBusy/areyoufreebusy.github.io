@@ -1,10 +1,8 @@
----
+---
 layout: help
 title: "How do I read team availability?"
+categories: team-scheduling
 ---
-
-
-### **Team Scheduling**
 
 ### How do I read team availability?
 

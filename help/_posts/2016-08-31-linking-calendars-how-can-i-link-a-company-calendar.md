@@ -1,10 +1,8 @@
 ---
 layout: help
 title: "How can I link a company calendar?"
+categories: linking-calendars
 ---
-
-
-### **Linking Calendars**
 
 ### How can I link a company calendar?
 

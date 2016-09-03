@@ -1,10 +1,8 @@
 ---
 layout: help
 title: "Where can I get FreeBusy for Outlook?"
+categories: outlook
 ---
-
-
-### **Outlook**
 
 ### Where can I get FreeBusy for Outlook?
 

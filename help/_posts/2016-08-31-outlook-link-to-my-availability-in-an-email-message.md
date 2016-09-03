@@ -1,10 +1,8 @@
 ---
 layout: help
 title: "Link to my availability in an email message"
+categories: outlook
 ---
-
-
-### **Outlook**
 
 ### Link to my availability in an email message
 

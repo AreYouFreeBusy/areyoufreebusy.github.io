@@ -1,10 +1,8 @@
 ---
 layout: help
 title: "Which permissions does FreeBusy need?"
+categories: linking-calendars
 ---
-
-
-### **Linking Calendars**
 
 ### Which permissions does FreeBusy need?
 

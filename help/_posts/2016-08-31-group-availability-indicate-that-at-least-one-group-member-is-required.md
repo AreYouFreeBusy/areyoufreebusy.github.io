@@ -1,12 +1,8 @@
 ---
 layout: help
-title: "Indicate that at least one group member is required
-
-"
+title: "Indicate that at least one group member is required"
+categories: group-availability
 ---
-
-
-### **Group Availability**
 
 ### Indicate that at least one group member is required
 

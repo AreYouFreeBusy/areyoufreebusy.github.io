@@ -1,9 +1,8 @@
 ---
 layout: help
 title: "How do I schedule a meeting with my team?"
+categories: team-scheduling
 ---
-
-### **Team Scheduling**
 
 ### How do I schedule a meeting with my team?
 
