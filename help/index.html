@@ -46,17 +46,10 @@
                     <div class="col-md-10">
                         <div class="section-text ">
                             <div class="mb-0">
-                                <h3>Test</h3>
-                                {% for post in site.categories.help %}
-                                    {% if post.categories contains "Availability" %}
-                                        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-                                    {% endif %}
-                                {% endfor %}
-                                
                                 <!-- Category: Getting Started -->
                                 <h3>Getting Started</h3>
                                 {% for post in site.categories.help %}
-                                  {% if post.categories contains helpGettingStarted %}
+                                  {% if post.categories contains "getting-started" %}
                                     <a href="{{ post.url }}">{{ post.title }}</a><br>
                                   {% endif %}
                                 {% endfor %}
@@ -64,7 +57,7 @@
                                 <!-- Category: Linking Calendars -->
                                 <h3 class="mt-30">Linking Calendars</h3>
                                 {% for post in site.categories.help %}
-                                  {% if post.categories contains helpLinkingCalendars %}
+                                  {% if post.categories contains "linking-calendars" %}
                                     <a href="{{ post.url }}">{{ post.title }}</a><br>
                                   {% endif %}
                                 {% endfor %}
@@ -72,7 +65,7 @@
                                 <!-- Category: Availability -->
                                 <h3 class="mt-30">Availability</h3>
                                 {% for post in site.categories.help %}
-                                  {% if post.categories contains helpAvailability" %}
+                                  {% if post.categories contains "availability"" %}
                                     <a href="{{ post.url }}">{{ post.title }}</a><br>
                                   {% endif %}
                                 {% endfor %}
@@ -80,7 +73,7 @@
                                 <!-- Category: Group Scheduling -->
                                 <h3 class="mt-30">Group Scheduling</h3>
                                 {% for post in site.categories.help %}
-                                  {% if post.categories contains helpGroupScheduling %}
+                                  {% if post.categories contains "group-scheduling" %}
                                     <a href="{{ post.url }}">{{ post.title }}</a><br>
                                   {% endif %}
                                 {% endfor %}
@@ -88,7 +81,7 @@
                                 <!-- Category: Team Scheduling -->
                                 <h3 class="mt-30">Team Scheduling</h3>
                                 {% for post in site.categories.help %}
-                                  {% if post.categories contains helpTeamScheduling %}
+                                  {% if post.categories contains "team-scheduling" %}
                                     <a href="{{ post.url }}">{{ post.title }}</a><br>
                                   {% endif %}
                                 {% endfor %}
@@ -96,7 +89,7 @@
                                 <!-- Category: Notifications -->
                                 <h3 class="mt-30">Notifications</h3>
                                 {% for post in site.categories.help %}
-                                  {% if post.categories contains helpNotifications %}
+                                  {% if post.categories contains "notifications" %}
                                     <a href="{{ post.url }}">{{ post.title }}</a><br>
                                   {% endif %}
                                 {% endfor %}
@@ -104,7 +97,7 @@
                                 <!-- Category: Troubleshooting -->
                                 <h3 class="mt-30">Troubleshooting</h3>
                                 {% for post in site.categories.help %}
-                                  {% if post.categories contains helpTroubleshooting %}
+                                  {% if post.categories contains "troubleshooting" %}
                                     <a href="{{ post.url }}">{{ post.title }}</a><br>
                                   {% endif %}
                                 {% endfor %}
@@ -112,7 +105,7 @@
                                 <!-- Category: Outlook add-in -->
                                 <h3 class="mt-30">Outlook add-in</h3>
                                 {% for post in site.categories.help %}
-                                  {% if post.categories contains helpOutlook %}
+                                  {% if post.categories contains "outlook" %}
                                     <a href="{{ post.url }}">{{ post.title }}</a><br>
                                   {% endif %}
                                 {% endfor %}
