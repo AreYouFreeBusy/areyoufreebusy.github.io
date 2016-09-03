@@ -1,10 +1,8 @@
 ---
 layout: help
 title: "Configure when I generally show as available"
+categories: Availability
 ---
-
-
-### **Availability**
 
 ### Configure when I generally show as available
 
