@@ -32,7 +32,7 @@ Navigate to the **Suggest times** tab.
 
 If you haven't already, enter the attendees you'd like to meet with to the **To:** line of the email.
 FreeBusy will refresh availability and show available times.
-<br>
+<br><br>
 
 You can view detailed availability for all attendees by clicking on a timeslot as depicted.
 <br>
