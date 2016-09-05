@@ -9,8 +9,7 @@ We'll show this error for one of the following reasons:
 (1) The calendar provider is temporarily unavailable.
 <br>
 (2) FreeBusy has lost authorization to the calendar provider.
-
-<br><br>
+<br>
 
 ### Solution
 
