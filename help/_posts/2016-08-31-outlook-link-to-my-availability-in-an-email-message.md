@@ -6,7 +6,8 @@ categories: outlook
 
 Start **Outlook Desktop**.
 
-> **Note**
+> **Note
+>
 > This tutorial uses **Outlook Desktop**.
 > 
 > If you're using Outlook Web Access or Outlook.com, these steps are identical.
@@ -15,6 +16,7 @@ Start **Outlook Desktop**.
 > ![Imgur](http://i.imgur.com/bFdOANU.png)
 
 <br>
+
 #### Insert link to your FreeBusy page
 
 To insert a link into an email message, open the message window.
