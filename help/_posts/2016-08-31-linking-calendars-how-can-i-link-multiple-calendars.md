@@ -18,7 +18,8 @@ This will take your through the same steps as when you signed in with the first 
 Every time you sign in with another calendar, FreeBusy will link them together.
 You can see which calendars you've already linked on your [Account](https://freebusy.io/account) page.
 
-<br><br>
+<br>
+
 > **Note**
 >
 > FreeBusy combines availability data from all your connected calendars.
