@@ -5,6 +5,7 @@ categories: outlook
 ---
 
 Start **Outlook Desktop**.
+<br>
 
 > **Note**
 >
@@ -45,4 +46,5 @@ If you'd like to point your audience to a particular duration or date, use this 
 
 <br><br>
 **Check** the duration or date and select a value.
+<br>
 To insert this link into the email, use the **copy** icon next to the link and paste it into the message.
