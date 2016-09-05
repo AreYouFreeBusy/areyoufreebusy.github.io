@@ -6,7 +6,7 @@ categories: outlook
 
 Start **Outlook Desktop**.
 
-> **Note
+> **Note**
 >
 > This tutorial uses **Outlook Desktop**.
 > 
