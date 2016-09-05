@@ -17,7 +17,7 @@ Start **Outlook Desktop**.
 
 <br>
 
-#### Insert link to your FreeBusy page
+### Insert link to your FreeBusy page
 
 To insert a link into an email message, open the message window.
 Click on **Suggest Meeting Times** as shown below.
@@ -37,7 +37,7 @@ This will insert the link to the body of the message.
 
 <br><br>
 
-#### Point to a particular duration or date
+### Point to a particular duration or date
 
 If you'd like to point your audience to a particular duration or date, use this section of the pane.
 
