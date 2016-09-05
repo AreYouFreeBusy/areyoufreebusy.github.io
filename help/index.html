@@ -1,125 +1,96 @@
 ---
+layout: help
+title: FreeBusy Help Center
 ---
-<!DOCTYPE html>
-<html>
-<head>
-    <title>FreeBusy Help Center</title>
-    {% include help_head.html %}
-</head>
-
-<body class="appear-animate">
-    <!-- Page Loader -->
-    <div class="page-loader">
-        <div class="loader">Loading...</div>
+<!-- Hero Section -->
+<section class="page-section pb-0 bg-dark" data-background="http://i.imgur.com/j7uYD8O.jpg" id="home">
+  <div class="relative">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="align-center">
+            <h1 class="hs-line-8 no-transp font-alt mt-100 mb-40 mb-xs-20">
+              FreeBusy Help Center
+            </h1>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- End Page Loader -->
-    <!-- Page Wrap -->
-    <div class="page" id="top">
-        {% include help_nav.html %}
+  </div>
+</section>
+<!-- Topics Section -->
+<section class="page-section" id="topics">
+  <div class="container relative">
+    <div class="row">
+      <div class="col-md-10">
+        <div class="section-text">
+          <div class="mb-0">
+            <!-- Category: Getting Started -->
+            <h3>Getting Started</h3>
+            {% for post in site.categories.help %}
+              {% if post.categories contains "getting-started" %}
+                <a href="{{ post.url }}">{{ post.title }}</a><br>
+              {% endif %}
+            {% endfor %}
 
-        <!-- Hero Section -->
-        <section class="page-section pb-0 bg-dark" data-background="/help/images/support.jpg" id="home">
-            <div class="relative">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-10 col-md-offset-1">
-                            <div class="align-center">
-                                <h1 class="hs-line-8 no-transp font-alt mt-100 mb-40 mb-xs-20">
-                                    FreeBusy Help Center
-                                </h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Hero Section -->
+            <!-- Category: Linking Calendars -->
+            <h3 class="mt-30">Linking Calendars</h3>
+            {% for post in site.categories.help %}
+              {% if post.categories contains "linking-calendars" %}
+                <a href="{{ post.url }}">{{ post.title }}</a><br>
+              {% endif %}
+            {% endfor %}
 
-        <!-- Divider -->
-        {% include divider.html %}
-        <!-- End Divider -->
+            <!-- Category: Availability -->
+            <h3 class="mt-30">Availability</h3>
+            {% for post in site.categories.help %}
+              {% if post.categories contains "availability" %}
+                <a href="{{ post.url }}">{{ post.title }}</a><br>
+              {% endif %}
+            {% endfor %}
 
-        <!-- Topics Section-->
-        <section class="page-section" id="topics">
-            <div class="container relative">
-                <div class="row">
-                    <div class="col-md-10">
-                        <div class="section-text">
-                            <div class="mb-0">
-                                <!-- Category: Getting Started -->
-                                <h3>Getting Started</h3>
-                                {% for post in site.categories.help %}
-                                  {% if post.categories contains "getting-started" %}
-                                    <a href="{{ post.url }}">{{ post.title }}</a><br>
-                                  {% endif %}
-                                {% endfor %}
-                                
-                                <!-- Category: Linking Calendars -->
-                                <h3 class="mt-30">Linking Calendars</h3>
-                                {% for post in site.categories.help %}
-                                  {% if post.categories contains "linking-calendars" %}
-                                    <a href="{{ post.url }}">{{ post.title }}</a><br>
-                                  {% endif %}
-                                {% endfor %}
+            <!-- Category: Group Availability -->
+            <h3 class="mt-30">Group Availability</h3>
+            {% for post in site.categories.help %}
+              {% if post.categories contains "group-availability" %}
+                <a href="{{ post.url }}">{{ post.title }}</a><br>
+              {% endif %}
+            {% endfor %}
 
-                                <!-- Category: Availability -->
-                                <h3 class="mt-30">Availability</h3>
-                                {% for post in site.categories.help %}
-                                  {% if post.categories contains "availability" %}
-                                    <a href="{{ post.url }}">{{ post.title }}</a><br>
-                                  {% endif %}
-                                {% endfor %}
+            <!-- Category: Team Scheduling -->
+            <h3 class="mt-30">Team Scheduling</h3>
+            {% for post in site.categories.help %}
+              {% if post.categories contains "team-scheduling" %}
+                <a href="{{ post.url }}">{{ post.title }}</a><br>
+              {% endif %}
+            {% endfor %}
 
-                                <!-- Category: Group Availability -->
-                                <h3 class="mt-30">Group Availability</h3>
-                                {% for post in site.categories.help %}
-                                  {% if post.categories contains "group-availability" %}
-                                    <a href="{{ post.url }}">{{ post.title }}</a><br>
-                                  {% endif %}
-                                {% endfor %}
+            <!-- Category: Notifications -->
+            <h3 class="mt-30">Notifications</h3>
+            {% for post in site.categories.help %}
+              {% if post.categories contains "notifications" %}
+                <a href="{{ post.url }}">{{ post.title }}</a><br>
+              {% endif %}
+            {% endfor %}
 
-                                <!-- Category: Team Scheduling -->
-                                <h3 class="mt-30">Team Scheduling</h3>
-                                {% for post in site.categories.help %}
-                                  {% if post.categories contains "team-scheduling" %}
-                                    <a href="{{ post.url }}">{{ post.title }}</a><br>
-                                  {% endif %}
-                                {% endfor %}
+            <!-- Category: Troubleshooting -->
+            <h3 class="mt-30">Troubleshooting</h3>
+            {% for post in site.categories.help %}
+              {% if post.categories contains "troubleshooting" %}
+                <a href="{{ post.url }}">{{ post.title }}</a><br>
+              {% endif %}
+            {% endfor %}
 
-                                <!-- Category: Notifications -->
-                                <h3 class="mt-30">Notifications</h3>
-                                {% for post in site.categories.help %}
-                                  {% if post.categories contains "notifications" %}
-                                    <a href="{{ post.url }}">{{ post.title }}</a><br>
-                                  {% endif %}
-                                {% endfor %}
-
-                                <!-- Category: Troubleshooting -->
-                                <h3 class="mt-30">Troubleshooting</h3>
-                                {% for post in site.categories.help %}
-                                  {% if post.categories contains "troubleshooting" %}
-                                    <a href="{{ post.url }}">{{ post.title }}</a><br>
-                                  {% endif %}
-                                {% endfor %}
-
-                                <!-- Category: Outlook add-in -->
-                                <h3 class="mt-30">Outlook add-in</h3>
-                                {% for post in site.categories.help %}
-                                  {% if post.categories contains "outlook" %}
-                                    <a href="{{ post.url }}">{{ post.title }}</a><br>
-                                  {% endif %}
-                                {% endfor %}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Text Section -->
-        
+            <!-- Category: Outlook add-in -->
+            <h3 class="mt-30">Outlook add-in</h3>
+            {% for post in site.categories.help %}
+              {% if post.categories contains "outlook" %}
+                <a href="{{ post.url }}">{{ post.title }}</a><br>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- End Page Wrap -->
-    {% include help_js.html %}
-
-</body>
-</html>
+  </div>
+</section>
