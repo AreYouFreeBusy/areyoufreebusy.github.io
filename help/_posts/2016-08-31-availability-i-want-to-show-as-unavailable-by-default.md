@@ -5,11 +5,13 @@ categories: availability
 ---
 
 Select **Share** from the top navigation.
+<br>
 
 ![Share button](http://i.imgur.com/Px64Woa.png)
 
 <br>
 Click on the **Set Sharing Preferences** tab and find a section titled **Availability Control**.
+<br>
 
 ![Share guarded](http://i.imgur.com/XbDbZn1.png)
 
@@ -23,5 +25,6 @@ When doing so,
 - change the event type from **Busy** to **Available** (or **Free**), and
 - leave the subject blank.
 
+<br>
 FreeBusy will understand that this is a specific time that you'd like to be marked available.
 Your audience will be able to request a meeting with you during this time.
