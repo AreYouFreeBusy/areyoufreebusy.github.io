@@ -8,11 +8,13 @@ Suppose you linked a Google Calendar which has two subcalendars, titled "Office"
 You'd like FreeBusy to ignore all events in the "Outcall" subcalendar when calculating availability.
 
 To do so, select **Calendars & Integrations** from the top right menu.
+<br>
 
 ![Account](http://i.imgur.com/v1dXWOQ.png)
 
-<br>
+<br><br>
 In a section titled **Calendars and Contacts**, find the calendar you wish to manage.
 Uncheck the subcalendars that you want FreeBusy to ignore and click **Save**.
+<br>
 
 ![Subcalendars](http://i.imgur.com/zLcT7CB.png)
