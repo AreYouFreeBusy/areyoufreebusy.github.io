@@ -13,5 +13,7 @@ If you've confirmed the above, sign out and back in with that calendar.
 You should now appear **Busy** during the time of the event.
 
 <br>
+
 > **Need more help?**
+>
 > Please contact us if you require further assistance.
