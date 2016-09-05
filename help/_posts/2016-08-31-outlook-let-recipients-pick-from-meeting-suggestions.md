@@ -39,24 +39,24 @@ You can view detailed availability for all attendees by clicking on a timeslot a
 
 ![Availability timeslot expandable](http://i.imgur.com/JkFwBPT.png)
 
-<br><br>
+<br><br><br>
 This shows a dropdown pane with detailed availability.
 In this case **John the Supplier** is unavailable for the meeting.
 
 ![Availability timeslot expanded](http://i.imgur.com/U5DWhUT.png)
 
-<br><br>
+<br><br><br>
 To suggest meeting times, click on the time portion of the timeslot.
 
 ![Availability timeslot selected](http://i.imgur.com/fHNyhgp.png)
 
-<br><br>
+<br><br><br>
 Once you're finished, click on **Confirm selected timeslots**.
 You can then provide meeting details if you'd like.
 
 ![Finalize suggestions](http://i.imgur.com/O1u4Han.png)
 
-<br><br>
+<br><br><br>
 Finally, click **Insert suggestions into email**.
 Suggestions will then appear in the body of the email.
 
