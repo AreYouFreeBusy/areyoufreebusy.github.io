@@ -7,6 +7,7 @@ categories: linking-calendars
 To link your company calendar to FreeBusy, [just sign in](https://freebusy.io/connect).
 
 <br>
+
 > **Note**
 >
 > Depending on your company policy, you may be forbidden from signing in directly.
