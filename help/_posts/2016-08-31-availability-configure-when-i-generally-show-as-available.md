@@ -5,6 +5,7 @@ categories: availability
 ---
 
 When you sign up, we set a default sharing window of **Monday - Friday, 8am to 8pm**.
+<br>
 You can easily change the times which you share with your audience.
 
 To do so, select **Share** from the top navigation.
