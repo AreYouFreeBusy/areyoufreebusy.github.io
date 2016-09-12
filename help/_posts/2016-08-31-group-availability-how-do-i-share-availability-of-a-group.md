@@ -4,9 +4,9 @@ title: "How do I share availability of a group?"
 categories: group-availability
 ---
 
-Select **Groups** from the top navigation.
+Select **Groups** from the top right drop down menu.
 
-![Groups button](http://i.imgur.com/vlHHqHe.png)
+![Groups button](https://imgur.com/5t0ZosS.png)
 
 <br>
 On the [Group](https://freebusy.io/groups) page, click on **Create A New Group**.
