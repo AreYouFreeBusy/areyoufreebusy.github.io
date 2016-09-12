@@ -26,7 +26,7 @@ You can restrict group availability to:
 - those who know a secret pass phrase.
 
 <br>
-![Time range](http://i.imgur.com/4BOxRsf.png)
+![Time range](https://imgur.com/hsbnrDb.png)
 
 <br>
 Confirm your selection by clicking on **Save**.
