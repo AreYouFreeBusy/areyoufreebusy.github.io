@@ -10,7 +10,7 @@ Once done, select **Link Another Calendar** from the top right menu.
 
 <br>
 
-![Link calendar](http://i.imgur.com/T38SqzU.png)
+![Link calendar](https://imgur.com/ECeCzfc.png)
 
 <br>
 This will take your through the same steps as when you signed in with the first calendar.
