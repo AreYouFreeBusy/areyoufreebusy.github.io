@@ -8,7 +8,7 @@ categories: availability
 Click on the **Preferences** tab and find a section titled **Availability Control**.
 <br>
 
-![Share guarded](https://imgur.com/GPu5hgw.png)
+![Share guarded](https://imgur.com/jlhKK6z.png)
 
 Tick the **Guarded** option and press **Save**.
 FreeBusy will now show you unavailable during the times you've shared.
