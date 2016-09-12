@@ -18,4 +18,4 @@ Edit the time of day if necessary and click **Save**.
 
 ![Time range](https://imgur.com/GPu5hgw.png)
 
-In the example above, availability on **Monday - Friday, 8am - 5pm** is shared with the audience.
+In the example above, availability on **Monday - Friday, 8am - 8pm** is shared with the audience.
