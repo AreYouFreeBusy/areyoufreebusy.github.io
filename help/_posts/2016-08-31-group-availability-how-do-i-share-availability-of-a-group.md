@@ -12,7 +12,7 @@ Select **Groups** from the top right drop down menu.
 On the [Group](https://freebusy.io/groups) page, click on **Create A New Group**.
 <br>
 
-![Group new button](http://i.imgur.com/hoygPFB.png)
+![Group new button](https://imgur.com/XwT9EqQ.png)
 
 <br>
 Once on the **New Group** page, begin by selecting a name for the group.
