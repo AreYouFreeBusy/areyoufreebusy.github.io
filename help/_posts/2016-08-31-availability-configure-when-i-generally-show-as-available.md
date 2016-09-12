@@ -8,9 +8,9 @@ When you sign up, we set a default sharing window of **Monday - Friday, 8am to 8
 <br>
 You can easily change the times which you share with your audience.
 
-To do so, select **Share** from the top navigation.
+To do so, select **Preferences** from the top navigation.
 
-![Share](https://imgur.com/Qhzho2h.png)
+![Preferences](https://imgur.com/Qhzho2h.png)
 
 <br>
 In a section titled **Time Range**, check the days you wish to share.
