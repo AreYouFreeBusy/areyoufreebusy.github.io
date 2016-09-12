@@ -4,16 +4,11 @@ title: "I want to show as unavailable by default, unless I say otherwise"
 categories: availability
 ---
 
-Select **Share** from the top navigation.
+
+Click on the **Preferences** tab and find a section titled **Availability Control**.
 <br>
 
-![Share button](http://i.imgur.com/Px64Woa.png)
-
-<br>
-Click on the **Set Sharing Preferences** tab and find a section titled **Availability Control**.
-<br>
-
-![Share guarded](http://i.imgur.com/XbDbZn1.png)
+![Share guarded](https://imgur.com/GPu5hgw.png)
 
 Tick the **Guarded** option and press **Save**.
 FreeBusy will now show you unavailable during the times you've shared.
