@@ -9,20 +9,20 @@ When you create a group, we set a default sharing window of **Monday - Friday, 8
 You can easily change the times at which the group is available.
 
 <br>
-To do so, select **Groups** from the top navigation.
+To do so, select **Group Avalability** from the top right drop down menu.
 
-![Groups](http://i.imgur.com/vlHHqHe.png)
+![Group avalability](https://imgur.com/5t0ZosS.png)
 
 <br><br>
 On the [Group](https://freebusy.io/groups) page, select the group you wish to change.
 
-![Group edit button](http://i.imgur.com/8A2PSmr.png)
+![Group edit button](https://imgur.com/wRtnSgw.png)
 
 <br><br>
 In a section titled **Time Range**, check the days you wish to share.
 Edit the time of day if necessary and click **Save**.
 
-![Time range](http://i.imgur.com/4BOxRsf.png)
+![Time range](https://imgur.com/hsbnrDb.png)
 
 <br>
 
