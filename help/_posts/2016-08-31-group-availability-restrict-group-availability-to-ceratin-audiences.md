@@ -7,9 +7,9 @@ categories: group-availability
 When you create a group, by default it is accessible to anyone who knows the **Vanity URL**.
 You can easily restrict the group availability to certain audiences.
 
-To do so, select **Groups** from the top navigation.
+To do so, select **Groups** from the top right drop down menu.
 
-![Groups](http://i.imgur.com/vlHHqHe.png)
+![Groups](https://imgur.com/5t0ZosS.png)
 
 <br>
 On the [Group](https://freebusy.io/groups) page, select the group you wish to change.
