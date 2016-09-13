@@ -15,7 +15,7 @@ To do so, select **Groups** from the top right drop down menu.
 On the [Group](https://freebusy.io/groups) page, select the group you wish to change.
 <br>
 
-![Group edit button](https://imgur.com/8A2PSmr.png)
+![Group edit button](https://imgur.com/PTXhlgP.png)
 
 <br><br>
 In a section titled **Restrict Access**, select the appropriate access control.
