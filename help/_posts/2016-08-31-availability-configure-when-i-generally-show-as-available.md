@@ -16,6 +16,6 @@ To do so, select **Preferences** from the top navigation.
 In a section titled **Time Range**, check the days you wish to share.
 Edit the time of day if necessary and click **Save**.
 
-![Time range](https://imgur.com/GPu5hgw.png)
+![Time range](https://imgur.com/4vDd8gv.png)
 
 In the example above, availability on **Monday - Friday, 8am - 8pm** is shared with the audience.
