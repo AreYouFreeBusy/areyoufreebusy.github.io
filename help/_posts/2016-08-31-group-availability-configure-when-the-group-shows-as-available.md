@@ -16,7 +16,7 @@ To do so, select **Group Avalability** from the top right drop down menu.
 <br><br>
 On the [Group](https://freebusy.io/groups) page, select the group you wish to change.
 
-![Group edit button](https://imgur.com/8A2PSmr.png)
+![Group edit button](https://imgur.com/PTXhlgP.png)
 
 <br><br>
 In a section titled **Time Range**, check the days you wish to share.
