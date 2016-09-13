@@ -6,7 +6,7 @@ categories: availability
 
 Select **Share** from the top navigation.
 
-![Share button](http://i.imgur.com/Px64Woa.png)
+![Share button](https://i.imgur.com/Px64Woa.png)
 
 <br>
 There are a number of options on the [Share](https://freebusy.io/share) page:
@@ -17,7 +17,7 @@ There are a number of options on the [Share](https://freebusy.io/share) page:
 You can turn on or off availability sharing on FreeBusy through this switch.
 <br>
 
-![Share switch](http://i.imgur.com/mAUR3W8.png)
+![Share switch](https://i.imgur.com/mAUR3W8.png)
 
 FreeBusy will only share your availability with others when the switch is in the **shared** position.
 
@@ -28,7 +28,7 @@ FreeBusy will show links to your availability for all email addresses you've lin
 They all point to the same availability. Select the right email based on your audience.
 <br>
 
-![Share link](http://i.imgur.com/wYnVFWs.png)
+![Share link](https://i.imgur.com/wYnVFWs.png)
 <br>
 
 You can point your audience to a particular duration or date by indicating a preference as shown above.
@@ -42,4 +42,4 @@ Let your audience subscribe to your availability directly from their favorite ca
 *It's not necessary to be a FreeBusy user for someone to subscribe to your iCalendar feed.*
 <br>
 
-![iCal](http://i.imgur.com/Fl5dYzA.png)
+![iCal](https://i.imgur.com/Fl5dYzA.png)
