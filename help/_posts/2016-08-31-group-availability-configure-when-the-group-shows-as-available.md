@@ -11,18 +11,18 @@ You can easily change the times at which the group is available.
 <br>
 To do so, select **Group Avalability** from the top right drop down menu.
 
-![Group avalability](https://imgur.com/5t0ZosS.png)
+![Group avalability](https://imgur.com/nVDD9RT.png)
 
 <br><br>
 On the [Group](https://freebusy.io/groups) page, select the group you wish to change.
 
-![Group edit button](https://imgur.com/wRtnSgw.png)
+![Group edit button](https://imgur.com/8A2PSmr.png)
 
 <br><br>
 In a section titled **Time Range**, check the days you wish to share.
 Edit the time of day if necessary and click **Save**.
 
-![Time range](https://imgur.com/hsbnrDb.png)
+![Time range](https://imgur.com/4vDd8gv.png)
 
 <br>
 
