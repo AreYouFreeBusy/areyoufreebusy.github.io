@@ -6,7 +6,7 @@ categories: availability
 
 To do so, select **Preferences** from the top navigation.
 
-![Preferences](http://imgur.com/Qhzho2h.png)
+![Preferences](https://imgur.com/Mw8ZgXh.png)
 
 Click on the **Preferences** tab and find a section titled **Availability Control**.
 <br>
