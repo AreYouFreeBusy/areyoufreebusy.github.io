@@ -9,13 +9,13 @@ You can easily restrict the group availability to certain audiences.
 
 To do so, select **Groups** from the top right drop down menu.
 
-![Groups](https://imgur.com/5t0ZosS.png)
+![Groups](https://imgur.com/nVDD9RT.png)
 
 <br>
 On the [Group](https://freebusy.io/groups) page, select the group you wish to change.
 <br>
 
-![Group edit button](https://imgur.com/wRtnSgw.png)
+![Group edit button](https://imgur.com/8A2PSmr.png)
 
 <br><br>
 In a section titled **Restrict Access**, select the appropriate access control.
@@ -26,7 +26,7 @@ You can restrict group availability to:
 - those who know a secret pass phrase.
 
 <br>
-![Time range](https://imgur.com/hsbnrDb.png)
+![Time range](https://imgur.com/4vDd8gv.png)
 
 <br>
 Confirm your selection by clicking on **Save**.
