@@ -28,7 +28,7 @@ Find the time that you want to troubleshoot.
 **Click** on the dropdown button.
 <br>
 
-![Timeslots](http://i.imgur.com/mgVwGsL.png)
+![Timeslots](https://i.imgur.com/mgVwGsL.png)
 
 <br>
 The dropdown pane tells you why **FreeBusy** marks you **unavailable**.
@@ -41,7 +41,7 @@ The dropdown pane tells you why **FreeBusy** marks you **unavailable**.
 <br>
 In this case, there was another event scheduled at 10 a.m.
 
-![Timeslots reason](http://i.imgur.com/u0Xj1Gh.png)
+![Timeslots reason](https://i.imgur.com/u0Xj1Gh.png)
 
 <br><br>
 
