@@ -14,7 +14,7 @@ Start **Outlook Desktop**.
 > If you're using Outlook Web Access or Outlook.com, these steps are identical.
 > You can find FreeBusy by clicking on **Add-ins**.
 > 
-> ![Imgur](http://i.imgur.com/bFdOANU.png)
+> ![Imgur](https://i.imgur.com/bFdOANU.png)
 
 <br>
 
@@ -23,18 +23,18 @@ Start **Outlook Desktop**.
 To insert a link into an email message, open the message window.
 Click on **Suggest Meeting Times** as shown below.
 
-![Suggestions button](http://i.imgur.com/sqlmlWy.png)
+![Suggestions button](https://i.imgur.com/sqlmlWy.png)
 
 <br><br>
 The add-in pane will load.
 Click on **Insert link to your FreeBusy page**.
 
-![Insert link](http://i.imgur.com/ZHYwsZl.png)
+![Insert link](https://i.imgur.com/ZHYwsZl.png)
 
 <br><br>
 This will insert the link to the body of the message.
 
-![Link inserted](http://i.imgur.com/DGaSctz.png)
+![Link inserted](https://i.imgur.com/DGaSctz.png)
 
 <br><br>
 
@@ -42,7 +42,7 @@ This will insert the link to the body of the message.
 
 If you'd like to point your audience to a particular duration or date, use this section of the pane.
 
-![Link filter](http://i.imgur.com/vAQNlGf.png)
+![Link filter](https://i.imgur.com/vAQNlGf.png)
 
 <br><br>
 **Check** the duration or date and select a value.
