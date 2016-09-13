@@ -10,7 +10,7 @@ You can easily change the times which you share with your audience.
 
 To do so, select **Preferences** from the top navigation.
 
-![Preferences](https://imgur.com/Qhzho2h.png)
+![Preferences](https://imgur.com/Qhzho2hh.png)
 
 <br>
 In a section titled **Time Range**, check the days you wish to share.
