@@ -12,7 +12,7 @@ Select **Groups** from the top right drop down menu.
 On the [Group](https://freebusy.io/groups) page, select the group you wish to change.
 <br>
 
-![Group edit button](https://imgur.com/8A2PSmr.png)
+![Group edit button](https://imgur.com/PTXhlgP.png)
 
 <br>
 In the section **Availability Logic**, select the option **At Least One Member Required**.
