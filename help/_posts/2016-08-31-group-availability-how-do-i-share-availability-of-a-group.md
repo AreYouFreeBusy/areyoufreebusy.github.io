@@ -6,7 +6,7 @@ categories: group-availability
 
 Select **Groups** from the top right drop down menu.
 
-![Groups button](https://imgur.com/nVDD9RT.png)
+![Groups button](https://imgur.com/lDQ2JHJ.png)
 
 <br>
 On the [Group](https://freebusy.io/groups) page, click on **Create A New Group**.
