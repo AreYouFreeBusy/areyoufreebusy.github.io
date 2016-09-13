@@ -6,7 +6,7 @@ categories: group-availability
 
 Select **Groups** from the top right drop down menu.
 
-![Groups button](https://imgur.com/nVDD9RT.png)
+![Groups button](https://imgur.com/lDQ2JHJ.png)
 
 <br>
 On the [Group](https://freebusy.io/groups) page, select the group you wish to change.

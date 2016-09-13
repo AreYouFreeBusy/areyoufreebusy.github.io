@@ -11,7 +11,7 @@ You can easily change the times at which the group is available.
 <br>
 To do so, select **Group Avalability** from the top right drop down menu.
 
-![Group avalability](https://imgur.com/nVDD9RT.png)
+![Group avalability](https://imgur.com/lDQ2JHJ.png)
 
 <br><br>
 On the [Group](https://freebusy.io/groups) page, select the group you wish to change.

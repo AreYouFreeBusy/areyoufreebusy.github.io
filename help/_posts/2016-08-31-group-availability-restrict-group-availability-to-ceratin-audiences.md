@@ -9,7 +9,7 @@ You can easily restrict the group availability to certain audiences.
 
 To do so, select **Groups** from the top right drop down menu.
 
-![Groups](https://imgur.com/nVDD9RT.png)
+![Groups](https://imgur.com/lDQ2JHJ.png)
 
 <br>
 On the [Group](https://freebusy.io/groups) page, select the group you wish to change.

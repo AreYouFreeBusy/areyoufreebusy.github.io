@@ -6,12 +6,12 @@ categories: team-scheduling
 
 Select **Meet** from the top navigation.
 
-![Meet button](http://i.imgur.com/KMRUYQb.png)
+![Meet button](https://i.imgur.com/KMRUYQb.png)
 
 <br><br>
 On the [Meet](https://freebusy.io/meet) page, start by adding participants.
 
-![Meet participants](http://i.imgur.com/03dc0wl.png)
+![Meet participants](https://i.imgur.com/03dc0wl.png)
 
 <br><br>
 
@@ -23,7 +23,7 @@ On the [Meet](https://freebusy.io/meet) page, start by adding participants.
 <br><br>
 With each participant that you add, **FreeBusy** will obtain their availability and show the results on the grid.
 
-![Imgur](http://i.imgur.com/USCvTP6.png)
+![Imgur](https://i.imgur.com/USCvTP6.png)
 
 <br><br>
 
@@ -46,7 +46,7 @@ At 11 a.m., only *2 out of 3* participants are available. **Everyone is availabl
 When you hover over an **available** timeslot, you can explore which participants are unavailable.
 <br>
 
-![Timeslot popover](http://i.imgur.com/pz84JQX.png)
+![Timeslot popover](https://i.imgur.com/pz84JQX.png)
 <br>
 
 Notice that at 11 a.m., **Tim** is not available for a meeting.
@@ -57,6 +57,6 @@ The selected time will show in the section **Meeting Details** on the left.
 Provide title and location for the event, which in this case are **Supplier meeting** and **Conference Room A3**.
 <br><br>
 
-![Meet confirmation](http://i.imgur.com/rTtj7gw.png)
+![Meet confirmation](https://i.imgur.com/rTtj7gw.png)
 
 Click on **Schedule Meeting** to place the event on your calendar and send out the invitations.

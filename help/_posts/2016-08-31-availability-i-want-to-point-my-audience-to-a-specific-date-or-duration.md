@@ -7,13 +7,13 @@ categories: availability
 Select **Share** from the top navigation.
 <br>
 
-![Share button](http://i.imgur.com/Px64Woa.png)
+![Share button](https://i.imgur.com/Px64Woa.png)
 <br>
 
 Scroll down the [Share](https://freebusy.io/share) page to a section titled **Link to Your FreeBusy Page**.
 <br>
 
-![Share link](http://i.imgur.com/wYnVFWs.png)
+![Share link](https://i.imgur.com/wYnVFWs.png)
 <br>
 
 If you want to set a **duration** preference, tick the **Duration** checkbox and select a value.
@@ -28,4 +28,4 @@ You can also set a **date** preference in the same manner.
 <br>
 The link will be updated to reflect the preferences you've set.
 
-![Share link with preferences](http://i.imgur.com/Ys99OtY.png)
+![Share link with preferences](https://i.imgur.com/Ys99OtY.png)

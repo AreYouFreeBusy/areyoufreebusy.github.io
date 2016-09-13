@@ -16,7 +16,7 @@ Start **Outlook Desktop**.
 > If you're using Outlook Web Access or Outlook.com, these steps are identical.
 > You can find FreeBusy by clicking on **Add-ins**.
 > 
-> ![Imgur](http://i.imgur.com/bFdOANU.png)
+> ![Imgur](https://i.imgur.com/bFdOANU.png)
 <br>
 
 ### Linking Outlook add-in
@@ -26,13 +26,13 @@ Before you can use the add-in, you must link it to FreeBusy.
 To do so, start a new email message.
 Click on **Suggest Meeting Times** as shown below.
 
-![Suggestions button](http://i.imgur.com/sqlmlWy.png)
+![Suggestions button](https://i.imgur.com/sqlmlWy.png)
 
 <br><br><br>
 The add-in pane will load on the right side.
 Click on the **Sign in** button.
 
-![Imgur](http://i.imgur.com/LWtJCoo.png)
+![Imgur](https://i.imgur.com/LWtJCoo.png)
 
 <br>
 You will be prompted to sign in with your calendar.
