@@ -4,6 +4,9 @@ title: "I want to show as unavailable by default, unless I say otherwise"
 categories: availability
 ---
 
+To do so, select **Preferences** from the top navigation.
+
+![Preferences](https://imgur.com/Qhzho2h.png)
 
 Click on the **Preferences** tab and find a section titled **Availability Control**.
 <br>
