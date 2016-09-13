@@ -14,7 +14,7 @@ Start **Outlook Desktop**.
 > If you're using Outlook Web Access or Outlook.com, these steps are identical.
 > You can find FreeBusy by clicking on **Add-ins**.
 > 
-> ![Imgur](http://i.imgur.com/bFdOANU.png)
+> ![Imgur](https://i.imgur.com/bFdOANU.png)
 
 <br>
 
@@ -24,7 +24,7 @@ To pick the right meeting time, open the meeting window.
 Click on **Pick a Time** as shown below.
 <br>
 
-![Pick a Time button](http://i.imgur.com/ENTQLCK.png)
+![Pick a Time button](https://i.imgur.com/ENTQLCK.png)
 
 <br><br>
 The add-in pane will load.
@@ -37,4 +37,4 @@ Click on the timeslot that you wish to select.
 The meeting start and end times will automatically update.
 <br>
 
-![Pick a Time selected](http://i.imgur.com/fSyijT6.png)
+![Pick a Time selected](https://i.imgur.com/fSyijT6.png)
