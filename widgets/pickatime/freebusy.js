@@ -1,32 +1,46 @@
-$( document ).ready(function() {
-    
-    var pluginHostUrl = 'http://localhost';
+ $( document ).ready(function() {
+
+    var handshakeMessage = '{ "messageType" : "handshake" }';
+
+    var origin;
+    var pluginHostUrl;
     var pluginWindow;
 
     window.addEventListener("message", receiveMessage, false);
 
-    // Called
+    // Called after event listener is registered
     function receiveMessage(event) {
 
+      origin = event.origin || event.originalEvent.origin;
+
       // Do we trust the sender of this message?
-      if (event.origin !== pluginHostUrl){
-        console.log('Plugin host event origin invalid: ' + event.origin);
+      if (event.origin !== origin){
+        console.log('ALERT: plugin host event origin invalid: ' + event.origin);
         return;
       }
 
-      // Set the reference to the plugin window
-      pluginWindow = event.source;
+      console.log('messageType received: ' + getMessageType(event.data));
 
-      // TODO: Check message type
-      // TODO: Do something with the message
+      // Check message type
+      if(getMessageType(event.data) == 'handshake'){
 
-      console.log('Message received from plugin: ' + event.data);
+        // If handshake, set the reference to the plugin window and host
+        pluginHostUrl = event.origin;
+        pluginWindow = event.source;
 
+        // Send confirmation
+        pluginWindow.postMessage(JSON.parse(handshakeMessage), pluginHostUrl);
 
-      pluginWindow.postMessage('Handshake successful.', pluginHostUrl);
+      }
+      else if(getMessageType(event.data) == 'invite'){
+        console.log('invite message received: ' + event.data);
+      }
     }
-    
-    function sendMessage() {
-      pluginWindow.postMessage('Sending date selected from pick-a-time...', pluginHostUrl);
+
+
+    function getMessageType(message){
+      return message.messageType;
     }
-});
+
+  });
+
