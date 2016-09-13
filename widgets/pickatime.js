@@ -1,10 +1,7 @@
 $(document).ready(function() {
-    /*$('#modalPickATime1').on('show.bs.modal', function (event) {
-        console.log('Clicked open modal option 1...' + event);
-    });*/
 
     // https://freebusy.io/pick-a-time
-    var pickATimeUrl = 'http://localhost:3000';
+    var pickATimeUrl = 'https://freebusy.io/pick-a-time';
 
     // following variable should be passed from the plugins host (ie https://www.gotomeeting.com/)
     var attendeesMessage = '{ "attendees" : [' +
@@ -22,16 +19,12 @@ $(document).ready(function() {
     var interval;
 
     $('#openWindow').on('click',function(event){
-        //console.log('Clicked open window option 2...');
-        //var pickATimeWindow  = window.open('https://freebusy.io/pick-a-time/m.heath66@gmail.com', 'newWindow','width=768,height=550');
-        pickATimeWindow  = window.open(pickATimeUrl, 'freebusy');
+        pickATimeWindow  = window.open(pickATimeUrl, 'freebusy', 'width=768,height=550');
         interval = setInterval(sendHandshakeMessage, 1000);
 
     });
 
     function sendHandshakeMessage(){
-        //var messageType = JSON.parse(handshakeMessage);
-        //console.log(messageType.messageType);
 
         pickATimeWindow.postMessage(JSON.parse(handshakeMessage), pickATimeUrl);
         console.log('sendHandshakeMessage');
@@ -42,10 +35,6 @@ $(document).ready(function() {
     function sendAttendeesMessage(){
         pickATimeWindow.postMessage(JSON.parse(attendeesMessage), pickATimeUrl);
     }
-    /*$('#modalPickATime2').on('show.bs.modal', function (event) {
-        console.log('Clicked open modal option 3...' + event);
-        $(event.target).find('.modal-body').load('https://freebusy.io/pick-a-time');
-    });*/
 
     function receiveMessage(event){
         // Do we trust the sender of this message?  (might be
@@ -61,12 +50,8 @@ $(document).ready(function() {
         // TODO: Do something with the message
         // if handshake confirm, clearInterval, sendAttendeesMessage
         
-
-
         // Send the attendees
         console.log('messageType: ' + getMessageType(attendeesMessage));
-
-        //sendAttendeesMessage();
 
     }
 
