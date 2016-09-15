@@ -48,7 +48,7 @@ $(document).ready(function () {
 
     $('#openWindow').on('click', function (event) {
         _pickATimeWindow = window.open(PICK_A_TIME_URL, 'freebusy');
-        _interval = setInterval(sendHandshakeMessage, 1000);
+        _interval = setInterval(sendHandshakeMessage, 5000);
     });
 
     function sendHandshakeMessage() {
