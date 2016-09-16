@@ -10,80 +10,29 @@
 
 </head>
 
+<div id="freebusy-button"></div>
 
-<button type="button" class="btn btn-default" name="openWindow" id="openWindow">Pick a time</button>
-
-<script>
-//------------------------------------------------------------------------------
-// Copyright (C) BizLogr Inc. All rights reserved.
-//------------------------------------------------------------------------------
-
-//------------------------------------------------------------------------------
-// pick-a-time/pickatimebutton.js
-//  Handles third-party button integration (to be loaded by the client)
-//------------------------------------------------------------------------------
-
-$(document).ready(function () {
-
-    // Constants
-    // https://freebusy.io/pick-a-time
-    var PICK_A_TIME_URL = 'https://freebusy.io/pick-a-time';
-
-    // following messages should be passed from the plugins host (ie https://www.gotomeeting.com/)
-    var _attendeesMessage = '{ "attendees" : [' +
-        '{ "email":"m.heath66@gmail.com"},' +
-        '{ "email":"michael@freebusy.io"},' +
-        '{ "email":"stefan@freebusy.io"} ],' +
-        '"invitee":"michael@freebusy.io",' +
-        '"messageType" : "invite" }';
-
-    var _handshakeMessage = '{ "messageType" : "handshake" }';
-
-    // Private member variables
-    var _pickATimeWindow;
-    var _interval;
-
-    window.addEventListener("message", receiveMessage, false);
-
-
-    $('#openWindow').on('click', function (event) {
-        _pickATimeWindow = window.open(PICK_A_TIME_URL, 'freebusy', 'width=768,height=550');
-        _interval = setInterval(sendHandshakeMessage, 10000);
-    });
-
-    function sendHandshakeMessage() {
-        _pickATimeWindow.postMessage(JSON.parse(_handshakeMessage), PICK_A_TIME_URL);
-    }
-
-    function sendAttendeesMessage() {
-        _pickATimeWindow.postMessage(JSON.parse(_attendeesMessage), PICK_A_TIME_URL);
-    }
-
-    function receiveMessage(event) {
-        // Do we trust the sender of this message?  (might be
-        // different from what we originally opened, for example).
-        if (event.origin !== PICK_A_TIME_URL) {
-            console.log('pick-a-time event origin invalid.');
-            return;
-        }
-
-        console.log('messageType received: ' + getMessageType(event.data));
-
-        // if handshake confirm, clear_Interval, sendAttendeesMessage
-        if (getMessageType(event.data) == 'handshake') {
-            window.clearInterval(_interval);
-            sendAttendeesMessage();
-        }
-        // if suggestions, set on plugin 
-        else if(getMessageType(event.data) === 'suggestions'){
-            // TODO: implement after data format confirmed
+<script src="https://freebusy.io/scripts/pick-a-time/button.js"></script>
+<script type="text/javascript">
+freebusy.pickatime.load(function () {
+  freebusy.pickatime.button.init(
+      {
+        organizer: {
+          email: {organizerEmail}
+        },
+        duration: {durationInMin},
+        title: '{title}',
+        location: '{location}',
+        attendees: [
+          {
+            email: {attendeeEmail}
+          }
+        ]
       }
-    }
-
-    function getMessageType(message) {
-        return message.messageType;
-    }
-
+  );
+  freebusy.pickatime.button.result = function (startTime) {
+    {manipulate the timestamp as you see fit}
+  }
 });
 </script>
 
