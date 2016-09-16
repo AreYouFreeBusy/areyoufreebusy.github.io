@@ -18,20 +18,20 @@ freebusy.pickatime.load(function () {
   freebusy.pickatime.button.init(
       {
         organizer: {
-          email: {organizerEmail}
+          email: "david@freebusy.io"
         },
-        duration: {durationInMin},
-        title: '{title}',
-        location: '{location}',
+        duration: "60min",
+        title: "test event",
+        location: "test location",
         attendees: [
           {
-            email: {attendeeEmail}
+            email: "stefan@freebusy.io"
           }
         ]
       }
   );
   freebusy.pickatime.button.result = function (startTime) {
-    {manipulate the timestamp as you see fit}
+      console.log("you have selected: " + startTime);
   }
 });
 </script>
