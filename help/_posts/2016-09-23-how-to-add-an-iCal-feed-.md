@@ -1,6 +1,7 @@
 ---
 layout: help
 title: "How to Add an iCal feed"
+categories: Troubleshooting
 ---
 
 ##Adding an iCal feed
