@@ -30,6 +30,16 @@
 <body style="text-align: center; margin: 0; height:100%; overflow: hidden;" class="layoutB">
     <script src="https://freebusy.io/scripts/pick-a-time/button.js"></script>
     <script type="text/javascript">
+    var eventData = getEventData();
+
+    function getEventData (){
+        // get the form data
+        var title = $('#meetingname').val();
+        console.log('meeting name: ' + title);
+
+        // create JSON object
+
+    }
     freebusy.pickatime.load(function () {
       freebusy.pickatime.button.init(
           {
