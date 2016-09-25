@@ -1,0 +1,645 @@
+* {
+	resize: none;
+}
+.clear {
+	clear: both;
+}
+#backgroundimage {
+	left: 0px; top: 0px; position: absolute;
+}
+.contentwindow .bt_close {
+	display: none;
+}
+a#buy_more_hidden {
+	cursor: default;
+}
+a#buy_more {
+	font-size: 11px;
+}
+.error-page-left-content {
+	text-align: center; padding-top: 40px; vertical-align: top;
+}
+.unknownerrorcontent {
+	padding: 20px 20px 10px;
+}
+.unknownerrorcontent table {
+	left: -2px; position: relative;
+}
+.unknownerrorcontent .errorpagelabel {
+	padding: 0px; width: 120px;
+}
+div.verify {
+	padding: 20px;
+}
+div.verify input#email {
+	width: 300px;
+}
+div.verify td.firstColumn {
+	width: 150px; padding-top: 5px; vertical-align: top;
+}
+div.verify table#send {
+	margin: 15px 0px;
+}
+div.verify #cannotfind {
+	margin: 15px 0px; left: 1px; line-height: 50px; position: relative;
+}
+div.verify #cannotfind:focus {
+	border: 1px dotted gray; border-image: none; left: 0px;
+}
+div.verify table#myemail {
+	padding-top: 10px;
+}
+div.verify span.closed {
+	background-position: -373px -34px; padding-left: 6px; background-repeat: no-repeat; background-color: transparent;
+}
+div.verify span.opened {
+	background-position: -372px 6px; padding-left: 6px; background-repeat: no-repeat; background-color: transparent;
+}
+div.green {
+	padding: 15px 0px; border-left-color: rgb(203, 203, 203); border-left-width: 1px; border-left-style: solid;
+}
+div.green ul {
+	color: rgb(134, 198, 1); line-height: 25px; font-size: 14px;
+}
+#loginright div.green ul {
+	font-size: 12px;
+}
+div.green ul li span {
+	color: rgb(68, 68, 68);
+}
+tr.even:hover {
+	background-color: rgb(217, 234, 179);
+}
+tr.odd:hover {
+	background-color: rgb(217, 234, 179);
+}
+tr.odd {
+	background-color: rgb(243, 247, 230);
+}
+tr.even {
+	background-color: rgb(255, 255, 255);
+}
+jm_html {
+	overflow: hidden;
+}
+body {
+	color: rgb(68, 68, 68); font-family: tahoma, arial, verdana; font-size: 12px;
+}
+input {
+	color: rgb(68, 68, 68);
+}
+textarea {
+	color: rgb(68, 68, 68);
+}
+h1 {
+	font-family: Tahoma,arial,sans-serif; font-weight: bold; margin-top: 0px;
+}
+h2 {
+	font-family: Tahoma,arial,sans-serif; font-weight: bold; margin-top: 0px;
+}
+h3 {
+	font-family: Tahoma,arial,sans-serif; font-weight: bold; margin-top: 0px;
+}
+h4 {
+	font-family: Tahoma,arial,sans-serif; font-weight: bold; margin-top: 0px;
+}
+h5 {
+	font-family: Tahoma,arial,sans-serif; font-weight: bold; margin-top: 0px;
+}
+h6 {
+	font-family: Tahoma,arial,sans-serif; font-weight: bold; margin-top: 0px;
+}
+h1 {
+	font-family: arial; font-size: 26px;
+}
+h2 {
+	font-size: 18px;
+}
+h3 {
+	font-size: 16px;
+}
+h4 {
+	font-size: 14px;
+}
+h5 {
+	font-size: 13px;
+}
+h6 {
+	font-size: 11px;
+}
+a {
+	color: rgb(255, 146, 0); font-weight: bold; text-decoration: none;
+}
+a:focus {
+	outline: rgb(255, 146, 0) dotted 1px;
+}
+#mainWrapper {
+	left: 0px; top: 0px; width: 100%; height: 100%; overflow: auto; position: absolute; z-index: 10; background-image: url("/Common/Images/blank.gif");
+}
+#mainWrapper div#notTranslated {
+	font: 12px/14px Verdana; left: 1px; top: 1px; width: 300px; height: 100%; text-align: left; color: rgb(255, 255, 255); position: absolute; z-index: 10000; -ms-overflow-y: auto; font-size-adjust: none; font-stretch: normal; background-color: rgb(51, 51, 51);
+}
+div#X_Ex {
+	left: 668px; top: -125px;
+}
+div#X_Ex div {
+	background: url("/Common/Images/Temp/x_from_express.png") no-repeat 0px 0px; width: 10px; height: 10px; -background: url(/Common/Images/Temp/x_from_express.png) no-repeat 0px 0px; -behavior: url(/Common/Scripts/3rdParty/csshover3.htc);
+}
+.joci_rel {
+	position: relative;
+}
+.joci_abs {
+	position: absolute;
+}
+.button {
+	cursor: pointer;
+}
+div.joci_rel.jm_beta {
+	left: 60px; top: -8px;
+}
+div.joci_rel.jm_beta div.joci_abs {
+	width: 45px; height: 15px; background-repeat: no-repeat; background-color: transparent;
+}
+div.joci_rel.jm_logo {
+	left: -93px; top: -72px; position: absolute;
+}
+div.joci_rel.jm_logo div.joci_abs {
+	background-position: 0px -65px; width: 160px; height: 120px; background-repeat: no-repeat; background-color: transparent;
+}
+div.joci_rel.lmi_logo {
+	left: -65px; top: 67px; float: right; -top: -49px; -left: 6px;
+}
+div.joci_rel.lmi_copyright {
+	left: 8px; top: 19px; color: white; font-size: 11px; font-style: italic; font-weight: normal;
+}
+div.joci_rel.lmi_logo div {
+	background-position: -280px 0px; width: 68px; height: 24px; background-repeat: no-repeat; background-color: transparent; -height: 59px; -width: 80px; -border-left: 1px solid #d0cdc8;
+}
+#social_icons {
+	top: 12px; width: 105px; height: 18px; right: 20px; position: absolute; z-index: 100001;
+}
+#social_icons a {
+	
+}
+.br_ie #social_icons {
+	width: 75px;
+}
+#social_icons .socialGroups {
+	background: url("/Common/Images/Homepage/social_icons.png") no-repeat 2px -210px; width: 34px; height: 35px; float: left; position: relative; z-index: 100001; cursor: pointer;
+}
+.socialIconWindow {
+	border-width: 6px; border-style: solid; border-image: url("/Common/Images/Homepage/roundbg.png") 6 fill; -webkit-border-image: url(/Common/Images/Homepage/roundbg.png) 6 6 6 6; -moz-border-image: url(/Common/Images/Homepage/roundbg.png) 6 6 6 6; -o-border-image: url(/Common/Images/Homepage/roundbg.png) 6 6 6 6;
+}
+#socialLikeWindow {
+	left: -20px; top: 35px; width: 57px; height: 100px; visibility: hidden; position: absolute;
+}
+.br_ie #socialLikeWindow {
+	margin: 6px 0px 0px 6px; top: -1000px; width: 60px; visibility: visible;
+}
+#fbLikeDisc:hover #socialLikeWindow {
+	visibility: visible;
+}
+.br_ie #fbLikeDisc {
+	display: none;
+}
+#blogDisc #blog {
+	background: url("/Common/Images/Homepage/social_icons.png") no-repeat 0px 0px; left: 1px; top: 0px; width: 30px; height: 30px; position: absolute;
+}
+#blogDisc:hover #blog {
+	background-position: -30px 0px;
+}
+#fbLikeDisc #fbLikeIcon {
+	background: url("/Common/Images/Homepage/social_icons.png") no-repeat 0px -30px; left: 1px; top: 0px; width: 30px; height: 30px; position: absolute;
+}
+#fbLikeDisc:hover #fbLikeIcon {
+	background-position: -30px -30px;
+}
+#shareDisc #shareIcon {
+	background: url("/Common/Images/Homepage/social_icons.png") no-repeat -1px -60px; left: 1px; top: 0px; width: 30px; height: 30px; position: absolute;
+}
+#shareDisc:hover #shareIcon {
+	background-position: -31px -60px;
+}
+#socialShareWindow {
+	left: -1px; top: 35px; width: 23px; height: 123px; visibility: hidden; position: absolute;
+}
+.br_ie #socialShareWindow {
+	margin: 6px 0px 0px 6px;
+}
+#socialShareWindow a {
+	background: url("/Common/Images/Homepage/social_icons.png") no-repeat; left: -5px; width: 30px; height: 30px; display: block; position: relative;
+}
+#shareDisc:hover #socialShareWindow {
+	visibility: visible;
+}
+#social_icons a#facebook {
+	background-position: 0px -90px;
+}
+#social_icons a#facebook:hover {
+	background-position: -30px -90px;
+}
+#social_icons a#twitter {
+	background-position: 0px -120px;
+}
+#social_icons a#twitter:hover {
+	background-position: -30px -120px;
+}
+#social_icons a#youtube {
+	background-position: 0px -150px;
+}
+#social_icons a#youtube:hover {
+	background-position: -30px -150px;
+}
+#social_icons a#linkedin {
+	background-position: 0px -180px; top: 3px;
+}
+#social_icons a#linkedin:hover {
+	background-position: -30px -180px;
+}
+#login_container {
+	top: -27px; right: 5px; position: absolute;
+}
+#login_container_main {
+	top: -27px; right: 5px; position: absolute;
+}
+#member_login {
+	color: rgb(255, 255, 255); cursor: pointer;
+}
+#addfeatures {
+	height: 10px; line-height: 10px; padding-right: 10px; margin-right: 6px; border-right-color: rgb(238, 238, 238); border-right-width: 1px; border-right-style: solid; cursor: pointer;
+}
+#forbiz {
+	height: 10px; line-height: 10px; padding-right: 10px; margin-right: 6px; border-right-color: rgb(238, 238, 238); border-right-width: 1px; border-right-style: solid; cursor: pointer;
+}
+#addfeatures {
+	color: rgb(255, 255, 255);
+}
+#forbiz {
+	color: rgb(254, 164, 42);
+}
+#forbizLoggedin {
+	color: rgb(254, 164, 42); padding-left: 10px; font-size: 11px; margin-left: 6px; border-right-color: currentColor; border-left-color: rgb(238, 238, 238); border-right-width: medium; border-left-width: 1px; border-right-style: none; border-left-style: solid; cursor: pointer;
+}
+#copyright {
+	left: -5px; width: 300px; bottom: -38px; color: rgb(255, 255, 255); font-size: 11px; font-weight: normal; position: absolute;
+}
+#legaleselink {
+	left: 290px; bottom: -38px; color: rgb(255, 255, 255); font-size: 11px; font-weight: bold; position: absolute; cursor: pointer;
+}
+#privacylink {
+	left: 290px; bottom: -38px; color: rgb(255, 255, 255); font-size: 11px; font-weight: bold; position: absolute; cursor: pointer;
+}
+#lmi_logo {
+	background-position: -280px 0px; width: 68px; height: 24px; right: 10px; bottom: -40px; position: absolute; cursor: pointer; background-repeat: no-repeat; background-color: transparent; -height: 59px; -width: 80px;
+}
+#common_callus {
+	top: -21px; width: auto; text-align: right; right: 12px; color: rgb(255, 255, 255); font-size: 11px; font-weight: bold; white-space: nowrap; position: absolute;
+}
+table.main {
+	text-align: left; display: inline-block; position: relative;
+}
+table.menu {
+	text-align: left; display: inline-block; position: relative;
+}
+#menucontentwindow {
+	left: 50%; height: 47px; margin-left: -237px; position: absolute; z-index: -1;
+}
+table.menucontent {
+	font-size: 11px; font-weight: bold;
+}
+table.menucontent td.start {
+	background-repeat: no-repeat; -background: white none;
+}
+table.menucontent td.end {
+	background-repeat: no-repeat; -background: white none;
+}
+table.menucontent td.padding {
+	width: 66px;
+}
+table.menucontent td.start {
+	background-position: -200px -1px; padding: 0px; width: 6px;
+}
+table.menucontent {
+	position: relative; -behavior: url(/Common/Scripts/3rdParty/csshover3.htc);
+}
+table.menucontent td.content {
+	padding: 0px 15px; cursor: pointer; background-color: white; -position: relative;
+}
+table.menucontent td.separator {
+	background-position: -210px -1px; margin: 0px; padding: 0px; border: currentColor; border-image: none; width: 1px; height: 29px; position: relative;
+}
+table.menucontent td.end {
+	background-position: -200px -34px; padding: 0px; width: 6px;
+}
+table.menucontent td {
+	height: 30px;
+}
+table.menucontent {
+	padding: 9px 8px;
+}
+table.white tr.white_middle td.white_middle.sep {
+	padding-right: 1px; background-color: transparent;
+}
+table.white tr.white_top td.white_middle.sep {
+	padding-right: 1px; background-color: transparent;
+}
+table.white tr.white_bottom td.white_middle.sep {
+	padding-right: 1px; background-color: transparent;
+}
+table.white tr.white_top td.white_middle.sep {
+	background-image: none;
+}
+table.white tr.white_bottom td.white_middle.sep {
+	background-image: none;
+}
+table.exclamation {
+	width: 100%; height: 166px; margin-bottom: 12px; -text-align: center;
+}
+table.exclamation #newFeature {
+	padding-top: 10px; font-size: 18px;
+}
+table.exclamation .new {
+	color: rgb(255, 255, 255); padding-right: 8px;
+}
+table.exclamation .recicon {
+	background-position: -351px -210px; top: 2px; width: 20px; height: 18px; position: relative;
+}
+table.exclamation .rec {
+	color: rgb(255, 146, 0); padding-left: 2px;
+}
+table.fromexpress {
+	width: 100%; height: 140px; -text-align: center;
+}
+td.share {
+	padding-left: 57px;
+}
+td.join {
+	padding-right: 0px; padding-left: 5px;
+}
+div.share {
+	background-position: -135px 0px; top: -5px; width: 65px; height: 68px; margin-right: 10px; display: block; position: relative; background-repeat: no-repeat; background-color: transparent;
+}
+div.join {
+	background-position: -135px 0px; top: -5px; width: 65px; height: 68px; margin-right: 10px; display: block; position: relative; background-repeat: no-repeat; background-color: transparent;
+}
+span.share {
+	background-position: -135px 0px; top: -5px; width: 65px; height: 68px; margin-right: 10px; display: block; position: relative; background-repeat: no-repeat; background-color: transparent;
+}
+span.join {
+	background-position: -135px 0px; top: -5px; width: 65px; height: 68px; margin-right: 10px; display: block; position: relative; background-repeat: no-repeat; background-color: transparent;
+}
+div.join {
+	background-position: -70px 1px;
+}
+span.join {
+	background-position: -70px 1px;
+}
+div.join {
+	
+}
+td.content {
+	padding: 5px 20px;
+}
+table.content tr.top td {
+	vertical-align: top;
+}
+table.content tr.bottom td {
+	vertical-align: bottom;
+}
+td.menupadding {
+	width: 66px; -width: 61px;
+}
+div.freefor {
+	color: rgb(136, 136, 136); padding-top: 4px; font-size: 10px;
+}
+div.mobilviewer_link {
+	color: rgb(136, 136, 136); padding-top: 4px; font-size: 10px;
+}
+div#freeandnoreg {
+	left: 0px; height: 20px; text-align: center; color: rgb(255, 255, 255); line-height: 22px; font-size: 11px; font-weight: bold; margin-bottom: -20px; position: relative;
+}
+.layoutB div#freeandnoreg {
+	top: -1px;
+}
+.br_ff .layoutB div#freeandnoreg {
+	top: -2px;
+}
+.br_ie.vr_9 .layoutB div#freeandnoreg {
+	top: -2px;
+}
+a#dl_desktopapp_home {
+	right: 20px; bottom: -7px; color: rgb(254, 164, 42); line-height: 22px; font-size: 11px; position: absolute; z-index: 1000;
+}
+a#dl_desktopapp_start {
+	top: 21px; right: 20px; color: rgb(254, 164, 42); font-size: 11px; position: absolute; z-index: 1000;
+}
+table.jointable {
+	padding-top: 5px; padding-left: 5px;
+}
+table.sharetable {
+	padding-left: 5px;
+}
+td.jointext {
+	padding-right: 10px;
+}
+td.codeinput {
+	padding-right: 10px;
+}
+table.tabsystem {
+	left: 30px; top: 10px; font-size: 11px; position: relative;
+}
+table.tabsystem a {
+	font-weight: bold;
+}
+div#remember {
+	left: 1px; position: relative;
+}
+div#donthaveaccount {
+	padding-top: 5px; padding-bottom: 18px; font-size: 18px; font-weight: bold;
+}
+#loginspacer {
+	height: 113px;
+}
+.br_ie.vr_8 #loginspacer {
+	height: 114px;
+}
+.br_ie.vr_9 #loginspacer {
+	height: 114px;
+}
+#cancelForgotPassword {
+	margin-left: 10px;
+}
+div#forgotpasswordsuccess {
+	left: 160px; top: -30px; width: 510px;
+}
+div#premium {
+	font-size: 14px; font-weight: bold;
+}
+ul#premiumlist {
+	margin: 0px; padding: 0px 0px 0px 16px;
+}
+ul#premiumlist li {
+	font-size: 18px;
+}
+ul#premiumlist span {
+	font-size: 12px;
+}
+table#personalinformation td.leftcolumn {
+	color: rgb(134, 134, 134); padding-right: 20px; padding-bottom: 10px;
+}
+table#personalinformation td.rightcolumn {
+	padding-right: 20px; padding-bottom: 10px;
+}
+table#personalinformation td.first {
+	padding-bottom: 20px;
+}
+table#personalinformation td.last {
+	padding-top: 10px;
+}
+div#keepmeinformed {
+	color: rgb(134, 134, 134);
+}
+div#sendme {
+	color: rgb(134, 134, 134);
+}
+div#pleaseenter {
+	color: rgb(134, 134, 134);
+}
+div#changeemailsuccessmsg {
+	left: 155px; top: -41px; color: rgb(112, 168, 0); font-weight: bold; display: none;
+}
+div#changeemailfailure {
+	left: 155px; top: -32px; color: red; font-weight: bold; display: none;
+}
+table#changepassword td.changepwdleft {
+	color: rgb(134, 134, 134); padding-right: 15px; padding-bottom: 10px;
+}
+table#changepassword td.changepwdright {
+	padding-bottom: 10px;
+}
+table#changepassword td.changepwdleft {
+	color: rgb(134, 134, 134); padding-right: 15px; padding-bottom: 10px;
+}
+div#changepwdsuccessmsg {
+	left: 225px; top: -32px; color: rgb(112, 168, 0); font-weight: bold; display: none;
+}
+div#changepwdfailure {
+	left: 225px; top: -32px; color: red; font-weight: bold; display: none;
+}
+div#changepwdoldpasswordwrong {
+	left: 225px; top: -32px; color: red; font-weight: bold; display: none;
+}
+div.sessiontimerdialog {
+	padding: 8px 11px 18px; font-size: 14px; cursor: pointer;
+}
+iframe.sessiontimerdialogiframe {
+	left: -500px; top: -500px; width: 0px; height: 0px; position: absolute;
+}
+#legalese .legalContent#jm_scrollablemaincontent {
+	margin: 0px 0px 5px 15px; width: 670px; height: 350px; line-height: 17px; overflow: visible;
+}
+#legalese .jspScrollable p {
+	width: 630px; margin-left: 0px;
+}
+#legalese .jspScrollable ol {
+	width: 630px; margin-left: 0px;
+}
+#openSource .jspScrollable p {
+	width: 630px; margin-left: 0px;
+}
+#openSource .jspScrollable ol {
+	width: 630px; margin-left: 0px;
+}
+#openSource .jspScrollable ol li {
+	margin-left: 0px;
+}
+#legalese .jspScrollable {
+	text-align: justify;
+}
+#legalese .jspScrollable h3 {
+	color: rgb(68, 68, 68); font-size: 14px; margin-top: 2em; margin-bottom: 0.75em;
+}
+#legalese .jspScrollable em {
+	font-style: normal; font-weight: normal; text-decoration: underline;
+}
+#legalese .jspScrollable p {
+	width: 650px;
+}
+#legalese .jspScrollable p.l-1 {
+	width: 620px; text-indent: -30px; padding-left: 30px; margin-bottom: 0px;
+}
+#legalese .jspScrollable p.l-1.dmca {
+	text-indent: 0px; margin-bottom: 2em;
+}
+#legalese .jspScrollable p.l-2 {
+	width: 620px; padding-left: 30px; margin-bottom: 0px;
+}
+#legalese .jspScrollable p.l-3 {
+	width: 590px; padding-left: 60px; margin-bottom: 0px;
+}
+#legalese .jspScrollable p.l-3.dmca {
+	margin-top: 1em;
+}
+#legalese .jspScrollable address {
+	margin: 1em 0px; text-indent: -30px; padding-left: 90px; font-style: normal; font-weight: normal;
+}
+#legalese .jspScrollable .copyright {
+	font-size: 11px;
+}
+#legalese .jspScrollable .opensource {
+	font-size: 11px;
+}
+#legalese .jspScrollable .patents {
+	font-size: 11px;
+}
+#legalese .jspScrollable .copyright {
+	margin-top: 2em;
+}
+#legalese .jspScrollable .clickable {
+	cursor: pointer;
+}
+table#invite td.inviteleft {
+	color: rgb(134, 134, 134); padding-right: 40px; padding-bottom: 10px;
+}
+table#invite td.inviteright {
+	padding-bottom: 10px;
+}
+span.scheduler_nosubscription {
+	left: -2px; top: -4px; color: red; font-weight: bold; position: relative;
+}
+table#subscriptions td.info {
+	color: gray; padding-left: 15px; font-size: 11px; background-color: white;
+}
+table#subscriptions td span.hide {
+	color: red; display: none;
+}
+.yes_button td {
+	width: 27px; text-align: center;
+}
+.no_button td {
+	width: 27px; text-align: center;
+}
+div#pwdstrengthcontent {
+	padding: 2px 0px 0px 16px; width: 500px; text-align: left;
+}
+div#pwdstrengthcontent ul {
+	
+}
+h1.hostInstalled {
+	margin-top: 17px; margin-left: 15px;
+}
+iframe.mediaframe {
+	left: -1000px; top: -1000px; width: 1px !important; height: 1px !important; position: absolute;
+}
+.accountemail {
+	font-size: 11px;
+}
+.error-page-left-content {
+	width: 130px;
+}
+.error-page-left-content a img {
+	border: currentColor; border-image: none;
+}
+#ui-datepicker-div {
+	display: none;
+}

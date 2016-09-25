@@ -1,0 +1,165 @@
+@font-face {
+	font-family: Swiss721BT-BlackRounded;
+	src: url(/BigIdea/Common/Styles/Swiss721BT-BlackRounded.woff) format("woff"), url(/BigIdea/Common/Styles/Swiss721BT-BlackRounded.ttf) format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: Swiss721BT-BoldRounded;
+	src: url(/BigIdea/Common/Styles/Swiss721BT-BoldRounded.woff) format("woff"), url(/BigIdea/Common/Styles/Swiss721BT-BoldRounded.ttf) format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+#UpdateProgress {
+	background: rgb(0, 0, 0); left: 0px; top: 0px; width: 100%; height: 100%; position: fixed; z-index: 10000; opacity: 0.85;
+}
+#UpdateProgress img {
+	margin: 100px auto 10px; width: 49px; height: 49px; display: block; position: relative;
+}
+#UpdateProgress span {
+	margin: auto; color: rgb(255, 146, 0); font-size: 12px; font-weight: bold; display: block; position: relative;
+}
+div.dialog {
+	left: 0px; top: 0px; width: 100%; height: 100%; text-align: center; display: none; position: absolute; z-index: 1003;
+}
+div.dialog div.dimmer {
+	left: 0px; top: 0px; width: 100%; height: 100%; position: fixed; z-index: 11; opacity: 0.7; background-color: black;
+}
+div.dimmerForIE7_top {
+	left: 0px; top: 0px; width: 250px; height: 100%; margin-top: 51px; position: absolute; z-index: 11; opacity: 0.7; background-color: black;
+}
+div.dimmerForIE7_left {
+	left: 0px; top: 0px; width: 250px; height: 100%; margin-top: 51px; position: absolute; z-index: 11; opacity: 0.7; background-color: black;
+}
+div.dimmerForIE7_top {
+	margin: 0px; left: auto; width: 100%; height: 51px; right: 17px;
+}
+div.dialog div.box {
+	border-radius: 4px; top: 40%; text-align: left; color: rgb(48, 48, 48); display: inline-block; position: relative; z-index: 11; min-height: 100px; min-width: 300px; max-width: 600px; background-color: rgb(250, 250, 250); -webkit-border-radius: 4px; -moz-border-radius: 4px;
+}
+div.dialogbox {
+	border-radius: 4px; top: 40%; text-align: left; color: rgb(48, 48, 48); display: inline-block; position: relative; z-index: 11; min-height: 100px; min-width: 300px; max-width: 600px; background-color: rgb(250, 250, 250); -webkit-border-radius: 4px; -moz-border-radius: 4px;
+}
+div.dialog div.box.big {
+	margin-top: 5%;
+}
+div.dialogbox.big {
+	margin-top: 5%;
+}
+div.dialog div.box div.inner {
+	padding: 20px;
+}
+div.dialogbox div.inner {
+	padding: 20px;
+}
+div.dialog div.box div.inner div.modalclosebutton {
+	background-position: -358px -38px; top: 10px; width: 8px; height: 8px; right: 10px; float: right; position: absolute; cursor: pointer; background-repeat: no-repeat; background-color: transparent;
+}
+div.dialog div.box div.inner div.closer {
+	background-position: -358px -38px; top: 10px; width: 8px; height: 8px; right: 10px; float: right; position: absolute; cursor: pointer; background-repeat: no-repeat; background-color: transparent;
+}
+div.dialog div.box div.inner h1 {
+	margin: 0px 0px 20px; height: auto; line-height: normal; font-size: 20px; font-weight: normal; white-space: normal;
+}
+div.dialog div.box div.inner h2 {
+	color: inherit;
+}
+div.dialog div.box div.inner p {
+	margin: 0px 0px 20px; font-size: 13px;
+}
+div.dialog div.box div.buttons {
+	text-align: center; margin-top: 20px;
+}
+#jmDialogContainer {
+	text-align: center;
+}
+#jmDialogContainer .msg {
+	overflow: hidden; -ms-text-overflow: ellipsis;
+}
+.dialog .feedback {
+	text-align: center; padding-top: 20px;
+}
+.dialog .feedback span {
+	padding-left: 15px; font-size: 13px;
+}
+.dialog #setfullname .cb {
+	padding: 10px 20px 10px 0px; float: right;
+}
+.dialog .pleasewait {
+	margin: auto; width: auto; padding-top: 25px; padding-left: 31%;
+}
+.dialog .pleasewait .txt {
+	padding-left: 10px;
+}
+.inlineblock {
+	display: inline-block;
+}
+.inliner {
+	display: inline-block;
+}
+.dialog.player .hided {
+	display: none;
+}
+.dialog.player .box {
+	top: 25px; min-height: 0px; min-width: 0px; max-width: 100%;
+}
+.dialog.player .inner {
+	height: 100%;
+}
+.dialog.player .player-container {
+	width: 100%; height: 100%; position: relative;
+}
+.dialog.player .player-container:hover .title-ph {
+	transition:opacity 0.1s linear; opacity: 1; -moz-transition: opacity 0.1s linear; -webkit-transition: opacity 0.1s linear;
+}
+.dialog.player .player-container .title-ph {
+	transition:opacity 0.1s linear 0.1s; top: 5px; width: 100%; position: absolute; opacity: 0; -moz-transition: opacity 0.1s linear 0.1s; -webkit-transition: opacity 0.1s linear 0.1s;
+}
+.dialog.player .player-container .title {
+	margin: 0px auto; border-radius: 3px; width: 98%; height: 30px; text-align: center; color: rgb(255, 255, 255); line-height: 30px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis; max-width: 800px; opacity: 0.6; background-color: rgb(0, 0, 0);
+}
+.dialog.player video {
+	width: 100%; height: auto; min-height: 160px; min-width: 200px;
+}
+.dialog.player .loading {
+	padding: 100px 200px;
+}
+.dialog.player div.box div.inner div.modalclosebutton {
+	background-position: -172px -177px; top: -12px; width: 29px; height: 29px; right: -12px; cursor: pointer;
+}
+.dialog .notsupported {
+	width: 460px;
+}
+.dialog .notsupported a {
+	color: rgb(255, 128, 0); font-weight: bold;
+}
+.dialog .notsupported .item {
+	padding-bottom: 5px;
+}
+.dialog .notsupported .learnmore {
+	padding-top: 5px;
+}
+.dialog .notsupported .title {
+	padding: 5px 0px 15px; text-align: center; font-weight: bold;
+}
+.dialog .notsupported .use {
+	width: 323px; padding-bottom: 10px;
+}
+.dialog .notsupported .secondColumn {
+	padding-left: 10px;
+}
+.bi-title {
+	font-family: "Rubik", helvetica, arial, sans-serif; font-size: 28px; font-weight: 700;
+}
+.joinme-orange {
+	color: rgb(255, 140, 0);
+}
+.joinme-green {
+	color: rgb(141, 201, 1);
+}
+.bi-title-small {
+	font-size: 24px;
+}
+.inline {
+	display: inline-block;
+}

@@ -1,0 +1,504 @@
+* {
+	-webkit-font-smoothing: antialiased;
+}
+.navbar_container {
+	width: 100%; height: 55px; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; position: absolute; min-width: 970px; background-color: rgb(255, 142, 0);
+}
+.navbar_inner_container {
+	margin: 4px auto 0px; max-width: 1100px;
+}
+#navigationBar {
+	letter-spacing: 1px; font-family: Tahoma, Arial, Sans-Serif; font-size: 14px; float: left; z-index: 10000;
+}
+#navigationBar .navbarEndpart {
+	top: 0px; width: 10px; height: 61px; right: -10px; position: absolute;
+}
+#navigationBar div.vr {
+	width: 0px; height: 50px; float: left;
+}
+#navigationBar div#navbarLogo {
+	background: url("/Common/Images/Logos/JM_wordmark.png") no-repeat right; left: -5px; top: -2px; width: 122px; height: 50px; position: absolute;
+}
+#navigationBar div#navbarLogo .byLink {
+	background: url("/Common/Images/Logos/mktg-sprite.png") no-repeat -29px -171px; left: 135px; top: 15px; width: 62px; height: 24px; position: absolute; cursor: pointer;
+}
+#navigationBar div#navbarLogo .jmLink {
+	left: 0px; top: 8px; width: 122px; height: 40px; position: absolute; cursor: pointer;
+}
+#navigationBar div#navbarLogo a:active {
+	background-color: inherit;
+}
+#navigationBar .menuItem span {
+	padding: 10px 18px 5px 9px; white-space: nowrap; cursor: pointer;
+}
+#navigationBar div span:hover {
+	
+}
+#navigationBar div span.active {
+	color: rgb(255, 255, 255); text-shadow: 0px -1px 0px #d38d0a;
+}
+#navigationBar div span.active:hover {
+	color: rgb(255, 255, 255); text-shadow: 0px -1px 0px #d38d0a;
+}
+#navigationBar .menuItem {
+	height: 50px; color: rgb(255, 255, 255); line-height: 48px; float: left; position: relative; -webkit-font-smoothing: antialiased;
+}
+.br_ie #navigationBar .menuItem {
+	top: -1px;
+}
+.br_ff #navigationBar .menuItem {
+	top: -1px;
+}
+#navigationBar #menuArea {
+	padding-left: 210px; white-space: nowrap; position: relative; z-index: 3;
+}
+.menuSubItems {
+	border-width: 12px; border-style: solid; border-image: url("/Common/Images/Navbar/navi_dropdown_bg.png") 12 fill; left: 0px; top: 48px; text-align: left; padding-right: 5px; margin-left: -9px; display: none; position: absolute; -webkit-border-image: url(/Common/Images/Navbar/navi_dropdown_bg.png) 12 12 12 12; -moz-border-image: url(/Common/Images/Navbar/navi_dropdown_bg.png) 12 12 12 12; -o-border-image: url(/Common/Images/Navbar/navi_dropdown_bg.png) 12 12 12 12;
+}
+#navigationBar .menuItem.hover .menuSubItems {
+	display: block;
+}
+.menuSubItems span {
+	top: -12px; width: 100%; height: 48px; line-height: 48px; text-indent: 10px; padding-right: 6px; padding-left: 5px; margin-right: 10px; margin-left: -6px; border-top-color: rgb(236, 105, 19); border-top-width: 1px; border-top-style: solid; display: block; position: relative;
+}
+.menuSubItems span.lastItem {
+	height: 33px;
+}
+.br_ie .menuSubItems {
+	margin-top: 12px; margin-left: 3px;
+}
+.mainBgGray {
+	border-width: 6px; border-style: solid; border-image: url("/Common/Images/new_gray_round_bg.png") 6 fill; left: -6px; top: -6px; width: 100%; height: 100%; position: absolute; -webkit-border-image: url(/Common/Images/new_gray_round_bg.png) 6 6 6 6; -moz-border-image: url(/Common/Images/new_gray_round_bg.png) 6 6 6 6; -o-border-image: url(/Common/Images/new_gray_round_bg.png) 6 6 6 6;
+}
+#schedulerFullScreenBgGray {
+	left: 0px; top: 0px; width: 100%; height: 100%; display: none; position: fixed; z-index: 1; opacity: 0.6; background-color: rgb(0, 0, 0);
+}
+.br_ie .mainBgGray {
+	left: 0px; top: 0px;
+}
+.homeBoxes {
+	border-width: 6px; border-style: solid; border-image: url("/Common/Images/new_gray_round_bg.png") 6 fill; width: 234px; height: 78px; bottom: -111px; position: absolute; cursor: pointer; -webkit-border-image: url(/Common/Images/new_gray_round_bg.png) 6 6 6 6; -moz-border-image: url(/Common/Images/new_gray_round_bg.png) 6 6 6 6; -o-border-image: url(/Common/Images/new_gray_round_bg.png) 6 6 6 6;
+}
+.homeBoxes h1 {
+	position: relative;
+}
+.homeBoxes p {
+	text-align: center; color: rgb(255, 255, 255); line-height: 16px; font-size: 13px; margin-top: -30px; display: none; position: relative;
+}
+.homeBoxes span.arrow {
+	background: url("/Common/Images/promobox_arrow.png") no-repeat; margin: 0px 0px 0px -7px; left: 50%; top: 52px; width: 14px; height: 12px; display: block; position: absolute;
+}
+.homeBoxes p a {
+	color: rgb(255, 146, 0); font-weight: normal;
+}
+.homeBoxes:hover {
+	height: 108px; bottom: -141px;
+}
+.homeBoxes:hover span.arrow {
+	display: none;
+}
+.homeBoxes:hover p {
+	display: block;
+}
+.backToHomeButton {
+	background-position: -172px -177px; top: 0px; width: 29px; height: 29px; right: 0px; position: absolute; cursor: pointer;
+}
+#buyBox {
+	left: -6px;
+}
+.br_ie #buyBox {
+	left: 0px;
+}
+#trialBox {
+	left: 249px;
+}
+.br_ie #trialBox {
+	left: 255px;
+}
+#annotationBox {
+	left: 504px;
+}
+.br_ie #annotationBox {
+	left: 510px;
+}
+.homeBoxes h1 {
+	height: 68px; text-align: center; color: rgb(255, 255, 255); line-height: 68px; font-family: Tahoma, Arial, Sans-Serif; font-size: 20px;
+}
+#newRibbon {
+	top: -11px; right: -11px; position: absolute;
+}
+form.mainForm {
+	background: rgba(0, 0, 0, 0.1); height: auto; min-height: 100%;
+}
+div.contentwindow {
+	margin-bottom: 150px;
+}
+div.contentwindow.loggedin {
+	margin-bottom: 70px;
+}
+#footerContainer {
+	height: 41px; bottom: 0px; color: rgb(255, 255, 255); font-size: 11px; margin-top: -41px; position: relative; z-index: 1000; min-width: 970px; background-image: url("/Common/Images/new_gray_footer_bg.png");
+}
+#footerContainer a {
+	color: rgb(255, 255, 255);
+}
+#socialWrapper {
+	top: 0px; width: 0px; height: 100%; position: absolute; min-height: 640px;
+}
+#socialWrapper {
+	right: 0px;
+}
+#footerInner {
+	margin: auto; left: 0px; width: 970px; height: 40px; bottom: 0px; position: absolute;
+}
+#footerLmiLogo {
+	top: 13px; float: left; display: block; position: relative;
+}
+#footerLegaleseLink {
+	top: 13px; float: left; display: block; position: relative;
+}
+#footerPrivacyLink {
+	top: 13px; float: left; display: block; position: relative;
+}
+#footerUninstallLink {
+	top: 13px; float: left; display: block; position: relative;
+}
+#footerSalesLink {
+	top: 13px; float: left; display: block; position: relative;
+}
+#footerCopyright {
+	top: 13px; float: left; display: block; position: relative;
+}
+#footerQuestions {
+	top: 13px; float: left; display: block; position: relative;
+}
+#footerPoweredby {
+	top: 13px; float: left; display: block; position: relative;
+}
+#footerLegaleseLink {
+	font-size: 11px; cursor: pointer;
+}
+#footerLegaleseLink span {
+	padding: 0px 8px; font-weight: bold; text-decoration: underline;
+}
+#footerPrivacyLink {
+	font-size: 11px; cursor: pointer;
+}
+#footerPrivacyLink span {
+	padding: 0px 8px; font-weight: bold; text-decoration: underline;
+}
+#footerUninstallLink {
+	font-size: 11px; font-weight: normal;
+}
+#footerSalesLink {
+	font-size: 11px; font-weight: normal;
+}
+#footerUninstallLink span {
+	padding: 0px 8px; font-weight: bold; text-decoration: underline;
+}
+#footerSalesLink span {
+	padding: 0px 8px; font-weight: bold; text-decoration: underline;
+}
+#footerQuestions {
+	font-size: 11px;
+}
+#footerQuestions span {
+	padding: 0px 5px; font-weight: bold;
+}
+#footerPoweredby {
+	padding-left: 20px; font-size: 10px; cursor: pointer;
+}
+#footerPoweredby b {
+	background-position: -280px 0px; top: 4px; width: 68px; height: 24px; margin-top: -11px; margin-left: 5px; display: inline-block; position: relative;
+}
+#socialIcons {
+	left: 50px; position: relative;
+}
+#socialIcons a {
+	
+}
+.br_ie #socialIcons {
+	width: 75px;
+}
+#socialWrapper {
+	width: 130px !important; height: 40px !important; min-height: 40px !important;
+}
+#socialIcons .socialGroups {
+	background: url("/Common/Images/Homepage/social_icons.png") no-repeat 2px -205px; width: 34px; height: 35px; float: left; position: relative; z-index: 100001; cursor: pointer;
+}
+#socialIcons .socialIconWindow {
+	border-width: 6px; border-style: solid; border-image: url("/Common/Images/Homepage/roundbg.png") 6 fill; -webkit-border-image: url(/Common/Images/Homepage/roundbg.png) 6 6 6 6; -moz-border-image: url(/Common/Images/Homepage/roundbg.png) 6 6 6 6; -o-border-image: url(/Common/Images/Homepage/roundbg.png) 6 6 6 6;
+}
+.br_ie #socialIcons .socialIconWindow {
+	
+}
+#socialLikeWindow {
+	left: -20px; top: -112px; width: 57px; height: 100px; visibility: hidden; position: absolute;
+}
+#socialIcons .br_ie #socialLikeWindow {
+	margin: 6px 0px 0px 6px; top: -1000px; width: 60px; visibility: visible;
+}
+#fbLikeDisc:hover #socialLikeWindow {
+	visibility: visible;
+}
+#blogDisc #blog {
+	background: url("/Common/Images/Homepage/social_icons.png") no-repeat 0px 5px; left: 1px; top: 0px; width: 30px; height: 30px; position: absolute;
+}
+#blogDisc:hover #blog {
+	background-position: -30px 5px;
+}
+#fbLikeDisc #fbLikeIcon {
+	background: url("/Common/Images/Homepage/social_icons.png") no-repeat 0px -25px; left: 1px; top: 0px; width: 30px; height: 30px; position: absolute;
+}
+#fbLikeDisc:hover #fbLikeIcon {
+	background-position: -30px -25px;
+}
+#shareDisc #shareIcon {
+	background: url("/Common/Images/Homepage/social_icons.png") no-repeat -1px -55px; left: 1px; top: 0px; width: 30px; height: 30px; position: absolute;
+}
+#shareDisc:hover #shareIcon {
+	background-position: -31px -55px;
+}
+#socialShareWindow {
+	left: -1px; top: -135px; width: 23px; height: 123px; visibility: hidden; position: absolute;
+}
+#socialIcons .br_ie #socialShareWindow {
+	margin: 6px 0px 0px 6px;
+}
+#socialShareWindow a {
+	background: url("/Common/Images/Homepage/social_icons.png") no-repeat; left: -5px; width: 30px; height: 30px; display: block; position: relative;
+}
+#shareDisc:hover #socialShareWindow {
+	visibility: visible;
+}
+#socialIcons a#facebook {
+	background-position: 0px -90px;
+}
+#socialIcons a#facebook:hover {
+	background-position: -30px -90px;
+}
+#socialIcons a#twitter {
+	background-position: 0px -120px;
+}
+#socialIcons a#twitter:hover {
+	background-position: -30px -120px;
+}
+#socialIcons a#youtube {
+	background-position: 0px -150px;
+}
+#socialIcons a#youtube:hover {
+	background-position: -30px -150px;
+}
+#socialIcons a#linkedin {
+	background-position: 0px -180px; top: 3px;
+}
+#socialIcons a#linkedin:hover {
+	background-position: -30px -180px;
+}
+#shareProSlider {
+	top: 5px; width: 200px; height: 27px; overflow: hidden; margin-top: 6px; position: relative;
+}
+#shareProSlider .track {
+	background: url("/Common/Images/Homepage/pro_slider.png") no-repeat; top: 0px; height: 27px; position: absolute;
+}
+#shareProSlider .track div {
+	background: url("/Common/Images/Homepage/pro_slider.png") no-repeat; top: 0px; height: 27px; position: absolute;
+}
+#shareProSlider .slider {
+	background: url("/Common/Images/Homepage/pro_slider.png") no-repeat; top: 0px; height: 27px; position: absolute;
+}
+#shareProSlider .slider div {
+	background: url("/Common/Images/Homepage/pro_slider.png") no-repeat; top: 0px; height: 27px; position: absolute;
+}
+#shareProSlider .track div {
+	width: 10px; height: 27px; right: -10px;
+}
+#shareProSlider .slider div {
+	width: 10px; height: 27px; right: -10px;
+}
+#shareProSlider .track {
+	background-position: left top; left: -2px; width: 194px;
+}
+#shareProSlider .track div {
+	background-position: right top;
+}
+#shareProSlider .slider {
+	background-position: left bottom; left: -2px; width: 90px;
+}
+#shareProSlider .slider div {
+	background-position: right bottom;
+}
+#shareProSlider .sliderModePro {
+	left: 0px; top: 0px; width: 100px; height: 27px; text-align: center; color: rgb(101, 101, 101); line-height: 27px; font-size: 14px; font-weight: bold; position: absolute; cursor: pointer;
+}
+#shareProSlider .sliderModeBasic {
+	left: 0px; top: 0px; width: 100px; height: 27px; text-align: center; color: rgb(101, 101, 101); line-height: 27px; font-size: 14px; font-weight: bold; position: absolute; cursor: pointer;
+}
+#shareProSlider .sliderModePro span {
+	background-position: -114px -184px; width: 13px; height: 10px; margin-right: 7px; margin-left: -19px; display: inline-block; visibility: hidden;
+}
+#shareProSlider .sliderModeBasic span {
+	background-position: -114px -184px; width: 13px; height: 10px; margin-right: 7px; margin-left: -19px; display: inline-block; visibility: hidden;
+}
+#shareProSlider .sliderModeBasic {
+	left: 100px;
+}
+#shareProSlider .sliderModePro.active {
+	color: rgb(255, 255, 255);
+}
+#shareProSlider .sliderModeBasic.active {
+	color: rgb(255, 255, 255);
+}
+#shareProSlider .sliderModePro.active span {
+	visibility: visible;
+}
+#shareProSlider .sliderModeBasic.active span {
+	visibility: visible;
+}
+#shareProSliderLabel span {
+	top: 5px; width: 95px; text-align: center; color: rgb(129, 129, 129); line-height: 20px; display: inline-block; position: relative;
+}
+#tryNewWinApp {
+	position: relative; z-index: 100;
+}
+#tryNewWinApp .promoBubbles {
+	left: -23px; top: -74px; width: 80px; height: 32px; color: rgb(255, 255, 255); line-height: 18px; font-weight: bold; position: absolute;
+}
+.br_ie #tryNewWinApp .promoBubbles {
+	left: -7px; top: -59px;
+}
+#tryNewWinApp .promoBubbles .wrapper {
+	top: -5px; width: 80px; text-align: center; position: relative;
+}
+#tryNewWinApp .promoBubbles .olh {
+	top: 1px; margin-left: -19px;
+}
+#tryNewWinApp .promoBubbles .arrow {
+	background-position: -315px -126px; left: 50%; width: 30px; height: 17px; bottom: -21px; margin-left: -15px; position: absolute;
+}
+#resizeFrame {
+	top: 0px; width: 1px; height: 100%; right: 0px; visibility: hidden; position: absolute;
+}
+#nav-right {
+	float: right;
+}
+#nav-right .nav {
+	list-style: none; margin: 0px; padding: 0px; left: 0px; top: -1px; text-align: center; float: left; display: block; position: relative;
+}
+#nav-right .nav li {
+	height: 50px; color: rgb(0, 0, 0); line-height: 30px; font-weight: normal; float: left; min-width: 50px;
+}
+#nav-right .nav li > a {
+	padding: 10px 17px 5px 9px; color: rgb(255, 255, 255); font-size: 14px; display: block; cursor: pointer;
+}
+#nav-right .ls .currlang {
+	color: white; font-weight: normal;
+}
+#nav-right .ls .lsmenu {
+	display: none; position: absolute; z-index: 999;
+}
+#nav-right .ls.opened .lsmenu {
+	display: block;
+}
+#nav-right .ls .ls-content {
+	padding: 5px; margin-top: 7px; margin-left: -11px; float: right; background-color: rgb(255, 255, 255);
+}
+#nav-right .ls .lsmenu a {
+	padding: 0px 15px; text-align: left; color: rgb(85, 85, 85); font-size: 14px; font-weight: normal; text-decoration: none; display: block; white-space: nowrap; cursor: pointer;
+}
+#nav-right .ls .lsmenu a:hover {
+	color: rgb(255, 149, 13);
+}
+#nav-right .ls .lsmenu a.selected {
+	color: rgb(255, 149, 13);
+}
+#nav-right .logout-ph {
+	min-height: 50px;
+}
+#nav-right a.login {
+	color: white !important; letter-spacing: 0px; overflow: hidden; padding-top: 10px; font-size: 14px; font-weight: normal; display: block; white-space: nowrap; -ms-text-overflow: ellipsis; max-width: 165px;
+}
+#nav-right a.login.loggedin {
+	padding: 10px; min-width: 130px;
+}
+#nav-right a.login.loggedout {
+	padding: 10px 20px;
+}
+#nav-right .arrow-box {
+	background: rgb(255, 255, 255); border-radius: 2px; border: 3px solid rgb(255, 142, 0); border-image: none; color: rgb(0, 0, 0); margin-top: 30px; margin-right: auto; margin-left: auto; display: none; position: relative; z-index: 999; min-width: 110px; max-width: 140px;
+}
+#nav-right .arrow-box span {
+	margin: 10px 0px; line-height: normal; overflow: hidden; display: block; cursor: pointer;
+}
+#nav-right .arrow-box span:hover {
+	color: rgb(255, 136, 0);
+}
+#nav-right .logout-ph.openable:hover .arrow-box {
+	display: block;
+}
+#nav-right .arrow-box::before {
+	border: solid transparent; border-image: none; left: 50%; width: 0px; height: 0px; bottom: 100%; position: absolute; content: " "; pointer-events: none;
+}
+#nav-right .arrow-box::after {
+	border: solid transparent; border-image: none; left: 50%; width: 0px; height: 0px; bottom: 100%; position: absolute; content: " "; pointer-events: none;
+}
+#nav-right .arrow-box::before {
+	border-width: 12px; border-color: rgba(255, 142, 0, 0) rgba(255, 142, 0, 0) rgb(255, 142, 0); margin-left: -12px;
+}
+#nav-right .arrow-box::after {
+	border-width: 8px; border-color: rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) rgb(255, 255, 255); margin-left: -8px;
+}
+#joinCodeContainer {
+	left: 350px; top: 25px; width: 240px; position: absolute;
+}
+.bubbleContainer {
+	right: 0px !important; display: inline-block !important; position: relative;
+}
+.bubbleContainer .bubble {
+	background: rgb(245, 61, 61); padding: 3px 5px; border-radius: 5px; border: 4px solid rgb(245, 61, 61); border-image: none; color: rgb(255, 255, 255); line-height: 15px; font-family: Tahoma, Arial, Verdana; font-size: 12px; display: inherit; white-space: nowrap; position: relative; z-index: 20; min-width: inherit; -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.3));
+}
+.bubbleContainer .bubble::after {
+	border: solid transparent; border-image: none; top: 100%; width: 0px; height: 0px; position: absolute; content: " "; pointer-events: none;
+}
+.bubbleContainer .bubble::before {
+	border: solid transparent; border-image: none; top: 100%; width: 0px; height: 0px; position: absolute; content: " "; pointer-events: none;
+}
+.bubbleContainer .bubble::after {
+	border-width: 10px; border-color: rgb(245, 61, 61) rgba(245, 61, 61, 0) rgba(245, 61, 61, 0); left: 50%; margin-left: -10px;
+}
+.bubbleContainer .bubble::before {
+	border-width: 16px; border-color: rgb(245, 61, 61) rgba(245, 61, 61, 0) rgba(245, 61, 61, 0); left: 50%; margin-left: -16px;
+}
+.bubbleContainer a {
+	color: rgb(255, 255, 255); font-weight: bold; text-decoration: underline; cursor: pointer;
+}
+#joinlabel .bubbleContainer.stickyBubble {
+	left: 210px; top: -53px; right: auto !important; position: absolute;
+}
+#sharearrow .bubbleContainer.stickyBubble {
+	left: -20px; top: -53px; right: auto !important; position: absolute;
+}
+#loading-box {
+	border-radius: 5px; left: 50%; top: 50%; width: 400px; height: 150px; margin-top: -75px; margin-left: -200px; position: absolute; opacity: 0; background-color: white;
+}
+#loading-box .loading-caption {
+	top: 25px; color: rgb(255, 149, 13); padding-left: 10px; font-family: arial; font-size: 26px; font-weight: bold; position: relative;
+}
+.br_sa #loading-box .loading-caption {
+	top: -63px;
+}
+.os_mac.br_ff #loading-box .loading-caption {
+	top: -63px;
+}
+#loading-box .over-loader {
+	top: 40px; width: 60px; height: 60px; display: inline-block; position: relative; min-height: auto; background-color: white;
+}
+.br_sa #loading-box .over-loader {
+	top: 0px;
+}
+.os_mac.br_ff #loading-box .over-loader {
+	top: 0px;
+}
+#loading-box .over-loader .loader.simple {
+	width: 50px; height: 50px;
+}

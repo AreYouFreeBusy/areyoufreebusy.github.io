@@ -1,0 +1,1277 @@
+﻿    <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="os_win br_ch js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths blobconstructor cors json js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths blobconstructor cors json todataurljpeg todataurlwebp datauri" style="">
+<head>
+    <title>join.me | Instant Screen Sharing, Online Meetings &amp; Web Conferencing</title>
+    <noscript>
+        &lt;meta http-equiv="refresh" content="0;ErrorPages/NoJavaScript.aspx" /&gt;
+    </noscript>
+    <meta name="description" content="Free screen sharing, online meetings and team collaboration are all fast and easy at join.me - no registration required. Show work who’s boss.">
+    <meta http-equiv="cache-control" content="no-store, no-cache, max-age=0, must-revalidate">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link type="text/css" rel="Stylesheet" href="Loader.css">
+    <link type="text/css" rel="Stylesheet" href="ui.css">
+    <link type="text/css" rel="Stylesheet" href="joinme.css">
+    <link type="text/css" rel="Stylesheet" href="public2.css">
+    <link type="text/css" rel="Stylesheet" href="layoutB.css">
+    <link type="text/css" rel="Stylesheet" href="jquery-ui-1.8.custom.css">
+    <link type="text/css" rel="Stylesheet" href="Includer.css">
+    <link type="text/css" rel="Stylesheet" href="myjoinme.css">
+    <link type="text/css" rel="Stylesheet" href="loggedin.css">
+    <style type="text/css">div.joci_rel.jm_beta div.joci_abs { background-position: 0px 0px; }</style>
+
+    <!-- begin required by FreeBusy -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- end required by FreeBusy -->
+</head>
+<body style="text-align: center; margin: 0; height:100%; overflow: hidden;" class="layoutB">
+    <script src="https://freebusy.io/scripts/pick-a-time/button.js"></script>
+    <script type="text/javascript">
+    freebusy.pickatime.load(function () {
+      freebusy.pickatime.button.init(
+          {
+            organizer: {
+              email: "milelogrtest01@gmail.com"
+            },
+            durationInMin: "60min",
+            title: "test event",
+            location: "test location",
+            attendees: [
+              {
+                email: "friend@contoso.com"
+              }
+            ]
+          }
+      );
+      freebusy.pickatime.button.result = function (startTime) {
+          alert("you selected: " + startTime);
+      }
+    });
+    </script>
+
+    <div id="ImgBg" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 0; overflow: hidden; opacity: 1;">
+        <img src="https://www.join.me/Common/Images/Background/socks.jpg" id="backgroundimage" style="width: 100%; height: 100%;">
+    </div>
+    
+    
+
+    <div id="mainWrapper">
+        <form method="post" class="mainForm" onsubmit="return false;" style="position:relative;z-index:1000;">
+
+            <div class="contentwindow loggedin" id="maincontentwindow" style="opacity: 1; margin-top: 134px;">
+                <div class="mainBgGray" style="background-color: #fff"></div>
+                <div>
+
+
+
+
+
+<div id="jm_maincontent" style="padding: 15px; width: 714px; visibility: visible;">
+
+<link type="text/css" rel="Stylesheet" href="Includer.css">
+
+
+
+    <div id="tabsystem_top">
+        <div id="menuItem_myjoinme" onclick="JoinMe.Content.updateMainContent(&quot;/MyJoinMe.aspx&quot;);" style=""><a class="sprt"></a><b class="sprt"></b>start</div><div id="menuItem_schedulerpagesmeetinglist" onclick="JoinMe.Content.navigateToUrl(function() { JM.Meetings.App.loadTab(0) });" class="selected"><a class="sprt"></a><b class="sprt"></b>my meetings</div><div id="menuItem_mylicenses" onclick="top.location.href = &quot;/admin/&quot;;"><a class="sprt"></a><b class="sprt"></b>users</div><div id="menuItem_firstlevelmyaccount" onclick="if (JoinMe.Page.b_IsUserLoggedInByEncryptedCookie) JoinMe.Page.s_RedirectTo = &quot;/Purchase/CreditCardInfo.aspx&quot;;JoinMe.Content.updateMainContent(&quot;/Purchase/CreditCardInfo.aspx&quot;);" style=""><a class="sprt"></a><b class="sprt"></b>billing</div><div id="menuItem_firstlevelmysettings" onclick="JoinMe.Content.updateMainContent(&quot;/BigIdea/Settings/Audio/Pages/AudioSettings.aspx&quot;);" style=""><a class="sprt"></a><b class="sprt"></b>meeting settings</div><div id="menuItem_equote" onclick="fn_v_GoTo(&quot;&quot;);" style="opacity: 0; display: none;"><a class="sprt"></a><b class="sprt"></b>new eQuote!</div>
+    </div>
+
+
+
+
+<div class="roundedContainer">
+    <div class="meetingTabs" style="display: none;"><div id="upcomingMeetings" class="inliner tab upcomingMeetings selected">upcoming<div class="tabArrow selected"></div></div><div id="historyMeetings" class="inliner tab historyMeetings">history<div class="tabArrow"></div></div><div id="recordings" class="inliner tab recordings">recordings<div class="tabArrow"></div></div><div id="reports" class="inliner tab reports">reports<div class="tabArrow"></div></div></div>
+    
+
+<link rel="stylesheet" type="text/css" href="Includer.css">
+
+
+
+
+<div id="meetingDetails" style="">
+    <div id="meetingTemplate">
+        <div class="meeting">
+        <div class="header">
+           <span data-bind="text: title">test conf call</span>
+        </div>
+        <div class="content">
+            <table>
+                <tbody>
+                    <tr id="subject">
+                        <td><label>Subject:</label></td>
+                        <td colspan="2">
+                            <input id="meetingname" type="text" class="jm" maxlength="100" placeholder="Enter meeting subject" data-bind="hasfocus: nameHasFocus, value: name, css: {error: showNameValidator}, valueUpdate: 'afterkeydown', textbox: true">
+                            <div class="validator inliner" data-bind="visible: showNameValidator" style="display: none;">
+                                <div class="validator">
+                                    <span class="arrow sprt">&nbsp;</span>
+                                    <div class="inliner wrap">
+                                        <span class="valmessage">Subject required</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr id="share">
+                        <td><label>Meeting code:</label></td>
+                        <td>
+                            <input type="radio" id="personallinkradio" name="code" value="personallinkradio" onclick="JM.WebsiteTracking.Track('Scheduler_Upcoming_MeetingDetails_PersonalLinkRadioClicked', { category: 'join.me Web Scheduler' }, JM.WebsiteTracking.SegmentIntegrations.ALL);" data-bind="checked: isPersonalUrlMeeting, enable: hasPersonalUrl " disabled=""><label for="personallinkradio" class="meetingtypelabel disabledlabel" data-bind="css:{disabledlabel: !hasPersonalUrl}">personal link</label><span id="personalLink" data-bind="text: personalMeetingCode, visible: isPersonalUrlMeeting() == 'personallinkradio'" style="display: none;">https://join.me/null</span><span class="createpersonal" data-bind="visible: !hasPersonalUrl">(<a href="#" onclick="return JoinMe.Content.navigateToUrl('/');">create a personal link first</a>) </span> <br>
+                            <input type="radio" id="onetimeradio" name="code" value="onetimeradio" onclick="JM.WebsiteTracking.Track('Scheduler_Upcoming_MeetingDetails_OneTimeCodeRadioClicked', { category: 'join.me Web Scheduler' }, JM.WebsiteTracking.SegmentIntegrations.ALL);" data-bind="checked: isPersonalUrlMeeting"><label for="onetimeradio" class="meetingtypelabel">one-time code</label><span id="oneTimeCode" data-bind="text: onetimeMeetingCode, visible: isPersonalUrlMeeting() == 'onetimeradio'"></span>
+                        </td>
+                    </tr>
+                    <tr class="horizontalsep"><td colspan="10"></td></tr>
+                    <tr id="starttr" data-bind="with: dateModule">
+                        <td><label>Start:</label></td>
+                        <td colspan="3">
+                            <input type="text" class="jm hasDatepicker" id="startdate" data-bind="datepicker: startDate, datepickerOptions: { dateFormat: 'M/dd/yy', maxDate: maximumTime}, minDate: calendarStartDate">
+                            <input type="text" id="starttime" class="timepicker jm ui-timepicker-input" data-bind="timepicker: startTime, timepickeroptions:{showDuration: false, maxTime: '11:30pm'}, minTime: calendarStartMinTime" autocomplete="off">
+                            <div id="starttimearrow" class="sprt timearrow inliner" data-bind="click: startTimeToggle"></div>                          
+                            <div class="localtimezone inliner" id="localtimezonecontrol">
+                                 <div class="tz inliner ltzo" onclick="JM.WebsiteTracking.Track('Scheduler_Upcoming_MeetingDetails_LocalTimezoneChangerComboClicked', { category: 'join.me Web Scheduler' }, JM.WebsiteTracking.SegmentIntegrations.ALL);" data-bind="text: selectedTimeZoneNode().NodeText, click: timeZoneControlToggle">(UTC-08:00) Baja California</div>
+                                 <div class="tzt ph inliner ltzo" id="timezone" onclick="JM.WebsiteTracking.Track('Scheduler_Upcoming_MeetingDetails_LocalTimezoneChangerComboItemClicked', { category: 'join.me Web Scheduler' }, JM.WebsiteTracking.SegmentIntegrations.ALL);" data-bind="timeZoneControl: timeZoneControlIsExpanded, globalTimZoneNode: selectedTimeZoneNode" style="display: none;"></div>
+                                 <div class="sprt timezoneopenerarrow inliner ltzo" id="timezoneopener" data-bind="click: timeZoneControlToggle"></div>
+                             </div>
+                        </td>
+                    </tr>
+                    <tr id="end" data-bind="with: dateModule">
+                        <td><label>End:</label></td>
+                        <td colspan="2">
+                            <input type="text" class="jm hasDatepicker" id="enddate" data-bind="datepicker: endDate, datepickerOptions: { dateFormat: 'M/dd/yy'}, minDate: calendarEndMinDate, maxDate: calendarEndDate">
+                            <input type="text" id="endtime" class="timepicker jm ui-timepicker-input" data-bind="timepicker: endTime, timepickeroptions:{showDuration: true }, minTime: calendarEndMinTime, maxTime: calendarEndMaxTime, intervalStartTime: durationIntervalStart, selectedDate: selectedEndDate" name="endtimetimepicker" autocomplete="off">
+                            <div id="endtimearrow" class="sprt timearrow inliner" data-bind="click: endTimeToggle"></div>
+                        </td>
+                    </tr>
+                    <tr id="conflicts" class="alert" data-bind="with: dateModule">
+                        <td></td>
+                        <td colspan="2">
+                            <!-- Begin FreeBusy Pick-A-Time button -->
+                            <div style="height: 50px;">
+                                <div id="freebusy-button"></div>
+                            </div>
+                            <!-- End FreeBusy Pick-A-Time button -->
+                           <div class="conflictheader" data-bind="visible: conflictMeetings().length>0" style="display: none;"><span class="sprt_l ConfAdjWarningImg"></span><span class="txt">Conflicts with other join.me meetings:</span></div>
+                           <div class="conflictcontent" data-bind="foreach: conflictMeetings"></div>
+                        </td>
+                    </tr>
+                    <tr class="horizontalsep"><td colspan="10"></td></tr>
+                    <tr id="participantsEmail">
+                       <td><label>Participants:</label></td>
+                       <td colspan="1" data-bind="with: participantsModule">
+                           <span class="inliner participanttb">
+                               <input id="email" type="text" class="jm ui-autocomplete-input" placeholder="Enter email addresses" data-bind="value: emailField, valueUpdate: 'afterkeydown', ko_autocomplete:{ source: favorites, select: addFromFavorites,  minLength: 0},  event: { keypress: addOnEnter }" autocomplete="off"><span role="status" aria-live="polite" class="ui-helper-hidden-accessible">No search results.</span>
+                               <div class="sprt participantsarrow inliner" data-bind="jqAutoCombo: 'email'">&nbsp;</div>
+                               <button type="button" id="addParticipants" class="jm" onclick="JM.WebsiteTracking.Track('Scheduler_Upcoming_MeetingDetails_AddButtonClicked', { category: 'join.me Web Scheduler' }, JM.WebsiteTracking.SegmentIntegrations.ALL);" data-bind="click: add, enable: emailField.isValid" disabled="">add</button>
+                           </span>
+                       </td>
+                       <td class="previewLinkContainer">
+                           <span class="preview" id="preview" onclick="JM.WebsiteTracking.Track('Scheduler_Upcoming_MeetingDetails_ViewInvitationLinkClicked', { category: 'join.me Web Scheduler' }, JM.WebsiteTracking.SegmentIntegrations.ALL);" data-bind="click: showPreview, visible: showPreviewLinkIsVsible" style="display: none;">view invitation</span>
+                       </td>
+                    </tr>
+                    <tr id="participants" data-bind="with: participantsModule">
+                        <td></td>
+                        <td colspan="3" style="padding-top: 10px">
+                            <span class="emptytxt" data-bind="visible: participants().length == 0" style="display: none;">no invitation will be sent</span>
+                            <span class="sprt orange_opener expanded" data-bind="css: {expanded: isExpanded},visible: participants().length >= 20" style="display: none;">&nbsp;</span>
+                            <a data-bind="visible: participants().length >= 20, text: participantsNumberText() + ' Participants', click: toggle" style="display: none;">2 Participants</a>
+                            <div class="cont" data-bind="visible: isExpanded, foreach: participants">
+                                <div class="item inliner" data-bind="event: {mouseover: toggleX, mouseout: toggleX}">
+                                    <span data-bind="text: email">milelogrtest01@gmail.com</span>
+                                    <span class="redX sprt" onclick="JM.WebsiteTracking.Track('Scheduler_Upcoming_MeetingDetails_DeleteParticipantIconClicked', { category: 'join.me Web Scheduler' }, JM.WebsiteTracking.SegmentIntegrations.ALL);" data-bind="visible: isXVisible, click: $parent.remove" style="display: none;">&nbsp;</span>
+                                </div>
+                            
+                                <div class="item inliner" data-bind="event: {mouseover: toggleX, mouseout: toggleX}">
+                                    <span data-bind="text: email">friend@contoso.com</span>
+                                    <span class="redX sprt" onclick="JM.WebsiteTracking.Track('Scheduler_Upcoming_MeetingDetails_DeleteParticipantIconClicked', { category: 'join.me Web Scheduler' }, JM.WebsiteTracking.SegmentIntegrations.ALL);" data-bind="visible: isXVisible, click: $parent.remove" style="display: none;">&nbsp;</span>
+                                </div>
+                            </div>
+                            <div class="cont"></div>
+                        </td>
+                    </tr>
+                    <tr id="notes" data-bind="with: notesModule">
+                         <td id="noteslabel"><label>Notes:</label></td>
+                         <td colspan="2" class="ta">
+                            <textarea id="notes" rows="5" cols="20" class="jm" placeholder="(optional)" data-bind="value: notes, valueUpdate: 'afterkeydown', textbox: true"></textarea>
+                            <span class="count" data-bind="text: length">512</span>
+                         </td>
+                    </tr>
+                    <tr id="audio" class="alert" data-bind="with: audioModule">
+                        <td></td>
+                        <td colspan="3">
+                            <div data-bind="visible: PhoneNumbersChanged" style="padding-bottom: 12px; display: none;">
+                                <span class="sprt_l ConfAdjWarningImg"></span>
+                                <span class="txt">Some numbers you included before are no longer available.</span>
+                            </div>
+                            <div class="audioheader">
+                                <span class="sprt orange_opener" data-bind="css: {expanded: isExpanded}">&nbsp;</span><span data-bind="click: toggle">audio information in the invitation</span>
+                            </div>
+                            <div class="audiocontent" data-bind="visible: isExpanded" style="display: none;">
+                                <div data-bind="visible: isJMConferenceNumberUsed">
+                                    <div class="isjmconftxt">Include these conference numbers in the invitation:</div>
+                                    <div class="conferenceNumbers inliner" data-bind="foreach: conferenceNumbers, css: {error: showValidator}">
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner checked">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="US101"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">United States - Atlanta, GA</span>
+                                            <span class="number" data-bind="text: number">+1.404.801.3225</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner checked">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="US76"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">United States - Camden, DE</span>
+                                            <span class="number" data-bind="text: number">+1.302.202.5900</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner checked">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="US79"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">United States - Detroit, MI</span>
+                                            <span class="number" data-bind="text: number">+1.734.746.0035</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner checked">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="US57"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">United States - Hartford, CT</span>
+                                            <span class="number" data-bind="text: number">+1.860.970.0010</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner checked">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="US35"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">United States - Los Angeles, CA</span>
+                                            <span class="number" data-bind="text: number">+1.213.226.1066</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner checked">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="US36"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">United States - New York, NY</span>
+                                            <span class="number" data-bind="text: number">+1.646.307.1990</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner checked">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="US89"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">United States - San Francisco, CA</span>
+                                            <span class="number" data-bind="text: number">+1.415.655.0381</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner checked">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="US90"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">United States - Tampa, FL</span>
+                                            <span class="number" data-bind="text: number">+1.813.769.0500</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner checked">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="US100"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">United States - Washington, DC</span>
+                                            <span class="number" data-bind="text: number">+1.202.602.1295</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="AR34"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Argentina - Buenos Aires</span>
+                                            <span class="number" data-bind="text: number">+54.11.5352.8217</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="AU49"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Australia - Central-West</span>
+                                            <span class="number" data-bind="text: number">+61.8.7282.4006</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="AU50"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Australia - North-East</span>
+                                            <span class="number" data-bind="text: number">+61.7.3150.4013</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="AU51"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Australia - South-East</span>
+                                            <span class="number" data-bind="text: number">+61.3.8820.4056</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="AU3"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Australia - Sydney</span>
+                                            <span class="number" data-bind="text: number">+61.2.9191.6319</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="AT16"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Austria - national</span>
+                                            <span class="number" data-bind="text: number">+43.720.881.959</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="BH75"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Bahrain - national</span>
+                                            <span class="number" data-bind="text: number">+973.1619.9273</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="BE53"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Belgium - Brussels</span>
+                                            <span class="number" data-bind="text: number">+32.2.808.8662</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="BE6"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Belgium - Brussels</span>
+                                            <span class="number" data-bind="text: number">+32.2.588.2771</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="BR83"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Brazil - Belo Horizonte</span>
+                                            <span class="number" data-bind="text: number">+55.31.3500.5101</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="BR93"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Brazil - Brasilia</span>
+                                            <span class="number" data-bind="text: number">+55.61.3550.0430</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="BR92"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Brazil - Curitiba</span>
+                                            <span class="number" data-bind="text: number">+55.41.3500.2121</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="BR94"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Brazil - Porto Alegre</span>
+                                            <span class="number" data-bind="text: number">+55.51.3500.1401</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="BR84"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Brazil - Rio de Janeiro</span>
+                                            <span class="number" data-bind="text: number">+55.21.3500.1441</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="BR317"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Brazil - Sao Paulo</span>
+                                            <span class="number" data-bind="text: number">+55.11.3198.1366</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="BR19"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Brazil - Sao Paulo</span>
+                                            <span class="number" data-bind="text: number">+55.11.4130.1068</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="BG39"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Bulgaria - Sofia</span>
+                                            <span class="number" data-bind="text: number">+359.2.437.2476</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="CA62"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Canada - Brantford</span>
+                                            <span class="number" data-bind="text: number">+1.226.401.9363</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="CA65"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Canada - Charlottetown</span>
+                                            <span class="number" data-bind="text: number">+1.902.200.0149</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="CA64"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Canada - Edmonton</span>
+                                            <span class="number" data-bind="text: number">+1.587.415.0177</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="CA70"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Canada - Montreal</span>
+                                            <span class="number" data-bind="text: number">+1.514.800.1233</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="CA45"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Canada - Ottawa</span>
+                                            <span class="number" data-bind="text: number">+1.613.699.9318</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="CA63"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Canada - Quebec</span>
+                                            <span class="number" data-bind="text: number">+1.581.705.4251</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="CA77"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Canada - Saskatchewan</span>
+                                            <span class="number" data-bind="text: number">+1.306.400.1019</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="CA61"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Canada - Toronto</span>
+                                            <span class="number" data-bind="text: number">+1.647.977.2648</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="CA80"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Canada - Vancouver</span>
+                                            <span class="number" data-bind="text: number">+1.778.654.8779</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="CA103"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Canada - Winnipeg</span>
+                                            <span class="number" data-bind="text: number">+1.204.500.0399</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="CL29"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Chile - Santiago</span>
+                                            <span class="number" data-bind="text: number">+56.22.582.8713</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="CO259"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Colombia - Bogota</span>
+                                            <span class="number" data-bind="text: number">+57.1.508.6929</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="CR87"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Costa Rica - national</span>
+                                            <span class="number" data-bind="text: number">+506.4001.5382</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="HR40"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Croatia - Zagreb</span>
+                                            <span class="number" data-bind="text: number">+385.1.775.7101</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="CY318"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Cyprus - Nicosia</span>
+                                            <span class="number" data-bind="text: number">+357.22.008854</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="CZ67"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Czech Republic - Prague</span>
+                                            <span class="number" data-bind="text: number">+420.255.719.145</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="CZ28"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Czech Republic - Prague</span>
+                                            <span class="number" data-bind="text: number">+420.228.881.313</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="DK18"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Denmark - national</span>
+                                            <span class="number" data-bind="text: number">+45.6991.8003</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="DO96"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Dominican Republic - Santo Domingo</span>
+                                            <span class="number" data-bind="text: number">+1.829.607.2080</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="FI7"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Finland - Helsinki</span>
+                                            <span class="number" data-bind="text: number">+358.9.4259.9698</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="FR73"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">France - national</span>
+                                            <span class="number" data-bind="text: number">+33.9.7518.1777</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="FR15"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">France - Paris</span>
+                                            <span class="number" data-bind="text: number">+33.1.8288.3590</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="DE46"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Germany - Berlin</span>
+                                            <span class="number" data-bind="text: number">+49.30.2240.3071</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="DE55"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Germany - Cologne</span>
+                                            <span class="number" data-bind="text: number">+49.221.982.0381</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="DE23"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Germany - Frankfurt</span>
+                                            <span class="number" data-bind="text: number">+49.69.9753.3131</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="GR8"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Greece - Athens</span>
+                                            <span class="number" data-bind="text: number">+30.21.1198.2986</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="HK59"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Hong Kong - national</span>
+                                            <span class="number" data-bind="text: number">+852.5808.1760</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="HK22"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Hong Kong - national</span>
+                                            <span class="number" data-bind="text: number">+852.5808.1989</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="HU43"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Hungary - Budapest</span>
+                                            <span class="number" data-bind="text: number">+36.1.700.8899</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="HU66"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Hungary - Budapest</span>
+                                            <span class="number" data-bind="text: number">+36.1.848.0474</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="IE68"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Ireland - Dublin</span>
+                                            <span class="number" data-bind="text: number">+353.1.531.4868</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="IE24"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Ireland - Dublin</span>
+                                            <span class="number" data-bind="text: number">+353.1.513.4791</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="IL25"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Israel - Tel Aviv</span>
+                                            <span class="number" data-bind="text: number">+972.3.763.0434</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="IT58"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Italy - Milan</span>
+                                            <span class="number" data-bind="text: number">+39.02.9475.2989</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="IT5"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Italy - Rome</span>
+                                            <span class="number" data-bind="text: number">+39.06.8339.9900</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="JP13"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Japan - Tokyo</span>
+                                            <span class="number" data-bind="text: number">+81.3.4579.5983</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="KR71"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Korea, Republic of - South Korea</span>
+                                            <span class="number" data-bind="text: number">+82.26.022.2310</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="LV72"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Latvia - Riga</span>
+                                            <span class="number" data-bind="text: number">+371.6616.3227</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="LT261"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Lithuania - Vilnius</span>
+                                            <span class="number" data-bind="text: number">+370.521.40705</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="LU26"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Luxembourg - national</span>
+                                            <span class="number" data-bind="text: number">+352.20.880.005</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="MY102"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Malaysia - Kuala Lumpur</span>
+                                            <span class="number" data-bind="text: number">+60.3.9212.1197</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="MT280"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Malta - National</span>
+                                            <span class="number" data-bind="text: number">+356.2778.1234</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="MX88"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Mexico - Guadalajara</span>
+                                            <span class="number" data-bind="text: number">+52.33.4162.2240</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="MX20"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Mexico - Mexico City</span>
+                                            <span class="number" data-bind="text: number">+52.55.4631.9922</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="MX82"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Mexico - Monterrey</span>
+                                            <span class="number" data-bind="text: number">+52.81.4770.1958</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="NL44"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Netherlands - Amsterdam</span>
+                                            <span class="number" data-bind="text: number">+31.20.808.3218</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="NL4"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Netherlands - Amsterdam</span>
+                                            <span class="number" data-bind="text: number">+31.20.262.0571</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="NZ9"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">New Zealand - Auckland</span>
+                                            <span class="number" data-bind="text: number">+64.9.951.8390</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="NZ98"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">New Zealand - Christchurch</span>
+                                            <span class="number" data-bind="text: number">+64.3.288.0243</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="NZ97"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">New Zealand - Wellington</span>
+                                            <span class="number" data-bind="text: number">+64.4.488.0310</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="NO91"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Norway - Oslo</span>
+                                            <span class="number" data-bind="text: number">+47.2.396.1004</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="NO30"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Norway - Oslo</span>
+                                            <span class="number" data-bind="text: number">+47.2.199.9401</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="PA31"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Panama - Panama City</span>
+                                            <span class="number" data-bind="text: number">+507.836.5977</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="PE33"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Peru - Lima</span>
+                                            <span class="number" data-bind="text: number">+51.1.707.5722</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="PL47"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Poland - Warsaw</span>
+                                            <span class="number" data-bind="text: number">+48.22.397.0104</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="PT17"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Portugal - national</span>
+                                            <span class="number" data-bind="text: number">+351.308.800.816</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="PR85"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Puerto Rico - San Juan</span>
+                                            <span class="number" data-bind="text: number">+1.787.773.1830</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="RO42"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Romania - Bucharest</span>
+                                            <span class="number" data-bind="text: number">+40.31.630.2291</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="RU41"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Russian Federation - Moscow</span>
+                                            <span class="number" data-bind="text: number">+7.495.777.3554</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="SG14"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Singapore - national</span>
+                                            <span class="number" data-bind="text: number">+65.3158.1842</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="SK27"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Slovakia - Bratislava</span>
+                                            <span class="number" data-bind="text: number">+421.2.3345.6680</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="SI38"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Slovenia - Ljubljana</span>
+                                            <span class="number" data-bind="text: number">+386.1.828.0252</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="ZA69"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">South Africa - Johannesburg</span>
+                                            <span class="number" data-bind="text: number">+27.10.500.9591</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="ZA21"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">South Africa - Johannesburg</span>
+                                            <span class="number" data-bind="text: number">+27.10.590.4610</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="ES95"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Spain - Barcelona</span>
+                                            <span class="number" data-bind="text: number">+34.93.220.1484</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="ES48"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Spain - Madrid</span>
+                                            <span class="number" data-bind="text: number">+34.91.123.0202</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="SE54"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Sweden - Stockholm</span>
+                                            <span class="number" data-bind="text: number">+46.8.4030.8819</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="SE11"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Sweden - Stockholm</span>
+                                            <span class="number" data-bind="text: number">+46.8.4030.9107</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="CH12"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Switzerland - Zurich</span>
+                                            <span class="number" data-bind="text: number">+41.43.508.1539</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="CH60"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Switzerland - Zurich</span>
+                                            <span class="number" data-bind="text: number">+41.44.508.3055</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="TR81"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Turkey - Istanbul</span>
+                                            <span class="number" data-bind="text: number">+90.216.988.0264</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="UA52"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Ukraine - Kiev</span>
+                                            <span class="number" data-bind="text: number">+380.443.92.0739</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="UA37"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Ukraine - national</span>
+                                            <span class="number" data-bind="text: number">+380.893.23.9951</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="UK99"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">United Kingdom - Cambridge</span>
+                                            <span class="number" data-bind="text: number">+44.1223.85.9774</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="UK56"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">United Kingdom - London</span>
+                                            <span class="number" data-bind="text: number">+44.20.3582.4515</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="UK2"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">United Kingdom - Manchester</span>
+                                            <span class="number" data-bind="text: number">+44.161.820.1607</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="UK74"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">United Kingdom - National</span>
+                                            <span class="number" data-bind="text: number">+44.33.0088.2634</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    
+                                        <div class="audiorow" data-bind="{id: id}">
+                                           <span class="checkbox inliner">
+                                                 <span class="sprt sprite" data-bind="attr:{id: id}, checkbox: $parent.selectedjmConferenceIds" id="VE32"></span>
+                                            </span>
+                                            <span class="name" data-bind="text: name">Venezuela - Caracas</span>
+                                            <span class="number" data-bind="text: number">+58.212.710.2107</span>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="validator inliner" data-bind="visible: showValidator" style="display: none;">
+                                       <div class="validator">
+                                           <span class="arrow sprt">&nbsp;</span>
+                                           <div class="inliner wrap">
+                                               <span class="valmessage">At least one number required</span>
+                                           </div>
+                                       </div>
+                                    </div>
+                                    <div style="padding-top: 8px;" data-bind="fadeVisible: isNewFlow ||  (!isNewFlow &amp;&amp; changedNumbersOnUi)">
+                                        <input id="savenumbers" type="checkbox" data-bind="checked: isSaveNumbersChecked">
+                                        <label for="savenumbers">Apply these settings to all new meetings</label>                                 
+                                    </div>
+                                    <div class="isjmconftxt2">
+                                        Want to use your own conference line?
+                                    </div>
+                                    <div class="isjmconftxt3">
+                                        Make the change under 'meeting settings' and schedule a new meeting.
+                                    </div>
+                                </div>
+                                <div class="owninfo" data-bind="visible: !isJMConferenceNumberUsed" style="display: none;">
+                                    <div class="owninfotable">
+                                        <div class="txt1">Your own conference line will be included in the invitation:</div>
+                                        <div class="owninfolabel">dial-in number:</div><div class="owninfovalue" data-bind="text: dialInNumber"></div>
+                                        <div class="clear"></div>
+                                        <div class="owninfolabel">access code:</div><div class="owninfovalue" data-bind="text: accessCode"></div>
+                                        <div class="clear"></div>
+                                        <div class="isjmconftxt2">
+                                           Want to use a different conference line?
+                                        </div>
+                                        <div class="isjmconftxt3">
+                                           Make the change under 'meeting settings' and schedule a new meeting.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="buttons">
+
+            <button type="button" class="jm big" id="savemeeting" onclick="JM.WebsiteTracking.Track('Scheduler_Upcoming_MeetingDetails_ScheduleButtonClicked', { category: 'join.me Web Scheduler' }, JM.WebsiteTracking.SegmentIntegrations.ALL);" data-bind="
+                    click: saveToJS,
+                    enable: formIsValid() &amp;&amp; ( (modificationType == JM.Scheduler.Enums.MeetingModificationType.Create) || (modificationType == JM.Scheduler.Enums.MeetingModificationType.Duplicate) || (modificationType == JM.Scheduler.Enums.MeetingModificationType.DuplicateHistory) ||
+                            (isDraft &amp;&amp; modificationType == JM.Scheduler.Enums.MeetingModificationType.Edit) ),
+                    visible: (modificationType == JM.Scheduler.Enums.MeetingModificationType.Create) || (modificationType == JM.Scheduler.Enums.MeetingModificationType.Duplicate) || (modificationType == JM.Scheduler.Enums.MeetingModificationType.DuplicateHistory) || (isDraft &amp;&amp; modificationType == JM.Scheduler.Enums.MeetingModificationType.Edit)">
+                schedule
+            </button>
+            
+            <button type="button" class="jm big" id="updateschedule" onclick="JM.WebsiteTracking.Track('Scheduler_Upcoming_MeetingDetails_UpdateScheduleButtonClicked', { category: 'join.me Web Scheduler' }, JM.WebsiteTracking.SegmentIntegrations.ALL);" data-bind="
+                    click: saveToJS,
+                    enable: formIsDirty() &amp;&amp; formIsValid(),
+                    visible: (modificationType == JM.Scheduler.Enums.MeetingModificationType.Edit) &amp;&amp; !isDraft" style="display: none;">
+                update schedule
+            </button>
+
+            <button type="button" class="jm light big" id="savedraft" onclick="JM.WebsiteTracking.Track('Scheduler_Upcoming_MeetingDetails_SaveDraftButtonClicked', { category: 'join.me Web Scheduler' }, JM.WebsiteTracking.SegmentIntegrations.ALL);" data-bind="
+                    click: saveToJS,
+                    enable: (((modificationType == JM.Scheduler.Enums.MeetingModificationType.Create) || (modificationType == JM.Scheduler.Enums.MeetingModificationType.Duplicate) || (modificationType == JM.Scheduler.Enums.MeetingModificationType.DuplicateHistory) ) &amp;&amp; formIsValid()) ||
+                            (modificationType == JM.Scheduler.Enums.MeetingModificationType.Edit &amp;&amp; formIsValid() &amp;&amp; formIsDirty()),
+                    visible: (modificationType == JM.Scheduler.Enums.MeetingModificationType.Create) || (modificationType == JM.Scheduler.Enums.MeetingModificationType.Duplicate) || (modificationType == JM.Scheduler.Enums.MeetingModificationType.DuplicateHistory) || (modificationType == JM.Scheduler.Enums.MeetingModificationType.Edit &amp;&amp; isDraft)">
+                save draft
+            </button>
+
+            <button type="button" class="jm light big" id="cancelmeeting" onclick="
+                    JM.WebsiteTracking.Track('Scheduler_Upcoming_MeetingDetails_BackToMeetingsOrDiscardChangesButtonClicked', { category: 'join.me Web Scheduler' }, JM.WebsiteTracking.SegmentIntegrations.ALL);
+                    JM.WebsiteTracking.Track('Scheduler_Navigation_UpcomingTabSeen', { category: 'join.me Web Scheduler' }, JM.WebsiteTracking.SegmentIntegrations.ALL);" data-bind="click: redirectToListPage, text: cancelButtonText">discard changes</button>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+
+
+
+</div>
+
+  </div>
+
+</div>
+            </div>
+        </form>
+        <div id="schedulerFullScreenBgGray"></div>
+        <div id="footerContainer" class="positioner">
+            <div id="footerInner" style="left: 258px;">
+                <div id="footerCopyright"> Copyright © 2010-2016 <strong>LogMeIn</strong>, Inc. All rights reserved. </div>   
+                <div id="footerLmiLogo" class="sprt" onclick="fn_v_GoTo('https://secure.logmein.com');"></div>       
+                <div id="footerLegaleseLink" onclick="window.top.location.href = '/termsandconditions';"><span>Terms of Service</span></div>     
+                <div id="footerPrivacyLink" onclick="window.top.location.href = '/privacypolicy';">|<span>Privacy</span></div>     
+                <a id="footerUninstallLink" target="_blank" href="http://help.join.me/knowledgebase/articles/290746-how-do-i-uninstall-join-me-/?lang=en">|<span>Uninstall</span></a>
+                <a id="footerSalesLink" target="_top" href="http://solutions.join.me/contact-sales/en">|<span>Sales</span></a>                     
+                <div id="footerQuestions">| <span>Questions: +1.877.251.8373</span></div>
+                <!--div id='footerPoweredby' onclick="javascript:fn_v_GoTo('https://logmein.com');">Powered by<b class="sprt"></b></div-->
+                <div class="clear"></div>
+                <div id="socialWrapper">
+                    <div id="socialIcons">          
+                        <div class="socialGroups" id="blogDisc">
+                            <a href="http://blog.logmein.com/category/products/join-me" target="_top" id="blog"></a>
+                        </div>
+                        <div class="socialGroups" id="fbLikeDisc">
+                            <a id="fbLikeIcon"></a>
+                            <div class="socialIconWindow" id="socialLikeWindow">
+                                
+                                    <div id="fb-root" style="position: absolute; left: -1000px; top: -1000px;"></div>
+                                
+                            </div>
+                        </div>
+                        <div class="socialGroups" id="shareDisc">
+                            <a id="shareIcon"></a>
+                            <div class="socialIconWindow" id="socialShareWindow">
+                                <a href="http://www.facebook.com/join.me" target="_top" id="facebook"></a>
+                                <a href="http://twitter.com/joinme" target="_top" id="twitter"></a>
+                                <a href="http://www.youtube.com/user/joinme?feature=mhum" target="_top" id="youtube"></a>
+                                <a href="http://www.linkedin.com/company/join-me?trk=fc_badge" target="_top" id="linkedin"></a>           
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div class="bubble white_bubble modalDialog" id="modalDialog" style="z-index: -1; top: -100000px; display: block;"><table cellspacing="0" cellpadding="0" class="round white_bubble"><tbody><tr class="white_bubble_top"><td class="sprt white_bubble_left"></td><td class="sprt_x white_bubble_middle"></td><td class="sprt white_bubble_right"></td></tr><tr class="white_bubble_middle"><td class="sprt_y white_bubble_left"></td><td class="white_bubble_middle"><div style="padding-top: 10px;"><div class="sprt modalclosebutton"></div><div></div><table class="button orange" cellpadding="0" cellspacing="0" id="closeButton" style="margin-top: 10px;"><tbody><tr><td class="sprt buttonleft"></td><td class="sprt_x buttonmiddle"><span tabindex="9999">close</span></td><td class="sprt buttonright"></td></tr></tbody></table></div></td><td class="sprt_y white_bubble_right"></td></tr><tr class="white_bubble_bottom"><td class="sprt white_bubble_left"></td><td class="sprt_x white_bubble_middle"></td><td class="sprt white_bubble_right"></td></tr></tbody></table></div><div class="bubbleback" style="z-index: -1; display: none;"></div><div class="bubble white_bubble modalDialog" id="tooltip"><table cellspacing="0" cellpadding="0" class="round white_bubble"><tbody><tr class="white_bubble_top"><td class="sprt white_bubble_left"></td><td class="sprt_x white_bubble_middle"></td><td class="sprt white_bubble_right"></td></tr><tr class="white_bubble_middle"><td class="sprt_y white_bubble_left"></td><td class="white_bubble_middle"></td><td class="sprt_y white_bubble_right"></td></tr><tr class="white_bubble_bottom"><td class="sprt white_bubble_left"></td><td class="sprt_x white_bubble_middle"></td><td class="sprt white_bubble_right"></td></tr></tbody></table><div class="joci_rel bottom"><div class="sprt joci_abs"></div></div></div><div id="880gd1_dialog" class="dialog" style="display: none;"><div class="dimmer"></div><div class="box"><div class="inner"><div class="sprt modalclosebutton" style="display: none;"></div><div><div class="pleasewait">                            <div class="sprt_l iconbutton animIcon loadinganim inliner" id="animIcon_66950">&nbsp;</div>                            <div class="inliner txt">Please wait ...</div>                            </div></div></div></div></div><div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"><div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"><a class="ui-datepicker-prev ui-corner-all ui-state-disabled" title="Prev"><span class="ui-icon ui-icon-circle-triangle-w">Prev</span></a><a class="ui-datepicker-next ui-corner-all" data-handler="next" data-event="click" title="Next"><span class="ui-icon ui-icon-circle-triangle-e">Next</span></a><div class="ui-datepicker-title"><span class="ui-datepicker-month">September</span>&nbsp;<span class="ui-datepicker-year">2016</span></div></div><table class="ui-datepicker-calendar"><thead><tr><th><span title="Monday">Mo</span></th><th><span title="Tuesday">Tu</span></th><th><span title="Wednesday">We</span></th><th><span title="Thursday">Th</span></th><th><span title="Friday">Fr</span></th><th class="ui-datepicker-week-end"><span title="Saturday">Sa</span></th><th class="ui-datepicker-week-end"><span title="Sunday">Su</span></th></tr></thead><tbody><tr><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">1</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">2</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">3</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">4</span></td></tr><tr><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">5</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">6</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">7</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">8</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">9</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">10</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">11</span></td></tr><tr><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">12</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">13</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">14</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">15</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">16</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">17</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">18</span></td></tr><tr><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">19</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">20</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">21</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">22</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">23</span></td><td class=" ui-datepicker-week-end ui-datepicker-days-cell-over  ui-datepicker-current-day ui-datepicker-today" data-handler="selectDay" data-event="click" data-month="8" data-year="2016"><a class="ui-state-default ui-state-highlight ui-state-active ui-state-hover" href="#">24</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="8" data-year="2016"><a class="ui-state-default" href="#">25</a></td></tr><tr><td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2016"><a class="ui-state-default" href="#">26</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2016"><a class="ui-state-default" href="#">27</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2016"><a class="ui-state-default" href="#">28</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2016"><a class="ui-state-default" href="#">29</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2016"><a class="ui-state-default" href="#">30</a></td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td></tr></tbody></table></div><ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" id="ui-id-1" tabindex="0" style="z-index: 1001; display: none;"></ul></body></html>
