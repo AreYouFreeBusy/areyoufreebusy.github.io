@@ -1,7 +1,7 @@
 ---
 layout: help
 title: "Pick the right meeting time in Google Calendar"
-type: chrome extension
+categories: chrome extension
 ---
 
 ##Pick the right meeting time in Google Calendar
