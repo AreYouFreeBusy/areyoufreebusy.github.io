@@ -1,6 +1,6 @@
 ---
 layout: help
-title: "schedule an event from gmail"
+title: "Schedule an event from gmail"
 categories: chrome extension
 ---
 
