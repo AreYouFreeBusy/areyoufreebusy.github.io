@@ -10,8 +10,8 @@ categories: chrome extension
  
  3. The first widget shows up on the bottom of your email enabling you to *pick and propose meeting* times into the email that suits everyone.
  
-> ![First widget](https://imgur.com/vly1fAa.png)
-> ![Calendar Availability ](http://imgur.com/ykbB85l.png)
+![First widget](https://imgur.com/vly1fAa.png)
+![Calendar Availability ](http://imgur.com/ykbB85l.png)
 
  4. The second widget, allows you to schedule an event straight away, picking a time that suits all attendees.
 
