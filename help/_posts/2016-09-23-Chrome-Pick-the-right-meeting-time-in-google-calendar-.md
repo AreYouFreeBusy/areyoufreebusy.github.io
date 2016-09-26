@@ -1,10 +1,8 @@
 ---
 layout: help
 title: "Pick the right meeting time in Google Calendar"
-type: Chrome extension
+categories: chrome extension
 ---
-
-##Pick the right meeting time in Google Calendar
 
 Start by opening **Google Calendar** 
 Create an event on **Google Calendar**
