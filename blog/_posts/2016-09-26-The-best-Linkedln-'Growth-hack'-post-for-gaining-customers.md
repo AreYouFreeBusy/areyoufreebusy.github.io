@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Best Linkedin 'Growth hack' post in gaining customers"
+title: "The Best Linkedin 'Growth hack' post for gaining customers"
 author: "Abdul"
 date: 2016-09-26
 ---
