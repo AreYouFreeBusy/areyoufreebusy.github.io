@@ -11,7 +11,7 @@ The good news is that [FreeBusy](https://freebusy.io/) - an online scheduling as
 
 [![Alt text](http://imgur.com/ZG7Rhsg.png)](https://www.youtube.com/watch?v=PTyj9c7oCB8&feature=youtu.be) 
 
-#How is this helpfull ?
+# How is this helpfull ?
 
 **1) Save hours on scheduling meetings every month**
 
