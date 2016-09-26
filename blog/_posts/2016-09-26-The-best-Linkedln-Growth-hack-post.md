@@ -5,7 +5,7 @@ author: "Abdul"
 date: 2016-09-26
 ---
 
-If you publish content on LinkedIn, you know how valuable your audience is, especially if you are in consulting, freelancing, sales, or recruiting. Your articles are a great source of prospect customers and starting a conversation right away is so important to establishing a relationship. Chances are however, that you wasted many hours each month reaching out and trying to schedule a simple meeting with them.
+If you publish content on LinkedIn, you know how valuable your audience is, especially if you are in consulting, freelancing, sales, or recruiting. Your articles are a great source of prospect customers and starting a conversation <!--more--> right away is so important to establishing a relationship. Chances are however, that you wasted many hours each month reaching out and trying to schedule a simple meeting with them.
 
 The good news is that [FreeBusy](https://freebusy.io/) - an online scheduling assistant that makes it easy to coordinate meetings - now integrates with LinkedIn so your prospects can book a a meeting with you right from your article. Here's how:
 
