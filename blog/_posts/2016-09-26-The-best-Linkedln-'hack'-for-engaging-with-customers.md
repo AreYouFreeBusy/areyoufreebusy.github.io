@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Best Linkedin 'hack' post for engaging with customers"
+title: "The Best Linkedin 'hack' for engaging with customers"
 author: "Abdul"
 date: 2016-09-26
 ---
