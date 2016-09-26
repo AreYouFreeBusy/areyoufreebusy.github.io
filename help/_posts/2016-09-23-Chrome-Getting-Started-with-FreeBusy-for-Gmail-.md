@@ -1,10 +1,10 @@
 ---
 layout: help
 title: "Getting started with FreeBusy for Gmail"
-categories: Chrome extension
+categories: chrome extension
 ---
 
-##Getting started with FreeBusy for Gmail
+## Getting started with FreeBusy for Gmail
 
  1. Install our [FreeBusy Chrome Extension](https://freebusy.io/chrome).
  2. Open your **inbox** on your *Gmail account* you'll now have two new **FreeBusy Widgets.**
