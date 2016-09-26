@@ -1,7 +1,7 @@
 ---
 layout: help
 title: "schedule an event from gmail"
-type: chrome extension
+categories: chrome extension
 ---
 
 Open your **Gmail account**
