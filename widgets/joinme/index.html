@@ -54,9 +54,6 @@
 
 
 
-    <div id="tabsystem_top">
-        <div id="menuItem_myjoinme" onclick="JoinMe.Content.updateMainContent(&quot;/MyJoinMe.aspx&quot;);" style=""><a class="sprt"></a><b class="sprt"></b>start</div><div id="menuItem_schedulerpagesmeetinglist" onclick="JoinMe.Content.navigateToUrl(function() { JM.Meetings.App.loadTab(0) });" class="selected"><a class="sprt"></a><b class="sprt"></b>my meetings</div><div id="menuItem_mylicenses" onclick="top.location.href = &quot;/admin/&quot;;"><a class="sprt"></a><b class="sprt"></b>users</div><div id="menuItem_firstlevelmyaccount" onclick="if (JoinMe.Page.b_IsUserLoggedInByEncryptedCookie) JoinMe.Page.s_RedirectTo = &quot;/Purchase/CreditCardInfo.aspx&quot;;JoinMe.Content.updateMainContent(&quot;/Purchase/CreditCardInfo.aspx&quot;);" style=""><a class="sprt"></a><b class="sprt"></b>billing</div><div id="menuItem_firstlevelmysettings" onclick="JoinMe.Content.updateMainContent(&quot;/BigIdea/Settings/Audio/Pages/AudioSettings.aspx&quot;);" style=""><a class="sprt"></a><b class="sprt"></b>meeting settings</div><div id="menuItem_equote" onclick="fn_v_GoTo(&quot;&quot;);" style="opacity: 0; display: none;"><a class="sprt"></a><b class="sprt"></b>new eQuote!</div>
-    </div>
 
 
 
@@ -93,6 +90,9 @@
                             </div>
                         </td>
                     </tr>
+                     <tr>
+                    <td><div style="padding-top:25px;"></div></td>
+                    </tr>
                     <tr id="share">
                         <td><label>Meeting code:</label></td>
                         <td>
@@ -104,7 +104,9 @@
                             (<a href="#" onclick="return JoinMe.Content.navigateToUrl('/');">create a personal link first</a>)
                         </td>
                     </tr>
-
+                    <tr>
+                    <td><div style="padding-top:25px;"></div></td>
+                    </tr>
                     <tr>
                         <td><label>Duration:</label></td>
                         <td>
@@ -117,6 +119,10 @@
                         </td>
                     </tr>
                     
+                    <tr>
+                    <td><div style="padding-top:25px;"></div></td>
+                    </tr>
+
                     <tr id="participantsEmail">
                        <td><label>Participants:</label></td>
                        <td colspan="1" data-bind="with: participantsModule">
@@ -138,15 +144,18 @@
                     <tr>
                         <td><label>Pick A Date:</label></td>
                         <td>
-                            <div id="freebusy-button"></div>
+                            <div onclick="getEventData();" id="freebusy-button"></div>
                         </td>
                     </tr>
                     
+                    <tr>
+                    <td><div style="padding-top:25px;"></div></td>
+                    </tr>
+
                     <tr id="notes" data-bind="with: notesModule">
                          <td id="noteslabel"><label>Notes:</label></td>
                          <td colspan="2" class="ta">
                             <textarea id="notes" rows="5" cols="20" class="jm" placeholder="(optional)" data-bind="value: notes, valueUpdate: 'afterkeydown', textbox: true"></textarea>
-                            <span class="count" data-bind="text: length">512</span>
                          </td>
                     </tr>
 
@@ -162,9 +171,13 @@
                             </div>
                         </td>
                     </tr>
+                    <tr>
+                    <td><div style="padding-top:25px;"></div></td>
+                    </tr>
                 </tbody>
             </table>
         </div>
+        
         <div class="buttons">
 
             <button type="button" class="jm big" id="savemeeting" onclick="JM.WebsiteTracking.Track('Scheduler_Upcoming_MeetingDetails_ScheduleButtonClicked', { category: 'join.me Web Scheduler' }, JM.WebsiteTracking.SegmentIntegrations.ALL);" data-bind="
@@ -194,6 +207,7 @@
                     JM.WebsiteTracking.Track('Scheduler_Upcoming_MeetingDetails_BackToMeetingsOrDiscardChangesButtonClicked', { category: 'join.me Web Scheduler' }, JM.WebsiteTracking.SegmentIntegrations.ALL);
                     JM.WebsiteTracking.Track('Scheduler_Navigation_UpcomingTabSeen', { category: 'join.me Web Scheduler' }, JM.WebsiteTracking.SegmentIntegrations.ALL);" data-bind="click: redirectToListPage, text: cancelButtonText">discard changes</button>
         </div>
+        <div style="padding-top:25px;"></div>
     </div>
     </div>
 </div>
@@ -210,86 +224,53 @@
             </div>
         </form>
         <div id="schedulerFullScreenBgGray"></div>
-        <div id="footerContainer" class="positioner">
-            <div id="footerInner" style="left: 258px;">
-                <div id="footerCopyright"> Copyright © 2010-2016 <strong>LogMeIn</strong>, Inc. All rights reserved. </div>   
-                <div id="footerLmiLogo" class="sprt" onclick="fn_v_GoTo('https://secure.logmein.com');"></div>       
-                <div id="footerLegaleseLink" onclick="window.top.location.href = '/termsandconditions';"><span>Terms of Service</span></div>     
-                <div id="footerPrivacyLink" onclick="window.top.location.href = '/privacypolicy';">|<span>Privacy</span></div>     
-                <a id="footerUninstallLink" target="_blank" href="http://help.join.me/knowledgebase/articles/290746-how-do-i-uninstall-join-me-/?lang=en">|<span>Uninstall</span></a>
-                <a id="footerSalesLink" target="_top" href="http://solutions.join.me/contact-sales/en">|<span>Sales</span></a>                     
-                <div id="footerQuestions">| <span>Questions: +1.877.251.8373</span></div>
-                <!--div id='footerPoweredby' onclick="javascript:fn_v_GoTo('https://logmein.com');">Powered by<b class="sprt"></b></div-->
-                <div class="clear"></div>
-                <div id="socialWrapper">
-                    <div id="socialIcons">          
-                        <div class="socialGroups" id="blogDisc">
-                            <a href="http://blog.logmein.com/category/products/join-me" target="_top" id="blog"></a>
-                        </div>
-                        <div class="socialGroups" id="fbLikeDisc">
-                            <a id="fbLikeIcon"></a>
-                            <div class="socialIconWindow" id="socialLikeWindow">
-                                
-                                    <div id="fb-root" style="position: absolute; left: -1000px; top: -1000px;"></div>
-                                
-                            </div>
-                        </div>
-                        <div class="socialGroups" id="shareDisc">
-                            <a id="shareIcon"></a>
-                            <div class="socialIconWindow" id="socialShareWindow">
-                                <a href="http://www.facebook.com/join.me" target="_top" id="facebook"></a>
-                                <a href="http://twitter.com/joinme" target="_top" id="twitter"></a>
-                                <a href="http://www.youtube.com/user/joinme?feature=mhum" target="_top" id="youtube"></a>
-                                <a href="http://www.linkedin.com/company/join-me?trk=fc_badge" target="_top" id="linkedin"></a>           
-                            </div>
-                        </div>
-                        <div class="clear"></div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
+ 
     </div>
 
 
-<div class="bubble white_bubble modalDialog" id="modalDialog" style="z-index: -1; top: -100000px; display: block;"><table cellspacing="0" cellpadding="0" class="round white_bubble"><tbody><tr class="white_bubble_top"><td class="sprt white_bubble_left"></td><td class="sprt_x white_bubble_middle"></td><td class="sprt white_bubble_right"></td></tr><tr class="white_bubble_middle"><td class="sprt_y white_bubble_left"></td><td class="white_bubble_middle"><div style="padding-top: 10px;"><div class="sprt modalclosebutton"></div><div></div><table class="button orange" cellpadding="0" cellspacing="0" id="closeButton" style="margin-top: 10px;"><tbody><tr><td class="sprt buttonleft"></td><td class="sprt_x buttonmiddle"><span tabindex="9999">close</span></td><td class="sprt buttonright"></td></tr></tbody></table></div></td><td class="sprt_y white_bubble_right"></td></tr><tr class="white_bubble_bottom"><td class="sprt white_bubble_left"></td><td class="sprt_x white_bubble_middle"></td><td class="sprt white_bubble_right"></td></tr></tbody></table></div><div class="bubbleback" style="z-index: -1; display: none;"></div><div class="bubble white_bubble modalDialog" id="tooltip"><table cellspacing="0" cellpadding="0" class="round white_bubble"><tbody><tr class="white_bubble_top"><td class="sprt white_bubble_left"></td><td class="sprt_x white_bubble_middle"></td><td class="sprt white_bubble_right"></td></tr><tr class="white_bubble_middle"><td class="sprt_y white_bubble_left"></td><td class="white_bubble_middle"></td><td class="sprt_y white_bubble_right"></td></tr><tr class="white_bubble_bottom"><td class="sprt white_bubble_left"></td><td class="sprt_x white_bubble_middle"></td><td class="sprt white_bubble_right"></td></tr></tbody></table><div class="joci_rel bottom"><div class="sprt joci_abs"></div></div></div><div id="880gd1_dialog" class="dialog" style="display: none;"><div class="dimmer"></div><div class="box"><div class="inner"><div class="sprt modalclosebutton" style="display: none;"></div><div><div class="pleasewait">                            <div class="sprt_l iconbutton animIcon loadinganim inliner" id="animIcon_66950">&nbsp;</div>                            <div class="inliner txt">Please wait ...</div>                            </div></div></div></div></div><div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"><div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"><a class="ui-datepicker-prev ui-corner-all ui-state-disabled" title="Prev"><span class="ui-icon ui-icon-circle-triangle-w">Prev</span></a><a class="ui-datepicker-next ui-corner-all" data-handler="next" data-event="click" title="Next"><span class="ui-icon ui-icon-circle-triangle-e">Next</span></a><div class="ui-datepicker-title"><span class="ui-datepicker-month">September</span>&nbsp;<span class="ui-datepicker-year">2016</span></div></div><table class="ui-datepicker-calendar"><thead><tr><th><span title="Monday">Mo</span></th><th><span title="Tuesday">Tu</span></th><th><span title="Wednesday">We</span></th><th><span title="Thursday">Th</span></th><th><span title="Friday">Fr</span></th><th class="ui-datepicker-week-end"><span title="Saturday">Sa</span></th><th class="ui-datepicker-week-end"><span title="Sunday">Su</span></th></tr></thead><tbody><tr><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">1</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">2</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">3</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">4</span></td></tr><tr><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">5</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">6</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">7</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">8</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">9</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">10</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">11</span></td></tr><tr><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">12</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">13</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">14</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">15</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">16</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">17</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">18</span></td></tr><tr><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">19</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">20</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">21</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">22</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">23</span></td><td class=" ui-datepicker-week-end ui-datepicker-days-cell-over  ui-datepicker-current-day ui-datepicker-today" data-handler="selectDay" data-event="click" data-month="8" data-year="2016"><a class="ui-state-default ui-state-highlight ui-state-active ui-state-hover" href="#">24</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="8" data-year="2016"><a class="ui-state-default" href="#">25</a></td></tr><tr><td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2016"><a class="ui-state-default" href="#">26</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2016"><a class="ui-state-default" href="#">27</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2016"><a class="ui-state-default" href="#">28</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2016"><a class="ui-state-default" href="#">29</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2016"><a class="ui-state-default" href="#">30</a></td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td></tr></tbody></table></div><ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" id="ui-id-1" tabindex="0" style="z-index: 1001; display: none;"></ul></body>
+</body>
     <script type="text/javascript">
-        var attendeeEmails = [];
-        var attendees = [];
-        var payload = {};
 
-        $('#savemeeting').click(function () {
-            getEventData();
-        });
+    var attendeeEmails = [];
+    var attendees = [];
+    var payload = {};
 
-        $('#addParticipants').click(function () {
-            addAttendee();
-        })
+    $('#savemeeting').click(function () {
+        freebusy.pickatime.button.proposal = getEventData();
+    });
 
-        function addAttendee() {
-            // for display
-            attendeeEmails.push($('#email').val());
-            $('#attendees').html(attendeeEmails.toString());
+    $('#addParticipants').click(function () {
+        addAttendee();
+    })
 
-            // for payload
-            var attendee = { email: $('#email').val() };
-            attendees.push(attendee);
-        }
+    function addAttendee() {
+        // for display
+        attendeeEmails.push($('#email').val());
+        $('#attendees').html(attendeeEmails.toString());
 
-        function getEventData (){
-            // get the form data
-            var title = $('#meetingname').val();
-            var durationInMin = $('#durationInMin').val();
-            var location = "NA";
+        // for payload
+        var attendee = { email: $('#email').val() };
+        attendees.push(attendee);
+    }
 
-            payload.organizer = {email:"michael@freebusy.io"};
-            payload.durationInMin = durationInMin;
-            payload.title = title;
-            payload.location = location;
-            payload.attendees = attendees;
+    function getEventData (){
+        alert('hey');
+        // get the form data
+        var title = $('#meetingname').val();
+        var durationInMin = $('#durationInMin').val();
+        var location = "NA";
 
-            console.log('payload: ' + JSON.stringify(payload));
-        }
+        payload.organizer = {email:"michael@freebusy.io"};
+        payload.durationInMin = durationInMin;
+        payload.title = title;
+        payload.location = location;
+        payload.attendees = attendees;
+
+        console.log('payload: ' + JSON.stringify(payload));
+        return JSON.stringify(payload);
+    }
+
+
 
     freebusy.pickatime.load(function () {
       freebusy.pickatime.button.init(
