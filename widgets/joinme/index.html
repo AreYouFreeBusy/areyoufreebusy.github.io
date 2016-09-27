@@ -144,7 +144,7 @@
                     <tr>
                         <td><label>Pick A Date:</label></td>
                         <td>
-                            <div onclick="getEventData();" id="freebusy-button"></div>
+                            <div id="freebusy-button"></div>
                         </td>
                     </tr>
                     
@@ -235,10 +235,6 @@
     var attendees = [];
     var payload = {};
 
-    $('#savemeeting').click(function () {
-        freebusy.pickatime.button.proposal = getEventData();
-    });
-
     $('#addParticipants').click(function () {
         addAttendee();
     })
@@ -253,8 +249,7 @@
         attendees.push(attendee);
     }
 
-    function getEventData (){
-        alert('hey');
+    function saveProposal (){
         // get the form data
         var title = $('#meetingname').val();
         var durationInMin = $('#durationInMin').val();
@@ -267,7 +262,7 @@
         payload.attendees = attendees;
 
         console.log('payload: ' + JSON.stringify(payload));
-        return JSON.stringify(payload);
+        freebusy.pickatime.button.proposal = JSON.stringify(payload);
     }
 
 
@@ -288,6 +283,9 @@
             ]
           }
       );
+      var button = document.getElementById("freebusy-button");
+      button.innerHTML =  "<a href='#' onclick='saveProposal()'><img src='https://freebusy.io/content/icons/freebusy-icon-white-32x32.png'/> Pick a time</a>";
+
       freebusy.pickatime.button.result = function (startTime) {
           alert("you selected: " + startTime);
       }
