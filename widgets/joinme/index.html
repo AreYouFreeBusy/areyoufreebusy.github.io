@@ -100,6 +100,9 @@
                                  </span> <br>
                             <input type="radio" id="onetimeradio" name="code" value="onetimeradio" onclick="JM.WebsiteTracking.Track('Scheduler_Upcoming_MeetingDetails_OneTimeCodeRadioClicked', { category: 'join.me Web Scheduler' }, JM.WebsiteTracking.SegmentIntegrations.ALL);" data-bind="checked: isPersonalUrlMeeting"><label for="onetimeradio" class="meetingtypelabel">one-time code</label><span id="oneTimeCode" data-bind="text: onetimeMeetingCode, visible: isPersonalUrlMeeting() == 'onetimeradio'"></span>
                         </td>
+                    </tr>
+                    <tr>
+                        <td></td>
                         <td>
                             (<a href="#" onclick="return JoinMe.Content.navigateToUrl('/');">create a personal link first</a>)
                         </td>
@@ -148,6 +151,14 @@
                         </td>
                     </tr>
                     
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div id="selectedDateLabel" style="display:none;">Your proposed meeting is scheduled for:</div>
+                            <div id="selectedDate"></div>
+                        </td>
+                    </tr>
+
                     <tr>
                     <td><div style="padding-top:25px;"></div></td>
                     </tr>
@@ -276,7 +287,10 @@
       button.innerHTML =  "<a href='#' onclick='saveProposal()'><img src='https://freebusy.io/content/icons/freebusy-icon-white-32x32.png'/> Pick a time</a>";
 
       freebusy.pickatime.button.result = function (startTime) {
-          alert("you selected: " + startTime);
+          //alert("you selected: " + startTime);
+          var date = new Date(startTime);
+          $('#selectedDateLabel').show();
+          $('#selectedDate').html(date);
       }
     });
     </script>
