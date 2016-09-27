@@ -254,36 +254,24 @@
         var title = $('#meetingname').val();
         var durationInMin = $('#durationInMin').val();
         var location = "NA";
+        var organizer = attendees[0];
 
-        payload.organizer = {email:"michael@freebusy.io"};
+        payload.organizer = organizer;
+
         payload.durationInMin = durationInMin;
         payload.title = title;
         payload.location = location;
         payload.attendees = attendees;
 
         console.log('payload: ' + JSON.stringify(payload));
-        freebusy.pickatime.button.proposal = JSON.stringify(payload);
+        freebusy.pickatime.button.proposal = payload;
         freebusy.pickatime.button.clicked();
     }
 
 
 
     freebusy.pickatime.load(function () {
-      freebusy.pickatime.button.init(
-          {
-            organizer: {
-              email: "milelogrtest01@gmail.com"
-            },
-            durationInMin: "60min",
-            title: "test event",
-            location: "test location",
-            attendees: [
-              {
-                email: "friend@contoso.com"
-              }
-            ]
-          }
-      );
+      freebusy.pickatime.button.init();
       var button = document.getElementById("freebusy-button");
       button.innerHTML =  "<a href='#' onclick='saveProposal()'><img src='https://freebusy.io/content/icons/freebusy-icon-white-32x32.png'/> Pick a time</a>";
 
