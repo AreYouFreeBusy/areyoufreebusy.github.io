@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Building Conversational Alexa Apps for Amazon Echo"
+keywords: "calendar, availability, meeting, schedule, scheduling, reimbursement, business, expenses"
 author: Stefan
 date: 2015-06-05
 ---
