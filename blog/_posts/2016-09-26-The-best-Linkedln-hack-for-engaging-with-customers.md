@@ -1,6 +1,8 @@
 ---
 layout: post
-title: "The Best Linkedin 'hack' for engaging with customers"
+title: "The Best Linkedln hack to help engage with customers"
+description: "New Linkedln Hack to schudle meetings with customers "
+keywords: "Linkedln Hacks, Engaging with customers on Linkedln, Linkedln Growth Hack, Linkedln puls post,"
 author: "Abdul"
 date: 2016-09-26
 ---
