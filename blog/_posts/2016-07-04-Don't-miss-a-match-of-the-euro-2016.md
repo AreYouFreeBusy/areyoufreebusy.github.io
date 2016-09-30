@@ -1,6 +1,8 @@
 ---
 layout: post
-title: "Don’t miss a match of the Euro 2016"
+title: "Stay up to date on all games in the Euro 2016"
+keywords: "Summer 2016, Euro, Football, Englang, France, Spain, Ronaldo, Finale"
+description: ""
 author: "Abdul"
 date: 2016-07-04
 ---
