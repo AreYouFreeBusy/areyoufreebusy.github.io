@@ -1,6 +1,8 @@
 ---
 layout: post
-title: "First thing in your office A.I. will take over?"
+title: "How will Artificial Intelligence bots change your life"
+description: "Which AI bots will be used to change the way you live and work "
+keywords: "A.I. , Artificial Intelligence , Office, Productivity, Meeting, Calendars, Scheduling, Bots"
 author: "Abdul"
 date: 2016-08-15
 ---
