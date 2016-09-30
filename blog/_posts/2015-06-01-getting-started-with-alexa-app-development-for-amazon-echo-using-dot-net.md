@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Getting started with Alexa App development for Amazon Echo using .NET on Windows"
+description: "Building Conversational Alexa Apps for Amazon Echo"
 keywords: "Online, Alexa, Amazon, Meeting, Scheduling, Windows"
 author: Stefan
 date: 2015-06-01
