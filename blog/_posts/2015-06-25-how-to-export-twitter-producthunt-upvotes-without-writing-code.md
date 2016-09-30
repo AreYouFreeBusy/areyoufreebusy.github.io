@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "How to export Twitter usernames of people who upvoted on ProductHunt without writing code"
+description: "Learn how to export Twitter usernames of people who upvoted on ProductHunt without writing code"
 keywords: "Twitter, ProductHunt, Export, Upvotes"
 author: Stefan
 date: 2015-06-25
