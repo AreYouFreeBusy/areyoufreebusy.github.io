@@ -1,6 +1,8 @@
 ---
 layout: post
-title: "7 Free chrome extension Tools to increase productivity on Gmail"
+title: "7 Chrome extensions that make you more productive at work"
+description: "Try these 7 chrome extensions to increase your productivity at work"
+keywords: "Productivity, Gmail, Google Calendar, Chrome extension, Productivity, Scheduling"
 author: "Abdul"
 date: 2016-08-22
 ---
