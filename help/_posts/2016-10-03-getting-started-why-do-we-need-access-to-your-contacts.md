@@ -1,6 +1,6 @@
 ---
 layout: help
-title: "Why do you need access to your contacts"
+title: "Why do we need access to your contacts"
 categories: getting-started
 ---
 
