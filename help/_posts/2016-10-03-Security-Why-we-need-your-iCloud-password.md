@@ -1,7 +1,7 @@
 ---
 layout: help
 title: "Why we need your iCloud Password"
-categories: security
+categories: Getting Started
 ---
 
 Your iCloud calendar is hosted in the same account as your iCloud email. We need the password to you iCloud (Apple) account to access your calendar. 
