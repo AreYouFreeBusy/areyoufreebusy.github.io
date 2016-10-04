@@ -4,25 +4,16 @@ title: "What can i say?"
 categories: alexa
 ---
 
-## Check When Contacts Are Available 
+## Conversational Tips for Alexa
 
-Ask for people in your contacts list by their first name to find out when they are free or busy for a phone call or meeting   (if they share availability with you). 
+*check if, see if*
+**to check a contact's availability**
 
+*schedule, create, set up, add* 
+**to schedule events**
 
- - "Alexa, open FreeBusy and see if Kristen is busy tomorrow." 
- - "Alexa, ask FreeBusy to check if Jeremy is free on Wednesday." 
+*event, meeting, appointment, phone call* 
+**are considered synonyms**
 
-
-## Check Your Own Calendar 
- 
- - "Alexa, ask FreeBusy what's my schedule for Wednesday."  
- - "Alexa, ask FreeBusy what's my next meeting."
-
- 
-## Schedule Events, Meetings, Phone Calls 
-
-Now that you know when everyone is available, get it scheduled, handsfree! FreeBusy Scheduling Buddy will put it on your calendar. 
-
- - "Alexa, ask FreeBusy to create an event for Monday" 
- - "Alexa, ask FreeBusy to schedule a phone call for September 6th" 
- - "Alexa, open FreeBusy and set up a meeting for tomorrow"
+*never mind, neither, or cancel* 
+**to end a conversation at any point**
