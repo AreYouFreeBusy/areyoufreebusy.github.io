@@ -1,6 +1,6 @@
 ---
 layout: help
-title: "Getting started with FreeBusy on Alexa"
+title: "What can i say"
 categories: alexa
 ---
 
