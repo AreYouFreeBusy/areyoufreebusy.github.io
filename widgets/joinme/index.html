@@ -267,6 +267,9 @@
         var location = "NA";
         var organizer = attendees[0];
 
+        if(attendees.length === 0) {
+            alert('At least one email addressed is required.');
+        }
         payload.organizer = organizer;
 
         payload.durationInMin = durationInMin;
