@@ -4,7 +4,7 @@ title: "Simple way to grow your bussiness through Linkedln"
 description: "New Linkedln Hack to schudle meetings with customers "
 keywords: "Linkedln Hacks, Engaging with customers on Linkedln, Linkedln Growth Hack, Linkedln puls post,"
 author: "Abdul"
-date: 2016-09-26
+date: 2016-10-20
 ---
 
 If you publish content on LinkedIn, you know how valuable your audience is, especially if you are in consulting, freelancing, sales, or recruiting. Your articles are a great source of prospect customers and starting a conversation <!--more--> right away is so important to establishing a relationship. Chances are however, that you wasted many hours each month reaching out and trying to schedule a simple meeting with them.
