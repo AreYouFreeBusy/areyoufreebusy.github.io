@@ -14,27 +14,21 @@
     <div id="freebusy-button"></div>
 </div>
 
-<script src="https://freebusy.io/scripts/pick-a-time/button.js"></script>
+
+
 <script type="text/javascript">
-freebusy.pickatime.load(function () {
-  freebusy.pickatime.button.init(
-      {
-        organizer: {
-          email: "david@freebusy.io"
-        },
-        durationInMin: "60min",
-        title: "test event",
-        location: "test location",
-        attendees: [
-          {
-            email: "stefan@freebusy.io"
-          }
-        ]
-      }
-  );
-  freebusy.pickatime.button.result = function (startTime) {
-      console.log("you have selected: " + startTime);
+  window.pickatime || (window.pickatime = {});
+
+  pickatime.proposal.organizer = 'stefan@freebusy.io';
+  pickatime.proposal.durationInMin = 30;
+  pickatime.proposal.attendees.push('michael@freebusy.io');
+  
+  
+  pickatime.result = function (startTime) {
+    // Start time returned in which all attendees are available
+    var date = new Date(startTime);
   }
-});
 </script>
+<script src="pickatime.js" async></script>
+
 
