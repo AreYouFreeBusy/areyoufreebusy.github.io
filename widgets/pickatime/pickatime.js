@@ -65,9 +65,7 @@ function getHost() {
     : pickatime.constants.hosts.web_prod;
 }
 
-function isProposalValid(){
-    return false;
-}
+
 
 function getPickATimeUrl() {
   var url = getHost() +  "/pick-a-time/";
@@ -112,12 +110,23 @@ function getPickATimeUrl() {
   }*/
 }
 
+function isProposalValid(){
+  if(pickatime.proposal.organizer == "")
+    return false;
+  else if (pickatime.proposal.durationInMin == 0)
+    return false;
+  else if (pickatime.proposal.attendees.size == 0)
+    return false;
+  else
+    return true;
+}
+
 /*
 * Private method executed on button click event
 */
 pickatime.clicked = function () {
   
-  // call method on client side if proposal has not been set
+  // call method on client side if proposal has not already been set
   if(!isProposalValid())
     pickatime.setProposal();
 
