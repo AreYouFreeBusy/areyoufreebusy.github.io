@@ -4,7 +4,7 @@ title: "Chrome Dialog contents are out of bounds"
 categories: chrome extension
 ---
 
-![Imgur](https://i.imgur.com/RsZkeZo.png)
+![Imgur](https://i.imgur.com/Rg7Tp7Q.png)
 
 
 This is a work around solution 
