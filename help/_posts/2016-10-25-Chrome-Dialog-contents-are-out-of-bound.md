@@ -1,6 +1,6 @@
 ---
 layout: help
-title: "Chrome Dialog contents are out of bounds"
+title: "Chrome Dialog contents are out of bound"
 categories: chrome extension
 ---
 
