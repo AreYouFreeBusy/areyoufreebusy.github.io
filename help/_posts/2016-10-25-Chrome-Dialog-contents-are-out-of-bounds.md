@@ -19,5 +19,5 @@ To fix this please follow these 5 steps below
  
  Now your screen should display the widget look this:
  
- ![Imgur](https://i.imgur.com/xQNTHSw.png)
+ ![Imgur](https://i.imgur.com/Vqisocu.png)
 
