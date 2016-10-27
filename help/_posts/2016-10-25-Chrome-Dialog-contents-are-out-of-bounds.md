@@ -9,7 +9,7 @@ Some of you might be facing this issue when clicking on the **FreeBusy** widget 
 ![Imgur](https://i.imgur.com/Rg7Tp7Q.png)
 
 
-To fix this
+To fix this please follow these 5 steps below
 
  1. Open up the **Chrome** browser
  2. In the address bar type `chrome://extensions` and press ENTER
@@ -17,3 +17,7 @@ To fix this
  4. Click on **options** *Dont worry that the screen reads coming soon*
  5. Press CTRL and +/- (or scroll wheel) and get the page zoom to 100%
  
+ Now your screen should display the widget look this:
+ 
+ ![Imgur]()
+
