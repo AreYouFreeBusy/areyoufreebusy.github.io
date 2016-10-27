@@ -11,6 +11,8 @@ Some of you might be facing this issue when clicking on the **FreeBusy** widget 
 
 To fix this please follow these 5 steps below
 
+1. Open up the **chrome** browser
+
  1. Open up the **Chrome** browser
  2. In the address bar type `chrome://extensions` and press ENTER
  3. Find the **FreeBusy Scheduling Assistant** extension
