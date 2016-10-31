@@ -1,4 +1,4 @@
-﻿    <!DOCTYPE html>
+    <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" class="os_win br_ch js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths blobconstructor cors json js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths blobconstructor cors json todataurljpeg todataurlwebp datauri" style="">
 <head>
     <title>join.me | Instant Screen Sharing, Online Meetings &amp; Web Conferencing</title>
@@ -29,7 +29,7 @@
 
 </head>
 <body style="text-align: center; margin: 0; height:100%; overflow: hidden;" class="layoutB">
-    <script src="https://freebusy.io/scripts/pick-a-time/button.js"></script>
+<script src="https://freebusy.io/scripts/pick-a-time/button.js"></script> 
 
     <div id="ImgBg" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 0; overflow: hidden; opacity: 1;">
         <img src="https://www.join.me/Common/Images/Background/socks.jpg" id="backgroundimage" style="width: 100%; height: 100%;">
@@ -243,7 +243,6 @@
     <script type="text/javascript">
 
     var attendeeEmails = [];
-    var attendees = [];
     var payload = {};
 
     $('#addParticipants').click(function () {
@@ -251,13 +250,8 @@
     })
 
     function addAttendee() {
-        // for display
         attendeeEmails.push($('#email').val());
         $('#attendees').html(attendeeEmails.toString());
-
-        // for payload
-        var attendee = { email: $('#email').val() };
-        attendees.push(attendee);
     }
 
     function saveProposal (){
@@ -265,36 +259,39 @@
         var title = $('#meetingname').val();
         var durationInMin = $('#durationInMin').val();
         var location = "NA";
-        var organizer = attendees[0];
+        var organizer = attendeeEmails[0];
 
-        if(attendees.length === 0) {
-            alert('At least one email addressed is required.');
+        if(attendeeEmails.length === 0) {
+            alert('At least one email address is required.');
         }
         payload.organizer = organizer;
 
         payload.durationInMin = durationInMin;
         payload.title = title;
         payload.location = location;
-        payload.attendees = attendees;
-
-        console.log('payload: ' + JSON.stringify(payload));
-        freebusy.pickatime.button.proposal = payload;
-        freebusy.pickatime.button.clicked();
+        payload.attendees = attendeeEmails;
     }
 
+    pickatime.onButtonClicked(function() {
+        saveProposal();
+        console.log("proposal: " + JSON.stringify(payload));
 
+        pickatime.setProposal({
+            organizer: payload.organizer,
+            durationInMin: payload.durationInMin,
+            attendees: payload.attendees
+        });
+    });
 
-    freebusy.pickatime.load(function () {
-      freebusy.pickatime.button.init();
-      var button = document.getElementById("freebusy-button");
-      button.innerHTML =  "<a href='#' onclick='saveProposal()'><img src='https://freebusy.io/content/icons/freebusy-icon-white-32x32.png'/> Pick a time</a>";
+    pickatime.onTimeSelected(function (timeslot) {
+        console.log("selected timeslot: " + timeslot);
+        var date = new Date(timeslot);
+        $('#selectedDateLabel').show();
+        $('#selectedDate').html(date);
+    });
 
-      freebusy.pickatime.button.result = function (startTime) {
-          //alert("you selected: " + startTime);
-          var date = new Date(startTime);
-          $('#selectedDateLabel').show();
-          $('#selectedDate').html(date);
-      }
+    pickatime.onError(function (error) {
+        console.log("detected error: " + error);
     });
     </script>
 
