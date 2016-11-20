@@ -1,6 +1,6 @@
 ---
 layout: help
-title: "What can i say?"
+title: "What can i say"
 categories: alexa
 ---
 
