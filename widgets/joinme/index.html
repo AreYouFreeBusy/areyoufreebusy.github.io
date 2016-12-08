@@ -412,7 +412,6 @@
                     <tr>
                     <td><div style="padding-top:25px;"></div></td>
                     </tr>
-
                     <tr id="notes" data-bind="with: notesModule">
                          <td id="noteslabel"><label>Notes:</label></td>
                          <td colspan="2" class="ta">
@@ -423,8 +422,7 @@
                     <tr id="audio" class="alert" data-bind="with: audioModule">
                         <td></td>
                         <td colspan="3">
-                            <div data-bind="visible: PhoneNumbersChanged" style="padding-bottom: 12px; display: none;">
-                                <span class="sprt_l ConfAdjWarningImg"></span>
+                            <div data-bind="visible: PhoneNumbersChanged" style="padding-bottom: 12px; display: none;">                                <span class="sprt_l ConfAdjWarningImg"></span>
                                 <span class="txt">Some numbers you included before are no longer available.</span>
                             </div>
                             <div class="audioheader">
@@ -434,8 +432,7 @@
                     </tr>
                     <tr>
                     <td><div style="padding-top:25px;"></div></td>
-                    </tr>
-                </tbody>
+                    </tr>                </tbody>
             </table>
         </div>
         
@@ -445,8 +442,7 @@
                     click: saveToJS,
                     enable: formIsValid() &amp;&amp; ( (modificationType == JM.Scheduler.Enums.MeetingModificationType.Create) || (modificationType == JM.Scheduler.Enums.MeetingModificationType.Duplicate) || (modificationType == JM.Scheduler.Enums.MeetingModificationType.DuplicateHistory) ||
                             (isDraft &amp;&amp; modificationType == JM.Scheduler.Enums.MeetingModificationType.Edit) ),
-                    visible: (modificationType == JM.Scheduler.Enums.MeetingModificationType.Create) || (modificationType == JM.Scheduler.Enums.MeetingModificationType.Duplicate) || (modificationType == JM.Scheduler.Enums.MeetingModificationType.DuplicateHistory) || (isDraft &amp;&amp; modificationType == JM.Scheduler.Enums.MeetingModificationType.Edit)">
-                schedule
+                    visible: (modificationType == JM.Scheduler.Enums.MeetingModificationType.Create) || (modificationType == JM.Scheduler.Enums.MeetingModificationType.Duplicate) || (modificationType == JM.Scheduler.Enums.MeetingModificationType.DuplicateHistory) || (isDraft &amp;&amp; modificationType == JM.Scheduler.Enums.MeetingModificationType.Edit)">                schedule
             </button>
             
             <button type="button" class="jm big" id="updateschedule" onclick="JM.WebsiteTracking.Track('Scheduler_Upcoming_MeetingDetails_UpdateScheduleButtonClicked', { category: 'join.me Web Scheduler' }, JM.WebsiteTracking.SegmentIntegrations.ALL);" data-bind="
@@ -456,8 +452,7 @@
                 update schedule
             </button>
 
-            <button type="button" class="jm light big" id="savedraft" onclick="JM.WebsiteTracking.Track('Scheduler_Upcoming_MeetingDetails_SaveDraftButtonClicked', { category: 'join.me Web Scheduler' }, JM.WebsiteTracking.SegmentIntegrations.ALL);" data-bind="
-                    click: saveToJS,
+            <button type="button" class="jm light big" id="savedraft" onclick="JM.WebsiteTracking.Track('Scheduler_Upcoming_MeetingDetails_SaveDraftButtonClicked', { category: 'join.me Web Scheduler' }, JM.WebsiteTracking.SegmentIntegrations.ALL);" data-bind="                    click: saveToJS,
                     enable: (((modificationType == JM.Scheduler.Enums.MeetingModificationType.Create) || (modificationType == JM.Scheduler.Enums.MeetingModificationType.Duplicate) || (modificationType == JM.Scheduler.Enums.MeetingModificationType.DuplicateHistory) ) &amp;&amp; formIsValid()) ||
                             (modificationType == JM.Scheduler.Enums.MeetingModificationType.Edit &amp;&amp; formIsValid() &amp;&amp; formIsDirty()),
                     visible: (modificationType == JM.Scheduler.Enums.MeetingModificationType.Create) || (modificationType == JM.Scheduler.Enums.MeetingModificationType.Duplicate) || (modificationType == JM.Scheduler.Enums.MeetingModificationType.DuplicateHistory) || (modificationType == JM.Scheduler.Enums.MeetingModificationType.Edit &amp;&amp; isDraft)">
@@ -525,7 +520,7 @@
     pickatime.onButtonClicked(function() {
         saveProposal();
 
-        pickatime.setProposal({
+        pickatime.setAvailabilityQuery({
             organizer: payload.organizer,
             durationInMin: payload.durationInMin,
             attendees: payload.attendees
