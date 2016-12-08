@@ -242,57 +242,252 @@
 </body>
     <script type="text/javascript">
 
-    var attendeeEmails = [];
-    var payload = {};
+    //------------------------------------------------------------------------------
+// Copyright (C) BizLogr Inc. All rights reserved.
+//------------------------------------------------------------------------------
 
-    $('#addParticipants').click(function () {
-        addAttendee();
-    })
+//------------------------------------------------------------------------------
+// pick-a-time/button.js
+//  Handles third-party button integration (to be loaded by the client)
+//------------------------------------------------------------------------------
+(function (pickatime, undefined) {
+  
+  //----------------------------------------------------------------------------
+  // PRIVATE PROPERTIES
+  //----------------------------------------------------------------------------
 
-    function addAttendee() {
-        attendeeEmails.push($('#email').val());
-        $('#attendees').html(attendeeEmails.toString());
+  var BUTTON_ID = "freebusy-button";
+  var BUTTON_LABEL = " Pick a Time";
+  var DEFAULT_ENABLED_STATE = true;
+  var EMIT_PROPOSAL_EVENT = "proposal";
+  var EMIT_BUTTONCLICKED_EVENT = "buttonClicked";
+  var THROW_ERROR_EVENT = "error";
+  var WEBAPP_MESSAGE_EVENT = "message";
+  var DEFAULT_TIMEOUT_MS = 500;
+
+  var _constants = {
+    rootUrlRelative: "/pick-a-time",
+    responseTypes: {
+      suggestions: "SET_AVAILABILITY"
+    },
+    hosts: {
+      web: "https://freebusy.io",
+      api: "https://api.freebusy.io",
+      cdn: "https://freebusy.io"
+    }
+  }
+
+  var _base64 = {
+    encoder: function () {
+      return { _keyStr: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=", encode: function (e) { var t = ""; var n, r, i, s, o, u, a; var f = 0; e = this._utf8_encode(e); while (f < e.length) { n = e.charCodeAt(f++); r = e.charCodeAt(f++); i = e.charCodeAt(f++); s = n >> 2; o = (n & 3) << 4 | r >> 4; u = (r & 15) << 2 | i >> 6; a = i & 63; if (isNaN(r)) { u = a = 64 } else if (isNaN(i)) { a = 64 } t = t + this._keyStr.charAt(s) + this._keyStr.charAt(o) + this._keyStr.charAt(u) + this._keyStr.charAt(a) } return t }, decode: function (e) { var t = ""; var n, r, i; var s, o, u, a; var f = 0; e = e.replace(/[^A-Za-z0-9+/=]/g, ""); while (f < e.length) { s = this._keyStr.indexOf(e.charAt(f++)); o = this._keyStr.indexOf(e.charAt(f++)); u = this._keyStr.indexOf(e.charAt(f++)); a = this._keyStr.indexOf(e.charAt(f++)); n = s << 2 | o >> 4; r = (o & 15) << 4 | u >> 2; i = (u & 3) << 6 | a; t = t + String.fromCharCode(n); if (u != 64) { t = t + String.fromCharCode(r) } if (a != 64) { t = t + String.fromCharCode(i) } } t = this._utf8_decode(t); return t }, _utf8_encode: function (e) { e = e.replace(/n/g, "n"); var t = ""; for (var n = 0; n < e.length; n++) { var r = e.charCodeAt(n); if (r < 128) { t += String.fromCharCode(r) } else if (r > 127 && r < 2048) { t += String.fromCharCode(r >> 6 | 192); t += String.fromCharCode(r & 63 | 128) } else { t += String.fromCharCode(r >> 12 | 224); t += String.fromCharCode(r >> 6 & 63 | 128); t += String.fromCharCode(r & 63 | 128) } } return t }, _utf8_decode: function (e) { var t = ""; var n = 0; var r = c1 = c2 = 0; while (n < e.length) { r = e.charCodeAt(n); if (r < 128) { t += String.fromCharCode(r); n++ } else if (r > 191 && r < 224) { c2 = e.charCodeAt(n + 1); t += String.fromCharCode((r & 31) << 6 | c2 & 63); n += 2 } else { c2 = e.charCodeAt(n + 1); c3 = e.charCodeAt(n + 2); t += String.fromCharCode((r & 15) << 12 | (c2 & 63) << 6 | c3 & 63); n += 3 } } return t } }
+    },
+    encode: function (stringToEncode) {
+      return this.encoder().encode(stringToEncode);
+    },
+    decode: function (stringToDecode) {
+      return this.encoder().decode(stringToDecode);
+    }
+  }
+  var _button = null;
+  var _findAvailabilityParams;
+  var _proposal = null;
+  var _isEnabled = DEFAULT_ENABLED_STATE;
+
+
+  //----------------------------------------------------------------------------
+  // PUBLIC PROPERTIES
+  //----------------------------------------------------------------------------
+
+
+
+
+  //----------------------------------------------------------------------------
+  // PRIVATE METHODS
+  //----------------------------------------------------------------------------
+
+  // call init on script load
+  this.addEventListener('load', init, false);
+
+  function init() {
+    var initInterval = setInterval(function () {
+      if (document.readyState === "complete") {
+        clearInterval(initInterval);
+        injectButton();
+      }
+    });
+  }
+
+  function injectButton() {
+    // assert the button exists
+    _button = document.getElementById(BUTTON_ID);
+    if (_button === null) throwError("Button not found.");
+    _button.style.display = 'none';
+
+    // inject the CSS file
+    var css = document.createElement('link');
+    css.href = _constants.hosts.web + '/content/pick-a-time/button.css';
+    css.type = "text/css";
+    css.rel = "stylesheet";
+    document.getElementsByTagName("head")[0].appendChild(css);
+
+    // set up the button
+    _button.addEventListener('click', buttonClicked, false);
+    _button.innerHTML = "<img src='" + _constants.hosts.cdn + "/content/icons/freebusy-icon-white-32x32.png'/>" + BUTTON_LABEL + "</a>";
+    setTimeout(function () {
+      _button.style.display = 'inline-block'
+    }, DEFAULT_TIMEOUT_MS);
+  }
+
+  function buttonClicked() {
+    if (!_isEnabled) throwError("Button disabled.");
+    emitButtonClicked();
+    assertProposalValid();
+    var url = getPickATimeUrl();
+
+    window.open(url, 'FreeBusy Scheduling Assistant', 'width=768,height=550');
+    window.addEventListener(WEBAPP_MESSAGE_EVENT, receiveMessage, false);
+  }
+
+  function assertProposalValid() {
+    if (_proposal === null) throwError("Proposal not set.");
+
+    if (!_proposal.organizer) throwError("Organizer not set.");
+    else if (!_proposal.durationInMin) throwError("Duration not set.");
+    else if (!_proposal.attendees.length) throwError("Attendees not set.");
+  }
+
+  function getPickATimeUrl() {
+    var url = _constants.hosts.web + _constants.rootUrlRelative + "/";
+
+    // organizer is required at the beginning of querystring
+    url += encodeURI(_proposal.organizer);
+    var encodedProposal = _base64.encode(JSON.stringify(_proposal));
+    debugger;
+    url += "?proposal=" + encodeURIComponent(encodedProposal) + "&client=widget";
+    return url;
+  }
+
+  function receiveMessage(responseFromWebApp) {
+    if (responseFromWebApp.origin.indexOf(_constants.hosts.web) === -1)
+      throwError("Invalid response origin.");
+
+    if (!responseFromWebApp.data) throwError("No data received.");
+    var message = JSON.parse(responseFromWebApp.data);
+
+    if (message.type === _constants.responseTypes.suggestions) {
+      // Pass the message to the client
+      emitProposal(message.suggestions[0].startTime);
+      window.removeEventListener(WEBAPP_MESSAGE_EVENT, receiveMessage, false);
+    }
+  }
+
+  function emitProposal(proposal) {
+    triggerEvent(EMIT_PROPOSAL_EVENT, proposal);
+  }
+
+  function emitButtonClicked() {
+    triggerEvent(EMIT_BUTTONCLICKED_EVENT);
+  }
+
+  function throwError(error) {
+    triggerEvent(THROW_ERROR_EVENT, error);
+    throw new Error(error);
+  }
+
+  function triggerEvent(eventName, detail) {
+    if (detail === undefined) detail = null;
+    var event = new CustomEvent(eventName, {
+      detail: detail
+    });
+    document.dispatchEvent(event);
+  }
+
+  function setErrorEmitter(callback) {
+    if (typeof callback === 'function') {
+      document.addEventListener(THROW_ERROR_EVENT, function (e) {
+        callback(e.detail);
+      });
+    }
+  }
+
+  function setProposalEmitter(callback) {
+    if (typeof callback === 'function') {
+      document.addEventListener(EMIT_PROPOSAL_EVENT, function (e) {
+        callback(e.detail);
+      });
+    }
+  }
+
+
+  function setButtonClickedEmitter(callback) {
+    if (typeof callback === 'function') {
+      document.addEventListener(EMIT_BUTTONCLICKED_EVENT, function (e) {
+        callback(e.detail);
+      });
+    }
+  }
+
+  //----------------------------------------------------------------------------
+  // PUBLIC METHODS
+  //----------------------------------------------------------------------------
+
+  pickatime.disable = function () {
+    _button.style.opacity = "0.6";
+    _button.style.cursor = "not-allowed";
+    _button.disabled = true;
+    _isEnabled = false;
+    return true;
+  }
+
+  pickatime.enable = function () {
+    if (!_button) throwError("Button not found.");
+    _button.style.opacity = "1.0";
+    _button.style.cursor = "pointer";
+    _button.disabled = false;
+    _isEnabled = true;
+    return true;
+  }
+
+  pickatime.setAvailabilityParamaters = function (proposal) {
+    _proposal = proposal;
+    return true;
+  }
+
+  pickatime.onTimeSelected = function (callback) {
+    setProposalEmitter(callback);
+  }
+
+  pickatime.onButtonClicked = function (callback) {
+    setButtonClickedEmitter(callback);
+  }
+
+  pickatime.onError = function (callback) {
+    setErrorEmitter(callback);
+  }
+
+
+  //----------------------------------------------------------------------------
+  // HELPERS
+  //----------------------------------------------------------------------------
+
+  function polyfillCustomEventIfIE() {
+    if (typeof window.CustomEvent === "function") return false;
+
+    function CustomEvent(event, params) {
+      params = params || { bubbles: false, cancelable: false, detail: undefined };
+      var evt = document.createEvent('CustomEvent');
+      evt.initCustomEvent(event, params.bubbles, params.cancelable, params.detail);
+      return evt;
     }
 
-    function saveProposal (){
-        // get the form data
-        var title = $('#meetingname').val();
-        var durationInMin = $('#durationInMin').val();
-        var location = "NA";
-        var organizer = attendeeEmails[0];
+    CustomEvent.prototype = window.Event.prototype;
 
-        if(attendeeEmails.length === 0) {
-            alert('At least one email address is required.');
-        }
-        payload.organizer = organizer;
+    window.CustomEvent = CustomEvent;
+  }
+  polyfillCustomEventIfIE();
 
-        payload.durationInMin = durationInMin;
-        payload.title = title;
-        payload.location = location;
-        payload.attendees = attendeeEmails;
-    }
+}(window.pickatime = window.pickatime || {}));
 
-    pickatime.onButtonClicked(function() {
-        saveProposal();
-        console.log("proposal: " + JSON.stringify(payload));
 
-        pickatime.setProposal({
-            organizer: payload.organizer,
-            durationInMin: payload.durationInMin,
-            attendees: payload.attendees
-        });
-    });
-
-    pickatime.onTimeSelected(function (timeslot) {
-        console.log("selected timeslot: " + timeslot);
-        var date = new Date(timeslot);
-        $('#selectedDateLabel').show();
-        $('#selectedDate').html(date);
-    });
-
-    pickatime.onError(function (error) {
-        console.log("detected error: " + error);
-    });
     </script>
-
 </html>
