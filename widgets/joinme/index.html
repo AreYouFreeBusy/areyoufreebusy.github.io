@@ -21,11 +21,9 @@
     <link type="text/css" rel="Stylesheet" href="loggedin.css">
     <style type="text/css">div.joci_rel.jm_beta div.joci_abs { background-position: 0px 0px; }</style>
 
-    <!-- begin required by FreeBusy -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- end required by FreeBusy -->
 
 </head>
 <body style="text-align: center; margin: 0; height:100%; overflow: hidden;" class="layoutB">
@@ -237,51 +235,40 @@
 
 </body>
 
-    <script src="https://freebusy.io/scripts/pick-a-time/button.js"></script>
+    <script src="button.js"></script>
     <script type="text/javascript">
 
-    var attendeeEmails = [];
-    var payload = {};
+        var attendeeEmails = [];
+        var querySaved = false;
 
     $('#addParticipants').click(function () {
-        addAttendee();
-    })
-
-    function addAttendee() {
         attendeeEmails.push($('#email').val());
         $('#attendees').html(attendeeEmails.toString());
-    }
+    })
 
-    function saveProposal (){
-        // get the form data
-        var title = $('#meetingname').val();
-        var durationInMin = $('#durationInMin').val();
-        var location = "NA";
-        var organizer = attendeeEmails[0];
+    $('#savemeeting').click(function () {
+        saveAvailabilityQuery();
+    })
 
-        if(attendeeEmails.length === 0) {
-            alert('At least one email address is required.');
-        }
-        payload.organizer = organizer;
-
-        payload.durationInMin = durationInMin;
-        payload.title = title;
-        payload.location = location;
-        payload.attendees = attendeeEmails;
+    function saveAvailabilityQuery (){
+        pickatime.setAvailabilityQuery({
+            organizer: attendeeEmails[0],
+            durationInMin: $('#durationInMin').val(),
+            attendees: attendeeEmails
+        });
+        querySaved = true;
     }
 
     pickatime.onButtonClicked(function() {
-        saveProposal();
-
-        pickatime.setAvailabilityParamaters({
-            organizer: payload.organizer,
-            durationInMin: payload.durationInMin,
-            attendees: payload.attendees
-        });
+        if(attendeeEmails.length === 0) {
+            alert('At least one email address is required.');
+            return false;
+        }
+        if(!querySaved)
+            saveAvailabilityQuery();
     });
 
     pickatime.onTimeSelected(function (timeslot) {
-        console.log("selected timeslot: " + timeslot);
         var date = new Date(timeslot);
         $('#selectedDateLabel').show();
         $('#selectedDate').html(date);
