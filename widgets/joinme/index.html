@@ -235,7 +235,7 @@
 
 </body>
 
-    <script src="https://freebusy.io/scripts/pick-a-time/button.js"></script>
+    <script src="button.js"></script>
     <script type="text/javascript">
 
         var attendeeEmails = [];
@@ -251,7 +251,7 @@
     })
 
     function saveAvailabilityQuery (){
-        pickatime.setAvailabilityQuery({
+        pickatime.availabilityQuery({
             organizer: attendeeEmails[0],
             durationInMin: $('#durationInMin').val(),
             attendees: attendeeEmails
