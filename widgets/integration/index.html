@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- begin required by FreeBusy -->
+    <script src="button.js"></script> 
+    <!-- end required by FreeBusy -->
+
+</head>
+<body>
+    <div class="container">
+
+        <form class="well form-horizontal" action=" " method="post" id="contact_form">
+            <fieldset>
+
+                <!-- Form Name -->
+                <legend>Schedule Meeting</legend>
+
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Subject</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                            <input name="last_name" placeholder="Subject" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Participants</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="submit" class="btn btn-warning">Add <span class="glyphicon glyphicon-plus"></span></button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <textarea class="form-control" placeholder="michael@freebusy.io   stefan@freebusy.io   david@freebusy.io"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Select Basic
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Proposed Start</label>
+                    <div class="col-md-4 selectContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                            <select name="date" class="form-control selectpicker">
+                                <option selected>December 15, 2016</option>
+                                <option>8 pm</option>
+                                <option>9 pm</option>
+                            </select>
+                            <select name="time" class="form-control selectpicker">
+                                <option selected>7:30 pm</option>
+                                <option>8 pm</option>
+                                <option>9 pm</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Proposed End</label>
+                    <div class="col-md-4 selectContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                            <select name="date" class="form-control selectpicker">
+                                <option selected>December 15, 2016</option>
+                                <option>8 pm</option>
+                                <option>9 pm</option>
+                            </select>
+                            <select name="time" class="form-control selectpicker">
+                                <option selected>7:30 pm</option>
+                                <option>8 pm</option>
+                                <option>9 pm</option>
+                            </select>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <div id="freebusy-button"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Time selected</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+                            <input id="selected-time" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Location</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+                            <input name="location" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- radio checks 
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Do you have hosting?</label>
+                    <div class="col-md-4">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="hosting" value="yes" /> Yes
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="hosting" value="no" /> No
+                            </label>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Text area -->
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Notes</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                            <textarea class="form-control" name="comment"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Success message -->
+
+                <!-- Button -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4">
+                        <button type="submit" class="btn btn-warning">Schedule <span class="glyphicon glyphicon-send"></span></button>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+    </div><!-- /.container -->
+    <script type="text/javascript">
+
+    var attendeeEmails = [];
+    var payload = {};
+
+    $('#addParticipants').click(function () {
+        addAttendee();
+    })
+
+    function addAttendee() {
+        attendeeEmails.push($('#email').val());
+        $('#attendees').html(attendeeEmails.toString());
+    }
+
+    /*function saveProposal (){
+        // get the form data
+        var title = $('#meetingname').val();
+        var durationInMin = $('#durationInMin').val();
+        var location = "NA";
+        var organizer = attendeeEmails[0];
+
+        if(attendeeEmails.length === 0) {
+            alert('At least one email address is required.');
+        }
+        payload.organizer = organizer;
+
+        payload.durationInMin = durationInMin;
+        payload.title = title;
+        payload.location = location;
+        payload.attendees = attendeeEmails;
+    }*/
+
+    freebusy.pickatime.onButtonClicked(function() {
+        
+        var attendeeEmails = ['stefan@freebusy.io','david@freebusy.io'];
+
+        freebusy.pickatime.setAvailabilityParamaters({
+            organizer: 'michael@freebusy.io',
+            durationInMin: 60,
+            attendees: attendeeEmails
+        });
+    });
+
+    freebusy.pickatime.onTimeSelected(function (timeslot) {
+        console.log("selected timeslot: " + timeslot);
+        var date = new Date(timeslot);
+        $('#selected-time').val(date);
+        $('#selected-time').addClass('active');
+    });
+    </script>
+
+</body>
+</html>
