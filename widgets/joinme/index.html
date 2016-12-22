@@ -234,49 +234,49 @@
 
 
 </body>
-
-    <script src="button.js"></script>
+    <!--<script src="https://apidev.freebusy.io/pick-a-time/v1"></script>-->
+    <script src="https://freebusy.io/scripts/pick-a-time/button.js"></script>
     <script type="text/javascript">
 
         var attendeeEmails = [];
         var querySaved = false;
 
-    $('#addParticipants').click(function () {
-        attendeeEmails.push($('#email').val());
-        $('#attendees').html(attendeeEmails.toString());
-    })
+        $('#addParticipants').click(function () {
+            attendeeEmails.push($('#email').val());
+            $('#attendees').html(attendeeEmails.toString());
+        })
 
-    $('#savemeeting').click(function () {
-        saveAvailabilityQuery();
-    })
-
-    function saveAvailabilityQuery (){
-        pickatime.availabilityQuery({
-            organizer: attendeeEmails[0],
-            durationInMin: $('#durationInMin').val(),
-            attendees: attendeeEmails
-        });
-        querySaved = true;
-    }
-
-    pickatime.onButtonClicked(function() {
-        if(attendeeEmails.length === 0) {
-            alert('At least one email address is required.');
-            return false;
-        }
-        if(!querySaved)
+        $('#savemeeting').click(function () {
             saveAvailabilityQuery();
-    });
+        })
 
-    pickatime.onTimeSelected(function (timeslot) {
-        var date = new Date(timeslot);
-        $('#selectedDateLabel').show();
-        $('#selectedDate').html(date);
-    });
+        function saveAvailabilityQuery (){
+            window.freebusy.pickatime.setAvailabilityQuery({
+                organizer: attendeeEmails[0],
+                durationInMin: $('#durationInMin').val(),
+                attendees: attendeeEmails
+            });
+            querySaved = true;
+        }
 
-    pickatime.onError(function (error) {
-        console.log("detected error: " + error);
-    });
+        window.freebusy.pickatime.onButtonClicked(function() {
+            if(attendeeEmails.length === 0) {
+                alert('At least one email address is required.');
+                return false;
+            }
+            if(!querySaved)
+                saveAvailabilityQuery();
+        });
+
+        window.freebusy.pickatime.onTimeSelected(function (timeslot) {
+            var date = new Date(timeslot);
+            $('#selectedDateLabel').show();
+            $('#selectedDate').html(date);
+        });
+
+        window.freebusy.pickatime.onError(function (error) {
+            console.log("detected error: " + error);
+        });
     </script>
 
 </html>
