@@ -1,0 +1,282 @@
+﻿    <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="os_win br_ch js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths blobconstructor cors json js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths blobconstructor cors json todataurljpeg todataurlwebp datauri" style="">
+<head>
+    <title>join.me | Instant Screen Sharing, Online Meetings &amp; Web Conferencing</title>
+    <noscript>
+        &lt;meta http-equiv="refresh" content="0;ErrorPages/NoJavaScript.aspx" /&gt;
+    </noscript>
+    <meta name="description" content="Free screen sharing, online meetings and team collaboration are all fast and easy at join.me - no registration required. Show work who’s boss.">
+    <meta http-equiv="cache-control" content="no-store, no-cache, max-age=0, must-revalidate">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link type="text/css" rel="Stylesheet" href="Loader.css">
+    <link type="text/css" rel="Stylesheet" href="ui.css">
+    <link type="text/css" rel="Stylesheet" href="joinme.css">
+    <link type="text/css" rel="Stylesheet" href="public2.css">
+    <link type="text/css" rel="Stylesheet" href="layoutB.css">
+    <link type="text/css" rel="Stylesheet" href="jquery-ui-1.8.custom.css">
+    <link type="text/css" rel="Stylesheet" href="Includer.css">
+    <link type="text/css" rel="Stylesheet" href="myjoinme.css">
+    <link type="text/css" rel="Stylesheet" href="loggedin.css">
+    <style type="text/css">div.joci_rel.jm_beta div.joci_abs { background-position: 0px 0px; }</style>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body style="text-align: center; margin: 0; height:100%; overflow: hidden;" class="layoutB">
+
+ 
+
+    <div id="ImgBg" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 0; overflow: hidden; opacity: 1;">
+        <img src="https://www.join.me/Common/Images/Background/socks.jpg" id="backgroundimage" style="width: 100%; height: 100%;">
+    </div>
+    
+    
+
+    <div id="mainWrapper">
+        <form method="post" class="mainForm" onsubmit="return false;" style="position:relative;z-index:1000;">
+
+            <div class="contentwindow loggedin" id="maincontentwindow" style="opacity: 1; margin-top: 134px;">
+                <div class="mainBgGray" style="background-color: #fff"></div>
+                <div>
+
+
+
+
+
+<div id="jm_maincontent" style="padding: 15px; width: 714px; visibility: visible;">
+
+<link type="text/css" rel="Stylesheet" href="Includer.css">
+
+
+
+
+
+
+
+<div class="roundedContainer">
+    <div class="meetingTabs" style="display: none;"><div id="upcomingMeetings" class="inliner tab upcomingMeetings selected">upcoming<div class="tabArrow selected"></div></div><div id="historyMeetings" class="inliner tab historyMeetings">history<div class="tabArrow"></div></div><div id="recordings" class="inliner tab recordings">recordings<div class="tabArrow"></div></div><div id="reports" class="inliner tab reports">reports<div class="tabArrow"></div></div></div>
+    
+
+<link rel="stylesheet" type="text/css" href="Includer.css">
+
+
+
+
+<div id="meetingDetails" style="">
+    <div id="meetingTemplate">
+        <div class="meeting">
+        <div class="header">
+           <span data-bind="text: title"></span>
+        </div>
+        <div class="content">
+            <table>
+                <tbody>
+                    <tr id="subject">
+                        <td><label>Subject:</label></td>
+                        <td colspan="2">
+                            <input id="meetingname" type="text" class="jm" maxlength="100" placeholder="Enter meeting subject" data-bind="hasfocus: nameHasFocus, value: name, css: {error: showNameValidator}, valueUpdate: 'afterkeydown', textbox: true">
+                            <div class="validator inliner" data-bind="visible: showNameValidator" style="display: none;">
+                                <div class="validator">
+                                    <span class="arrow sprt">&nbsp;</span>
+                                    <div class="inliner wrap">
+                                        <span class="valmessage">Subject required</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                     <tr>
+                    <td><div style="padding-top:25px;"></div></td>
+                    </tr>
+                    <tr id="share">
+                        <td><label>Meeting code:</label></td>
+                        <td>
+                            <input type="radio" id="personallinkradio" name="code" value="personallinkradio" onclick="JM.WebsiteTracking.Track('Scheduler_Upcoming_MeetingDetails_PersonalLinkRadioClicked', { category: 'join.me Web Scheduler' }, JM.WebsiteTracking.SegmentIntegrations.ALL);" data-bind="checked: isPersonalUrlMeeting, enable: hasPersonalUrl " disabled=""><label for="personallinkradio" class="meetingtypelabel disabledlabel" data-bind="css:{disabledlabel: !hasPersonalUrl}">personal link</label><span id="personalLink" data-bind="text: personalMeetingCode, visible: isPersonalUrlMeeting() == 'personallinkradio'" style="display: none;">https://join.me/null</span><span class="createpersonal" data-bind="visible: !hasPersonalUrl">
+                                 </span> <br>
+                            <input type="radio" id="onetimeradio" name="code" value="onetimeradio" onclick="JM.WebsiteTracking.Track('Scheduler_Upcoming_MeetingDetails_OneTimeCodeRadioClicked', { category: 'join.me Web Scheduler' }, JM.WebsiteTracking.SegmentIntegrations.ALL);" data-bind="checked: isPersonalUrlMeeting"><label for="onetimeradio" class="meetingtypelabel">one-time code</label><span id="oneTimeCode" data-bind="text: onetimeMeetingCode, visible: isPersonalUrlMeeting() == 'onetimeradio'"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            (<a href="#" onclick="return JoinMe.Content.navigateToUrl('/');">create a personal link first</a>)
+                        </td>
+                    </tr>
+                    <tr>
+                    <td><div style="padding-top:25px;"></div></td>
+                    </tr>
+                    <tr>
+                        <td><label>Duration:</label></td>
+                        <td>
+                            <select id="durationInMin">
+                            <option value="15" selected="selected">15 min</option>
+                            <option value="30">30 min</option>
+                            <option value="45">45 min</option>
+                            <option value="60">90 min</option>
+                            </select>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                    <td><div style="padding-top:25px;"></div></td>
+                    </tr>
+
+                    <tr id="participantsEmail">
+                       <td><label>Participants:</label></td>
+                       <td colspan="1" data-bind="with: participantsModule">
+                           <span class="inliner participanttb">
+                               <input id="email" type="text" class="jm ui-autocomplete-input" placeholder="Enter email addresses" data-bind="value: emailField, valueUpdate: 'afterkeydown', ko_autocomplete:{ source: favorites, select: addFromFavorites,  minLength: 0},  event: { keypress: addOnEnter }" autocomplete="off"><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                               <div class="sprt participantsarrow inliner" data-bind="jqAutoCombo: 'email'">&nbsp;</div>
+                            <button type="button" id="addParticipants">add</button>
+                           </span>
+                       </td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div id="attendees" style="min-height:50px;"></div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div id="freebusy-button"></div>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div id="selectedDateLabel" style="display:none;">Your proposed meeting is scheduled for:</div>
+                            <div id="selectedDate"></div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                    <td><div style="padding-top:25px;"></div></td>
+                    </tr>
+                    <tr id="notes" data-bind="with: notesModule">
+                         <td id="noteslabel"><label>Notes:</label></td>
+                         <td colspan="2" class="ta">
+                            <textarea id="notes" rows="5" cols="20" class="jm" placeholder="(optional)" data-bind="value: notes, valueUpdate: 'afterkeydown', textbox: true"></textarea>
+                         </td>
+                    </tr>
+
+                    <tr id="audio" class="alert" data-bind="with: audioModule">
+                        <td></td>
+                        <td colspan="3">
+                            <div data-bind="visible: PhoneNumbersChanged" style="padding-bottom: 12px; display: none;">                                <span class="sprt_l ConfAdjWarningImg"></span>
+                                <span class="txt">Some numbers you included before are no longer available.</span>
+                            </div>
+                            <div class="audioheader">
+                                <span class="sprt orange_opener" data-bind="css: {expanded: isExpanded}">&nbsp;</span><span data-bind="click: toggle">audio information in the invitation</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                    <td><div style="padding-top:25px;"></div></td>
+                    </tr>                </tbody>
+            </table>
+        </div>
+        
+        <div class="buttons">
+
+            <button type="button" class="jm big" id="savemeeting" onclick="JM.WebsiteTracking.Track('Scheduler_Upcoming_MeetingDetails_ScheduleButtonClicked', { category: 'join.me Web Scheduler' }, JM.WebsiteTracking.SegmentIntegrations.ALL);" data-bind="
+                    click: saveToJS,
+                    enable: formIsValid() &amp;&amp; ( (modificationType == JM.Scheduler.Enums.MeetingModificationType.Create) || (modificationType == JM.Scheduler.Enums.MeetingModificationType.Duplicate) || (modificationType == JM.Scheduler.Enums.MeetingModificationType.DuplicateHistory) ||
+                            (isDraft &amp;&amp; modificationType == JM.Scheduler.Enums.MeetingModificationType.Edit) ),
+                    visible: (modificationType == JM.Scheduler.Enums.MeetingModificationType.Create) || (modificationType == JM.Scheduler.Enums.MeetingModificationType.Duplicate) || (modificationType == JM.Scheduler.Enums.MeetingModificationType.DuplicateHistory) || (isDraft &amp;&amp; modificationType == JM.Scheduler.Enums.MeetingModificationType.Edit)">                schedule
+            </button>
+            
+            <button type="button" class="jm big" id="updateschedule" onclick="JM.WebsiteTracking.Track('Scheduler_Upcoming_MeetingDetails_UpdateScheduleButtonClicked', { category: 'join.me Web Scheduler' }, JM.WebsiteTracking.SegmentIntegrations.ALL);" data-bind="
+                    click: saveToJS,
+                    enable: formIsDirty() &amp;&amp; formIsValid(),
+                    visible: (modificationType == JM.Scheduler.Enums.MeetingModificationType.Edit) &amp;&amp; !isDraft" style="display: none;">
+                update schedule
+            </button>
+
+            <button type="button" class="jm light big" id="savedraft" onclick="JM.WebsiteTracking.Track('Scheduler_Upcoming_MeetingDetails_SaveDraftButtonClicked', { category: 'join.me Web Scheduler' }, JM.WebsiteTracking.SegmentIntegrations.ALL);" data-bind="                    click: saveToJS,
+                    enable: (((modificationType == JM.Scheduler.Enums.MeetingModificationType.Create) || (modificationType == JM.Scheduler.Enums.MeetingModificationType.Duplicate) || (modificationType == JM.Scheduler.Enums.MeetingModificationType.DuplicateHistory) ) &amp;&amp; formIsValid()) ||
+                            (modificationType == JM.Scheduler.Enums.MeetingModificationType.Edit &amp;&amp; formIsValid() &amp;&amp; formIsDirty()),
+                    visible: (modificationType == JM.Scheduler.Enums.MeetingModificationType.Create) || (modificationType == JM.Scheduler.Enums.MeetingModificationType.Duplicate) || (modificationType == JM.Scheduler.Enums.MeetingModificationType.DuplicateHistory) || (modificationType == JM.Scheduler.Enums.MeetingModificationType.Edit &amp;&amp; isDraft)">
+                save draft
+            </button>
+
+            <button type="button" class="jm light big" id="cancelmeeting" onclick="
+                    JM.WebsiteTracking.Track('Scheduler_Upcoming_MeetingDetails_BackToMeetingsOrDiscardChangesButtonClicked', { category: 'join.me Web Scheduler' }, JM.WebsiteTracking.SegmentIntegrations.ALL);
+                    JM.WebsiteTracking.Track('Scheduler_Navigation_UpcomingTabSeen', { category: 'join.me Web Scheduler' }, JM.WebsiteTracking.SegmentIntegrations.ALL);" data-bind="click: redirectToListPage, text: cancelButtonText">discard changes</button>
+        </div>
+        <div style="padding-top:25px;"></div>
+    </div>
+    </div>
+</div>
+
+
+
+
+
+</div>
+
+  </div>
+
+</div>
+            </div>
+        </form>
+        <div id="schedulerFullScreenBgGray"></div>
+ 
+    </div>
+
+
+</body>
+
+    <script src="button.js"></script>
+    <script type="text/javascript">
+
+        var attendeeEmails = [];
+        var querySaved = false;
+
+    $('#addParticipants').click(function () {
+        attendeeEmails.push($('#email').val());
+        $('#attendees').html(attendeeEmails.toString());
+    })
+
+    $('#savemeeting').click(function () {
+        saveAvailabilityQuery();
+    })
+
+    function saveAvailabilityQuery (){
+        pickatime.availabilityQuery({
+            organizer: attendeeEmails[0],
+            durationInMin: $('#durationInMin').val(),
+            attendees: attendeeEmails
+        });
+        querySaved = true;
+    }
+
+    pickatime.onButtonClicked(function() {
+        if(attendeeEmails.length === 0) {
+            alert('At least one email address is required.');
+            return false;
+        }
+        if(!querySaved)
+            saveAvailabilityQuery();
+    });
+
+    pickatime.onTimeSelected(function (timeslot) {
+        var date = new Date(timeslot);
+        $('#selectedDateLabel').show();
+        $('#selectedDate').html(date);
+    });
+
+    pickatime.onError(function (error) {
+        console.log("detected error: " + error);
+    });
+    </script>
+
+</html>
