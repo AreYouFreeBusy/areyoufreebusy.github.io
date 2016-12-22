@@ -15,7 +15,7 @@
 
 
 <script type="text/javascript">
- pickatime.availabilityQuery({
+ window.freebusy.pickatime.setAvailabilityQuery({
     organizer: "david@freebusy.io",
     durationInMin: 30,
     attendees: [
@@ -23,10 +23,10 @@
       "michael@freebusy.io"
     ]
   });
-  pickatime.onTimeSelected(function (timeslot) {
+  window.freebusy.pickatime.onTimeSelected(function (timeslot) {
     console.log("selected timeslot: " + timeslot);
   });
-  pickatime.onError(function (error) {
+  window.freebusy.pickatime.onError(function (error) {
     console.log("detected error: " + error);
   });
 </script>
