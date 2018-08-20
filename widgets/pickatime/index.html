@@ -9,27 +9,83 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
+<body>
+    
+<!-- <script type="text/javascript" src="https://js.freebusy.io/pick-a-time/v1"></script> -->
+<script type="text/javascript" src="https://localhost.freebusy.io:49506/pick-a-time/v1"></script>
+    
+    
+ <div class="container">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+      <h2>FreeBusy Pick-a-Time demo</h2>
+      <p>
+        Pick your preferred time for the demo.
+      </p>
+      <div class="tab-content" style="background-color:#EEF6F9;padding: 20px 50px">
+        <div role="tabpanel" id="step1">
+          <form role="form" id="formDemo" method="post">
+            <input type="button" class="btn btn-primary" id="pick-a-time" value="Pick a time for demo" />
+          </form>
+        </div>
+        <div role="tabpanel" id="step2" style="display:none">
+          <p class="mt-120 mb-120">
+            <strong>Demo booked for <span id="startTime"></span></strong>
+          </p>
+        </div>
+        <div role="tabpanel" id="stepError" style="display:none">
+          <p class="mt-120 mb-120 text-center">
+            We couldn't book your demo at this time.<br />
+            Please contact us at <strong>hello@freebusy.io</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+</body>
 
-<div id="freebusy-button"></div>
-<script src="https://freebusy.io/scripts/pick-a-time/button.js"></script>
+
 
 
 <script type="text/javascript">
- window.freebusy.pickatime.setAvailabilityQuery({
-    organizer: "david@freebusy.io",
-    durationInMin: 30,
-    attendees: [
-      "stefan@freebusy.io",
-      "michael@freebusy.io"
-    ]
-  });
-  window.freebusy.pickatime.onTimeSelected(function (timeslot) {
-    console.log("selected timeslot: " + timeslot);
-  });
-  window.freebusy.pickatime.onError(function (error) {
-    console.log("detected error: " + error);
+  $(document).ready(function () {
+    freebusy.pickatime.init({
+      buttonType: "native"
+    });
+
+    freebusy.pickatime.onclick(function () {
+      freebusy.pickatime.open(
+        {
+          scenario: 'meet'
+        },
+        {
+          calendarOwner: 'freebusy-growth-team',
+          durationInMin: 30,
+          subject: "FreeBusy intro and demo",
+          location: "Skype for Business",
+          notes: $("textarea[name='notes']").val(),
+          participants: [{
+            email: $("input[name='email']").val(),
+            name: $("input[name='name']").val(),
+            role: "proposer",
+            timeZone: moment.tz.guess()
+          }]
+        }
+      );
+    });
+
+    freebusy.pickatime.onselect(function (response, proposal) {
+      if (response.statusCode === 200) {
+        $('#startTime').text(moment(new Date(proposal.startTime)).format('MMMM Do YYYY [at] h:mm a'));
+        $('#step1').hide();
+        $('#step2').show();
+      }
+      else {
+        $('#step1').hide();
+        $('#stepError').show();
+      }
+    });
   });
 </script>
-
-
-
