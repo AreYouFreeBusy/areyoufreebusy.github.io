@@ -79,6 +79,7 @@
     });
 
     freebusy.pickatime.onselect(function (response, proposal) {
+      debugger;
       if (response.statusCode === 200) {
         $('#startTime').text(moment(new Date(proposal.startTime)).format('MMMM Do YYYY [at] h:mm a'));
         $('#step1').hide();
