@@ -14,12 +14,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" />
   <meta name="keywords" content="share, calendar, availability, meeting, schedule, scheduling, assistant, outlook" />
-  <link rel="apple-touch-icon" sizes="120x120" href="https://cdn.freebusy.io/content/icons/freebusy-icon-120x120.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="https://cdn.freebusy.io/content/icons/freebusy-icon-96x96.png">
-  <link rel="icon" type="image/x-icon" href="https://cdn.freebusy.io/content/icons/favicon.ico" />
-  <link rel="shortcut icon" type="image/x-icon" href="https://cdn.freebusy.io/content/icons/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="120x120" href="https://freebusy.io/content/icons/freebusy-icon-120x120.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="https://freebusy.io/content/icons/freebusy-icon-96x96.png">
+  <link rel="icon" type="image/x-icon" href="https://freebusy.io/content/icons/favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://freebusy.io/content/icons/favicon.ico" />
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdn.freebusy.io/content/css/webapp.min.css?v=LkFaMqWrCwVJXBgGtpfcpk3pQXZLCd1ofvpxTTwdIfs1" />
+  <link rel="stylesheet" href="https://freebusy.io/content/css/webapp.min.css" />
 </head>
 <body>
 <div id="body">
@@ -106,11 +106,8 @@
               <label for="notes">Notes</label>
               <textarea name="notes" class="form-control" id="notes" rows="6" placeholder="Anything in particular you'd like to cover?"></textarea>
             </div>
-            <div class="submit" ng-click="isButtonClicked = true">
-              <input ng-show="!name || !email"
-                      type="button" class="btn btn-primary" id="book-disabled" value="Pick a time for demo" />
-              <input ng-show="name && email"
-                      type="button" class="btn btn-primary" id="book" value="Pick a time for demo" />
+            <div class="submit">
+              <input type="button" class="btn btn-primary" id="book" value="Pick a time for demo" />
             </div>
           </form>
         </div>
@@ -250,7 +247,7 @@
 
       freebusy.pickatime.onselect(function (response, proposal) {
         if (response.statusCode === 200) {
-          $('#startTime').text(moment(new Date(proposal.startTime)).format('MMMM Do YYYY [at] h:mm a'));
+          $('#startTime').text(new Date(proposal.startTime));
           $('#step1').hide();
           $('#step2').show();
         }
