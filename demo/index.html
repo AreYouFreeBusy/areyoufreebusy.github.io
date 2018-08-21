@@ -1,0 +1,270 @@
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!--              Join the FreeBusy team and Do Epic Sh*t!                   -->
+<!--                   https://angel.co/freebusy/jobs                        -->
+<!--                                                                         -->
+<!--     Copyright (C) BizLogr Inc. d/b/a FreeBusy. All rights reserved.     -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Schedule a Product Demo | FreeBusy</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" />
+  <meta name="keywords" content="share, calendar, availability, meeting, schedule, scheduling, assistant, outlook" />
+  <link rel="apple-touch-icon" sizes="120x120" href="https://cdn.freebusy.io/content/icons/freebusy-icon-120x120.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="https://cdn.freebusy.io/content/icons/freebusy-icon-96x96.png">
+  <link rel="icon" type="image/x-icon" href="https://cdn.freebusy.io/content/icons/favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://cdn.freebusy.io/content/icons/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.freebusy.io/content/css/webapp.min.css?v=LkFaMqWrCwVJXBgGtpfcpk3pQXZLCd1ofvpxTTwdIfs1" />
+</head>
+<body>
+<div id="body">
+  <nav class="navbar navbar-default navbar-fixed-top ">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+        <span class="glyphicon glyphicon-menu-hamburger"></span>&nbsp; MENU
+      </button>
+      <a class="navbar-brand" href="/">&nbsp;</a>
+    </div>
+    <div class="hidden-xs">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a class="text-uppercase"
+                   data-analytics-category="signup"
+                   data-analytics-event="web_navbar_faq"
+                   href="/how-it-works">
+                  &nbsp;&nbsp; FAQ &nbsp;&nbsp;
+                </a>
+              </li>
+              <li>
+                <a class="text-uppercase"
+                   data-analytics-category="signup"
+                   data-analytics-event="web_navbar_signup"
+                   href="https://freebusy.io/signup?returnUrl=%2Fdemo">
+                  &nbsp; Sign Up &nbsp;
+                </a>
+              </li>
+              <li>
+                <a class="text-uppercase"
+                   data-analytics-category="signup"
+                   data-analytics-event="web_navbar_signin"
+                   href="https://freebusy.io/signin?returnUrl=%2Fdemo">
+                  &nbsp; Sign In &nbsp;
+                </a>
+              </li>
+            </ul>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="visible-xs nav navbar-nav navbar-right">
+          <li>
+            <a class="text-uppercase"
+                data-analytics-category="signup"
+                data-analytics-event="web_navbar_signin"
+                href="https://freebusy.io/signin?returnUrl=%2Fdemo">
+              Sign In <span class="hidden-sm">With Your Calendar</span>
+            </a>
+          </li>
+        </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="body-content">
+<script type="text/javascript" src="https://js.freebusy.io/pick-a-time/v1"></script>
+<div class="container"
+     ng-app="WebApp"
+     ng-cloak>
+  <div class="row mt-40 mb-40">
+    <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+      <h2>Book a demo with a FreeBusy specialist</h2>
+      <p>
+        Tell us about your scheduling use case and pick your preferred time for the demo.
+      </p>
+      <div class="tab-content" style="background-color:#EEF6F9;padding: 20px 50px">
+        <div role="tabpanel" id="step1">
+          <form role="form" id="formDemo" method="post">
+            <div class="form-group"
+                 ng-class="{ 'has-error': isButtonClicked && !name }">
+              <label for="name">Your Name*</label>
+              <input type="text" name="name" class="form-control" id="name"
+                     ng-model="name" />
+            </div>
+            <div class="form-group"
+                 ng-class="{ 'has-error': isButtonClicked && !email }">
+              <label for="email">Work Email*</label>
+              <input type="email" name="email" class="form-control" id="email" placeholder="You will receive a calendar invite to this email"
+                     ng-model="email" />
+            </div>
+            <div class="form-group">
+              <label for="company">Company Name</label>
+              <input type="text" name="company" class="form-control" id="company" />
+            </div>
+            <div class="form-group">
+              <label for="notes">Notes</label>
+              <textarea name="notes" class="form-control" id="notes" rows="6" placeholder="Anything in particular you'd like to cover?"></textarea>
+            </div>
+            <div class="submit" ng-click="isButtonClicked = true">
+              <input ng-show="!name || !email"
+                      type="button" class="btn btn-primary" id="book-disabled" value="Pick a time for demo" />
+              <input ng-show="name && email"
+                      type="button" class="btn btn-primary" id="book" value="Pick a time for demo" />
+            </div>
+          </form>
+        </div>
+        <div role="tabpanel" id="step2" style="display:none">
+          <p class="mt-120 mb-120">
+            <strong>Demo booked for <span id="startTime"></span></strong>
+          </p>
+        </div>
+        <div role="tabpanel" id="stepError" style="display:none">
+          <p class="mt-120 mb-120 text-center">
+            We couldn't book your demo at this time.<br />
+            Please contact us.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Section -->
+<section class="page-section pt-0 pb-0 banner-section">
+  <div class="container-fluid">
+    <div class="row text-center mt-40">
+      <div class="col-xs-12">
+        <h3>You Are In Trusted Company</h3>
+      </div>
+    </div>
+    <div class="row text-center mt-20">
+      <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+        <img class="img-responsive" src="https://cdn.freebusy.io/content/logos/logos.png" alt="client logos" />
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Section -->
+<!-- Testimonials -->
+<section class="page-section pt-10 pb-10 banner-section">
+  <div id="testimonials" class="container relative mb-20">
+    <div class="row">
+      <div class="col-sm-12 text-center mt-40 mb-30">
+        <h3>See What Customers Have To Say</h3>
+        <a href='https://www.capterra.com/reviews/154042/FreeBusy?utm_source=vendor&utm_medium=badge&utm_campaign=capterra_reviews_badge'>
+          <img border='0' src='https://assets.capterra.com/badge/ac6d57b64079aac7ff473eefe37ac2c8.png?v=2108275&p=154042' />
+        </a>
+        <p class="mt-10">
+          <em>Rated 4.5 out of 5 <br />by users in large and small companies</em>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Testimonials -->
+
+</div>
+
+
+  </div>
+  <footer></footer>
+</div>
+<footer>
+  <div id="visible-xs" class="visible-xs"></div>
+<div id="visible-sm" class="visible-sm"></div>
+<div id="visible-md" class="visible-md"></div>
+<div id="visible-lg" class="visible-lg"></div>
+  
+<div id="footer" class="bg-gray-lighter">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 col-lg-3 col-lg-offset-1">
+        <ul class="list-unstyled">
+          <li><a href="/about">About</a></li>
+          <li><a href="/pricing">Pricing</a></li>
+          <li><a href="/security">Security Policy</a></li>
+          <li><a href="/privacy">Privacy Policy</a></li>
+          <li><a href="/terms">Terms of Use</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-4 col-lg-3 col-lg-offset-1">
+        <ul class="list-unstyled">
+          <li><a href="/how-it-works">How It Works</a></li>
+          <li><a href="/chrome">Chrome Extension</a></li>
+          <li><a href="/outlook">Outlook Add-in</a></li>
+          <li><a href="/developers">Developer API</a></li>
+          <li><a href="/enterprise">Enterprise Scheduling</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-4 col-lg-3 col-lg-offset-1">
+        <ul class="list-unstyled">
+          <li>&nbsp;</li>
+          <li>
+            <a href="https://help.freebusy.io" target="_blank">Help Center</a>
+            <small><small><span class="glyphicon glyphicon-new-window"></span></small></small>
+          </li>
+          <li>&nbsp;</li>
+          <li>
+            <a href="http://status.freebusy.io/" target="_blank">Service Status</a>
+            <small><small><span class="glyphicon glyphicon-new-window"></span></small></small>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</footer>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+    $(document).ready(function () {
+      freebusy.pickatime.init({
+        buttonType: "custom",
+        buttonId: "book"
+      });
+
+      freebusy.pickatime.onclick(function () {
+        freebusy.pickatime.open(
+          {
+            scenario: 'meet'
+          },
+          {
+            calendarOwner: 'freebusy-growth-team',
+            durationInMin: 30,
+            subject: "FreeBusy intro and demo",
+            location: "Skype for Business",
+            notes: $("textarea[name='notes']").val(),
+            participants: [{
+              email: $("input[name='email']").val(),
+              name: $("input[name='name']").val(),
+              role: "proposer",
+              timeZone: moment.tz.guess()
+            }]
+          }
+        );
+      });
+
+      freebusy.pickatime.onselect(function (response, proposal) {
+        if (response.statusCode === 200) {
+          $('#startTime').text(moment(new Date(proposal.startTime)).format('MMMM Do YYYY [at] h:mm a'));
+          $('#step1').hide();
+          $('#step2').show();
+        }
+        else {
+          $('#step1').hide();
+          $('#stepError').show();
+        }
+      });
+    });
+  </script>
+
+
+</body>
+</html>
