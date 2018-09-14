@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<!--  This site was created in Webflow. http://www.webflow.com  -->
+<!--  Last Published: Thu Sep 13 2018 12:01:35 GMT+0000 (UTC)  -->
+<html data-wf-page="5b62bf66b54c829a783174a4" data-wf-site="5b62bf66b54c8251b03173e9">
+<head>
+  <meta charset="utf-8">
+  <title>FreeBusy, the complete solution for scheduling meetings</title>
+  <meta content="FreeBusy is the perfect AI scheduling assistant for individuals, teams and enterprises. Coordinate meetings 10x faster." name="description">
+  <meta content="FreeBusy, the complete solution for scheduling meetings" property="og:title">
+  <meta content="FreeBusy is the perfect AI scheduling assistant for individuals, teams and enterprises. Coordinate meetings 10x faster." property="og:description">
+  <meta content="summary" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/freebusy.webflow.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">
+      WebFont.load({
+        google: {
+          families: ["Merriweather:300,300italic,400,400italic,700,700italic,900,900italic", "Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic", "Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic", "Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic", "Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic", "Work Sans:100,200,300,regular,500,600,700,800,900", "Source Sans Pro:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,900,900italic"]
+        }
+      });
+    </script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">
+      ! function(o, c) {
+        var n = c.documentElement,
+          t = " w-mod-";
+        n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
+      }(window, document);
+    </script>
+  <link href="images/FreeBusy_Logo_32.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/FreeBusy_Logo.png" rel="apple-touch-icon">
+  <style>
+      html {
+        opacity: 0;
+        transition: opacity 0s ease-out;
+      }
+      html.webflow-loaded {
+        opacity: 1;
+      }
+    </style>
+  <script>
+      var Webflow = Webflow || [];
+      Webflow.push(function() {
+        $('html').addClass('webflow-loaded')
+      });
+    </script>
+  <!--  Hotjar Tracking Code for https://freebusy.io  -->
+  <script>
+      (function(h, o, t, j, a, r) {
+        h.hj = h.hj || function() {
+          (h.hj.q = h.hj.q || []).push(arguments)
+        };
+        h._hjSettings = {
+          hjid: 974027,
+          hjsv: 6
+        };
+        a = o.getElementsByTagName('head')[0];
+        r = o.createElement('script');
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+</head>
+<body>
+  <div data-w-id="50c9180c-ebb3-5a6b-17a1-a3c0f4666b88" class="preload"><img src="images/Loader.gif" class="preload-icon"></div>
+  <div class="page-wrapper">
+    <div data-collapse="medium" data-animation="default" data-duration="400" data-w-id="d01e57f4-e73a-65d3-95aa-b600a5a5e2d8" class="shared_navbar w-nav">
+      <div class="shared_container_alternativ w-container"><a href="index.html" class="shared_logo_brand w-nav-brand"><img src="images/logo.svg" width="170" data-w-id="0dfd8e9a-4602-3642-1827-934a200088f2" class="shared_logo_white"><img src="images/logo_color.svg" width="170" data-w-id="d3c439d2-1166-60f8-767e-9220a56a7532" class="shared_logo_color"></a>
+        <nav role="navigation" class="shared_nav_menu w-nav-menu">
+          <div data-delay="0" class="w-dropdown">
+            <div data-w-id="442a460d-b9a1-a169-ecc1-d22a89966730" class="shared_nav_link w-dropdown-toggle">
+              <div class="center">Solutions</div>
+              <div class="shared_dropdown_icon w-icon-dropdown-toggle"></div>
+            </div>
+            <nav class="shared_nav_dropdown w-dropdown-list"><a href="solutions/recruiting-professionals.html" class="shared_dropdown_link w-dropdown-link">For Recruiting Professionals</a><a href="solutions/sales-and-marketing.html" class="shared_dropdown_link w-dropdown-link">For Sales &amp; Marketing</a><a href="solutions/consultants-and-freelancers.html" class="shared_dropdown_link w-dropdown-link">For Consultants &amp; Freelancers</a><a href="solutions/customer-assistance.html" class="shared_dropdown_link w-dropdown-link">For Customer Assistance</a><a href="solutions/freebusy-for-enterprise.html" class="shared_dropdown_link w-dropdown-link">For Enterprises</a><a href="solutions/automated-scheduling-solutions.html" class="shared_dropdown_link w-dropdown-link">Automated Scheduling Solutions</a></nav>
+          </div>
+          <div data-delay="0" class="w-dropdown">
+            <div class="shared_nav_link right-margin-20 w-dropdown-toggle">
+              <div class="center">Integrations</div>
+              <div class="shared_dropdown_icon w-icon-dropdown-toggle"></div>
+            </div>
+            <nav class="shared_nav_dropdown w-dropdown-list"><a href="#integrations" class="shared_dropdown_link w-dropdown-link">Calendar Integrations</a><a href="#integrations" class="shared_dropdown_link w-dropdown-link">Web Conferencing Integrations</a><a target="_blank" href="/outlook" class="shared_dropdown_link w-dropdown-link">Outlook Add-In</a><a href="/chrome" target="_blank" class="shared_dropdown_link w-dropdown-link">G Suite Integration</a></nav>
+          </div><a href="#features" class="shared_nav_link">Features</a><a target="_blank" href="/pricing" class="shared_nav_link">Pricing</a><a href="/signup" target="_blank" data-w-id="c876da89-ae6e-9305-0bd3-8a594d94d6ac" class="shared_menu_button_outline right-margin-20 w-button">Try for free</a><a target="_blank" href="/signin" class="shared_nav_link">Sign in</a></nav>
+        <div data-w-id="ffabe870-9308-4bbf-b747-6913d469d683" class="shared_menu_button w-nav-button">
+          <div data-w-id="ffabe870-9308-4bbf-b747-6913d469d684" class="icon-4 w-icon-nav-menu"></div>
+        </div>
+      </div>
+      <div data-w-id="c65c81f4-846f-25c0-07f8-6ecf503706f4" class="navbar-background"></div>
+    </div>
+    <div data-ix="slide-in-scroll-navigation-on-scroll" class="hero-section top">
+      <div class="full-container center top-padding-150">
+        <div>
+          <div class="top-padding-100 margin-10">
+            <h1 class="hero-big-text white width80">How fast can you <strong class="bold-text-8">schedule a meeting</strong> with 4 people from 2 companies?</h1>
+            <p class="hero-big-text white width80">2 days? How about, <strong>60 seconds</strong>!</p>
+            <div class="button-block-center"><a href="/signup" class="button move-up no-hover white-button width80 w-button">Try for free</a><a target="_blank" href="/demo" class="button move-up no-hover outline-button white-outline-button left-space-20 left-space--20 width80 w-button">Schedule a demo</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="Complete-Solution" class="section gray">
+      <div class="full-container">
+        <div class="section-tittle-block no-margin padding-top">
+          <div class="shared_sub_tittle shared_bottom_space center">COORDINATE MEETINGS 10X FASTER</div>
+          <h1 class="hero-big-text black center bottom-space-50">The <strong>complete solution</strong> for <strong>scheduling meetings</strong></h1>
+        </div>
+        <div class="row-6 w-row">
+          <div class="same-height w-col w-col-4 w-col-stack">
+            <a href="solutions/recruiting-professionals.html" class="solutions _1 w-inline-block">
+              <div class="service-div-wrapper">
+                <div class="swervices-wrapper _2 w-clearfix"><img src="images/recruiting.svg" class="audience-image">
+                  <h4 class="features-tittle top-padding-20">For Recruiting &amp; Executive Search</h4>
+                  <p class="paragraph bottom-space-16 grey">Reduce time-to-hire with seamless interview scheduling!</p>
+                  <p class="paragraph bottom-space-16 right blue">See how it works</p><img src="images/noun_Arrow_1569918.svg" width="30" class="float-right"></div>
+              </div>
+            </a>
+          </div>
+          <div class="same-height w-col w-col-4 w-col-stack">
+            <a href="solutions/sales-and-marketing.html" class="solutions _2 w-inline-block">
+              <div class="service-div-wrapper">
+                <div class="swervices-wrapper _2 w-clearfix"><img src="images/sales.svg" class="audience-image">
+                  <h4 class="features-tittle top-padding-20">For Sales &amp; Marketing</h4>
+                  <p class="paragraph bottom-space-16 grey">Close more deals and win more happy clients with instant &amp; personalized scheduling!</p>
+                  <p class="paragraph bottom-space-16 right blue">See how it works</p><img src="images/noun_Arrow_1569918.svg" width="30" class="float-right"></div>
+              </div>
+            </a>
+          </div>
+          <div class="same-height w-col w-col-4 w-col-stack">
+            <a href="solutions/consultants-and-freelancers.html" class="solutions _2 w-inline-block">
+              <div class="service-div-wrapper">
+                <div class="swervices-wrapper _2 w-clearfix"><img src="images/Consultants_and_freelancers.svg" class="audience-image">
+                  <h4 class="features-tittle top-padding-20">For Consultants &amp; Freelancers</h4>
+                  <p class="paragraph bottom-space-16 grey">Differentiate yourself from the competition by easy communicate your availability to your clients!</p>
+                  <p class="paragraph bottom-space-16 right blue">See how it works</p><img src="images/noun_Arrow_1569918.svg" width="30" class="float-right"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row-5 w-row">
+          <div class="same-height w-col w-col-4 w-col-stack">
+            <a href="solutions/customer-assistance.html" class="solutions _2 w-inline-block">
+              <div class="service-div-wrapper">
+                <div class="swervices-wrapper _2 w-clearfix"><img src="images/customer_assistance.svg" class="audience-image">
+                  <h4 class="features-tittle top-padding-20">For Customer Assistance</h4>
+                  <p class="paragraph bottom-space-16 grey">Be prepared with the right tools to turn customer service challenges into opportunities!</p>
+                  <p class="paragraph bottom-space-16 right blue">See how it works</p><img src="images/noun_Arrow_1569918.svg" width="30" class="float-right"></div>
+              </div>
+            </a>
+          </div>
+          <div class="same-height w-col w-col-4 w-col-stack">
+            <a href="solutions/freebusy-for-enterprise.html" class="solutions _2 w-inline-block">
+              <div class="service-div-wrapper">
+                <div class="swervices-wrapper _2 w-clearfix"><img src="images/enterprise.svg" class="audience-image">
+                  <h4 class="features-tittle top-padding-20">For Enterprises</h4>
+                  <p class="paragraph bottom-space-16 grey">FreeBusy for Enterprise makes coordinating meetings fast and easy!</p>
+                  <p class="paragraph bottom-space-16 right blue">See how it works</p><img src="images/noun_Arrow_1569918.svg" width="30" class="float-right"></div>
+              </div>
+            </a>
+          </div>
+          <div class="same-height w-col w-col-4 w-col-stack">
+            <a href="solutions/automated-scheduling-solutions.html" class="solutions _2 w-inline-block">
+              <div class="service-div-wrapper">
+                <div class="swervices-wrapper _2 w-clearfix"><img src="images/embeded_availability_2.svg" class="audience-image">
+                  <h4 class="features-tittle top-padding-20">Automated Scheduling Solutions</h4>
+                  <p class="paragraph bottom-space-16 grey">With our embeddable widget &amp; buttons, finding the perfect time to meet is only a click away.</p>
+                  <p class="paragraph bottom-space-16 right blue">See how it works</p><img src="images/noun_Arrow_1569918.svg" width="30" class="float-right"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="Testimonials" class="section gradient-image">
+      <div class="w-container">
+        <div data-w-id="10104eb8-897c-f333-a89a-4feb20e9f240" class="center-block gradient bottom-space-100">
+          <div class="shared_sub_tittle light center">See What Customers Have To Say</div>
+          <div class="hero-big-text center white">Trusted by the world’s most <strong>innovative businesses</strong> - big and small</div>
+          <div class="top-space-block _30 center"></div>
+          <div class="full-container">
+            <div class="w-row">
+              <div class="w-col w-col-2 w-col-medium-4 w-col-small-6 w-col-tiny-6">
+                <div class="logo-div _2"></div>
+              </div>
+              <div class="w-col w-col-2 w-col-medium-4 w-col-small-6 w-col-tiny-6">
+                <div class="logo-div _3"></div>
+              </div>
+              <div class="w-col w-col-2 w-col-medium-4 w-col-small-6 w-col-tiny-6">
+                <div class="logo-div _4"></div>
+              </div>
+              <div class="w-col w-col-2 w-col-medium-4 w-col-small-6 w-col-tiny-6">
+                <div class="logo-div _5"></div>
+              </div>
+              <div class="w-col w-col-2 w-col-medium-4 w-col-small-6 w-col-tiny-6">
+                <div class="logo-div _6"></div>
+              </div>
+              <div class="w-col w-col-2 w-col-medium-4 w-col-small-6 w-col-tiny-6">
+                <div class="logo-div _7"></div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="column-9 w-col w-col-2 w-col-stack w-col-small-6 w-col-tiny-6"></div>
+              <div class="column-10 w-col w-col-2 w-col-stack w-col-small-6 w-col-tiny-6"></div>
+              <div class="w-col w-col-2 w-col-stack w-col-small-6 w-col-tiny-6">
+                <div class="logo-div _8"></div>
+              </div>
+              <div class="w-col w-col-2 w-col-stack w-col-small-6 w-col-tiny-6">
+                <div class="logo-div _9"></div>
+              </div>
+              <div class="column-11 w-col w-col-2 w-col-stack w-col-small-6 w-col-tiny-6"></div>
+              <div class="column-12 w-col w-col-2 w-col-stack w-col-small-6 w-col-tiny-6"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section team">
+      <div class="full-container back160">
+        <div class="div-block">
+          <div data-delay="10000" data-animation="slide" data-autoplay="1" data-duration="1000" data-infinite="1" class="team-slider w-slider">
+            <div class="w-slider-mask">
+              <div class="slide-second w-slide">
+                <div class="same-height w-row">
+                  <div class="same-height w-col w-col-4">
+                    <div data-ix="move-left" class="team-wrapper-block">
+                      <p class="top-padding-20"><strong>&quot;</strong> Started using this to schedule client calls as a consultant. I love that I can create a team of consultants and share the calendar with one link. The client then can pick the easiest time. Saves 10 emails to schedule a meeting or even worse scheduling a phone call to coordinate a meeting.<br></p>
+                      <p class="shared_small_text center top-padding-20">Casey D. - Consultant<br></p>
+                    </div>
+                  </div>
+                  <div class="same-height w-col w-col-4">
+                    <div data-ix="move-left" class="team-wrapper-block">
+                      <p class="top-padding-20"><strong>&quot; </strong>Very helpful with my day to day planning. It makes scheduling meetings easier, especially with customers who are overseas. It frees up my time to do other things.<br></p>
+                      <p class="shared_small_text center top-padding-20">Michael N. - Customer Success Manager<br></p>
+                    </div>
+                  </div>
+                  <div class="same-height w-col w-col-4">
+                    <div data-ix="move-left" class="team-wrapper-block">
+                      <p class="top-padding-20"><strong>&quot; </strong>I needed a way to set up client appointments that was not only easy to set up, but easy for my clients to use as well. FreeBusy is easy to sync with your online calendar (whichever you use). They also make it easy to create your own vanity link to share with your clients.<br></p>
+                      <p class="shared_small_text center top-padding-20">Shannon C. - Virtual Support Specialist / Owner<br></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide-second w-slide">
+                <div class="same-height w-row">
+                  <div class="same-height w-col w-col-4">
+                    <div data-ix="move-left" class="team-wrapper-block">
+                      <p class="top-padding-20"><strong>&quot; </strong>I was first introduced to FreeBusy through a co-worker, and it has become such a staple of my day to day work life, I would not know what to do without it. It&#x27;s in my signature line and every email I send.<strong><br></strong></p>
+                      <p class="shared_small_text center top-padding-20">Patrick C. - Sales Operations Manager<br></p>
+                    </div>
+                  </div>
+                  <div class="same-height w-col w-col-4">
+                    <div data-ix="move-left" class="team-wrapper-block">
+                      <p class="top-padding-20"><strong>&quot; </strong>Accommodates scheduling complexities of having multiple calendars. No other service handles this without very painful workarounds, and this takes it up a notch with easy URL-based calendar switches.<br></p>
+                      <p class="shared_small_text center top-padding-20">Chris R. - Co-Founder<br></p>
+                    </div>
+                  </div>
+                  <div class="same-height w-col w-col-4">
+                    <div data-ix="move-left" class="team-wrapper-block">
+                      <p class="top-padding-20"><strong>&quot;</strong> I like the appearance, ease of use and the ability to create custom hyperlinks for 15/30/60 minutes. Prospective and current customers compliment the service.<br></p>
+                      <p class="shared_small_text center top-padding-20">Aaron W. - Lead Territory Manager<br></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="left-arrow-3 w-slider-arrow-left">
+              <div class="icon-2 w-icon-slider-left"></div>
+            </div>
+            <div class="right-arrow-3 w-slider-arrow-right">
+              <div class="icon-3 w-icon-slider-right"></div>
+            </div>
+            <div class="slide-nav-second w-slider-nav w-slider-nav-invert w-shadow w-round w-num"></div>
+            <p class="shared_small_text center">Rated 4.5 out of 5 in large and small companies. <a href="https://www.capterra.com/p/154042/FreeBusy/#reviews" target="_blank">See more testimonials on Caprerra!</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="features" class="section bottom-line">
+      <div class="w-container">
+        <div data-w-id="609e178d-5f29-ad6e-3206-ef14502128a7" style="opacity:0" class="center-block">
+          <div class="shared_sub_tittle center">Accelerate your growth</div>
+          <div class="hero-big-text bottom-space-100">The perfect <strong>AI scheduling assistant</strong> for individuals, teams and enterprises</div>
+        </div>
+      </div>
+      <div class="full-container w-row">
+        <div class="w-col w-col-4">
+          <div class="features-wrapper no-border">
+            <div class="swervices-wrapper">
+              <div class="features-icon _1"></div>
+              <h4 class="features-tittle">Shareable unified availability for personal &amp; business calendars <br></h4>
+              <p class="paragraph bottom-space-50 grey">We designed FreeBusy to integrate with all your existing calendars. Check availability in real-time for an unlimited number of meeting participants. Get your own personalized availability page.<br></p>
+            </div>
+          </div>
+        </div>
+        <div class="w-col w-col-4">
+          <div class="features-wrapper no-border">
+            <div class="swervices-wrapper">
+              <div class="features-icon _2"></div>
+              <h4 class="features-tittle">Integrates &amp; prepares conference calls for you</h4>
+              <p class="paragraph bottom-space-50 grey">FreeBusy integrates will all major web conferencing services and automatically ensures meetings are prepared with conference call information.</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-col w-col-4">
+          <div class="features-wrapper no-border">
+            <div class="swervices-wrapper">
+              <div class="features-icon _3"></div>
+              <h4 class="features-tittle">Highly customizable availability preferences<br></h4>
+              <p class="paragraph bottom-space-50 grey">From separate preferences for people inside &amp; outside your company, to preventing back-to back meetings and password-protect your availability page.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="full-container w-row">
+        <div class="w-col w-col-4">
+          <div class="features-wrapper no-border">
+            <div class="swervices-wrapper">
+              <div class="features-icon _4"></div>
+              <h4 class="features-tittle">Real-time group availability and scheduling for the entire team<br></h4>
+              <p class="paragraph bottom-space-50 grey">Real-time group availability across one or multiple companies and time zones. You can schedule a group meeting with external people in 60 seconds or display your teams availability from multiple locations, all in one place.<br></p>
+            </div>
+          </div>
+        </div>
+        <div class="w-col w-col-4">
+          <a target="_blank" href="#" class="solutions _2 w-inline-block">
+            <div class="features-wrapper no-border">
+              <div class="swervices-wrapper">
+                <div class="features-icon _5"></div>
+                <h4 class="features-tittle">Bring FreeBusy to 3rd party apps &amp; websites with Pick-a-Time<br></h4>
+                <p class="paragraph bottom-space-50 grey">Experience real-time individual or group availability right inside your favorite apps &amp; websites, with Pick-a-Time embedded widget. Embed your availability on your company&#x27;s site or your blog. Also, integrates with internal business apps (CRM, ATS, ERP etc.)</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="w-col w-col-4">
+          <div class="features-wrapper no-border">
+            <div class="swervices-wrapper">
+              <div class="features-icon _6"></div>
+              <h4 class="features-tittle">Time zones completely solved</h4>
+              <p class="paragraph bottom-space-50 grey">FreeBusy automatically detects every participant time zones and ensure everyone sees the right times and availability.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="integrations" class="section">
+      <div class="full-container">
+        <div data-w-id="bbf71545-e930-c579-6a16-cefeaf978411" style="opacity:0" class="bottom-block">
+          <div class="shared_sub_tittle center bottom-space-16">Connected to the tools you love</div>
+          <h1 class="hero-big-text black bold">Integrations to empower every team</h1>
+          <div class="full-container">
+            <div class="top-padding-60 same-height w-row">
+              <div class="same-height w-col w-col-6 w-col-stack w-col-small-small-stack w-col-tiny-tiny-stack">
+                <div class="service-div-wrapper integrations-wrapper">
+                  <div class="swervices-wrapper align-left">
+                    <div class="calendar-icons">
+                      <div class="integrations-icon-div">
+                        <div class="integrations-icon top-padding-20 google">
+                          <div class="vertical-align w-embed"><svg version="" id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);fill:#FBBC05;}
+	.st1{clip-path:url(#SVGID_4_);fill:#EA4335;}
+	.st2{clip-path:url(#SVGID_6_);fill:#34A853;}
+	.st3{clip-path:url(#SVGID_8_);fill:#4285F4;}
+</style>
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M44.5,20H24v8.5h11.8C34.7,33.9,30.1,37,24,37c-7.2,0-13-5.8-13-13s5.8-13,13-13c3.1,0,5.9,1.1,8.1,2.9
+			l6.4-6.4C34.6,4.1,29.6,2,24,2C11.8,2,2,11.8,2,24s9.8,22,22,22c11,0,21-8,21-22C45,22.7,44.8,21.3,44.5,20z"></path>
+	</defs>
+	<clippath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_" style="overflow:visible;"></use>
+	</clippath>
+	<path class="st0" d="M0,37V11l17,13L0,37z"></path>
+</g>
+<g>
+	<defs>
+		<path id="SVGID_3_" d="M44.5,20H24v8.5h11.8C34.7,33.9,30.1,37,24,37c-7.2,0-13-5.8-13-13s5.8-13,13-13c3.1,0,5.9,1.1,8.1,2.9
+			l6.4-6.4C34.6,4.1,29.6,2,24,2C11.8,2,2,11.8,2,24s9.8,22,22,22c11,0,21-8,21-22C45,22.7,44.8,21.3,44.5,20z"></path>
+	</defs>
+	<clippath id="SVGID_4_">
+		<use xlink:href="#SVGID_3_" style="overflow:visible;"></use>
+	</clippath>
+	<path class="st1" d="M0,11l17,13l7-6.1L48,14V0H0V11z"></path>
+</g>
+<g>
+	<defs>
+		<path id="SVGID_5_" d="M44.5,20H24v8.5h11.8C34.7,33.9,30.1,37,24,37c-7.2,0-13-5.8-13-13s5.8-13,13-13c3.1,0,5.9,1.1,8.1,2.9
+			l6.4-6.4C34.6,4.1,29.6,2,24,2C11.8,2,2,11.8,2,24s9.8,22,22,22c11,0,21-8,21-22C45,22.7,44.8,21.3,44.5,20z"></path>
+	</defs>
+	<clippath id="SVGID_6_">
+		<use xlink:href="#SVGID_5_" style="overflow:visible;"></use>
+	</clippath>
+	<path class="st2" d="M0,37l30-23l7.9,1L48,0v48H0V37z"></path>
+</g>
+<g>
+	<defs>
+		<path id="SVGID_7_" d="M44.5,20H24v8.5h11.8C34.7,33.9,30.1,37,24,37c-7.2,0-13-5.8-13-13s5.8-13,13-13c3.1,0,5.9,1.1,8.1,2.9
+			l6.4-6.4C34.6,4.1,29.6,2,24,2C11.8,2,2,11.8,2,24s9.8,22,22,22c11,0,21-8,21-22C45,22.7,44.8,21.3,44.5,20z"></path>
+	</defs>
+	<clippath id="SVGID_8_">
+		<use xlink:href="#SVGID_7_" style="overflow:visible;"></use>
+	</clippath>
+	<path class="st3" d="M48,48L17,24l-4-3l35-10V48z"></path>
+</g>
+</svg></div>
+                        </div>
+                        <div class="integrations-icons-text">G Suite</div>
+                      </div>
+                      <div class="integrations-icon-div">
+                        <div class="integrations-icon top-padding-20 office">
+                          <div class="vertical-align w-embed"><svg version="" id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.st5{fill:#E73F24;}
+	.st6{fill:#FFFFFF;}
+</style>
+<g>
+	<polygon class="st5" points="9.3,80 62,98.9 91.2,89.5 91.2,10.7 62,0.9 9.3,21.2 	">
+	<polygon class="st6" points="9.3,80.1 28.2,72.2 28.2,25.9 62.3,18 62.3,87 	">
+</polygon></polygon></g>
+</svg></div>
+                        </div>
+                        <div class="integrations-icons-text">Office 365</div>
+                      </div>
+                      <div class="integrations-icon-div">
+                        <div class="integrations-icon top-padding-20 exchange">
+                          <div class="vertical-align w-embed"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.exchange0{fill:#0071BB;}
+</style>
+<g>
+	<path class="exchange0" d="M0.9,12.7v74.4l54.9,9.5V78.4v-6.9v-19v-4.1V28.3v-6.9V3.2L0.9,12.7z M37.8,69.2l-20.8-2v-39l20-2.1V34
+		l-12.2,0.9v9l11.4-0.3v7.8l-11.4-0.1v9.3l13,0.7C37.8,61.3,37.8,69.2,37.8,69.2z"></path>
+	<path class="exchange0" d="M94,21.4H61v6.9h1.4c0.3,0,0.6,0.1,0.9,0.4l4.9,4.9c0.3,0.3,0.3,0.9,0,1.2l-1.8,1.8c-0.3,0.3-0.9,0.3-1.2,0
+		L63,34.4c0,0-0.1-0.1-0.2-0.1H61v13.3c3.4,3.1,6.3,5.3,5.4,6.3c-0.6,0.6-2.8-0.4-5.4-2v13.5h0.8C68,60.8,73,52.5,74.5,53.9
+		c1.8,1.7-10.1,17.3-11.6,17.5H61v6.9h33c2.7,0,4.9-2.2,4.9-4.9V26.3C98.9,23.6,96.7,21.4,94,21.4z M92,65.4v4.8
+		c0,0.7-0.5,1.2-1.2,1.2H86h-2h-5.5c-0.3,0-0.6-0.1-0.9-0.4l-4.9-4.9c-0.3-0.3-0.3-0.9,0-1.2l1.8-1.8c0.3-0.3,0.9-0.3,1.2,0l2.2,2.2
+		c0,0,0.1,0.1,0.2,0.1H86v-6.9c-4.6-6.1-12.9-11.1-11.5-12.6C76.2,44.1,91.8,56,92,57.4V65.4z M92,34.4v2v5.5c0,0.3-0.1,0.6-0.4,0.9
+		l-4.9,4.9c-0.3,0.3-0.9,0.3-1.2,0l-1.8-1.8c-0.3-0.3-0.3-0.9,0-1.2l2.2-2.2c0,0,0.1-0.1,0.1-0.2v-7.9h-6.9C73,39,68,47.3,66.5,45.9
+		c-1.8-1.7,10-17.4,11.5-17.6h8h4.8c0.7,0,1.2,0.5,1.2,1.2V34.4z"></path>
+</g>
+</svg></div>
+                        </div>
+                        <div class="integrations-icons-text">Exchange</div>
+                      </div>
+                      <div class="integrations-icon-div">
+                        <div class="integrations-icon top-padding-20 salesforce">
+                          <div class="w-embed"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 445.9 312.1" style="enable-background:new 0 0 445.9 312.1;" xml:space="preserve">
+<style type="text/css">
+	.salesforce0{fill:#139CD8;}
+	.salesforce1{fill:#FFFFFF;}
+</style>
+<g>
+	<path class="salesforce0" d="M185.9,34.6c14.2-14.8,33.9-23.9,55.7-23.9c29,0,54.3,16.2,67.8,40.2c11.7-5.2,24.7-8.1,38.3-8.1
+		c52.3,0,94.8,42.8,94.8,95.6S400.1,234,347.7,234c-6.4,0-12.6-0.6-18.7-1.9c-11.9,21.2-34.5,35.5-60.5,35.5
+		c-10.9,0-21.1-2.5-30.3-7c-12,28.3-40.1,48.2-72.8,48.2c-34,0-63-21.5-74.2-51.7c-4.9,1-9.9,1.6-15.1,1.6
+		C35.8,258.5,3,225.3,3,184.4C3,157,17.7,133,39.7,120.2c-4.5-10.4-7-21.9-7-33.9C32.7,39.2,70.9,1,118,1
+		C145.7,1,170.3,14.2,185.9,34.6"></path>
+	<path class="salesforce1" d="M66.7,160.6c-0.3,0.7,0.1,0.9,0.2,1c0.8,0.6,1.7,1,2.5,1.5c4.5,2.4,8.7,3.1,13.1,3.1c9,0,14.6-4.8,14.6-12.5
+		v-0.1c0-7.1-6.3-9.7-12.2-11.6l-0.8-0.2c-4.5-1.5-8.3-2.7-8.3-5.7V136c0-2.5,2.3-4.4,5.7-4.4c3.9,0,8.5,1.3,11.5,2.9
+		c0,0,0.9,0.6,1.2-0.3c0.2-0.5,1.7-4.5,1.8-4.9c0.2-0.5-0.1-0.8-0.4-1c-3.4-2.1-8.1-3.5-12.9-3.5h-0.9c-8.3,0-14,5-14,12.1v0.1
+		c0,7.5,6.4,10,12.3,11.7l1,0.3c4.3,1.3,8.1,2.5,8.1,5.5v0.2c0,2.8-2.4,4.9-6.4,4.9c-1.5,0-6.4,0-11.6-3.3c-0.6-0.4-1-0.6-1.5-0.9
+		c-0.3-0.2-0.9-0.4-1.2,0.4L66.7,160.6z"></path>
+	<path class="salesforce1" d="M198.7,160.6c-0.3,0.7,0.1,0.9,0.2,1c0.8,0.6,1.7,1,2.5,1.5c4.5,2.4,8.7,3.1,13.1,3.1c9,0,14.6-4.8,14.6-12.5
+		v-0.1c0-7.1-6.3-9.7-12.2-11.6l-0.8-0.2c-4.5-1.5-8.3-2.7-8.3-5.7V136c0-2.5,2.3-4.4,5.7-4.4c3.9,0,8.5,1.3,11.5,2.9
+		c0,0,0.9,0.6,1.2-0.3c0.2-0.5,1.7-4.5,1.8-4.9c0.2-0.5-0.1-0.8-0.4-1c-3.4-2.1-8.1-3.5-12.9-3.5h-0.9c-8.3,0-14,5-14,12.1v0.1
+		c0,7.5,6.4,10,12.3,11.7l1,0.3c4.3,1.3,8.1,2.5,8.1,5.5v0.2c0,2.8-2.4,4.9-6.4,4.9c-1.5,0-6.4,0-11.6-3.3c-0.6-0.4-1-0.6-1.5-0.9
+		c-0.2-0.1-0.9-0.4-1.2,0.4L198.7,160.6z"></path>
+	<path class="salesforce1" d="M296.3,137.3c-0.7-2.5-1.9-4.7-3.4-6.5s-3.5-3.3-5.8-4.4s-5-1.6-8.1-1.6s-5.8,0.5-8.1,1.6
+		c-2.3,1.1-4.2,2.6-5.8,4.4c-1.5,1.8-2.7,4-3.4,6.5c-0.7,2.5-1.1,5.2-1.1,8.1c0,2.9,0.4,5.6,1.1,8.1s1.9,4.7,3.4,6.5
+		s3.5,3.3,5.8,4.4c2.3,1,5,1.6,8.1,1.6c3,0,5.8-0.5,8.1-1.6c2.3-1,4.2-2.5,5.8-4.4c1.5-1.8,2.7-4,3.4-6.5c0.7-2.5,1.1-5.2,1.1-8.1
+		C297.4,142.6,297.1,139.8,296.3,137.3 M288.8,145.4c0,4.4-0.8,7.8-2.4,10.2s-4,3.6-7.3,3.6s-5.7-1.2-7.3-3.6
+		c-1.6-2.4-2.4-5.9-2.4-10.2c0-4.4,0.8-7.8,2.4-10.2s4-3.5,7.3-3.5s5.7,1.2,7.3,3.5C288,137.6,288.8,141.1,288.8,145.4"></path>
+	<path class="salesforce1" d="M358.1,158.1c-0.2-0.7-1-0.5-1-0.5c-1.1,0.4-2.3,0.8-3.5,1c-1.3,0.2-2.6,0.3-4.1,0.3c-3.6,0-6.5-1.1-8.6-3.2
+		c-2.1-2.1-3.2-5.6-3.2-10.3c0-4.3,1-7.5,2.9-9.9c1.8-2.4,4.6-3.7,8.4-3.7c3.1,0,5.5,0.4,8,1.1c0,0,0.6,0.3,0.9-0.5
+		c0.7-1.8,1.2-3.1,1.9-5.1c0.2-0.6-0.3-0.8-0.5-0.9c-1-0.4-3.3-1-5-1.3c-1.6-0.2-3.5-0.4-5.6-0.4c-3.2,0-6,0.5-8.4,1.6
+		s-4.4,2.5-6.1,4.4c-1.6,1.8-2.8,4-3.7,6.5c-0.8,2.5-1.2,5.2-1.2,8.1c0,6.2,1.7,11.3,5,15s8.3,5.6,14.9,5.6c3.9,0,7.8-0.8,10.7-1.9
+		c0,0,0.5-0.3,0.3-0.9L358.1,158.1z"></path>
+	<path class="salesforce1" d="M396.6,135.9c-0.6-2.4-2.2-4.9-3.3-6c-1.6-1.8-3.2-3-4.8-3.7c-2.1-0.9-4.6-1.5-7.3-1.5c-3.2,0-6.1,0.5-8.4,1.6
+		s-4.3,2.6-5.9,4.5c-1.5,1.9-2.7,4.1-3.4,6.6c-0.7,2.5-1.1,5.2-1.1,8.1c0,2.9,0.4,5.7,1.2,8.1c0.8,2.5,2,4.7,3.7,6.5
+		s3.8,3.2,6.4,4.2s5.7,1.5,9.3,1.5c7.4,0,11.2-1.7,12.8-2.5c0.3-0.2,0.5-0.4,0.2-1.2l-1.7-4.7c-0.3-0.7-1-0.4-1-0.4
+		c-1.8,0.7-4.4,1.9-10.5,1.9c-4,0-6.9-1.2-8.7-3c-1.9-1.9-2.8-4.6-3-8.5h25.5c0,0,0.7,0,0.7-0.7
+		C397.4,146.6,398.3,141.7,396.6,135.9 M371.3,141.3c0.4-2.4,1-4.4,2.1-6c1.6-2.4,3.9-3.7,7.3-3.7c3.3,0,5.5,1.3,7.1,3.7
+		c1.1,1.6,1.5,3.7,1.7,6H371.3z"></path>
+	<path class="salesforce1" d="M192.6,135.9c-0.6-2.4-2.2-4.9-3.3-6c-1.6-1.8-3.2-3-4.8-3.7c-2.1-0.9-4.6-1.5-7.3-1.5c-3.2,0-6.1,0.5-8.4,1.6
+		c-2.3,1.1-4.3,2.6-5.9,4.5c-1.5,1.9-2.7,4.1-3.4,6.6s-1.1,5.2-1.1,8.1c0,2.9,0.4,5.7,1.2,8.1c0.8,2.5,2,4.7,3.7,6.5
+		s3.8,3.2,6.4,4.2c2.6,1,5.7,1.5,9.3,1.5c7.4,0,11.2-1.7,12.8-2.5c0.3-0.2,0.5-0.4,0.2-1.2l-1.7-4.7c-0.3-0.7-1-0.4-1-0.4
+		c-1.8,0.7-4.4,1.9-10.5,1.9c-3.9,0-6.9-1.2-8.7-3c-1.9-1.9-2.8-4.6-3-8.5h25.5c0,0,0.7,0,0.7-0.7
+		C193.4,146.6,194.2,141.7,192.6,135.9 M167.2,141.3c0.4-2.4,1-4.4,2.1-6c1.6-2.4,3.9-3.7,7.3-3.7c3.3,0,5.6,1.3,7.1,3.7
+		c1,1.6,1.5,3.7,1.7,6H167.2z"></path>
+	<path class="salesforce1" d="M122.3,140c-1-0.1-2.4-0.1-4-0.1c-2.2,0-4.3,0.3-6.3,0.8s-3.8,1.4-5.3,2.5c-1.6,1.1-2.8,2.5-3.7,4.2
+		c-0.9,1.7-1.4,3.7-1.4,5.9c0,2.3,0.4,4.2,1.2,5.8c0.8,1.6,1.9,3,3.3,4s3.2,1.8,5.2,2.2c2,0.5,4.3,0.7,6.8,0.7
+		c2.6,0,5.2-0.2,7.7-0.6c2.5-0.4,5.6-1,6.4-1.2s1.8-0.5,1.8-0.5c0.6-0.2,0.6-0.8,0.6-0.8v-23.3c0-5.1-1.4-8.9-4-11.3
+		c-2.7-2.3-6.6-3.5-11.7-3.5c-1.9,0-5,0.3-6.8,0.6c0,0-5.6,1.1-7.8,2.9c0,0-0.5,0.3-0.2,1l1.8,4.8c0.2,0.6,0.8,0.4,0.8,0.4
+		s0.2-0.1,0.4-0.2c4.9-2.7,11.1-2.6,11.1-2.6c2.8,0,4.9,0.6,6.3,1.6c1.4,1.1,2.1,2.7,2.1,6.1v1.1C124.3,140.2,122.3,140,122.3,140
+		 M112.2,157.9c-1-0.8-1.1-1-1.5-1.5c-0.5-0.8-0.8-1.9-0.8-3.3c0-2.2,0.7-3.9,2.3-4.9c0,0,2.2-1.9,7.4-1.8c3.7,0,6.9,0.6,6.9,0.6
+		v11.6c0,0-3.2,0.7-6.9,0.9C114.5,159.7,112.1,157.9,112.2,157.9"></path>
+	<path class="salesforce1" d="M327.8,126.9c0.2-0.6-0.2-0.9-0.4-0.9c-0.4-0.2-2.6-0.6-4.3-0.7c-3.2-0.2-5,0.3-6.6,1.1
+		c-1.6,0.7-3.3,1.9-4.3,3.2v-3.1c0-0.4-0.3-0.8-0.7-0.8H305c-0.4,0-0.7,0.3-0.7,0.8v38c0,0.4,0.3,0.8,0.8,0.8h6.7
+		c0.4,0,0.8-0.3,0.8-0.8v-19c0-2.6,0.3-5.1,0.8-6.7c0.5-1.6,1.3-2.8,2.2-3.7c0.9-0.9,2-1.5,3.2-1.9s2.5-0.5,3.4-0.5
+		c1.3,0,2.8,0.3,2.8,0.3c0.5,0.1,0.8-0.3,0.9-0.7C326.3,131.1,327.6,127.6,327.8,126.9"></path>
+	<path class="salesforce1" d="M265,109.3c-0.8-0.3-1.6-0.4-2.5-0.6c-1-0.2-2.1-0.3-3.5-0.3c-4.6,0-8.2,1.3-10.8,3.9
+		c-2.5,2.6-4.3,6.4-5.1,11.6l-0.3,1.7H237c0,0-0.7,0-0.9,0.7l-0.9,5.3c-0.1,0.5,0.1,0.8,0.8,0.8h5.6l-5.7,31.9
+		c-0.4,2.6-1,4.7-1.5,6.3c-0.6,1.6-1.1,2.8-1.8,3.6s-1.3,1.4-2.3,1.8c-0.9,0.3-1.9,0.4-3,0.4c-0.6,0-1.4-0.1-2-0.2
+		c-0.6-0.1-0.9-0.3-1.4-0.4c0,0-0.7-0.3-0.9,0.4c-0.2,0.5-1.7,4.7-1.9,5.2s0.1,0.9,0.4,1c0.7,0.3,1.3,0.4,2.3,0.7
+		c1.4,0.3,2.6,0.4,3.7,0.4c2.3,0,4.5-0.3,6.3-1c1.8-0.6,3.3-1.8,4.7-3.3c1.5-1.6,2.4-3.4,3.3-5.7c0.9-2.3,1.6-5.2,2.2-8.6l5.7-32.5
+		h8.4c0,0,0.7,0,0.9-0.7l0.9-5.3c0.1-0.5-0.1-0.8-0.8-0.8H251c0-0.2,0.4-3,1.3-5.7c0.4-1.2,1.1-2.1,1.8-2.7c0.6-0.6,1.3-1.1,2.1-1.3
+		c0.8-0.3,1.7-0.4,2.7-0.4c0.8,0,1.5,0.1,2.1,0.2c0.8,0.2,1.1,0.3,1.3,0.3c0.8,0.3,0.9,0,1.1-0.4l1.9-5.3
+		C265.6,109.6,265.2,109.4,265,109.3"></path>
+	<path class="salesforce1" d="M151.2,164.4c0,0.4-0.3,0.8-0.7,0.8h-6.8c-0.4,0-0.7-0.3-0.7-0.8V110c0-0.4,0.3-0.8,0.7-0.8h6.8
+		c0.4,0,0.7,0.3,0.7,0.8V164.4z"></path>
+</g>
+</svg></div>
+                        </div>
+                        <div class="integrations-icons-text">Salesforce</div>
+                      </div>
+                      <div class="integrations-icon-div">
+                        <div class="integrations-icon top-padding-20 icloud">
+                          <div class="vertical-align w-embed"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.iCloud0{fill:url(#background_1_);}
+	.iCloud1{fill:#FFFFFF;}
+</style>
+<g id="iCloud-logo-2013-2014_2_">
+		<lineargradient id="background_1_" gradientunits="userSpaceOnUse" x1="50" y1="2.7" x2="50" y2="100.6998" gradienttransform="matrix(1 0 0 -1 0 102)">
+		<stop offset="0" style="stop-color:#5AC3F9"></stop>
+		<stop offset="1" style="stop-color:#585ED8"></stop>
+	</lineargradient>
+	<path id="background_4_" class="iCloud0" d="M99,77.3c0,12.1-9.9,22-22,22H23c-12.1,0-22-9.9-22-22V23.2c0-12.1,9.9-22,22-22h54
+		c12.1,0,22,9.9,22,22V77.3z"></path>
+	<g id="cloud">
+		<path class="iCloud1" d="M75.2,75.1H25c-9.3,0-16.8-7.5-16.8-16.8c0-7,4.3-13.2,10.7-15.7c0.7-6.4,6.1-11.3,12.7-11.3
+			c1.8,0,3.6,0.4,5.2,1.1c4-6.9,11.4-11.3,19.5-11.3c11.7,0,21.5,9.2,22.4,20.8C86.3,43.5,92,50.3,92,58.3
+			C92,67.5,84.4,75.1,75.2,75.1z M31.6,34.6c-5.2,0-9.4,4.1-9.5,9.3v1.2L21,45.4c-5.7,1.8-9.5,6.9-9.5,12.9
+			c0,7.4,6.1,13.5,13.5,13.5h50.1c7.4,0,13.5-6.1,13.5-13.5c0-6.8-5.1-12.5-11.8-13.4l-1.4-0.2v-1.4c-0.1-10.4-8.7-18.9-19.1-18.9
+			c-7.3,0-14.1,4.3-17.3,10.9L38.2,37l-1.6-1C35.1,35.1,33.4,34.6,31.6,34.6z"></path>
+	</g>
+</g>
+</svg></div>
+                        </div>
+                        <div class="integrations-icons-text">iCloud</div>
+                      </div>
+                      <div class="integrations-icon-div">
+                        <div class="integrations-icon outlook">
+                          <div class="vertical-align w-embed"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 382.9 385.7" style="enable-background:new 0 0 382.9 385.7;" xml:space="preserve">
+<style type="text/css">
+	.outlook0{fill:#1A76BC;}
+	.outlook1{fill:#FFFFFF;}
+</style>
+<polygon class="outlook0" points="6.6,43.5 6.6,334.9 224,377.6 224,6 ">
+<path class="outlook0" d="M237.5,182.9v97.7h123c0,0,18-2.5,16.5-26.1l0.1-127.7l-90.1,61C287,187.8,261.5,208.4,237.5,182.9z"></path>
+<path class="outlook0" d="M237.5,81.4h124c0,0,14.6-1,14.6,14.9L264,170.9L237.5,154V81.4z"></path>
+<path class="outlook1" d="M115.8,122.7c-27.3,0-49.5,29.5-49.5,65.9s22.2,65.9,49.5,65.9s49.5-29.5,49.5-65.9S143.2,122.7,115.8,122.7z
+	 M115.2,227.5c-13.1,0-23.8-17.5-23.8-39.1s10.7-39.1,23.8-39.1s23.8,17.5,23.8,39.1C139.1,210,128.4,227.5,115.2,227.5z"></path>
+</polygon></svg></div>
+                        </div>
+                        <div class="integrations-icons-text">Outlook</div>
+                      </div>
+                      <div class="integrations-icon-div">
+                        <div class="integrations-icon yahoo">
+                          <div class="vertical-align w-embed"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.yahoo0{fill:#8A2A8F;}
+	.yahoo1{fill:#FFFFFF;}
+</style>
+<g>
+	<path class="yahoo0" d="M64.5,70.3c-5.7,4.2-12.8,6.7-21.2,7.5H32.5c-8.5-0.7-15.6-3.2-21.2-7.5C4.4,65.2,1,58.5,1,50.3
+		c0-8.1,3.4-14.7,10.3-19.8c6.8-5.2,15.7-7.8,26.6-7.8c10.8,0,19.7,2.6,26.6,7.8c6.8,5.1,10.2,11.7,10.2,19.8
+		C74.7,58.5,71.2,65.2,64.5,70.3L64.5,70.3z"></path>
+	<polygon class="yahoo0" points="88.9,76.9 78.9,75.7 80,66.9 90,68.1 	">
+	<polygon class="yahoo0" points="98.9,23.6 81.8,21.5 81.9,61.2 89.4,62.2 	">
+	<path class="yahoo0" d="M59.3,43.5l-5.2,1.1c-0.8,0.2-2.9,1.8-6.6,4.8c-3.9,3.1-5.9,5.1-6.2,6.1l-0.2,2.8L41,60l0.4,4.2l6.9,0.1
+		l-0.1,2.1H37l-10,0.1l0.3-2l3.2-0.1c1.7-0.1,2.7-0.3,3-0.7c0.2-0.2,0.3-1.6,0.3-3.9v-1.4l-0.1-2.9c-0.2-0.7-2-3.1-5.4-7.3
+		c-3.6-4.3-5.9-6.9-7-7.8l-6.5-0.9v-1.9c0.3-0.2,3.9-0.2,10.5-0.1c4.6-0.1,8.3-0.1,11.3,0.1l-0.2,1.6l-6.8,0.7
+		c2.1,3.1,5.3,7.5,9.7,12.9c5.7-4.3,8.7-7.1,8.8-8.3l-5.8-0.9l-0.4-2h9.7l9.1,0.1L59.3,43.5L59.3,43.5z"></path>
+	<polygon class="yahoo0" points="92.7,68.1 91.9,68.1 91.9,67.6 94.1,67.6 94.1,68.1 93.3,68.1 93.3,70.2 92.7,70.2 	">
+	<polygon class="yahoo0" points="95.2,68.3 95.2,70.2 94.6,70.2 94.6,67.6 95.3,67.6 96.1,68.9 96.8,67.6 97.4,67.6 97.4,70.2 
+		96.8,70.2 96.8,68.3 96.1,69.7 95.9,69.7 	">
+	<path class="yahoo0" d="M64.5,70.3c-5.7,4.2-12.8,6.7-21.2,7.5H32.5c-8.5-0.7-15.6-3.2-21.2-7.5C4.4,65.2,1,58.5,1,50.3
+		c0-8.1,3.4-14.7,10.3-19.8c6.8-5.2,15.7-7.8,26.6-7.8c10.8,0,19.7,2.6,26.6,7.8c6.8,5.1,10.2,11.7,10.2,19.8
+		C74.7,58.5,71.2,65.2,64.5,70.3L64.5,70.3z"></path>
+	<polygon class="yahoo0" points="88.9,76.9 78.9,75.7 80,66.9 90,68.1 	">
+	<polygon class="yahoo0" points="98.9,23.6 81.8,21.5 81.9,61.2 89.4,62.2 	">
+	<path class="yahoo1" d="M59.3,43.5l-5.2,1.1c-0.8,0.2-2.9,1.8-6.6,4.8c-3.9,3.1-5.9,5.1-6.2,6.1l-0.2,2.8L41,60l0.4,4.2l6.9,0.1
+		l-0.1,2.1H37l-10,0.1l0.3-2l3.2-0.1c1.7-0.1,2.7-0.3,3-0.7c0.2-0.2,0.3-1.6,0.3-3.9v-1.4l-0.1-2.9c-0.2-0.7-2-3.1-5.4-7.3
+		c-3.6-4.3-5.9-6.9-7-7.8l-6.5-0.9v-1.9c0.3-0.2,3.9-0.2,10.5-0.1c4.6-0.1,8.3-0.1,11.3,0.1l-0.2,1.6l-6.8,0.7
+		c2.1,3.1,5.3,7.5,9.7,12.9c5.7-4.3,8.7-7.1,8.8-8.3l-5.8-0.9l-0.4-2h9.7l9.1,0.1L59.3,43.5L59.3,43.5z"></path>
+	<polygon class="yahoo0" points="92.7,68.1 91.9,68.1 91.9,67.6 94.1,67.6 94.1,68.1 93.3,68.1 93.3,70.2 92.7,70.2 	">
+	<polygon class="yahoo0" points="95.2,68.3 95.2,70.2 94.6,70.2 94.6,67.6 95.3,67.6 96.1,68.9 96.8,67.6 97.4,67.6 97.4,70.2 
+		96.8,70.2 96.8,68.3 96.1,69.7 95.9,69.7 	">
+</polygon></polygon></polygon></polygon></polygon></polygon></polygon></polygon></g>
+</svg></div>
+                        </div>
+                        <div class="integrations-icons-text">Yahoo!</div>
+                      </div>
+                      <div class="integrations-icon-div">
+                        <div class="integrations-icon zimbra">
+                          <div class="vertical-align w-embed"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.zimbra0{fill:#F05C28;}
+	.zimbra1{fill:#1B86C2;}
+	.zimbra2{fill:#F58C24;}
+</style>
+<path class="zimbra0" d="M50.3,78.7c-4.4,0.6-8.7,1.3-13.1,1c-10.6-0.7-20.1-3.8-28-11.1c-9.9-9-11.1-22.7-2.9-33.2
+	C7,34.5,7,33.8,6.7,32.8c-1.2-3.4-2.2-6.9-3.4-10.3c-0.5-1.4-0.4-2.6,0.7-3.6s2.4-1,3.8-0.3c3.8,1.9,7.7,3.7,11.6,5.6
+	c0.7,0.3,1.3,0.5,2.1,0.2c9.3-3.7,18.9-4.3,28.8-2.4c4.8,1.1,9.3,2.9,13.7,5.2c1.7,1.3,3.5,2.5,5.1,3.9c11,9.2,12.6,23.4,4,34.3
+	c-2.5,3.2-5.6,5.6-8.9,7.9C59.7,75.7,55.1,77.5,50.3,78.7z M35.5,73.3c0,0.3,0.3,0.2,0.4,0.2c4.5,0.4,9,0.2,13.4-0.9
+	c6.6-1.3,12.4-4.1,17.1-8.9c6.7-6.7,7.9-15.6,3-22.9c-4.7-7.2-11.8-10.9-20-12.6c-4.5-1.1-9-1.6-13.6-0.9c-4.7,0.1-9.1,1.3-13.4,3.2
+	c-1.5,0.7-2.8,0.7-4.3-0.1c-2.2-1.2-4.5-2.2-7.1-3.4c0.8,2.5,1.5,4.7,2.2,6.9c0.4,1.3,0.2,2.3-0.7,3.3c-0.5,0.6-1,1.2-1.5,1.8
+	c-5.5,6.8-5.7,15.2-0.5,22.2c4.8,6.4,11.5,9.7,19,11.5C31.5,73,33.5,73.6,35.5,73.3L35.5,73.3z"></path>
+<path class="zimbra1" d="M50.3,78.7c4.8-1.2,9.4-3,13.7-5.4c0.3,0.1,0.5,0.3,0.8,0.3c4.2-0.7,8.4-1.4,12.3-3.3c1.6-0.8,3-0.7,4.5,0.1
+	c2.2,1.2,4.4,2.1,7,3.4c-0.6-1.9-1-3.5-1.7-5.1c-1.1-2.5-0.7-4.3,1.2-6.4c6.4-7.3,6.5-16.5,0.1-23.8C81.8,31.1,73.3,28,63.8,27.2
+	c-4.3-2.3-8.9-4.2-13.7-5.2c14.9-2.6,28.7-0.3,40.3,10.2c10.1,9.2,11.2,22.5,2.9,33.3c-0.6,0.8-0.6,1.4-0.4,2.3
+	c1.1,3.4,2.2,6.8,3.3,10.1c0.5,1.4,0.6,2.8-0.6,3.9S93,82.6,91.7,82c-3.6-1.8-7.3-3.5-10.9-5.3c-1-0.5-1.9-0.6-3-0.2
+	c-8.7,3.4-17.6,4-26.8,2.5C50.7,78.9,50.5,78.8,50.3,78.7z"></path>
+<path class="zimbra1" d="M35.5,73.3c-2.4-1.8-4.8-3.5-6.9-5.7c-10.3-10.4-9.8-25.9,1.1-35.7c1.9-1.7,4-3.2,6.2-4.7
+	c4.6-0.7,9.1-0.2,13.6,0.9c-4.5,1.3-8.8,3-12.7,5.7C23.9,43,24.1,58.1,37.1,67.1c3.8,2.6,7.9,4.2,12.2,5.5
+	c-4.4,1.2-8.9,1.3-13.4,0.9C35.8,73.4,35.6,73.4,35.5,73.3L35.5,73.3z"></path>
+<path class="zimbra2" d="M49.4,64.1c-4.5-0.2-9-2-12.3-6.1c-1.6-1.9-1.5-3.7,0-4.9s3.1-0.8,4.6,1.1c4.4,5.3,12.5,5.3,16.9,0
+	c1.5-1.8,3.2-2.2,4.7-1c1.5,1.2,1.4,3.1-0.1,4.9C60,61.9,55.2,64.1,49.4,64.1z"></path>
+<path class="zimbra1" d="M46.3,43c0,2.5-2,4.5-4.5,4.5c-2.6,0-4.6-2-4.6-4.6s2.1-4.6,4.7-4.5C44.3,38.5,46.3,40.5,46.3,43z"></path>
+<path class="zimbra1" d="M63,42.9c0,2.6-1.9,4.6-4.4,4.6c-2.6,0-4.7-2.1-4.6-4.6c0-2.5,2.1-4.5,4.6-4.5S63,40.4,63,42.9z"></path>
+</svg></div>
+                        </div>
+                        <div class="integrations-icons-text">Zimbra</div>
+                      </div>
+                      <div class="integrations-icon-div">
+                        <div class="integrations-icon zoho">
+                          <div class="padding w-embed"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 98 33.8">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e79225;
+      }
+      .cls-2 {
+        fill: #fff16d;
+      }
+      .cls-3 {
+        fill: url(#linear-gradient);
+      }
+      .cls-4 {
+        fill: #fff;
+      }
+      .cls-5 {
+        fill: #009ada;
+      }
+      .cls-6 {
+        fill: #91c9ed;
+      }
+      .cls-7 {
+        fill: url(#linear-gradient-2);
+      }
+      .cls-8 {
+        fill: #66bf6b;
+      }
+      .cls-9 {
+        fill: #98d0a0;
+      }
+      .cls-10 {
+        fill: url(#linear-gradient-3);
+      }
+      .cls-11 {
+        fill: #760d16;
+      }
+      .cls-12 {
+        fill: #ef463e;
+      }
+      .cls-13 {
+        fill: url(#linear-gradient-4);
+      }
+    </style>
+    <lineargradient id="linear-gradient" x1="-248.35" y1="350.06" x2="-248.16" y2="350.06" gradienttransform="matrix(0, 113.61, 106.06, 0, -37043.29, 28226.52)" gradientunits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffe513"></stop>
+      <stop offset="0.01" stop-color="#ffe513"></stop>
+      <stop offset="1" stop-color="#fdb924"></stop>
+    </lineargradient>
+    <lineargradient id="linear-gradient-2" x1="-248.49" y1="350.85" x2="-248.29" y2="350.85" gradienttransform="matrix(111.4, 89.46, 89.9, -110.85, -3810.84, 61134.79)" gradientunits="userSpaceOnUse">
+      <stop offset="0" stop-color="#008cd2"></stop>
+      <stop offset="0.01" stop-color="#008cd2"></stop>
+      <stop offset="1" stop-color="#00649d"></stop>
+    </lineargradient>
+    <lineargradient id="linear-gradient-3" x1="-248.39" y1="351.97" x2="-248.2" y2="351.97" gradienttransform="matrix(0, 99.53, 97.93, 0, -34430.41, 24737.58)" gradientunits="userSpaceOnUse">
+      <stop offset="0" stop-color="#26a146"></stop>
+      <stop offset="1" stop-color="#008a52"></stop>
+    </lineargradient>
+    <lineargradient id="linear-gradient-4" x1="-248.03" y1="352.86" x2="-247.84" y2="352.86" gradienttransform="matrix(17.12, 103.35, 105.39, -16.79, -32928.9, 31571.6)" gradientunits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d92231"></stop>
+      <stop offset="1" stop-color="#ba2234"></stop>
+    </lineargradient>
+  </defs>
+  <title>ZOHO</title>
+  <g>
+    <polygon class="cls-1" points="98 7.2 98 30.5 94.8 33.6 94.8 10.9 98 7.2">
+    <polygon class="cls-2" points="76.9 7.2 73.6 10.9 73.8 11.1 94.7 11 94.8 10.9 98 7.2 76.9 7.2">
+    <rect class="cls-3" x="73.6" y="10.9" width="21.2" height="22.8"></rect>
+    <path class="cls-4" d="M92.6,52.1a7.74,7.74,0,0,0-1.9-2.8A8,8,0,0,0,88,47.5a8.29,8.29,0,0,0-3.2-.6,8.66,8.66,0,0,0-3.2.6,8,8,0,0,0-2.7,1.8A10.65,10.65,0,0,0,77,52.1a9.89,9.89,0,0,0-.6,3.5A9.34,9.34,0,0,0,77,59a8.66,8.66,0,0,0,4.5,4.7,8.83,8.83,0,0,0,6.4,0,8,8,0,0,0,2.7-1.8A8.12,8.12,0,0,0,92.5,59a9.74,9.74,0,0,0,.6-3.4A8.06,8.06,0,0,0,92.6,52.1Zm-4.4,7.5a4.38,4.38,0,0,1-6.6,0,6.26,6.26,0,0,1-1.2-4.1,6.26,6.26,0,0,1,1.2-4.1,4.38,4.38,0,0,1,6.6,0,6.45,6.45,0,0,1,1.2,4.1A6.08,6.08,0,0,1,88.2,59.6Z" transform="translate(-1 -33.1)"></path>
+    <polygon class="cls-5" points="71.5 5.3 71.5 5.4 74.2 26.3 72.6 30.7 72.4 30.6 69.6 10.5 69.7 10.3 71.4 5.4 71.5 5.3">
+    <polygon class="cls-6" points="50.6 8.2 71.5 5.3 69.7 10.3 69.5 10.6 49.9 13.5 50 9.9 50.6 8.2">
+    <polygon class="cls-7" points="69.7 10.3 72.6 30.7 52 33.6 49.2 13.9 50.5 13 69.7 10.3">
+    <path class="cls-4" d="M67.2,47.3a2.1,2.1,0,0,0-.7-1.4,1.78,1.78,0,0,0-1-.4h-.3a1.85,1.85,0,0,0-1.2.7,2,2,0,0,0-.3,1.1v.5l.7,5.3-5.8.9-.7-5.3a2.1,2.1,0,0,0-.7-1.4,1.28,1.28,0,0,0-1-.4h-.3a1.47,1.47,0,0,0-1.2.7,2,2,0,0,0-.3,1.1v.5l2,13.8a2.1,2.1,0,0,0,.7,1.4,1.82,1.82,0,0,0,1.1.4h.3a1.44,1.44,0,0,0,1.1-.7,1.64,1.64,0,0,0,.2-1v-.5L59,57.1l5.9-.9.8,5.5a2.1,2.1,0,0,0,.7,1.4,1.78,1.78,0,0,0,1,.4h.3a1.85,1.85,0,0,0,1.2-.7,1.8,1.8,0,0,0,.3-1.1v-.5Z" transform="translate(-1 -33.1)"></path>
+    <polygon class="cls-8" points="31 0 23.6 17.7 24.6 25.5 24.6 25.4 33 6.6 33 6.2 31.2 0.2 31 0">
+    <polygon class="cls-9" points="31 0 32.9 6.5 33 6.6 51.4 14.9 51.5 14.8 49.9 8.6 31 0">
+    <polygon class="cls-10" points="32.9 6.5 51.5 14.8 43.1 33.8 24.6 25.5 32.9 6.5">
+    <path class="cls-4" d="M46.8,49.5a8.75,8.75,0,0,0-1.7-2.8,6.77,6.77,0,0,0-2.6-1.8,8.7,8.7,0,0,0-3.1-.7h-.1a7.41,7.41,0,0,0-3.2.7,8,8,0,0,0-2.8,2,9.75,9.75,0,0,0-2,3.1,9.31,9.31,0,0,0-.8,3.5v.4a10.47,10.47,0,0,0,.5,3,6.25,6.25,0,0,0,1.7,2.7,6.43,6.43,0,0,0,2.7,1.8,8.24,8.24,0,0,0,3.1.7h0a6.7,6.7,0,0,0,3.1-.7,9.42,9.42,0,0,0,2.9-2,10.49,10.49,0,0,0,2-3,9.31,9.31,0,0,0,.8-3.5v-.3A6.55,6.55,0,0,0,46.8,49.5ZM43.1,55a6.49,6.49,0,0,1-2.8,3.4,4.14,4.14,0,0,1-1.9.5,3.53,3.53,0,0,1-1.7-.4,4.18,4.18,0,0,1-2.5-2.7,5.85,5.85,0,0,1-.2-1.3,7.21,7.21,0,0,1,.7-3A6.75,6.75,0,0,1,37.5,48a4.14,4.14,0,0,1,1.9-.5,4.21,4.21,0,0,1,1.8.4,3.81,3.81,0,0,1,2.4,2.7,5.07,5.07,0,0,1,.2,1.3A6.52,6.52,0,0,1,43.1,55Z" transform="translate(-1 -33.1)"></path>
+    <polygon class="cls-11" points="22.1 3 25.1 23.3 23.7 30.4 23.5 30.1 20.6 10.6 20.6 10.2 21.9 3.3 22.1 3">
+    <polygon class="cls-12" points="0 13.5 1.4 6.3 22.1 3 20.7 10.3 20.7 10.8 0.2 13.7 0 13.5">
+    <polygon class="cls-13" points="20.7 10.3 23.7 30.4 3.3 33.6 0 13.5 20.7 10.3">
+    <path class="cls-4" d="M19.5,60.3a1.61,1.61,0,0,0-.7-.4,3.08,3.08,0,0,0-1-.1,4.87,4.87,0,0,0-1.2.1l-5.4.9a8.23,8.23,0,0,1,.6-1.6,31.14,31.14,0,0,1,1.8-2.7,8,8,0,0,0,.6-.8,5.92,5.92,0,0,0,.4-.6,13.19,13.19,0,0,0,2.3-4,5.66,5.66,0,0,0,.3-1.8v-.5a6.15,6.15,0,0,0-.1-1.3,4.65,4.65,0,0,0-.3-.9,2.65,2.65,0,0,0-.5-.6,2,2,0,0,0-.9-.2,5.74,5.74,0,0,0-1.2.1L8,47a2.94,2.94,0,0,0-1.7.7A2,2,0,0,0,6,48.8v.3a1.55,1.55,0,0,0,.8,1.1,3,3,0,0,0,1,.2,2.49,2.49,0,0,0,.8-.1l5.2-.9v.3a3.55,3.55,0,0,1-.2,1,6.09,6.09,0,0,1-1.2,1.8c-.2.2-.4.6-.8,1a24.63,24.63,0,0,0-3,4.4,10.64,10.64,0,0,0-.9,2.5,6.75,6.75,0,0,0-.2,1.4,2.77,2.77,0,0,0,.1.9,6.21,6.21,0,0,0,.3,1,1,1,0,0,0,.5.6,2,2,0,0,0,.9.2c.5,0,1.2-.1,2.1-.2l5.7-1a5.61,5.61,0,0,0,2.1-.7,1.43,1.43,0,0,0,.5-1.1v-.3A.84.84,0,0,0,19.5,60.3Z" transform="translate(-1 -33.1)"></path>
+  </polygon></polygon></polygon></polygon></polygon></polygon></polygon></polygon></polygon></polygon></polygon></g>
+</svg></div>
+                        </div>
+                        <div class="integrations-icons-text">Zoho</div>
+                      </div>
+                      <div class="integrations-icon-div">
+                        <div class="integrations-icon workmail">
+                          <div class="w-embed"></div>
+                        </div>
+                        <div class="integrations-icons-text">WorkMail</div>
+                      </div>
+                      <div class="integrations-icon-div">
+                        <div class="integrations-icon kerio">
+                          <div class="vertical-align w-embed"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.kerio0{fill:#002168;}
+</style>
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+	<g>
+		<g id="Layer0_0_FILL">
+			<path class="kerio0" d="M15.9,37.3c-1,0-1.9,0.3-2.7,0.8L2.1,46.4C1.4,47,1,47.7,1,48.4c0,0.8,0.4,1.5,1.1,2.1l45.2,33.9
+				c0.8,0.6,1.7,0.8,2.7,0.8s1.9-0.3,2.6-0.8l45.2-33.9c0.7-0.6,1.1-1.2,1.1-2.1c0-0.8-0.4-1.4-1.1-2l-11.1-8.3
+				c-0.7-0.5-1.6-0.8-2.7-0.8c-1,0-1.9,0.3-2.7,0.8L52.6,59.6c-0.7,0.6-1.6,0.8-2.6,0.8s-1.9-0.3-2.7-0.8L18.6,38.1
+				C17.9,37.6,17,37.3,15.9,37.3 M47.3,12.6L26.6,28.1c-0.7,0.6-1.1,1.2-1.1,2s0.4,1.5,1.1,2l20.7,15.5c0.8,0.6,1.7,0.9,2.7,0.9
+				s1.9-0.3,2.6-0.9l20.8-15.5c0.7-0.5,1.1-1.2,1.1-2s-0.4-1.4-1.1-2L52.6,12.6c-0.7-0.5-1.6-0.8-2.6-0.8S48.1,12.1,47.3,12.6z"></path>
+		</g>
+	</g>
+</g>
+</svg></div>
+                        </div>
+                        <div class="integrations-icons-text">Kerio</div>
+                      </div>
+                      <div class="integrations-icon-div">
+                        <div class="integrations-icon facebook">
+                          <div class="vertical-align w-embed"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 1024 1024" style="enable-background:new 0 0 1024 1024;" xml:space="preserve">
+<style type="text/css">
+	.facebook0{fill:#2D64AF;}
+	.facebook1{fill:#FFFFFF;}
+</style>
+<g>
+	<path class="facebook0" d="M967.5,0h-911C25.3,0,0,25.3,0,56.5v911c0,31.2,25.3,56.5,56.5,56.5H547V628H414V473h133V358.9
+		c0-132.3,80.8-204.3,198.8-204.3c56.5,0,105.1,4.2,119.2,6.1V299h-81.4c-64.2,0-76.6,30.5-76.6,75.3V473h153.5l-20,155H707v396
+		h260.5c31.2,0,56.5-25.3,56.5-56.5v-911C1024,25.3,998.7,0,967.5,0z"></path>
+	<path id="f" class="facebook1" d="M707,1024V628h133.5l20-155H707v-98.7c0-44.8,12.4-75.3,76.6-75.3H865V160.7
+		c-14.2-1.9-62.7-6.1-119.2-6.1c-118,0-198.8,72-198.8,204.3V473H414v155h133v396H707z"></path>
+</g>
+</svg></div>
+                        </div>
+                        <div class="integrations-icons-text">Facebook</div>
+                      </div>
+                      <div class="integrations-icon-div">
+                        <div class="integrations-icon fastmail">
+                          <div class="vertical-align w-embed"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.fastmail0{fill:#ECB643;}
+	.fastmail1{fill:#43547D;}
+</style>
+<path class="fastmail0" d="M16.7,26.1c-0.1,0-0.1,5.8-0.1,18c0,12.9,0,18.1-0.1,18.2c-0.1,0.1-0.1,0.1-3.1-0.2c-5.3-0.7-9.2-1.5-11.6-2.6
+	c-0.5-0.2-0.9-0.4-0.9-0.3c-0.1,0.1,1,0.8,2.1,1.4c3,1.7,7.3,3.2,11.6,3.9c0.9,0.2,1.7,0.3,1.8,0.4c0.2,0.1,0.2,0.1,0.2,1.8v1.7
+	h-0.5c-0.8-0.1-4.3-0.7-5.7-1.1c-0.7-0.2-1.7-0.5-2.3-0.7S7,66.2,7,66.2c-0.1,0.1,0.7,0.6,1.8,1.2c1.9,1,4.2,2,6.7,2.6
+	c0.6,0.2,1,0.3,1.1,0.4c0,0.1,0.1,0.8,0.1,1.7c0,0.3,0,0.5,0,0.7c0-0.2,0-0.5,0-0.8c0-0.9,0-1.6,0.1-1.6s0.9,0.2,1.9,0.4
+	c2.2,0.4,4.6,0.7,7.2,0.9c2.5,0.2,8.2,0.1,10.8-0.2c7.5-0.7,14.7-2.5,22.5-5.6c6-2.4,11.2-5,22.6-11.3c4.4-2.4,6.4-3.4,7.9-3.9
+	c1.2-0.4,2.7-0.7,3-0.6c0.2,0.1,0.2,1.1,0.2,11.9v0.1L93,50.2h0.4c0.6,0,1.5,0.4,2.1,0.9c1.6,1.5,1.5,3.9-0.4,6.4
+	c-0.3,0.4-0.6,0.8-0.5,0.8c0.1,0.1,1.3-0.9,2.2-1.9c1.6-1.6,2.1-2.6,2.2-3.9c0.1-1.7-0.5-3.2-2-4.6c-1-1-1.9-1.6-3.1-1.9
+	c-0.4-0.1-0.8-0.2-0.8-0.3C93,45.6,93,43.5,93,35.9V46l-0.9-0.1c-2.7-0.2-7.2,0.9-11.4,2.9c-2.8,1.3-5.4,2.9-11.2,6.6
+	c-1.9,1.3-4.2,2.7-5,3.2C54.7,64.5,45.1,68,35,69.2c-1.4,0.2-7.5,0.3-9.2,0.2c-3.1-0.2-8.2-0.7-8.8-0.9c-0.2-0.1-0.2-1.2-0.2-21.3
+	C16.6,32.9,16.6,26.1,16.7,26.1L16.7,26.1z M92.8,36.1L92.8,36.1L92.8,36.1z M92.8,32.3c0-2.3,0-4.2,0-5.2
+	C92.8,28.1,92.8,30,92.8,32.3z M92.7,74l-0.3,0.5c-0.2,0.4-0.4,0.7-0.7,1c0.3-0.3,0.6-0.6,0.8-1L92.7,74L92.7,74z M16.8,74.2
+	c0.1,0.3,0.2,0.5,0.4,0.8c0.2,0.2,0.3,0.4,0.6,0.6C17.3,75.3,17,74.8,16.8,74.2L16.8,74.2z M18.3,76L18.3,76L18.3,76z M18.5,76.1
+	L18.5,76.1L18.5,76.1z"></path>
+<path class="fastmail1" d="M18.8,76.2c-1-0.3-1.7-1-2-2c-0.1-0.3-0.2-0.9-0.2-2.1c0-0.9,0-1.6,0.1-1.6s0.9,0.2,1.9,0.4
+	c2.2,0.4,4.6,0.7,7.2,0.9c2.5,0.2,8.2,0.1,10.8-0.2c7.5-0.7,14.7-2.5,22.5-5.6c6-2.4,11.2-5,22.6-11.3c4.4-2.4,6.4-3.4,7.9-3.9
+	c1.2-0.4,2.7-0.7,3-0.6c0.2,0.1,0.2,1.1,0.2,11.9v11.8l-0.3,0.6c-0.4,0.7-0.9,1.2-1.6,1.6l-0.5,0.2H54.9
+	C21.4,76.4,19.3,76.4,18.8,76.2L18.8,76.2z"></path>
+<path class="fastmail1" d="M25.6,69.4c-3.1-0.2-8.2-0.7-8.8-0.9c-0.2-0.1-0.2-1.2-0.2-21.3c0-14.4,0-21.2,0.1-21.2s8.2,7.1,18,15.8
+	C45.5,51.5,52.9,57.9,53.2,58c1,0.5,2.4,0.5,3.4,0c0.3-0.1,0.8-0.5,1.1-0.8c3.4-3.1,35-30.9,35.1-30.9c0,0,0.1,4.4,0.1,9.8V46
+	L92,45.9c-2.7-0.2-7.2,0.9-11.4,2.9c-2.8,1.3-5.4,2.9-11.2,6.6c-1.9,1.3-4.2,2.7-5,3.2C54.6,64.5,45,68,34.9,69.2
+	C33.5,69.4,27.3,69.5,25.6,69.4L25.6,69.4z"></path>
+<path class="fastmail1" d="M54.1,50.3c-0.5-0.2-1.1-0.5-1.6-0.9c-0.3-0.2-7.8-6.1-16.8-13S19.3,23.7,19.2,23.6c-0.2-0.4-0.2-0.6,0.1-1
+	l0.3-0.3h70.6l0.3,0.3c0.3,0.3,0.3,0.6,0.1,0.9C90.4,23.6,83,29.4,74,36.3c-8.9,6.9-16.5,12.8-16.8,13c-0.8,0.7-1.5,1-2.2,1.1
+	C54.7,50.4,54.3,50.4,54.1,50.3L54.1,50.3z"></path>
+</svg></div>
+                        </div>
+                        <div class="integrations-icons-text">FastMail</div>
+                      </div>
+                      <div class="integrations-icon-div">
+                        <div class="integrations-icon owncloud">
+                          <div class="vertical-align w-embed"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.owncloud0{fill:#1D2D44;}
+	.owncloud1{fill:#FFFFFF;}
+</style>
+<ellipse class="owncloud0" cx="28.6" cy="36.1" rx="7.4" ry="7.7"></ellipse>
+<path class="owncloud1" d="M28.6,44.8c-4.6,0-8.3-3.9-8.3-8.6s3.7-8.6,8.3-8.6s8.3,3.9,8.3,8.6S33.1,44.8,28.6,44.8z M28.6,29.4
+	c-3.5,0-6.4,3-6.4,6.7s2.9,6.7,6.4,6.7s6.4-3,6.4-6.7S32.1,29.4,28.6,29.4z"></path>
+<ellipse class="owncloud0" cx="15.1" cy="62.9" rx="13.5" ry="14.1"></ellipse>
+<path class="owncloud1" d="M15.1,78c-8,0-14.4-6.8-14.4-15.1s6.5-15.1,14.4-15.1s14.4,6.8,14.4,15.1S23,78,15.1,78z M15.1,49.7
+	c-6.9,0-12.5,5.9-12.5,13.2s5.6,13.2,12.5,13.2s12.5-5.9,12.5-13.2S22,49.7,15.1,49.7z"></path>
+<ellipse class="owncloud0" cx="30.3" cy="53.5" rx="14.6" ry="15.2"></ellipse>
+<path class="owncloud1" d="M30.3,69.7c-8.5,0-15.5-7.3-15.5-16.2s7-16.2,15.5-16.2s15.5,7.3,15.5,16.2S38.8,69.7,30.3,69.7z M30.3,39.2
+	c-7.5,0-13.6,6.4-13.6,14.3s6.1,14.3,13.6,14.3s13.6-6.4,13.6-14.3S37.8,39.2,30.3,39.2z"></path>
+<ellipse class="owncloud0" cx="60" cy="47.3" rx="13.5" ry="14.1"></ellipse>
+<path class="owncloud1" d="M60,62.4c-8,0-14.4-6.8-14.4-15.1S52,32.2,60,32.2S74.4,39,74.4,47.3S67.9,62.4,60,62.4z M60,34.1
+	c-6.9,0-12.5,5.9-12.5,13.2S53.1,60.5,60,60.5s12.5-5.9,12.5-13.2S66.9,34.1,60,34.1z"></path>
+<ellipse class="owncloud0" cx="45.2" cy="36.3" rx="13.5" ry="14.1"></ellipse>
+<path class="owncloud1" d="M45.2,51.4c-8,0-14.4-6.8-14.4-15.1s6.5-15.1,14.4-15.1S59.6,28,59.6,36.3S53.1,51.4,45.2,51.4z M45.2,23.1
+	c-6.9,0-12.5,5.9-12.5,13.2s5.6,13.2,12.5,13.2s12.5-5.9,12.5-13.2S52.1,23.1,45.2,23.1z"></path>
+<ellipse class="owncloud0" cx="90" cy="68.3" rx="7.7" ry="8.1"></ellipse>
+<path class="owncloud1" d="M90,77.4c-4.8,0-8.6-4.1-8.6-9.1s3.9-9.1,8.6-9.1c4.8,0,8.6,4.1,8.6,9.1S94.8,77.4,90,77.4z M90,61.2
+	c-3.7,0-6.7,3.2-6.7,7.2c0,3.9,3,7.2,6.7,7.2s6.7-3.2,6.7-7.2S93.7,61.2,90,61.2z"></path>
+<ellipse class="owncloud0" cx="73.6" cy="62.1" rx="14.6" ry="15.2"></ellipse>
+<path class="owncloud1" d="M73.6,78.3c-8.5,0-15.5-7.3-15.5-16.2s7-16.2,15.5-16.2s15.5,7.3,15.5,16.2S82.2,78.3,73.6,78.3z M73.6,47.8
+	c-7.5,0-13.6,6.4-13.6,14.3s6.1,14.3,13.6,14.3S87.2,70,87.2,62.1S81.1,47.8,73.6,47.8z"></path>
+<ellipse class="owncloud0" cx="29.4" cy="69.1" rx="7.7" ry="8.1"></ellipse>
+<path class="owncloud1" d="M29.4,78.2c-4.8,0-8.6-4.1-8.6-9.1s3.9-9.1,8.6-9.1s8.6,4.1,8.6,9.1S34.1,78.2,29.4,78.2z M29.4,62
+	c-3.7,0-6.7,3.2-6.7,7.2s3,7.2,6.7,7.2s6.7-3.2,6.7-7.2S33.1,62,29.4,62z"></path>
+<ellipse class="owncloud0" cx="49.6" cy="57.6" rx="18.7" ry="19.5"></ellipse>
+<path class="owncloud1" d="M49.6,78.1C38.8,78.1,30,68.9,30,57.6s8.8-20.5,19.6-20.5s19.6,9.2,19.6,20.5S60.5,78.1,49.6,78.1z M49.6,39.1
+	c-9.8,0-17.7,8.3-17.7,18.6s8,18.6,17.7,18.6c9.8,0,17.7-8.3,17.7-18.6S59.4,39.1,49.6,39.1z"></path>
+</svg></div>
+                        </div>
+                        <div class="integrations-icons-text">OwnCloud</div>
+                      </div>
+                      <div class="integrations-icon-div">
+                        <div class="integrations-icon beehive"></div>
+                        <div class="integrations-icons-text">Beehive</div>
+                      </div>
+                    </div>
+                    <h4 class="features-tittle">Calendar Integrations</h4>
+                    <p class="paragraph bottom-space-16 grey">We designed FreeBusy to integrate with all your existing calendars. You can link all your work, personal, and school calendars and present your availability to others as a unified front.<br></p>
+                  </div>
+                </div>
+              </div>
+              <div class="same-height w-col w-col-6 w-col-stack w-col-small-small-stack w-col-tiny-tiny-stack">
+                <div class="service-div-wrapper integrations-wrapper">
+                  <div class="swervices-wrapper align-left">
+                    <div class="integrations-icon-div">
+                      <div class="integrations-icon top-padding-20 skype">
+                        <div class="vertical-align w-embed"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.skype0{fill:#24A2D4;}
+</style>
+<g>
+	<g>
+		<path id="XMLID_115_" class="skype0" d="M57.7,45.2L47.5,43c-3.8-0.9-8.3-2.2-8.3-5.8c0-3.7,2.9-6.3,8.6-6.3
+			c11.3,0,10.4,7.9,16.1,7.9c2.9,0,5.5-1.7,5.5-4.6c0-7-11.3-12.3-20.8-12.3c-10.3,0-21.2,4.3-21.2,16.1c0,5.7,1.9,11.8,13,14.6
+			L54.2,56c4.2,1,5.4,3.4,5.4,5.5c0,3.5-3.7,7.4-10,7.4c-12.3,0-10.6-9.8-17.2-9.8c-2.9,0-5.3,2-5.3,5c0,5.8,7,13.6,22.5,13.6
+			c14.7,0,22.2-7.4,22.2-17C71.9,54.3,68.8,47.7,57.7,45.2"></path>
+		<path class="skype0" d="M70.7,90.3c-3.5,0-6.9-0.9-10-2.6l-2.2-1.2L56,87c-2.2,0.3-4.4,0.6-6.7,0.6c-21.2,0-38.4-17.2-38.4-38.4
+			c0-2.3,0.2-4.5,0.6-6.7L12,40l-1.2-2.2c-1.7-3.1-2.6-6.5-2.6-10c0-11.1,8.9-20,20-20c3.5,0,6.9,0.9,10,2.6l2.2,1.2l2.5-0.5
+			c2.2-0.3,4.4-0.6,6.7-0.6C70.8,10.5,88,27.7,88,48.9c0,2.3-0.2,4.5-0.6,6.7l-0.5,2.5l1.2,2.2c1.7,3.1,2.6,6.5,2.6,10
+			C90.8,81.3,81.8,90.3,70.7,90.3 M94,56.9c0.5-2.6,0.7-5.2,0.7-7.8c0-25-20.3-45.3-45.3-45.3c-2.7,0-5.3,0.2-7.8,0.7
+			C37.7,2.2,33.2,1,28.3,1C13.5,1,1.4,13,1.4,27.9c0,4.9,1.2,9.4,3.5,13.4c-0.5,2.6-0.7,5.2-0.7,7.8c0,25,20.3,45.3,45.3,45.3
+			c2.7,0,5.3-0.2,7.9-0.7c4,2.3,8.5,3.5,13.4,3.5c14.8,0,26.9-12,26.9-26.9C97.7,65.4,96.3,60.9,94,56.9"></path>
+	</g>
+</g>
+</svg></div>
+                      </div>
+                      <div class="integrations-icons-text">Skype for B</div>
+                    </div>
+                    <div class="integrations-icon-div">
+                      <div class="integrations-icon top-padding-20 bluejeans"></div>
+                      <div class="integrations-icons-text">BlueJeans</div>
+                    </div>
+                    <div class="integrations-icon-div">
+                      <div class="integrations-icon top-padding-20 gotomeeting">
+                        <div class="vertical-align w-embed"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.goto0{fill:url(#XMLID_4_);}
+	.goto1{fill:#FFFFFF;}
+</style>
+<g id="XMLID_3_">
+	<g id="XMLID_2_">
+			<lineargradient id="XMLID_4_" gradientunits="userSpaceOnUse" x1="50.1656" y1="199.075" x2="50.1656" y2="101.1" gradienttransform="matrix(1 0 0 1 0 -100)">
+			<stop offset="0" style="stop-color:#F15B27"></stop>
+			<stop offset="1" style="stop-color:#DFBE3B"></stop>
+		</lineargradient>
+		<path id="XMLID_54_" class="goto0" d="M28.2,87.3C19.1,86.5,11.7,82.6,7,74.6S2.4,58.4,6.3,50.2c-8.6-16.7,3-36.3,22-37.4
+			C33.6,5.3,40.9,1.1,50.2,1.1c9.2,0,16.5,4.1,21.8,11.6c18.2,0.7,30.6,19.7,22,37.3c3.9,8.3,4.1,16.6-0.7,24.6
+			c-4.7,8.1-12.1,11.9-21.2,12.7C61.5,103,38.8,103,28.2,87.3z"></path>
+		<path id="XMLID_51_" class="goto1" d="M33.6,78c-8.3,1.4-14.9-0.9-19.2-8.2c-3-5-3.3-13.1,2.8-19.8c-5.4-6.4-6.7-13.5-2.1-21
+			c3.7-5.9,9.1-7.8,18.5-7.1c2.8-7.6,8.2-12.2,16.5-12.2c8.2,0,13.6,4.5,16.5,12.2c8.8-1.4,15.9,1.3,19.8,9.6
+			c3.1,6.7,1.5,12.9-3.3,18.4c5.5,6.6,6.7,13.6,2,21.1c-3.7,5.8-9.3,7.7-18.4,6.9c-2.8,7.8-8.3,12.4-16.5,12.4S36.5,85.8,33.6,78z
+			 M50.1,81.8c3.6,0,6.6-2.2,7.7-5.5c1.2-3.2,0-6.7-2.8-9c-0.6-0.5-1.2-0.9-1.6-1.4c-2.8-3.1-1.4-7.7,2.6-8.8
+			c3.3-0.8,6.3,1.5,6.8,5.3c0.6,5,5,8.2,9.8,7.3c4.6-0.9,7.5-5.6,6.1-10.1c-1.4-4.6-6.3-6.9-10.9-5.2c-0.6,0.2-1.3,0.5-2,0.7
+			c-2.3,0.6-4.6-0.3-5.9-2.2c-1.3-1.8-1.3-4.1,0-5.9c1.4-2,3.6-2.8,5.9-2.2c0.8,0.2,1.5,0.6,2.2,0.8c3.8,1.3,7.8-0.1,9.8-3.5
+			c2-3.2,1.4-7.4-1.4-9.9c-2.9-2.6-7.3-2.9-10.5-0.5c-2.1,1.5-3,3.7-3.2,6.1c-0.3,2.8-2.3,4.7-5,5.1c-2.2,0.2-4.6-1.2-5.4-3.2
+			c-1-2.4-0.2-5,2-6.7c0.5-0.3,0.9-0.7,1.4-1c3.3-3.2,3.5-8.3,0.1-11.4c-3.3-3.2-8.9-3-11.9,0.5s-2.4,8.6,1.3,11.5
+			c0.7,0.5,1.4,1,1.8,1.6c1.5,1.7,1.6,4.3,0.5,6.2c-1.3,2-3.6,2.9-5.9,2.3c-3-0.8-3.9-3-4.4-5.8c-0.7-4.8-5.3-7.7-9.9-6.6
+			c-4.5,1-7.3,5.8-5.8,10.1c1.5,4.5,6.4,6.8,10.9,5c0.7-0.3,1.5-0.6,2.2-0.7c3.1-0.6,5.9,1.4,6.4,4.5c0.5,2.8-1.6,5.6-4.5,5.9
+			c-1.4,0.1-3-0.3-4.4-0.8c-4.5-1.5-9.3,0.8-10.7,5.2c-1.4,4.4,1.4,9,5.9,10.1c4.6,1,9.1-1.8,9.9-6.4c0.1-0.6,0.1-1.3,0.3-1.8
+			c0.6-2.6,3.1-4.5,5.8-4.4c2.6,0.2,4.7,2.2,5,4.8c0.2,2.4-1,4-2.9,5.4c-3,2.2-4.1,5.6-3,9C43.4,79.6,46.5,81.8,50.1,81.8z"></path>
+	</g>
+</g>
+</svg></div>
+                      </div>
+                      <div class="integrations-icons-text">GoToMeeting</div>
+                    </div>
+                    <div class="integrations-icon-div">
+                      <div class="integrations-icon top-padding-20 joinme">
+                        <div class="vertical-align w-embed"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 604 397" style="enable-background:new 0 0 604 397;" xml:space="preserve">
+<style type="text/css">
+	.joinme0{fill:#6BE005;}
+	.joinme1{fill:#FF8E00;}
+	.joinme2{fill:#48C606;}
+	.joinme3{fill:#FFFFFF;}
+</style>
+<g id="XMLID_16_">
+	<path id="XMLID_15_" class="joinme0" d="M286.9,313.4c-1.2-12.7-1.9-25.6-1.9-38.8c0-13,0.7-25.7,1.8-38.2c2-30.8,24.5-56,54.1-62
+		c51.9-10.9,112.8-18,178.4-19.9v0.1c40.9,0,74.6,30.7,79.4,70.3h0.2c2,16.1,3.1,32.7,3.1,49.8c0,17-1.1,33.6-3.1,49.6h-0.2
+		c-4.8,39.6-38.5,70.3-79.4,70.3v0.1c-64.2-1.9-123.8-8.7-175-19.2C313.3,370.8,289.2,345.1,286.9,313.4L286.9,313.4z"></path>
+	<path id="XMLID_14_" class="joinme1" d="M353.4,179.7c1.4-14.1,2.1-28.6,2.1-43.3c0-14.5-0.7-28.7-2.1-42.6
+		c-2.2-34.4-27.4-62.5-60.3-69.1C235.2,12.5,167.4,4.6,94.2,2.4v0.1C48.6,2.5,11,36.7,5.6,80.9H5.4C3.2,98.8,2,117.4,2,136.4
+		c0,18.9,1.2,37.4,3.4,55.3h0.2c5.3,44.2,42.9,78.4,88.5,78.4v0.1c71.6-2.1,138.1-9.7,195.1-21.4
+		C323.9,243.7,350.8,215.1,353.4,179.7L353.4,179.7z"></path>
+	<path id="XMLID_13_" class="joinme2" d="M289.3,248.8c34.6-5.1,61.6-33.7,64.1-69.1c0.3-2.6,0.5-5.3,0.7-8c-4.4,0.9-8.8,1.7-13.2,2.6
+		c-29.6,5.9-52.2,31.2-54.1,62c-0.4,4.3-0.7,8.7-1,13.1C286.9,249.2,288.1,249,289.3,248.8L289.3,248.8z"></path>
+	<path class="joinme3" d="M174.9,137.4c0.1,1.2,0.1,2.8,0.1,4.8c0,1.9,0,3.5-0.1,4.8c-0.2,4-1.1,7.7-2.7,11.1c-1.7,3.5-3.9,6.5-6.8,9.1
+		c-2.9,2.6-6.4,4.6-10.5,6.1s-8.6,2.2-13.7,2.2c-5,0-9.6-0.7-13.7-2.2c-4.1-1.5-7.6-3.5-10.5-6.1s-5.2-5.6-6.8-9.1
+		c-1.7-3.5-2.6-7.2-2.7-11.1c-0.1-1.2-0.1-2.8-0.1-4.8c0-1.9,0-3.5,0.1-4.8c0.1-4,0.9-7.7,2.6-11.1c1.6-3.5,3.9-6.5,6.9-9.1
+		c2.9-2.6,6.4-4.7,10.5-6.2c4.1-1.5,8.6-2.3,13.7-2.3c5,0,9.6,0.8,13.7,2.3c4.1,1.5,7.6,3.6,10.5,6.2s5.2,5.6,6.8,9.1
+		C173.8,129.8,174.7,133.4,174.9,137.4z M129.8,146.3c0.2,3.1,1.4,5.6,3.4,7.4c2,1.8,4.7,2.7,8,2.7s6-0.9,8-2.7s3.2-4.2,3.4-7.4
+		c0.2-1.2,0.2-2.6,0.2-4.2s-0.1-3-0.2-4.2c-0.2-3.1-1.4-5.6-3.4-7.4c-2-1.8-4.7-2.7-8-2.7s-6,0.9-8,2.7s-3.2,4.2-3.4,7.4
+		c-0.2,1.2-0.2,2.6-0.2,4.2S129.6,145.1,129.8,146.3z"></path>
+	<path id="XMLID_10_" class="joinme3" d="M204.7,109.9h-15.6c-0.9,0-1.7,0.3-2.4,1s-1,1.4-1,2.4V171c0,0.9,0.3,1.7,1,2.4s1.4,1,2.4,1
+		h15.6c0.9,0,1.7-0.3,2.4-1s1-1.4,1-2.4v-57.7c0-0.9-0.3-1.7-1-2.4C206.4,110.3,205.6,109.9,204.7,109.9z"></path>
+	<path class="joinme3" d="M287.6,171c0,0.9-0.3,1.7-1,2.4s-1.4,1-2.4,1h-15.6c-0.9,0-1.7-0.3-2.4-1s-1-1.4-1-2.4v-31.3
+		c0-3.5-0.9-6.4-2.6-8.5s-4.5-3.2-8.2-3.2s-6.4,1.1-8.1,3.2c-1.7,2.1-2.5,5-2.5,8.5V171c0,0.9-0.3,1.7-1,2.4s-1.4,1-2.4,1h-15.6
+		c-0.9,0-1.7-0.3-2.4-1s-1-1.4-1-2.4v-57.7c0-0.9,0.3-1.7,1-2.4s1.4-1,2.4-1h15c0.9,0,1.7,0.3,2.4,1s1,1.4,1,2.4v2.8
+		c0.7-0.8,1.5-1.7,2.5-2.6s2.2-1.7,3.6-2.4s3-1.3,4.9-1.7c1.9-0.5,4-0.7,6.5-0.7c4,0,7.6,0.6,10.9,1.7s6.1,2.8,8.5,5.1
+		c2.4,2.3,4.2,5.2,5.5,8.8c1.3,3.5,2,7.8,2,12.6V171z"></path>
+	<path id="XMLID_8_" class="joinme3" d="M208.6,89.1c-0.2-3-1.3-5.3-3.4-6.8c-2-1.5-4.8-2.3-8.4-2.3c-3.5,0-6.3,0.8-8.4,2.3
+		c-2,1.5-3.2,3.8-3.4,6.8c-0.1,1.3-0.1,2.5,0,3.8c0.4,6,4.3,9.1,11.8,9.1c7.4,0,11.4-3,11.8-9.1C208.7,91.6,208.7,90.3,208.6,89.1
+		L208.6,89.1z"></path>
+	<path id="XMLID_7_" class="joinme3" d="M97.5,89.1c-0.2-3-1.3-5.3-3.4-6.8c-2-1.5-4.8-2.3-8.4-2.3c-3.5,0-6.3,0.8-8.4,2.3
+		c-2,1.5-3.2,3.8-3.4,6.8c-0.1,1.3-0.1,2.5,0,3.8c0.4,6,4.3,9.1,11.8,9.1c7.4,0,11.4-3,11.8-9.1V89.1z"></path>
+	<path id="XMLID_6_" class="joinme3" d="M93.6,109.9h-16c-1.7,0-2.9,1.4-2.9,3.1v52c0,5.7-3.8,5.9-5,5.9c-1.1,0-2.7-0.1-4.7-1.5
+		c-1.3-0.9-1.9-1.3-3.3-1.3c-0.3,0-1.7,0.1-2.5,1.4l-7,9.8c-0.6,0.9-1,1.9-1,2.7c0,0.9,0.5,1.9,1.3,2.7c4.5,5,13.6,7,20.1,7
+		c12.1,0,24.2-7,24.2-25.6v-53C96.6,111.3,95.2,109.9,93.6,109.9L93.6,109.9z"></path>
+	<g>
+		<path class="joinme3" d="M458.3,303.6c0,0.9-0.3,1.7-1,2.4s-1.5,1-2.4,1h-15.1c-0.9,0-1.7-0.3-2.4-1s-1-1.5-1-2.4v-31.8
+			c0-4.1-0.8-7.1-2.3-8.8c-1.5-1.7-3.8-2.6-6.8-2.6c-2.9,0-5.1,0.9-6.7,2.6c-1.5,1.7-2.3,4.7-2.3,8.8v31.8c0,0.9-0.3,1.7-1,2.4
+			s-1.5,1-2.4,1h-15.1c-0.9,0-1.7-0.3-2.4-1s-1-1.5-1-2.4v-31.8c0-4.1-0.8-7.1-2.3-8.8c-1.5-1.7-3.8-2.6-6.8-2.6
+			c-2.9,0-5.1,0.9-6.7,2.6c-1.5,1.7-2.3,4.5-2.3,8.5v32.2c0,0.9-0.3,1.7-1,2.4s-1.5,1-2.4,1h-15.7c-0.9,0-1.7-0.3-2.4-1
+			s-1-1.5-1-2.4v-58c0-0.9,0.3-1.7,1-2.4s1.5-1,2.4-1h15.1c0.9,0,1.7,0.3,2.4,1s1,1.5,1,2.4v2.9c1.8-2.3,4-4.1,6.7-5.5
+			c2.6-1.3,5.7-2,9.1-2c4.2,0,8.1,0.8,11.5,2.4c3.4,1.6,6.2,4,8.4,7.3c2.4-3.2,5.3-5.6,8.8-7.2c3.4-1.7,7.2-2.5,11.1-2.5
+			c3.6,0,6.9,0.6,9.9,1.7s5.6,2.8,7.8,5.2c2.2,2.3,3.9,5.3,5.1,8.8c1.2,3.6,1.8,7.8,1.8,12.7v34.1L458.3,303.6z M491,280.8
+			c0,1.9,0.8,4.4,1.5,5.6s1.6,2.2,2.7,3c1.1,0.7,2.3,1.3,3.6,1.6c1.3,0.3,2.6,0.4,3.9,0.4c2.5,0,4.5-0.2,5.9-0.7s1.2-0.4,2.5-1.2
+			c1-0.6,0.9-0.7,1.3-0.9c0.4-0.2,1.1-0.3,2.1-0.3h17.6c1.8,0,2.7,0.9,2.7,2.7c0,1-0.2,1.1-1.4,3.1s-3.2,4.1-5.8,6.2s-6,4-10.1,5.5
+			c-4.1,1.6-9.1,2.4-14.8,2.4c-5.4,0-10.2-0.8-14.4-2.3c-4.2-1.5-7.7-3.8-10.6-6.7c-2.9-2.9-5-6.4-6.5-10.6
+			c-1.4-4.1-2.2-8.8-2.2-14.1c0-4.8,0.7-9.3,2.2-13.4s3.6-7.6,6.5-10.6s6.4-5.3,10.6-7s9-2.6,14.4-2.6c6.1,0,11.2,1,15.5,3
+			s7.8,4.7,10.4,7.9c2.7,3.2,4.6,6.9,5.8,10.9s1.8,8,1.8,12v2.6c0,0.9-0.3,1.7-1,2.4s-1.5,1-2.4,1H491V280.8z M502.7,257.8
+			c-3.5,0-6.1,1-8,3.1c-1.8,2.1-3.3,4.4-3.6,8H514c-0.3-3.6-1.5-5.9-3.4-8C508.8,258.8,506.2,257.8,502.7,257.8z"></path>
+	</g>
+	<g>
+		<path class="joinme3" d="M541.9,242.4c0.1,0,0.1,0,0.2,0.1s0.1,0.1,0.1,0.2v0.7c0,0.1,0,0.1-0.1,0.2s-0.1,0.1-0.2,0.1H540v5.7
+			c0,0.1,0,0.1-0.1,0.2s-0.1,0.1-0.2,0.1h-0.8c-0.1,0-0.1,0-0.2-0.1s-0.1-0.1-0.1-0.2v-5.7h-1.9c-0.1,0-0.1,0-0.2-0.1
+			s-0.1-0.1-0.1-0.2v-0.7c0-0.1,0-0.1,0.1-0.2s0.1-0.1,0.2-0.1H541.9z M547.1,246.1l2-3.4c0,0,0.1-0.1,0.1-0.2
+			c0.1-0.1,0.2-0.1,0.3-0.1h0.7c0.1,0,0.1,0,0.2,0.1s0.1,0.1,0.1,0.2v6.7c0,0.1,0,0.1-0.1,0.2s-0.1,0.1-0.2,0.1h-0.8
+			c-0.1,0-0.1,0-0.2-0.1s-0.1-0.1-0.1-0.2v-4.1l-1.4,2.3c0,0.1-0.1,0.1-0.1,0.2c-0.1,0.1-0.1,0.1-0.2,0.1h-0.5c-0.1,0-0.2,0-0.2-0.1
+			c-0.1-0.1-0.1-0.1-0.1-0.2l-1.4-2.3v4.1c0,0.1,0,0.1-0.1,0.2s-0.1,0.1-0.2,0.1H544c-0.1,0-0.1,0-0.2-0.1s-0.1-0.1-0.1-0.2v-6.7
+			c0-0.1,0-0.1,0.1-0.2s0.1-0.1,0.2-0.1h0.7c0.1,0,0.2,0,0.3,0.1s0.1,0.1,0.1,0.2L547.1,246.1L547.1,246.1z"></path>
+	</g>
+</g>
+</svg></div>
+                      </div>
+                      <div class="integrations-icons-text">join.me</div>
+                    </div>
+                    <div class="integrations-icon-div">
+                      <div class="integrations-icon top-padding-20 freeconferencecall">
+                        <div class="vertical-align w-embed"></div>
+                      </div>
+                      <div class="integrations-icons-text">FreeConference</div>
+                    </div>
+                    <div class="integrations-icon-div">
+                      <div class="integrations-icon zoom">
+                        <div class="vertical-align padding w-embed"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 365 89" style="enable-background:new 0 0 365 89;" xml:space="preserve">
+<style type="text/css">
+	.zoom0{fill:#2C8CFF;}
+</style>
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+	<g>
+		<g id="Layer0_0_FILL">
+			<path class="zoom0" d="M105.4,7.4c-5,2-9.4,5-13.2,8.8c-7.8,7.8-11.8,17.2-11.8,28.3c0,11,3.9,20.4,11.8,28.2
+				c7.8,7.8,17.2,11.7,28.3,11.7c11,0,20.4-3.9,28.2-11.7c7.8-7.8,11.8-17.2,11.8-28.2c0-11.1-3.9-20.5-11.8-28.3
+				c-3.8-3.8-8.2-6.8-13.2-8.8c-4.8-1.9-9.8-2.9-15.1-2.9h-0.1C115.2,4.5,110.2,5.5,105.4,7.4 M120.5,20.6c6.6,0,12.2,2.3,16.9,7
+				c4.7,4.7,7,10.4,7,17c0,6.6-2.3,12.2-7,16.9c-4.7,4.7-10.4,7-16.9,7c-6.6,0-12.3-2.3-17-7c-4.7-4.7-7-10.3-7-16.9
+				c0-6.6,2.3-12.3,7-17C108.2,22.9,113.9,20.6,120.5,20.6 M80.5,20.5l-0.2-3.9c-0.1-3.3-1.3-6.1-3.5-8.2c-2.2-2.2-5-3.4-8.3-3.6
+				L4.5,4.6l0.2,3.9c0.3,3.3,1.5,6.1,3.7,8.2c2.2,2.2,4.9,3.4,8.1,3.6l40.1,0.1l-48,48l0.2,4c0.2,3.3,1.4,6.1,3.6,8.2
+				c2.2,2.2,4.9,3.3,8.2,3.6l64,0.2l-0.2-3.9c-0.3-3.3-1.5-6-3.6-8.2c-2.1-2.2-4.8-3.4-8.1-3.6l-40-0.2L80.5,20.5 M232.8,72.8
+				c7.8-7.8,11.8-17.2,11.8-28.2c0-11.1-3.9-20.5-11.8-28.3c-3.8-3.8-8.2-6.8-13.2-8.8c-4.8-1.9-9.8-2.9-15.1-2.9
+				c-5.2,0-10.3,1-15.1,2.9c-5,2-9.4,5-13.2,8.8c-7.8,7.8-11.8,17.2-11.8,28.3c0,11,3.9,20.4,11.8,28.2c7.8,7.8,17.2,11.7,28.3,11.7
+				C215.5,84.5,224.9,80.6,232.8,72.8 M204.5,20.6c6.6,0,12.2,2.3,17,7c4.7,4.7,7,10.4,7,17c0,6.6-2.3,12.2-7,16.9
+				c-4.7,4.7-10.4,7-17,7c-6.6,0-12.3-2.3-17-7c-4.7-4.7-7-10.3-7-16.9c0-6.6,2.3-12.3,7-17C192.2,22.9,197.9,20.6,204.5,20.6
+				 M264.7,36.5c0.2-3.4,0.8-6.1,1.9-8c1.4-2.4,3.3-4.4,5.8-5.8c2.5-1.5,5.2-2.2,8.1-2.2c2.9,0,5.6,0.7,8.1,2.2
+				c2.4,1.4,4.3,3.4,5.7,5.8c1.1,1.9,1.8,4.6,2,8l0.5,36c0.2,3.3,1.4,6,3.5,8.2c2.2,2.2,4.9,3.4,8.2,3.6l4,0.2l0.2-48
+				c0.2-3.4,0.8-6.1,1.9-8.1c1.4-2.4,3.3-4.3,5.8-5.8c2.5-1.5,5.2-2.2,8.1-2.2s5.6,0.7,8.1,2.2c2.4,1.4,4.3,3.4,5.8,5.8
+				c1.1,1.9,1.7,4.6,1.9,8l0.5,36c0.2,3.3,1.4,6.1,3.5,8.2c2.2,2.2,4.9,3.4,8.2,3.6l4,0.2v-48c0-8.8-3.1-16.4-9.4-22.6
+				c-6.2-6.3-13.8-9.4-22.6-9.4c-4.7,0-9.2,1-13.4,2.9c-4.1,1.9-7.6,4.5-10.6,7.9c-3-3.4-6.6-6-10.6-7.9c-4.2-2-8.7-2.9-13.4-2.9
+				c-6.5,0-12.5,1.8-18,5.5c-1.4-1.6-3.7-2.9-6.7-4.1c-2.7-1-5.2-1.4-7.4-1.4v80l4-0.2c3.3-0.2,6.1-1.4,8.3-3.6
+				c2.2-2.2,3.3-4.9,3.5-8.2L264.7,36.5z"></path>
+		</g>
+	</g>
+</g>
+</svg></div>
+                      </div>
+                      <div class="integrations-icons-text">Zoom</div>
+                    </div>
+                    <div class="integrations-icon-div">
+                      <div class="integrations-icon webex">
+                        <div class="padding w-embed"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 1725.7 632" style="enable-background:new 0 0 1725.7 632;" xml:space="preserve">
+<style type="text/css">
+	.webex0{fill:#86C555;}
+	.webex1{fill:#0993D1;}
+</style>
+<path d="M189.4,136.2c0,19.2-14.6,72.1-76.7,72.1c-54.3,0-88.6-36.1-88.6-94.3c0-55,35.1-94.4,88.6-94.4c61.8,0,75.9,46.7,76.2,63.6
+	h-26c-1-16.9-14.9-43.4-50.2-43.4c-41.7,0-62.3,33.8-62.3,74.2c0,42.9,22.7,74.2,62.3,74.2c38.1,0,49.9-33.1,51-52H189.4z"></path>
+<path d="M251.6,48.6h-24.5V23.9h24.5V48.6z M227.4,73.6h24.2V204h-24.2V73.6z"></path>
+<path d="M397.6,111.7h-24.2c0-11.6-9.3-22.2-29.8-22.2c-16.9,0-26.7,5.6-26.7,15.9c0,11.6,14.6,16.2,33.8,21.5
+	c21.7,6.1,51,12.9,51,40.4c0,21.4-15.2,40.4-58,40.4c-39.6,0-56.3-20.7-56.3-45.9h24.5c0,14.4,11.9,26.2,32.3,26.2
+	c24,0,32.6-7.8,32.6-17.4c0-10.9-11.1-16.4-35.1-23.2c-24.7-7.1-50-14.2-50-42.6c0-17.9,15.7-34.6,50.2-34.6
+	C388.3,70,396.6,95.3,397.6,111.7"></path>
+<path d="M545.5,161.6c-1.8,10.8-10.4,45.9-56.2,45.9c-37.1,0-64.1-26.7-64.1-68.6c0-42.1,27.3-68.9,64.1-68.9
+	c44.6,0,54.7,31.5,55.7,41.6h-24.2c-3.8-11.3-13.4-21.4-31.3-21.4c-25,0-39.4,21.2-39.4,48.7c0,23.5,11.9,48.4,39.1,48.4
+	c25.2,0,31-18.9,32.5-25.7H545.5z"></path>
+<path d="M570.5,138.9c0-42.1,27.2-68.9,64.1-68.9c37.1,0,64.3,26.5,64.3,68.9c0,42.9-28,68.6-64.3,68.6
+	C597.5,207.5,570.5,180.8,570.5,138.9 M634.5,187.4c26,0,39.1-22.7,39.1-48.4c0-26.3-13.4-48.7-38.8-48.7c-25,0-39.4,21.2-39.4,48.7
+	C595.4,162.4,607.3,187.4,634.5,187.4"></path>
+<polygon class="webex0" points="404.4,286.9 333.9,546.5 333.4,546.5 259,286.9 213,286.9 144.5,546 70,286.9 21.9,286.9 22.6,289.2 
+	119.6,606.9 169.4,606.9 235.4,359.9 308.8,606.9 353.3,606.9 448.8,286.9 ">
+<path class="webex0" d="M708.7,325.4c-29.5-31.4-67.4-47.1-113.1-47.1c-45.8,0-83.7,15.7-113.2,47.1c-29.6,31.4-44.3,72.1-44.3,121.8
+	c0,49.3,14.8,89.8,44.3,121.2c29.6,31.4,67.4,47.1,113.2,47.1c53.3,0,93.6-17.1,120.3-51.5c13.3-16.9,22.3-37.4,27.1-61.3l0.4-2.1
+	h-42.4l-0.3,1.4c-3.4,17.3-11.4,32.8-24.4,46.9c-19.6,20.8-46.3,31.2-80.7,31.2c-33.9,0-61.1-12.4-82-37.3
+	c-18.1-22.1-28.3-49.9-30.6-83.5h270.1v-12.1h0C753.1,397.5,738.3,356.8,708.7,325.4 M484.2,424.7c2.4-31.1,13.7-57.1,34.1-78.2
+	c20.7-21.5,46.3-32.2,77.3-32.2c32.2,0,58.8,11.4,80.1,34.3c19.2,20.9,29.8,46.1,31.9,76.1H484.2z"></path>
+<path class="webex0" d="M1049.3,324.8c-29.5-31-67.4-46.5-113.2-46.5c-50.8,0-88.6,18.8-112.7,56.2V166.3h-41.7v328.1
+	c0,43.2-1,80.1-3.2,110.7l-0.1,1.9h39.1l3.3-51.3c26.8,39.8,65.7,59.9,116,59.9c46,0,83.8-15.7,113-46.8
+	c29.2-31.2,43.9-71.7,43.8-121.5C1093.7,396.7,1078.9,355.7,1049.3,324.8 M1050.1,447.2c0,36.4-9.7,67-29,92
+	c-21,27.4-49,40.9-84.7,40.9c-34,0-61.2-12.8-82.2-38.5c-20.6-24.6-30.8-56-30.8-94.4c0-36.4,9.4-67,28.4-92
+	c20.9-27.8,49-41.5,84.7-41.5c34.8,0,62.7,13.2,84.1,39.7C1040.2,378.4,1050.1,409.6,1050.1,447.2"></path>
+<path class="webex1" d="M1388.2,325.4c-29.5-31.3-67.4-47.1-113.2-47c-45.8,0-83.6,15.7-113.2,47c-29.6,31.4-44.3,72.1-44.3,121.8
+	c0,49.3,14.8,89.8,44.3,121.2c29.6,31.4,67.4,47.1,113.2,47.1h0.1c53.3,0,93.5-17.2,120.2-51.5c13.3-17,22.3-37.5,27.1-61.3l0.4-2.1
+	h-42.4l-0.3,1.4c-3.4,17.3-11.4,32.8-24.4,46.9c-19.6,20.8-46.3,31.2-80.7,31.3c-33.9,0-61.1-12.4-82-37.3
+	c-18.1-22.1-28.3-49.9-30.6-83.5h270.1v-12.1h0C1432.6,397.5,1417.8,356.8,1388.2,325.4 M1163.7,424.7c2.5-31.1,13.7-57.1,34.1-78.2
+	c20.7-21.5,46.3-32.2,77.3-32.2c32.2,0,58.8,11.4,80.1,34.3c19.3,20.9,29.9,46.2,31.9,76.1H1163.7z"></path>
+<polygon class="webex1" points="1590.7,440.6 1704.9,286.9 1659.2,286.9 1568,410.5 1474.6,286.9 1473.8,286.9 1427.9,286.9 
+	1543,441.5 1418.1,606.9 1465,606.9 1565.6,470.4 1668,606.9 1716.4,606.9 ">
+</polygon></polygon></svg></div>
+                      </div>
+                      <div class="integrations-icons-text">WebEx</div>
+                    </div>
+                    <div class="integrations-icon-div">
+                      <div class="integrations-icon ringcentral"></div>
+                      <div class="integrations-icons-text">RingCentral</div>
+                    </div>
+                    <h4 class="features-tittle">Web conferencing Integrations</h4>
+                    <p class="paragraph bottom-space-16 grey">FreeBusy integrates will all major web conferencing services (Skype for Business, GoToMeeting, Join.me, WebEx, Zoom, BlueJeans etc.) and automatically ensures meetings are prepared with conference call information.<br></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row-7 w-row">
+              <div class="same-height w-col w-col-6">
+                <a href="/outlook" class="solutions _1 w-inline-block">
+                  <div class="service-div-wrapper integrations-wrapper">
+                    <div class="swervices-wrapper align-left w-clearfix">
+                      <div class="features-icon outlook"></div>
+                      <h4 class="features-tittle">Outlook Add-In</h4>
+                      <p class="paragraph bottom-space-16 grey">The Outlook add-in helps you find the best time to meet, quickly, for participants inside and outside your company.</p>
+                      <p class="paragraph bottom-space-16 right blue">Get Outlook add-in</p><img src="images/noun_Arrow_1569918.svg" width="30" class="float-right"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="same-height w-col w-col-6">
+                <a href="/chrome" class="solutions _2 w-inline-block">
+                  <div class="service-div-wrapper integrations-wrapper">
+                    <div class="swervices-wrapper align-left w-clearfix">
+                      <div class="features-icon chrome"></div>
+                      <h4 class="features-tittle">G Suite Integration (Chrome Extension for Gmail)</h4>
+                      <p class="paragraph bottom-space-16 grey">You can check availability for all meeting participants right from Google Calendar, no matter which calendar system they use.</p>
+                      <p class="paragraph bottom-space-16 right blue">Get Gmail extension</p><img src="images/noun_Arrow_1569918.svg" width="30" class="float-right"></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-ix="slide-in-scroll-navigation-on-scroll" id="Sign-up" class="hero-section linebackground bottom">
+      <div class="full-container center top-padding-60">
+        <div class="section">
+          <div class="shared_sub_tittle">Coordinate meetings 10x faster</div>
+          <h1 class="hero-big-text width80 bottom-space-30">Create <strong>seamless scheduling experiences</strong>. Use <strong>leading technology</strong> that adapts to any business.<br></h1>
+          <p class="side-padding-20 grey">You&#x27;ll enjoy flexible features to fit your business with a single integration!<br></p>
+          <div class="button-block-center margin-10"><a target="_blank" href="/signup" class="button move-up no-hover w-button">Try for free</a><a href="/demo" target="_blank" class="button move-up no-hover outline-button left-space-20 left-space--20 w-button">Schedule a demo</a></div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="shared_container w-container">
+        <div class="w-row">
+          <div class="w-col w-col-3">
+            <div class="shared_footer">
+              <div>
+                <h6 class="shared_footer_title">Solutions</h6><a href="solutions/recruiting-professionals.html" class="shared_footer-link">Recruiting Professionals</a><a href="solutions/sales-and-marketing.html" class="shared_footer-link">Sales &amp; Marketing</a><a href="solutions/consultants-and-freelancers.html" class="shared_footer-link">Consultants &amp; Freelancers</a><a href="solutions/customer-assistance.html" class="shared_footer-link">Customer Assistance</a><a href="solutions/freebusy-for-enterprise.html" class="shared_footer-link">Enterprises</a><a href="solutions/automated-scheduling-solutions.html" class="shared_footer-link">Automated Scheduling Solutions</a></div>
+            </div>
+          </div>
+          <div class="w-col w-col-3">
+            <div class="shared_footer">
+              <div>
+                <h6 class="shared_footer_title">Integrations</h6><a href="/#integrations" class="shared_footer-link">Calendar Integrations</a><a href="/#integrations" class="shared_footer-link">Web conferencing Integrations</a><a href="/outlook" target="_blank" class="shared_footer-link">Outlook Add-In</a><a target="_blank" href="/chrome" class="shared_footer-link">G Suite integration</a></div>
+            </div>
+          </div>
+          <div class="w-col w-col-3">
+            <div class="shared_footer">
+              <div>
+                <h6 class="shared_footer_title">Product</h6><a href="/#features" class="shared_footer-link">Features</a><a target="_blank" href="/pricing" class="shared_footer-link">Pricing</a><a target="_blank" href="https://help.freebusy.io/" class="shared_footer-link">Help center</a><a target="_blank" href="/developers" class="shared_footer-link">Developer API</a><a href="http://status.freebusy.io/" target="_blank" class="shared_footer-link">Service Status</a></div>
+            </div>
+          </div>
+          <div class="w-col w-col-3">
+            <div class="shared_footer">
+              <div>
+                <h6 class="shared_footer_title">Company</h6><a href="/about" target="_blank" class="shared_footer-link">About</a><a target="_blank" href="/privacy" class="shared_footer-link">Privacy policy</a><a target="_blank" href="/security" class="shared_footer-link">Security policy</a><a href="/terms" class="shared_footer-link">Terms of use</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="shared_top_border">
+          <div>
+            <div class="w-row">
+              <div class="w-col w-col-6">
+                <p class="shared_small_text">© 2018 FreeBusy. All rights reserved.</p>
+              </div>
+              <div class="column-8 w-col w-col-6"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] --><noscript><style>html{opacity:1;}</style></noscript></body>
+</html>
