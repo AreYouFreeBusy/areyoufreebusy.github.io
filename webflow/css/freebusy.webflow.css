@@ -201,8 +201,8 @@ blockquote {
 
 .hero-section.top {
   padding-top: 20px;
-  background-image: url('../images/Page-Angel.png'), -webkit-linear-gradient(315deg, rgba(91, 183, 2, .9) 24%, rgba(0, 166, 237, .9)), url('../images/681735120-2048x2048.jpg');
-  background-image: url('../images/Page-Angel.png'), linear-gradient(135deg, rgba(91, 183, 2, .9) 24%, rgba(0, 166, 237, .9)), url('../images/681735120-2048x2048.jpg');
+  background-image: url('../images/Page-Angel.png'), -webkit-linear-gradient(315deg, rgba(91, 183, 2, .9) 24%, rgba(0, 166, 237, .9)), url('../images/iStock-681735120.jpg');
+  background-image: url('../images/Page-Angel.png'), linear-gradient(135deg, rgba(91, 183, 2, .9) 24%, rgba(0, 166, 237, .9)), url('../images/iStock-681735120.jpg');
   background-position: 100% 100%, 0px 0px, 50% 50%;
   background-size: contain, auto, cover;
   background-repeat: no-repeat, repeat, no-repeat;
@@ -5612,6 +5612,13 @@ blockquote {
   padding-top: 10px;
 }
 
+.vertical-align.outlook {
+  background-image: url('../images/Exchange.svg');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .padding {
   padding-top: 10px;
 }
@@ -5622,6 +5629,37 @@ blockquote {
 
 .column-18 {
   display: block;
+}
+
+.outlook {
+  background-image: url('../images/Exchange.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.yahoo {
+  background-image: url('../images/Yahoo.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.office {
+  background-image: url('../images/Office.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.zoho {
+  background-image: url('../images/ZOHO.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.webex {
+  background-image: url('../images/webex.svg');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 991px) {

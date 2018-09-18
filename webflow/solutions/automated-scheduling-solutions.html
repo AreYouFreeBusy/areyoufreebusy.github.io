@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Thu Sep 13 2018 12:01:35 GMT+0000 (UTC)  -->
+<!--  Last Published: Tue Sep 18 2018 10:37:18 GMT+0000 (UTC)  -->
 <html data-wf-page="5b8d3c2d22359e5f829a1207" data-wf-site="5b62bf66b54c8251b03173e9">
 <head>
   <meta charset="utf-8">
@@ -130,7 +130,7 @@
               <div class="shared_sub_tittle shared_bottom_space">For websites</div>
               <h1 class="headling-left bottom-space-16">Pick-a-Time button for websites, blogs &amp; apps</h1>
               <p class="paragraph left grey">With Pick-aTime button on your website, blog or app, finding the perfect time to meet is only a click away. You can add our FreeBusy injected button or your own custom button anywhere on your site!<br></p>
-              <div class="inline-div top-padding-20"><a href="/developers/pickatime" target="_blank" class="button move-up no-hover outline-button top-padding-20 w-button">how to use</a><a target="_blank" class="button move-up no-hover outline-button top-padding-20 left-space-20 w-button">live Demo</a></div>
+              <div class="inline-div top-padding-20"><a href="/developers/pickatime" target="_blank" class="button move-up no-hover outline-button top-padding-20 w-button">how to use</a></div>
             </div>
           </div>
         </div>
@@ -150,7 +150,7 @@
             <div class="margin-left-40 margin-right w-clearfix">
               <div class="shared_sub_tittle shared_bottom_space all-right">For email communication</div>
               <h1 class="all-right">Pick-a-Time for email communication</h1>
-              <p class="paragraph all-right grey">No need to learn a new workflow. We bring your availability inside the apps you use daily.<br></p>
+              <p class="paragraph all-right grey">No need to learn a new workflow. We bring your availability inside your email.<br></p>
               <div class="inline-div float-left top-padding-20"><a href="https://help.freebusy.io/outlook-add-in/pick-meeting-time/link-to-my-availability-in-an-email-message" target="_blank" class="button move-up no-hover outline-button top-padding-20 w-button">how to use</a></div>
             </div>
           </div>
@@ -184,7 +184,7 @@
           <div class="w-col w-col-6 w-col-stack"><img src="../images/embeded_availability_2.svg"></div>
           <div class="w-col w-col-6 w-col-stack">
             <div class="margin-right margin-left-40">
-              <div class="shared_sub_tittle shared_bottom_space">For websites</div>
+              <div class="shared_sub_tittle shared_bottom_space">For web forms</div>
               <h1 class="headling-left bottom-space-16">Product demo<strong> </strong>button </h1>
               <p class="paragraph left grey">Do your users frequently coordinate when to meet? Don&#x27;t leave them in the dark! With Pick-aTime button on your website, finding the perfect time to meet is only a click away. See the demo!<br></p>
               <div class="inline-div top-padding-20"><a href="/developers/api" target="_blank" class="button move-up no-hover outline-button top-padding-20 w-button">how to use</a><a href="/demo" target="_blank" class="button move-up no-hover outline-button top-padding-20 left-space-20 w-button">live Demo</a></div>
@@ -351,5 +351,44 @@
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="../js/webflow.js" type="text/javascript"></script>
-  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] --><noscript><style>html{opacity:1;}</style></noscript></body>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] --><noscript><style>html{opacity:1;}</style></noscript>
+  <script>
+      window.intercomSettings = {
+        app_id: "gutxh45p"
+      };
+    </script>
+  <script>
+      (function() {
+        var w = window;
+        var ic = w.Intercom;
+        if (typeof ic === "function") {
+          ic('reattach_activator');
+          ic('update', intercomSettings);
+        } else {
+          var d = document;
+          var i = function() {
+            i.c(arguments)
+          };
+          i.q = [];
+          i.c = function(args) {
+            i.q.push(args)
+          };
+          w.Intercom = i;
+          function l() {
+            var s = d.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = 'https://widget.intercom.io/widget/gutxh45p';
+            var x = d.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+          }
+          if (w.attachEvent) {
+            w.attachEvent('onload', l);
+          } else {
+            w.addEventListener('load', l, false);
+          }
+        }
+      })()
+    </script>
+</body>
 </html>
