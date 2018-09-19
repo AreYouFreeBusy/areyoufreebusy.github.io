@@ -206,7 +206,7 @@ blockquote {
   background-position: 100% 100%, 0px 0px, 50% 50%;
   background-size: contain, auto, cover;
   background-repeat: no-repeat, repeat, no-repeat;
-  background-attachment: scroll, scroll, scroll;
+  background-attachment: scroll, scroll, fixed;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
 }
