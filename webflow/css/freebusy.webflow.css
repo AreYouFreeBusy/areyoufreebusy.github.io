@@ -1981,7 +1981,7 @@ blockquote {
   position: static;
   left: 0px;
   top: 0px;
-  margin-left: 0px;
+  margin-left: 20px;
 }
 
 .shared_logo_white.light {
@@ -2904,6 +2904,7 @@ blockquote {
   margin-right: 10px;
   margin-bottom: 10px;
   margin-left: 10px;
+  text-align: left;
 }
 
 .swervices-wrapper._2 {
@@ -3116,7 +3117,7 @@ blockquote {
 }
 
 .shared_container_alternativ {
-  max-width: 1170px;
+  max-width: 2560px;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -5177,7 +5178,7 @@ blockquote {
   top: 0px;
   z-index: 900;
   display: inline-block;
-  margin-left: 0px;
+  margin-left: 20px;
   float: none;
   clear: none;
   opacity: 0;
@@ -5553,8 +5554,8 @@ blockquote {
 .integrations-icon {
   position: relative;
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 .integrations-icon.top-padding-20.google {
@@ -5562,7 +5563,7 @@ blockquote {
 }
 
 .integrations-icon.top-padding-20.bluejeans {
-  background-image: url('../images/JGK3TSKGRTLK-180x180.JPEG');
+  background-image: url('../images/service_512.png');
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -5595,8 +5596,28 @@ blockquote {
   background-repeat: no-repeat;
 }
 
+.integrations-icon.zoom {
+  background-image: url('../images/ZoomAudioIcon.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.integrations-icon.webex {
+  background-image: url('../images/61JGXLoMdZL.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .integrations-icon.ringcentral {
   background-image: url('../images/RingCentral.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.integrations-icon.freeconferencecall {
+  background-image: url('../images/FreeConferenceCall.svg');
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -5606,6 +5627,7 @@ blockquote {
   display: inline-block;
   margin-right: 20px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .integrations-icons-text {
@@ -5685,13 +5707,6 @@ blockquote {
 
 .zoho {
   background-image: url('../images/ZOHO.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.webex {
-  background-image: url('../images/webex.svg');
-  background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -6133,6 +6148,12 @@ blockquote {
   .shared_logo_brand.center {
     padding-top: 10px;
   }
+  .shared_logo_white {
+    margin-left: 0px;
+  }
+  .shared_logo_white.opacity {
+    margin-left: 0px;
+  }
   .services-wrapper {
     margin-bottom: 40px;
   }
@@ -6524,6 +6545,12 @@ blockquote {
   .icon {
     color: #1a1a1a;
   }
+  .shared_logo_color {
+    margin-left: 0px;
+  }
+  .shared_logo_color.no-opacity {
+    margin-left: 0px;
+  }
   .bottom-space-16 {
     margin-bottom: 16px;
   }
@@ -6633,12 +6660,6 @@ blockquote {
   .hero-section.top {
     height: 800px;
     padding-top: 140px;
-    background-image: url('../images/angel.svg'), -webkit-linear-gradient(315deg, rgba(91, 183, 2, .9) 24%, rgba(0, 166, 237, .9)), url('../images/681735120-2048x2048.jpg');
-    background-image: url('../images/angel.svg'), linear-gradient(135deg, rgba(91, 183, 2, .9) 24%, rgba(0, 166, 237, .9)), url('../images/681735120-2048x2048.jpg');
-    background-position: 0px 6px, 0px 0px, -234px 0px;
-    background-size: cover, auto, cover;
-    background-repeat: no-repeat, repeat, no-repeat;
-    background-attachment: scroll, scroll, scroll;
   }
   .hero-section.top.new {
     padding-top: 100px;
@@ -7200,12 +7221,6 @@ blockquote {
   }
   .hero-section.top {
     padding-top: 120px;
-    background-image: url('../images/angel.svg'), -webkit-linear-gradient(315deg, rgba(91, 183, 2, .9) 24%, rgba(0, 166, 237, .9)), url('../images/681735120-2048x2048.jpg');
-    background-image: url('../images/angel.svg'), linear-gradient(135deg, rgba(91, 183, 2, .9) 24%, rgba(0, 166, 237, .9)), url('../images/681735120-2048x2048.jpg');
-    background-position: 0px 100%, 0px 0px, -582px -338px;
-    background-size: contain, auto, auto;
-    background-repeat: no-repeat, repeat, no-repeat;
-    background-attachment: scroll, scroll, scroll;
   }
   .hero-section.page-header.author {
     height: 420px;
@@ -7547,6 +7562,9 @@ blockquote {
   .fun-content.no-space {
     margin-bottom: 0px;
   }
+  .swervices-wrapper {
+    margin-right: 0px;
+  }
   .swervices-wrapper._2 {
     width: 84%;
   }
@@ -7572,6 +7590,9 @@ blockquote {
   .service-div-wrapper {
     margin-right: 0px;
     margin-bottom: 20px;
+  }
+  .service-div-wrapper.integrations-wrapper {
+    padding-right: 0px;
   }
   .row-elements {
     padding-top: 40px;
@@ -7744,6 +7765,9 @@ blockquote {
   }
   .column-12 {
     display: none;
+  }
+  .calendar-icons {
+    text-align: left;
   }
   .negative-padding {
     margin-top: -200px;
