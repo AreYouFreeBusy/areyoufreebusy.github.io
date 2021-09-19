@@ -1,0 +1,8 @@
+{
+  "routes": [
+    {
+      "route": "/aaa/*",
+      "rewrite": "/blog/*"
+    }
+  ]
+}
